@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>example</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/black.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11/styles/github-dark.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400&family=Playfair+Display:wght@400;700&family=Merriweather:wght@400;700&family=Fira+Code:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/dreampulse/computer-modern-web-font@master/fonts.css">
+  <style>
+    @font-face { font-family: 'Latin Modern Roman'; font-style: normal; font-weight: 400; src: url('https://cdn.jsdelivr.net/npm/lm-web-fonts@0.1.0/fonts/lm-roman10-regular.woff2') format('woff2'), url('https://cdn.jsdelivr.net/npm/lm-web-fonts@0.1.0/fonts/lm-roman10-regular.woff') format('woff'); }
+    @font-face { font-family: 'Latin Modern Roman'; font-style: normal; font-weight: 700; src: url('https://cdn.jsdelivr.net/npm/lm-web-fonts@0.1.0/fonts/lm-roman10-bold.woff2') format('woff2'), url('https://cdn.jsdelivr.net/npm/lm-web-fonts@0.1.0/fonts/lm-roman10-bold.woff') format('woff'); }
+    @font-face { font-family: 'Latin Modern Roman'; font-style: italic; font-weight: 400; src: url('https://cdn.jsdelivr.net/npm/lm-web-fonts@0.1.0/fonts/lm-roman10-italic.woff2') format('woff2'), url('https://cdn.jsdelivr.net/npm/lm-web-fonts@0.1.0/fonts/lm-roman10-italic.woff') format('woff'); }
+    html, body { margin: 0; padding: 0; overflow: hidden; width: 100%; height: 100%; background: #000; }
+    /* Reset reveal.js section padding/alignment so absolute positions match the 960x540 editor canvas exactly */
+    .reveal .slides section { padding: 0 !important; text-align: left !important; }
+    /* Neutralise theme typography overrides so presentation matches editor exactly */
+    /* font-family only on section (inherited) so KaTeX's explicit rules take precedence */
+    .reveal .slides section { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+    .reveal .slides section * { text-transform: none !important; letter-spacing: normal !important; }
+    /* Explicit heading sizes — override theme so present mode matches editor exactly */
+    .reveal .slides section h1 { font-size: 2.5em; font-weight: bold; line-height: 1.2; margin: 0 0 0.4em; }
+    .reveal .slides section h2 { font-size: 1.6em; font-weight: bold; line-height: 1.2; margin: 0 0 0.4em; }
+    .reveal .slides section h3 { font-size: 1.3em; font-weight: bold; line-height: 1.2; margin: 0 0 0.4em; }
+    .reveal .slides section h4 { font-size: 1em;   font-weight: bold; line-height: 1.2; margin: 0 0 0.4em; }
+    .reveal .slides section p  { margin: 0 0 0.4em; line-height: 1.5; }
+    .reveal .slides section ul,
+    .reveal .slides section ol { padding-left: 1.5em; margin: 0 0 0.4em; }
+    .reveal .slides section li { margin-bottom: 0.2em; line-height: 1.5; }
+    .reveal .slides section a  { text-decoration: underline; }
+    /* reveal.js constrains/decorates section imgs — reset everything */
+    .reveal .slides section img { margin: 0 !important; border: none !important; background: none !important; box-shadow: none !important; max-width: none !important; max-height: none !important; }
+    /* Footer — explicit CSS rule with high specificity so reveal.js theme cannot override */
+    .reveal .slides section .reveal-footer,
+    .reveal .slides section .reveal-footer * { font-family: -apple-system,sans-serif !important; font-size: 14px !important; color: rgba(255,255,255,0.65) !important; }
+    #fs-btn {
+      position: fixed; bottom: 16px; right: 16px; z-index: 9999;
+      background: rgba(0,0,0,0.5); color: white; border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 6px; padding: 6px 10px; cursor: pointer; font-size: 13px;
+      backdrop-filter: blur(4px); transition: background 0.15s;
+    }
+    #fs-btn:hover { background: rgba(0,0,0,0.75); }
+    :fullscreen #fs-btn, :-webkit-full-screen #fs-btn { display: none; }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+    <section data-background-color="#1e1e2e" style="padding:0;width:960px;height:540px;overflow:hidden;font-size:42px;">
+<iframe srcdoc="<script src=&quot;https://cdn.jsdelivr.net/npm/d3@7&quot;></script>
+<style>* { box-sizing: border-box; margin: 0; } body { background: transparent; overflow: hidden; }</style>
+<svg id=&quot;viz&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;display:block;&quot;></svg>
+<script>
+const W = window.innerWidth, H = window.innerHeight;
+const svg = d3.select('#viz').attr('viewBox', `0 0 ${W} ${H}`);
+const data = Array.from({length: 30}, () => ({ x: Math.random()*W, y: Math.random()*H, r: 8+Math.random()*20 }));
+svg.selectAll('circle').data(data).join('circle')
+  .attr('cx', d => d.x).attr('cy', d => d.y).attr('r', d => d.r)
+  .attr('fill', (d,i) => d3.schemeTableau10[i%10]).attr('opacity', 0.8);
+</script>" style="position:absolute;left:80px;top:80px;width:500px;height:380px;z-index:2;overflow:hidden;box-sizing:border-box;border:none;" sandbox="allow-scripts allow-same-origin" scrolling="no"></iframe>
+
+
+      
+    </section>
+    <section data-background-color="#1e1e2e" style="padding:0;width:960px;height:540px;overflow:hidden;font-size:42px;">
+<div style="position:absolute;left:80px;top:80px;width:600px;height:320px;z-index:2;overflow:hidden;box-sizing:border-box;"><pre style="margin:0;padding:10px 14px;width:100%;height:100%;overflow:hidden;box-sizing:border-box;font-family:'Fira Code','JetBrains Mono','Courier New',monospace;font-size:14px;line-height:1.5;"><code class="language-javascript" data-trim>// Write your code here
+function hello() {
+  return &quot;Hello, World!&quot;
+}</code></pre></div>
+
+
+      
+    </section>
+    <section data-background-color="#1e1e2e" style="padding:0;width:960px;height:540px;overflow:hidden;font-size:42px;">
+<div style="position:absolute;left:80px;top:160px;width:600px;height:180px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span data-math-latex="\int_0^\infty e^{-x^2} dx = \frac{\sqrt{\pi}}{2}" data-math-display="true" class="math-node math-display"></span></p></div>
+
+
+      
+    </section>
+    </div>
+  </div>
+  <button id="fs-btn" title="Enter fullscreen (F)" onclick="document.documentElement.requestFullscreen&&document.documentElement.requestFullscreen()">&#x26F6; Fullscreen</button>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/highlight/highlight.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      width: 960,
+      height: 540,
+      margin: 0,
+      minScale: 0,
+      maxScale: 10,
+      center: false,
+      transition: 'slide',
+      plugins: [ RevealNotes, RevealHighlight ]
+    });
+    Reveal.on('ready', function() {
+      document.querySelectorAll('span[data-math-latex]').forEach(function(el) {
+        try {
+          katex.render(el.getAttribute('data-math-latex'), el, {
+            displayMode: el.getAttribute('data-math-display') === 'true',
+            throwOnError: false
+          });
+        } catch(e) {}
+      });
+    });
+  </script>
+</body>
+</html>

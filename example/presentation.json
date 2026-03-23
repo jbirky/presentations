@@ -1,0 +1,73 @@
+{
+  "id": "bd22d501-550c-4071-b1c3-3003b8e3ecac",
+  "title": "example",
+  "theme": "black",
+  "transition": "slide",
+  "slides": [
+    {
+      "id": "ff58f332-50cc-4e21-92c0-90750ce03b2b",
+      "elements": [
+        {
+          "id": "462125d1-98db-4b25-9d62-37733f25228a",
+          "type": "html",
+          "x": 80,
+          "y": 80,
+          "width": 500,
+          "height": 380,
+          "zIndex": 2,
+          "content": "<script src=\"https://cdn.jsdelivr.net/npm/d3@7\"></script>\n<style>* { box-sizing: border-box; margin: 0; } body { background: transparent; overflow: hidden; }</style>\n<svg id=\"viz\" width=\"100%\" height=\"100%\" style=\"display:block;\"></svg>\n<script>\nconst W = window.innerWidth, H = window.innerHeight;\nconst svg = d3.select('#viz').attr('viewBox', `0 0 ${W} ${H}`);\nconst data = Array.from({length: 30}, () => ({ x: Math.random()*W, y: Math.random()*H, r: 8+Math.random()*20 }));\nsvg.selectAll('circle').data(data).join('circle')\n  .attr('cx', d => d.x).attr('cy', d => d.y).attr('r', d => d.r)\n  .attr('fill', (d,i) => d3.schemeTableau10[i%10]).attr('opacity', 0.8);\n</script>"
+        }
+      ],
+      "notes": "",
+      "background": {
+        "type": "color",
+        "color": "#1e1e2e"
+      }
+    },
+    {
+      "id": "e8de9942-d57e-4422-b400-7441da31d524",
+      "elements": [
+        {
+          "id": "f74ca051-f2b3-4881-988c-10328403025a",
+          "type": "code",
+          "x": 80,
+          "y": 80,
+          "width": 600,
+          "height": 320,
+          "zIndex": 2,
+          "content": "// Write your code here\nfunction hello() {\n  return \"Hello, World!\"\n}",
+          "language": "javascript",
+          "fontSize": 14
+        }
+      ],
+      "notes": "",
+      "background": {
+        "type": "color",
+        "color": "#1e1e2e"
+      }
+    },
+    {
+      "id": "11b31187-37e2-47bd-8816-faa906a4c5a5",
+      "elements": [
+        {
+          "id": "840a6d70-4dd0-4889-a851-2f12020cd5f6",
+          "type": "text",
+          "x": 80,
+          "y": 160,
+          "width": 600,
+          "height": 180,
+          "zIndex": 1,
+          "content": "<p><span data-math-latex=\"\\int_0^\\infty e^{-x^2} dx = \\frac{\\sqrt{\\pi}}{2}\" data-math-display=\"true\" class=\"math-node math-display\"></span></p>"
+        }
+      ],
+      "notes": "",
+      "background": {
+        "type": "color",
+        "color": "#1e1e2e"
+      }
+    }
+  ],
+  "createdAt": "2026-03-23T01:03:29.260Z",
+  "updatedAt": "2026-03-23T01:26:45.233Z",
+  "codeTheme": "github-dark"
+}
