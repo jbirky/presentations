@@ -1,0 +1,396 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>thesis</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/black.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11/styles/monokai.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400&family=Playfair+Display:wght@400;700&family=Merriweather:wght@400;700&family=Fira+Code:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/dreampulse/computer-modern-web-font@master/fonts.css">
+  <style>
+    @font-face { font-family: 'Latin Modern Roman'; font-style: normal; font-weight: 400; src: url('https://cdn.jsdelivr.net/npm/lm-web-fonts@0.1.0/fonts/lm-roman10-regular.woff2') format('woff2'), url('https://cdn.jsdelivr.net/npm/lm-web-fonts@0.1.0/fonts/lm-roman10-regular.woff') format('woff'); }
+    @font-face { font-family: 'Latin Modern Roman'; font-style: normal; font-weight: 700; src: url('https://cdn.jsdelivr.net/npm/lm-web-fonts@0.1.0/fonts/lm-roman10-bold.woff2') format('woff2'), url('https://cdn.jsdelivr.net/npm/lm-web-fonts@0.1.0/fonts/lm-roman10-bold.woff') format('woff'); }
+    @font-face { font-family: 'Latin Modern Roman'; font-style: italic; font-weight: 400; src: url('https://cdn.jsdelivr.net/npm/lm-web-fonts@0.1.0/fonts/lm-roman10-italic.woff2') format('woff2'), url('https://cdn.jsdelivr.net/npm/lm-web-fonts@0.1.0/fonts/lm-roman10-italic.woff') format('woff'); }
+    html, body { margin: 0; padding: 0; overflow: hidden; width: 100%; height: 100%; background: #000; }
+    /* Reset reveal.js section padding/alignment so absolute positions match the 960x540 editor canvas exactly */
+    .reveal .slides section { padding: 0 !important; text-align: left !important; }
+    /* Neutralise theme typography overrides so presentation matches editor exactly */
+    /* font-family only on section (inherited) so KaTeX's explicit rules take precedence */
+    .reveal .slides section { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+    .reveal .slides section * { text-transform: none !important; letter-spacing: normal !important; }
+    /* Explicit heading sizes — override theme so present mode matches editor exactly */
+    .reveal .slides section h1 { font-size: 2.5em; font-weight: bold; line-height: 1.2; margin: 0 0 0.4em; }
+    .reveal .slides section h2 { font-size: 1.6em; font-weight: bold; line-height: 1.2; margin: 0 0 0.4em; }
+    .reveal .slides section h3 { font-size: 1.3em; font-weight: bold; line-height: 1.2; margin: 0 0 0.4em; }
+    .reveal .slides section h4 { font-size: 1em;   font-weight: bold; line-height: 1.2; margin: 0 0 0.4em; }
+    .reveal .slides section p  { margin: 0 0 0.4em; line-height: 1.5; }
+    .reveal .slides section ul,
+    .reveal .slides section ol { padding-left: 1.5em; margin: 0 0 0.4em; }
+    .reveal .slides section li { margin-bottom: 0.2em; line-height: 1.5; }
+    .reveal .slides section a  { text-decoration: underline; }
+    /* reveal.js constrains/decorates section imgs — reset everything */
+    .reveal .slides section img { margin: 0 !important; border: none !important; background: none !important; box-shadow: none !important; max-width: none !important; max-height: none !important; }
+    /* Footer — explicit CSS rule with high specificity so reveal.js theme cannot override */
+    .reveal .slides section .reveal-footer,
+    .reveal .slides section .reveal-footer * { font-family: 'Fira Code',monospace !important; font-size: 14px !important; color: #bf4040 !important; }
+    #fs-btn {
+      position: fixed; bottom: 16px; right: 16px; z-index: 9999;
+      background: rgba(0,0,0,0.5); color: white; border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 6px; padding: 6px 10px; cursor: pointer; font-size: 13px;
+      backdrop-filter: blur(4px); transition: background 0.15s;
+    }
+    #fs-btn:hover { background: rgba(0,0,0,0.75); }
+    :fullscreen #fs-btn, :-webkit-full-screen #fs-btn { display: none; }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+    <section data-background-color="#000000" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
+<div style="position:absolute;left:260px;top:40px;width:440px;height:420px;z-index:1;overflow:hidden;box-sizing:border-box;opacity:0.84;"><svg width="100%" height="100%" viewBox="0 0 440 420" preserveAspectRatio="none" style="position:absolute;inset:0;overflow:visible;"><g fill="#c14545" stroke="none" stroke-width="0"><ellipse cx="220" cy="210" rx="220" ry="210" /></g></svg></div>
+<div style="position:absolute;left:0px;top:160px;width:960px;height:254.8603351955307px;z-index:2;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p style="text-align: center; line-height: 1;"><span style="font-family: Roboto, sans-serif; font-size: 40px; font-weight: 200;">The Role of Tides and Differential Rotation in the Angular Momentum Evolution of Low-Mass Stars</span></p><p style="text-align: center;"><span style="font-family: Roboto, sans-serif; font-size: 28px; font-weight: 200;">Jess Birky | Thesis Defense | 15 May 2026</span></p></div>
+      <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">Introduction</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">Conclusion</span></div></div>
+
+      
+    </section>
+    <section data-background-color="#ffffff" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
+<div style="position:absolute;left:20px;top:0px;width:600px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 32px;">Low mass stars</span></p></div>
+      <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#bf4040;font-weight:700;">Introduction</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">Conclusion</span></div><span style="margin-left:12px;flex-shrink:0;">1 / 37</span></div>
+
+      
+    </section>
+    <section data-background-color="#000000" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
+<div style="position:absolute;left:180px;top:40px;width:560px;height:420px;z-index:2;overflow:hidden;box-sizing:border-box;"><img src="/uploads/74e10ea3-98f8-491a-bc73-c43a72ed28b6.apng" alt="" style="display:block;width:100%;height:100%;object-fit:contain;" /></div>
+<div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:3;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(255, 255, 255); font-size: 28px;">Stellar rotation plays a fundamental role in the behavior of stars</span></p></div>
+<div style="position:absolute;left:60px;top:100px;width:180px;height:80px;z-index:3;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(255, 255, 255); font-size: 20px;">magnetic fields</span></p></div>
+<div style="position:absolute;left:60px;top:220px;width:180px;height:80px;z-index:3;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(255, 255, 255); font-size: 20px;">activity cycles</span></p></div>
+<div style="position:absolute;left:60px;top:360px;width:180px;height:80px;z-index:3;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(255, 255, 255); font-size: 20px;">mass loss</span></p></div>
+<div style="position:absolute;left:340px;top:400px;width:260px;height:80px;z-index:3;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p style="text-align: center;"><span style="color: rgb(255, 255, 255); font-size: 20px;">dynamical interactions</span></p></div>
+<div style="position:absolute;left:660px;top:100px;width:260px;height:80px;z-index:3;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p style="text-align: right;"><span style="color: rgb(255, 255, 255); font-size: 20px;">starspots and convection</span></p></div>
+<div style="position:absolute;left:660px;top:240px;width:260px;height:80px;z-index:3;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p style="text-align: right;"><span style="color: rgb(255, 255, 255); font-size: 20px;">stellar flares</span></p></div>
+<div style="position:absolute;left:660px;top:360px;width:260px;height:80px;z-index:3;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p style="text-align: right;"><span style="color: rgb(255, 255, 255); font-size: 20px;">differential rotation</span></p></div>
+<div style="position:absolute;left:20px;top:140px;width:36px;height:36px;z-index:10;overflow:hidden;box-sizing:border-box;border-radius:50%;background:#ef4444;display:flex;align-items:center;justify-content:center;color:#ffffff;font-size:16px;font-weight:700;font-family:-apple-system,sans-serif;">1</div>
+<div style="position:absolute;left:20px;top:260px;width:36px;height:36px;z-index:10;overflow:hidden;box-sizing:border-box;border-radius:50%;background:#ef4444;display:flex;align-items:center;justify-content:center;color:#ffffff;font-size:16px;font-weight:700;font-family:-apple-system,sans-serif;">2</div>
+      <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#bf4040;font-weight:700;">Introduction</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">Conclusion</span></div><span style="margin-left:12px;flex-shrink:0;">2 / 37</span></div>
+
+      
+    </section>
+    <section data-background-color="#000000" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
+<div style="position:absolute;left:100px;top:140px;width:340px;height:380px;z-index:1;overflow:hidden;box-sizing:border-box;"><svg width="100%" height="100%" viewBox="0 0 340 380" preserveAspectRatio="none" style="position:absolute;inset:0;overflow:visible;"><g fill="#000000" stroke="#1c71d8" stroke-width="2"><rect x="1" y="1" width="338" height="378" rx="51" /></g></svg></div>
+<div style="position:absolute;left:520px;top:140px;width:340px;height:380px;z-index:1;overflow:hidden;box-sizing:border-box;"><svg width="100%" height="100%" viewBox="0 0 340 380" preserveAspectRatio="none" style="position:absolute;inset:0;overflow:visible;"><g fill="#000000" stroke="#26a269" stroke-width="2"><rect x="1" y="1" width="338" height="378" rx="51" /></g></svg></div>
+<div style="position:absolute;left:490px;top:200px;width:400px;height:300px;z-index:2;overflow:hidden;box-sizing:border-box;"><img src="/uploads/019f43d6-6b96-43b4-91f6-6f483ea80b6a.apng" alt="" style="display:block;width:100%;height:100%;object-fit:contain;" /></div>
+<div style="position:absolute;left:0px;top:0px;width:960px;height:120px;z-index:3;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p style="text-align: center; line-height: 1;"><span style="font-family: Roboto, sans-serif; font-size: 36px; font-weight: 300;">The Role of </span><span style="color: rgb(37, 99, 235); font-family: Roboto, sans-serif; font-size: 36px; font-weight: 300;">Tides</span><span style="font-family: Roboto, sans-serif; font-size: 36px; font-weight: 300;"> and </span><span style="color: rgb(16, 185, 129); font-family: Roboto, sans-serif; font-size: 36px; font-weight: 300;">Differential Rotation</span><span style="font-family: Roboto, sans-serif; font-size: 36px; font-weight: 300;"> in the Angular Momentum Evolution of Low-Mass Stars</span></p></div>
+<div style="position:absolute;left:100px;top:180px;width:320px;height:300px;z-index:4;overflow:hidden;box-sizing:border-box;"><img src="/uploads/bfc6a068-f548-4452-b578-83d8b280888d.apng" alt="" style="position:absolute;left:-189px;top:-86px;width:820px;height:500px;object-fit:contain;" /></div>
+      <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#bf4040;font-weight:700;">Introduction</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">Conclusion</span></div><span style="margin-left:12px;flex-shrink:0;">3 / 37</span></div>
+
+      
+    </section>
+    <section data-background-color="#0a0a0f" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
+<div style="position:absolute;left:0px;top:20px;width:960px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p style="text-align: center;"><span style="font-family: &quot;Computer Modern Sans&quot;, sans-serif; font-size: 40px;">Tides</span></p></div>
+<div style="position:absolute;left:120px;top:160px;width:340px;height:380px;z-index:1;overflow:hidden;box-sizing:border-box;"><svg width="100%" height="100%" viewBox="0 0 340 380" preserveAspectRatio="none" style="position:absolute;inset:0;overflow:visible;"><g fill="#000000" stroke="#1c71d8" stroke-width="2"><rect x="1" y="1" width="338" height="378" rx="51" /></g></svg></div>
+<div style="position:absolute;left:120px;top:200px;width:320px;height:300px;z-index:4;overflow:hidden;box-sizing:border-box;"><img src="/uploads/bfc6a068-f548-4452-b578-83d8b280888d.apng" alt="" style="position:absolute;left:-189px;top:-86px;width:820px;height:500px;object-fit:contain;" /></div>
+<div style="position:absolute;left:560px;top:180px;width:36px;height:36px;z-index:10;overflow:hidden;box-sizing:border-box;border-radius:50%;background:#ef4444;display:flex;align-items:center;justify-content:center;color:#ffffff;font-size:16px;font-weight:700;font-family:-apple-system,sans-serif;">1</div>
+      <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">Introduction</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">Conclusion</span></div></div>
+
+      
+    </section>
+    <section data-background-color="#000000" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
+<div style="position:absolute;left:0px;top:80px;width:960px;height:500px;z-index:1;overflow:hidden;box-sizing:border-box;"><img src="/uploads/bd22d501-550c-4071-b1c3-3003b8e3ecac/74ef149d-a009-42af-ac0f-36df678be492.png" alt="" style="position:absolute;left:0px;top:-58px;width:960px;height:540px;object-fit:contain;" /></div>
+<div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;">What types of binaries are we modeling?</span></p></div>
+      <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">Introduction</span><span style="color:#bf4040;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">Conclusion</span></div><span style="margin-left:12px;flex-shrink:0;">4 / 37</span></div>
+
+      
+    </section>
+    <section data-background-color="#ffffff" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
+<div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;">Modeling the dynamical evolution of binary stars</span></p></div>
+<div style="position:absolute;left:40px;top:100px;width:880px;height:180px;z-index:2;overflow:hidden;box-sizing:border-box;box-shadow:2px 2px 2px rgba(0,0,0,0.5);"><img src="/uploads/fdb18096-1990-44e2-a475-a0ab37e3c05d.png" alt="" style="display:block;width:100%;height:100%;object-fit:contain;" /></div>
+      <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">Introduction</span><span style="color:#bf4040;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">Conclusion</span></div><span style="margin-left:12px;flex-shrink:0;">5 / 37</span></div>
+
+      
+    </section>
+    <section data-background-color="#000000" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
+<div style="position:absolute;left:0px;top:80px;width:960px;height:480px;z-index:1;overflow:hidden;box-sizing:border-box;"><img src="/uploads/bd22d501-550c-4071-b1c3-3003b8e3ecac/8826897c-8a76-4c00-8b21-a134e20f51d4.png" alt="" style="position:absolute;left:0px;top:-56px;width:960px;height:540px;object-fit:contain;" /></div>
+      <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">Introduction</span><span style="color:#bf4040;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">Conclusion</span></div><span style="margin-left:12px;flex-shrink:0;">6 / 37</span></div>
+
+      
+    </section>
+    <section data-background-color="#ffffff" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
+<div style="position:absolute;left:0px;top:140px;width:960px;height:400px;z-index:1;overflow:hidden;box-sizing:border-box;"><svg width="100%" height="100%" viewBox="0 0 960 400" preserveAspectRatio="none" style="position:absolute;inset:0;overflow:visible;"><g fill="#000000" stroke="none" stroke-width="0"><rect x="0" y="0" width="960" height="400" rx="0" /></g></svg></div>
+<div style="position:absolute;left:20px;top:0px;width:600px;height:80px;z-index:2;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;">Equilibrium tides</span></p></div>
+<div style="position:absolute;left:20px;top:140px;width:480px;height:auto;z-index:3;overflow:visible;box-sizing:border-box; padding:8px 12px; color:white;"><p style="line-height: 1;"><span style="color: rgb(226, 232, 240); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 20px;">Constant Phase Lag (Ferraz Mello 2008)</span></p></div>
+<div style="position:absolute;left:560px;top:140px;width:340px;height:80px;z-index:4;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p style="line-height: 1;"><span style="color: rgb(226, 232, 240); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 20px;">Constant Time Lag (Hut 1881)</span></p></div>
+<div style="position:absolute;left:20px;top:160px;width:200px;height:auto;z-index:5;overflow:visible;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(226, 232, 240); font-size: 28px;"><span data-math-latex="\epsilon \approx \mathcal{Q}^{-1}" data-math-display="true" data-math-fontsize="32px" data-math-color="#000000" class="math-node math-display"></span></span></p></div>
+<div style="position:absolute;left:580px;top:160px;width:160px;height:80px;z-index:6;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(226, 232, 240); font-size: 28px;"><span data-math-latex="\epsilon \approx n \tau" data-math-display="false" data-math-fontsize="24px" data-math-color="#334155" class="math-node math-inline"></span></span></p></div>
+<div style="position:absolute;left:460px;top:180px;width:580px;height:400px;z-index:7;overflow:hidden;box-sizing:border-box;"><img src="/uploads/236ddf4e-dd30-4990-8c6f-e6b7bf008f4f.apng" alt="" style="display:block;width:100%;height:100%;object-fit:contain;" /></div>
+<div style="position:absolute;left:180px;top:60px;width:540px;height:auto;z-index:8;overflow:visible;box-sizing:border-box; padding:8px 12px; color:white;"><p style="text-align: center; line-height: 1;"><span style="color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 20px;">Under weak friction, we can assume one of two models:</span></p></div>
+<div style="position:absolute;left:0px;top:220px;width:420px;height:320px;z-index:9;overflow:hidden;box-sizing:border-box;"><img src="/uploads/52d829ba-f634-403c-b8a2-c679e3d5bdc7.apng" alt="" style="display:block;width:100%;height:100%;object-fit:contain;" /></div>
+      <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">Introduction</span><span style="color:#bf4040;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">Conclusion</span></div><span style="margin-left:12px;flex-shrink:0;">7 / 37</span></div>
+
+      
+    </section>
+    <section data-background-color="#000000" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
+<div style="position:absolute;left:0px;top:80px;width:960px;height:479px;z-index:1;overflow:hidden;box-sizing:border-box;"><img src="/uploads/bd22d501-550c-4071-b1c3-3003b8e3ecac/5306903b-433f-4931-981f-0de5d1b01cd8.png" alt="" style="position:absolute;left:0px;top:-61px;width:960px;height:540px;object-fit:contain;" /></div>
+<div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:3;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(255, 255, 255); font-size: 28px;">The observed behavior of short-period binaries</span></p></div>
+      <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">Introduction</span><span style="color:#bf4040;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">Conclusion</span></div><span style="margin-left:12px;flex-shrink:0;">8 / 37</span></div>
+
+      
+    </section>
+    <section data-background-color="#000000" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
+<div style="position:absolute;left:0px;top:80px;width:960px;height:479px;z-index:1;overflow:hidden;box-sizing:border-box;"><img src="/uploads/bd22d501-550c-4071-b1c3-3003b8e3ecac/6ff2029f-d392-423a-8b11-f6c5f466af0c.png" alt="" style="position:absolute;left:0px;top:-57px;width:960px;height:540px;object-fit:contain;" /></div>
+<div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;">Orbital evolution: Constant Phase Lag (CPL) model</span></p></div>
+      <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">Introduction</span><span style="color:#bf4040;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">Conclusion</span></div><span style="margin-left:12px;flex-shrink:0;">9 / 37</span></div>
+
+      
+    </section>
+    <section data-background-color="#000000" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
+<div style="position:absolute;left:0px;top:80px;width:960px;height:480px;z-index:1;overflow:hidden;box-sizing:border-box;"><img src="/uploads/bd22d501-550c-4071-b1c3-3003b8e3ecac/6087445d-d0f5-41dc-afe6-752d64d787db.png" alt="" style="position:absolute;left:0px;top:-60px;width:960px;height:540px;object-fit:contain;" /></div>
+<div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;">Orbital evolution: Constant Time Lag (CTL) model</span></p></div>
+      <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">Introduction</span><span style="color:#bf4040;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">Conclusion</span></div><span style="margin-left:12px;flex-shrink:0;">10 / 37</span></div>
+
+      
+    </section>
+    <section data-background-color="#ffffff" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
+<div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;">ALABI: Active Learning for Accelerated Bayesian Inference</span></p></div>
+<div style="position:absolute;left:600px;top:200px;width:280px;height:40px;z-index:3;overflow:hidden;box-sizing:border-box;"><svg width="100%" height="100%" viewBox="0 0 280 40" preserveAspectRatio="none" style="position:absolute;inset:0;overflow:visible;"><line x1="3" y1="20" x2="277" y2="20" stroke="#3d3846" stroke-width="3" fill="none" /></svg></div>
+      <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">Introduction</span><span style="color:#bf4040;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">Conclusion</span></div><span style="margin-left:12px;flex-shrink:0;">11 / 37</span></div>
+
+      
+    </section>
+    <section data-background-color="#ffffff" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
+<div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;">Could differential rotation explain subsynchronous binaries?</span></p></div>
+<div style="position:absolute;left:80px;top:340px;width:420px;height:60px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 20px;">Hobson-Ritz &amp; Birky 2025</span></p></div>
+<div style="position:absolute;left:40px;top:80px;width:540px;height:300px;z-index:2;overflow:hidden;box-sizing:border-box;"><img src="/uploads/02af9547-8d1e-4724-bd8a-d0f117676cd6.png" alt="" style="display:block;width:100%;height:100%;object-fit:contain;" /></div>
+      <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">Introduction</span><span style="color:#bf4040;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">Conclusion</span></div><span style="margin-left:12px;flex-shrink:0;">12 / 37</span></div>
+
+      
+    </section>
+    <section data-background-color="#0a0a0f" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
+<div style="position:absolute;left:0px;top:103.01675977653632px;width:960px;height:254.8603351955307px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p style="text-align: center;"><span style="font-family: &quot;Computer Modern Sans&quot;, sans-serif; font-size: 40px;">Starspot GP</span></p></div>
+      <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">Introduction</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">Conclusion</span></div></div>
+
+      
+    </section>
+    <section data-background-color="#ffffff" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
+<div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;">Differential rotation drives the stellar dynamo process</span></p></div>
+<div style="position:absolute;left:20px;top:100px;width:580px;height:380px;z-index:2;overflow:hidden;box-sizing:border-box;box-shadow:2px 2px 2px rgba(0,0,0,0.5);"><img src="/uploads/32698af5-fed0-4697-a148-4254f19cc271.png" alt="" style="display:block;width:100%;height:100%;object-fit:contain;" /></div>
+<div style="position:absolute;left:600px;top:200px;width:280px;height:40px;z-index:3;overflow:hidden;box-sizing:border-box;"><svg width="100%" height="100%" viewBox="0 0 280 40" preserveAspectRatio="none" style="position:absolute;inset:0;overflow:visible;"><line x1="3" y1="20" x2="277" y2="20" stroke="#3d3846" stroke-width="3" fill="none" /></svg></div>
+      <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">Introduction</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#bf4040;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">Conclusion</span></div><span style="margin-left:12px;flex-shrink:0;">13 / 37</span></div>
+
+      
+    </section>
+    <section data-background-color="#ffffff" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
+<div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;">What if we could measure differential rotation?</span></p></div>
+<div style="position:absolute;left:120px;top:40px;width:380px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p style="text-align: left;"><span style="color: rgb(100, 116, 139); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 24px;"><em>well, it's hard...</em></span></p></div>
+<div style="position:absolute;left:20px;top:120px;width:380px;height:140px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 24px;">Degeneracies</span></p></div>
+<div style="position:absolute;left:20px;top:300px;width:380px;height:140px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 24px;">Non-uniqueness</span></p></div>
+<div style="position:absolute;left:420px;top:80px;width:500px;height:180px;z-index:2;overflow:hidden;box-sizing:border-box;"><img src="/uploads/f92d0336-ff23-4d57-b038-e4b7e2daa4a2.png" alt="" style="display:block;width:100%;height:100%;object-fit:contain;" /></div>
+<div style="position:absolute;left:480px;top:280px;width:440px;height:280px;z-index:2;overflow:hidden;box-sizing:border-box;"><img src="/uploads/b42a3aa4-e175-4a80-a86e-904c1200b61d.png" alt="" style="display:block;width:100%;height:100%;object-fit:contain;" /></div>
+      <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">Introduction</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#bf4040;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">Conclusion</span></div><span style="margin-left:12px;flex-shrink:0;">14 / 37</span></div>
+
+      
+    </section>
+    <section data-background-color="#ffffff" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
+<div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;">What if we could measure differential rotation?</span></p></div>
+<div style="position:absolute;left:120px;top:40px;width:380px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p style="text-align: left;"><span style="color: rgb(148, 163, 184); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 24px;"><em>maybe even hopeless...?</em></span></p></div>
+      <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">Introduction</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#bf4040;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">Conclusion</span></div><span style="margin-left:12px;flex-shrink:0;">15 / 37</span></div>
+
+      
+    </section>
+    <section data-background-color="#ffffff" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
+<div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;">Methods for measuring differential rotation and their limitations</span></p></div>
+      <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">Introduction</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#bf4040;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">Conclusion</span></div><span style="margin-left:12px;flex-shrink:0;">16 / 37</span></div>
+
+      
+    </section>
+    <section data-background-color="#ffffff" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
+<div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;">What physical information do GP models encode?</span></p></div>
+      <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">Introduction</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#bf4040;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">Conclusion</span></div><span style="margin-left:12px;flex-shrink:0;">17 / 37</span></div>
+
+      
+    </section>
+    <section data-background-color="#ffffff" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
+<div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;">What if we could come up with an <strong><em>interpretable</em></strong> GP model?</span></p></div>
+<div style="position:absolute;left:80px;top:40px;width:820px;height:auto;z-index:1;overflow:visible;box-sizing:border-box; padding:8px 12px; color:white;"><p style="text-align: left;"><span style="color: rgb(100, 116, 139); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 24px;"><em>in which hyperparameters of the kernel represent physical spot properties?</em></span></p></div>
+      <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">Introduction</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#bf4040;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">Conclusion</span></div><span style="margin-left:12px;flex-shrink:0;">18 / 37</span></div>
+
+      
+    </section>
+    <section data-background-color="#ffffff" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
+<div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 32px;">A physically-motivated starspot model</span></p></div>
+<div style="position:absolute;left:20px;top:80px;width:900px;height:400px;z-index:2;overflow:hidden;box-sizing:border-box;"><img src="/uploads/681bf995-fa33-4f19-92e5-4abb068d9707.gif" alt="" style="display:block;width:100%;height:100%;object-fit:contain;" /></div>
+      <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">Introduction</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#bf4040;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">Conclusion</span></div><span style="margin-left:12px;flex-shrink:0;">19 / 37</span></div>
+
+      
+    </section>
+    <section data-background-color="#ffffff" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
+<div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 32px;">A physically-motivated starspot model</span></p></div>
+      <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">Introduction</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#bf4040;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">Conclusion</span></div><span style="margin-left:12px;flex-shrink:0;">20 / 37</span></div>
+
+      
+    </section>
+    <section data-background-color="#0a0a0f" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
+<div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(226, 232, 240); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;">Tools for representing time series</span></p></div>
+      <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">Introduction</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#bf4040;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">Conclusion</span></div><span style="margin-left:12px;flex-shrink:0;">21 / 37</span></div>
+
+      
+    </section>
+    <section data-background-color="#ffffff" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
+<div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;">A physically-motivated starspot model</span></p></div>
+<div style="position:absolute;left:60px;top:80px;width:600px;height:auto;z-index:1;overflow:visible;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;">Visibility Function</span></p></div>
+      <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">Introduction</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#bf4040;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">Conclusion</span></div><span style="margin-left:12px;flex-shrink:0;">22 / 37</span></div>
+
+      
+    </section>
+    <section data-background-color="#0a0a0f" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
+<iframe srcdoc="<!doctype html><html><head><meta charset=&quot;utf-8&quot;><link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css&quot;><script src=&quot;https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js&quot;></script><style>*{margin:0;padding:0;box-sizing:border-box}html,body{width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:transparent;overflow:hidden;color:white}.katex{font-size:1.4em}svg{max-width:100%;max-height:100%}</style></head><body><div id=&quot;m&quot;></div><script>try{katex.render(&quot;\\begin{equation*}\n    \\boxed{\n    \\mathcal{K}(\\tau) = \\frac{N_{\\rm spot}\\,(1 - f_{\\rm spot})^2\\,\\alpha_{\\max}^4}{\\pi^2}\n    \\, \\int R_\\Gamma(\\tau) \\left[\\sum_{n} |c_n(\\Phi)|^2\\, \\cos\\!\\big(n\\omega_0(\\Phi)\\,\\tau\\big) \\right] p(\\Phi) \\, d \\Phi }\n\\end{equation*}&quot;,document.getElementById('m'),{displayMode:true,throwOnError:false})}catch(e){document.getElementById('m').textContent=e.message}</script></body></html>" style="position:absolute;left:69.8324022346369px;top:0px;width:890.1675977653631px;height:225.13966480446925px;z-index:2;overflow:hidden;box-sizing:border-box;border:none;background:transparent;" scrolling="no"></iframe>
+      <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">Introduction</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#bf4040;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">Conclusion</span></div><span style="margin-left:12px;flex-shrink:0;">23 / 37</span></div>
+
+      
+    </section>
+    <section data-background-color="#ffffff" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
+<div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(51, 65, 85); font-family: &quot;JetBrains Mono&quot;, monospace; font-size: 28px;"><strong>spotgp</strong></span><span style="color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;">: a JAX based GP solver + MCMC implementation</span></p></div>
+<div style="position:absolute;left:20px;top:80px;width:600px;height:460px;z-index:2;overflow:hidden;box-sizing:border-box;"><img src="/uploads/452971c7-b1df-4415-9d8d-afc999c77129.png" alt="" style="display:block;width:100%;height:100%;object-fit:contain;" /></div>
+      <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">Introduction</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#bf4040;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">Conclusion</span></div><span style="margin-left:12px;flex-shrink:0;">24 / 37</span></div>
+
+      
+    </section>
+    <section data-background-color="#ffffff" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
+<div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(51, 65, 85); font-family: &quot;JetBrains Mono&quot;, monospace; font-size: 28px;"><strong>spotgp</strong></span><span style="color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;">: a JAX based GP solver + MCMC implementation</span></p></div>
+<div style="position:absolute;left:20px;top:360px;width:920px;height:auto;z-index:1;overflow:visible;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 24px;">GPs are usually computationally slow, scaling  with n data points</span></p></div>
+<div style="position:absolute;left:20px;top:420px;width:920px;height:auto;z-index:1;overflow:visible;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 24px;">However, the sparse banded structure of the spotgp kernel can be solved O(b^2 n)!</span></p></div>
+<div style="position:absolute;left:20px;top:80px;width:880px;height:280px;z-index:2;overflow:hidden;box-sizing:border-box;"><img src="/uploads/696d8317-c07f-4c50-a79d-c054edd68256.png" alt="" style="display:block;width:100%;height:100%;object-fit:contain;" /></div>
+      <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">Introduction</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#bf4040;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">Conclusion</span></div><span style="margin-left:12px;flex-shrink:0;">25 / 37</span></div>
+
+      
+    </section>
+    <section data-background-color="#ffffff" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
+<div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(51, 65, 85); font-family: &quot;JetBrains Mono&quot;, monospace; font-size: 28px;"><strong>spotgp</strong></span><span style="color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;">: a JAX based GP solver + MCMC implementation</span></p></div>
+<div style="position:absolute;left:60px;top:80px;width:380px;height:460px;z-index:2;overflow:hidden;box-sizing:border-box;"><img src="/uploads/401f00a9-616c-4f40-9b20-09a9333c1b61.png" alt="" style="display:block;width:100%;height:100%;object-fit:contain;" /></div>
+      <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">Introduction</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#bf4040;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">Conclusion</span></div><span style="margin-left:12px;flex-shrink:0;">26 / 37</span></div>
+
+      
+    </section>
+    <section data-background-color="#ffffff" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
+<div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;">Under what conditions can we infer differential rotation?</span></p></div>
+<div style="position:absolute;left:20px;top:80px;width:520px;height:480px;z-index:2;overflow:hidden;box-sizing:border-box;box-shadow:2px 2px 2px rgba(0,0,0,0.5);"><img src="/uploads/41ba5051-5fc2-4885-a306-2c1486099f41.png" alt="" style="display:block;width:100%;height:100%;object-fit:contain;" /></div>
+      <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">Introduction</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#bf4040;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">Conclusion</span></div><span style="margin-left:12px;flex-shrink:0;">27 / 37</span></div>
+
+      
+    </section>
+    <section data-background-color="#ffffff" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
+<div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;">Application to Kepler-63</span></p></div>
+<div style="position:absolute;left:0px;top:100px;width:960px;height:280px;z-index:2;overflow:hidden;box-sizing:border-box;box-shadow:2px 2px 2px rgba(0,0,0,0.5);"><img src="/uploads/5a6030b8-42c1-40a7-ad10-9b5a7ec9aee4.png" alt="" style="display:block;width:100%;height:100%;object-fit:contain;" /></div>
+      <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">Introduction</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#bf4040;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">Conclusion</span></div><span style="margin-left:12px;flex-shrink:0;">28 / 37</span></div>
+
+      
+    </section>
+    <section data-background-color="#ffffff" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
+<div style="position:absolute;left:500px;top:0px;width:460px;height:600px;z-index:2;overflow:hidden;box-sizing:border-box;"><svg width="100%" height="100%" viewBox="0 0 460 600" preserveAspectRatio="none" style="position:absolute;inset:0;overflow:visible;"><g fill="#000000" stroke="none" stroke-width="0"><rect x="0" y="0" width="460" height="600" rx="0" /></g></svg></div>
+<div style="position:absolute;left:20px;top:10px;width:460px;height:560px;z-index:2;overflow:hidden;box-sizing:border-box;"><img src="/uploads/9f6d97f0-0336-41d5-be66-2c207016e88c.png" alt="" style="display:block;width:100%;height:100%;object-fit:contain;" /></div>
+      <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">Introduction</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#bf4040;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">Conclusion</span></div><span style="margin-left:12px;flex-shrink:0;">29 / 37</span></div>
+
+      
+    </section>
+    <section data-background-color="#ffffff" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
+<div style="position:absolute;left:420px;top:20px;width:540px;height:540px;z-index:2;overflow:hidden;box-sizing:border-box;"><img src="/uploads/43f11f8b-b678-4b3c-b4de-25ad8290c257.png" alt="" style="display:block;width:100%;height:100%;object-fit:contain;" /></div>
+<div style="position:absolute;left:0px;top:0px;width:400px;height:600px;z-index:2;overflow:hidden;box-sizing:border-box;"><svg width="100%" height="100%" viewBox="0 0 400 600" preserveAspectRatio="none" style="position:absolute;inset:0;overflow:visible;"><g fill="#000000" stroke="none" stroke-width="0"><rect x="0" y="0" width="400" height="600" rx="0" /></g></svg></div>
+<div style="position:absolute;left:20px;top:0px;width:380px;height:auto;z-index:3;overflow:visible;box-sizing:border-box; padding:8px 12px; color:white;"><p style="text-align: left;"><span style="color: rgb(226, 232, 240); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;">Kepler-63 Posterior</span></p></div>
+      <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">Introduction</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#bf4040;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">Conclusion</span></div><span style="margin-left:12px;flex-shrink:0;">30 / 37</span></div>
+
+      
+    </section>
+    <section data-background-color="#0a0a0f" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
+<div style="position:absolute;left:0px;top:103.01675977653632px;width:960px;height:254.8603351955307px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p style="text-align: center;"><span style="font-family: &quot;Computer Modern Sans&quot;, sans-serif; font-size: 40px;">Future and Conclusions</span></p></div>
+      <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">Introduction</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">Conclusion</span></div></div>
+
+      
+    </section>
+    <section data-background-color="#ffffff" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
+<div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;">Summary</span></p></div>
+      <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">Introduction</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#bf4040;font-weight:700;">Conclusion</span></div><span style="margin-left:12px;flex-shrink:0;">31 / 37</span></div>
+
+      
+    </section>
+    <section data-background-color="#ffffff" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
+<div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;">Summary</span></p></div>
+<div style="position:absolute;left:20px;top:120px;width:440px;height:440px;z-index:2;overflow:hidden;box-sizing:border-box;box-shadow:2px 2px 2px rgba(0,0,0,0.5);"><img src="/uploads/e20e85b1-a1fb-4da2-8302-8acd7fd52d0e.png" alt="" style="display:block;width:100%;height:100%;object-fit:contain;" /></div>
+<div style="position:absolute;left:480px;top:20px;width:400px;height:260px;z-index:2;overflow:hidden;box-sizing:border-box;box-shadow:2px 2px 2px rgba(0,0,0,0.5);"><img src="/uploads/61a222b3-5481-407f-b46e-f543cc130e52.png" alt="" style="display:block;width:100%;height:100%;object-fit:contain;" /></div>
+<div style="position:absolute;left:480px;top:300px;width:400px;height:260px;z-index:2;overflow:hidden;box-sizing:border-box;box-shadow:2px 2px 2px rgba(0,0,0,0.5);"><img src="/uploads/b3f64836-198a-4c0e-9f82-4a1742253937.png" alt="" style="display:block;width:100%;height:100%;object-fit:contain;" /></div>
+      <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">Introduction</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#bf4040;font-weight:700;">Conclusion</span></div><span style="margin-left:12px;flex-shrink:0;">32 / 37</span></div>
+
+      
+    </section>
+    <section data-background-color="#ffffff" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
+<div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;">Future projects: science applications</span></p></div>
+      <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">Introduction</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#bf4040;font-weight:700;">Conclusion</span></div><span style="margin-left:12px;flex-shrink:0;">33 / 37</span></div>
+
+      
+    </section>
+    <section data-background-color="#ffffff" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
+<div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;">Future projects: extending the GP to multi-wavelength data</span></p></div>
+<div style="position:absolute;left:40px;top:100px;width:600px;height:460px;z-index:2;overflow:hidden;box-sizing:border-box;box-shadow:2px 2px 2px rgba(0,0,0,0.5);"><img src="/uploads/f3f77826-ba0c-472f-b67c-f1b18bc28967.png" alt="" style="display:block;width:100%;height:100%;object-fit:contain;" /></div>
+      <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">Introduction</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#bf4040;font-weight:700;">Conclusion</span></div><span style="margin-left:12px;flex-shrink:0;">34 / 37</span></div>
+
+      
+    </section>
+    <section data-background-color="#ffffff" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
+<div style="position:absolute;left:0px;top:20px;width:580px;height:540px;z-index:1;overflow:hidden;box-sizing:border-box;"><img src="/uploads/780c8139-9e35-4269-b3cb-47beab1aa76a.png" alt="" style="display:block;width:100%;height:100%;object-fit:contain;" /></div>
+<div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:2;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p style="text-align: right;"><span style="color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;">Future projects: rotation periods from LSST</span></p></div>
+      <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">Introduction</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#bf4040;font-weight:700;">Conclusion</span></div><span style="margin-left:12px;flex-shrink:0;">35 / 37</span></div>
+
+      
+    </section>
+    <section data-background-color="#0a0a0f" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
+<div style="position:absolute;left:0px;top:103.01675977653632px;width:960px;height:254.8603351955307px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p style="text-align: center;"><span style="font-family: &quot;Computer Modern Sans&quot;, sans-serif; font-size: 40px;">Ackowledgements</span></p></div>
+      <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">Introduction</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">Conclusion</span></div></div>
+
+      
+    </section>
+    <section data-background-color="#ffffff" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
+<div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;">[Acknowledgements]</span></p></div>
+      <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">Introduction</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#bf4040;font-weight:700;">Conclusion</span></div><span style="margin-left:12px;flex-shrink:0;">36 / 37</span></div>
+
+      
+    </section>
+    <section data-background-color="#ffffff" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
+<div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;">[Final summary slide]</span></p></div>
+      <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">Introduction</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#bf4040;font-weight:700;">Conclusion</span></div><span style="margin-left:12px;flex-shrink:0;">37 / 37</span></div>
+
+      
+    </section>
+    </div>
+  </div>
+  <button id="fs-btn" title="Enter fullscreen (F)" onclick="document.documentElement.requestFullscreen&&document.documentElement.requestFullscreen()">&#x26F6; Fullscreen</button>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/highlight/highlight.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      width: 960,
+      height: 600,
+      margin: 0,
+      minScale: 0,
+      maxScale: 10,
+      center: false,
+      transition: 'slide',
+      plugins: [ RevealNotes, RevealHighlight ]
+    });
+    Reveal.on('ready', function() {
+      document.querySelectorAll('span[data-math-latex]').forEach(function(el) {
+        try {
+          katex.render(el.getAttribute('data-math-latex'), el, {
+            displayMode: el.getAttribute('data-math-display') === 'true',
+            throwOnError: false
+          });
+        } catch(e) {}
+      });
+    });
+  </script>
+</body>
+</html>
