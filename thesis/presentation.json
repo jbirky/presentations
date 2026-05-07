@@ -5,35 +5,83 @@
   "transition": "slide",
   "slides": [
     {
-      "id": "750b18a3-73f3-43b8-999f-25ad5007818c",
+      "id": "81a92cce-aa0d-4435-b252-5208307c0cf2",
       "elements": [
         {
-          "id": "fa0d596c-a723-4520-b929-20b381884900",
+          "id": "2be9ae9c-9f4b-4685-a26c-08418e871572",
           "type": "text",
-          "x": 0,
-          "y": 160,
-          "width": 960,
-          "height": 254.8603351955307,
-          "zIndex": 2,
-          "content": "<p style=\"text-align: center; line-height: 1;\"><span style=\"font-family: Roboto, sans-serif; font-size: 40px; font-weight: 200;\">The Role of Tides and Differential Rotation in the Angular Momentum Evolution of Low-Mass Stars</span></p><p style=\"text-align: center;\"><span style=\"font-family: Roboto, sans-serif; font-size: 28px; font-weight: 200;\">Jess Birky | Thesis Defense | 15 May 2026</span></p>"
+          "x": 20,
+          "y": 20,
+          "width": 574.5251396648046,
+          "height": 531,
+          "zIndex": 6,
+          "content": "<p style=\"text-align: left; line-height: 0.75;\"><span style=\"font-family: Barlow, sans-serif; font-size: 40px; font-weight: 400;\">The Role of</span></p><p style=\"text-align: left; line-height: 0.75;\"><span style=\"color: rgb(200, 48, 42); font-family: Barlow, sans-serif; font-size: 40px; font-weight: 400;\">Tides</span></p><p style=\"text-align: left; line-height: 0.75;\"><span style=\"font-family: Barlow, sans-serif; font-size: 40px; font-weight: 400;\">and</span></p><p style=\"text-align: left; line-height: 0.75;\"><span style=\"color: rgb(220, 38, 38); font-family: Barlow, sans-serif; font-size: 40px; font-weight: 400;\">Differential Rotation</span></p><p style=\"text-align: left; line-height: 0.75;\"><span style=\"font-family: Barlow, sans-serif; font-size: 40px; font-weight: 400;\">in the</span></p><p style=\"text-align: left; line-height: 0.75;\"><span style=\"font-family: Barlow, sans-serif; font-size: 40px; font-weight: 400;\">Angular Momentum Evolution</span></p><p style=\"text-align: left; line-height: 0.75;\"><span style=\"font-family: Barlow, sans-serif; font-size: 40px; font-weight: 400;\">of Low-Mass Stars</span></p>",
+          "sizeMode": "auto"
         },
         {
-          "id": "387a6b0c-3693-4bc2-912f-30e212917366",
+          "id": "7130e74c-7c00-4710-b454-adab12933c5f",
           "type": "shape",
-          "shape": "circle",
-          "x": 260,
-          "y": 40,
-          "width": 440,
-          "height": 420,
-          "zIndex": 1,
-          "fill": "#c14545",
-          "stroke": "none",
-          "strokeWidth": 0,
+          "shape": "line",
+          "x": 100,
+          "y": 460,
+          "width": 860,
+          "height": 40,
+          "zIndex": 5,
+          "fill": "#6366f1",
+          "stroke": "#ffffff",
+          "strokeWidth": 1,
           "borderRadius": 0,
-          "opacity": 0.84,
+          "opacity": 1,
           "text": "",
           "fontSize": 16,
           "textColor": "#ffffff"
+        },
+        {
+          "id": "65388c36-839d-4422-b780-f77d1c98efb0",
+          "type": "text",
+          "x": 731.3966480446927,
+          "y": 480,
+          "width": 228.6033519553073,
+          "height": 95,
+          "zIndex": 2,
+          "content": "<p style=\"text-align: right; line-height: 0.7;\"><span style=\"font-family: &quot;Barlow Condensed&quot;, sans-serif; font-size: 28px; font-weight: 200;\">Jess Birky</span></p>",
+          "sizeMode": "auto",
+          "lineHeight": 1
+        },
+        {
+          "id": "8de43eed-ade3-4fd8-9f92-82981b175e7c",
+          "type": "text",
+          "x": 580,
+          "y": 510,
+          "width": 380,
+          "height": 95,
+          "zIndex": 3,
+          "content": "<p style=\"text-align: right; line-height: 0.7;\"><span style=\"font-family: &quot;Barlow Condensed&quot;, sans-serif; font-size: 28px; font-weight: 200;\">PhD Defense, 15 May 2026</span></p>",
+          "sizeMode": "auto",
+          "lineHeight": 1
+        },
+        {
+          "id": "5ea4d2a5-3199-4363-968e-ae14f8ca7470",
+          "type": "text",
+          "x": 260,
+          "y": 540,
+          "width": 700,
+          "height": 95,
+          "zIndex": 4,
+          "content": "<p style=\"text-align: right; line-height: 0.7;\"><span style=\"font-family: &quot;Barlow Condensed&quot;, sans-serif; font-size: 28px; font-weight: 200;\">Committee: Rory Barnes, Eric Agol, Jim Davenport, Miguel Morales</span></p>",
+          "sizeMode": "auto",
+          "lineHeight": 1
+        },
+        {
+          "id": "f943c37a-f22d-4b9f-862e-8162c484f0cf",
+          "type": "html",
+          "x": -400,
+          "y": -100,
+          "width": 1400,
+          "height": 1000,
+          "zIndex": 1,
+          "content": "<!DOCTYPE html>\n<html>\n\n<head>\n    <meta charset=\"utf-8\">\n    <title>Tidal Binary</title>\n    <style>\n        * {\n            margin: 0;\n            padding: 0;\n        }\n\n        body {\n            background: #000;\n            overflow: hidden;\n        }\n\n        canvas {\n            display: block;\n            width: 1600px;   /* CSS display size — can differ from drawing resolution */                        \n            height: 1200px;   \n        }\n    </style>\n</head>\n\n<body>\n    <canvas id=\"c\"></canvas>\n    <script>\n        \"use strict\";\n\n        const canvas = document.getElementById(\"c\");\n        const ctx = canvas.getContext(\"2d\");\n\n        let W, H, R1, R2, cx, cy, sep, s1x, s1y, s2x, s2y;\n\n        // ── Configuration ─────────────────────────────────────────────────\n        const R1_FRAC = 0.25;   // star 1 radius as fraction of min(W,H)\n        const R2_FRAC = 0.2;   // star 2 radius as fraction of min(W,H)\n        const SEP_FRAC = 0.75;   // center-to-center separation as fraction of min(W,H)\n        const TIDAL_SCALE = 2;    // binary tidal amplitude: eps = TIDAL_SCALE * (R/sep)^3\n\n        function resize() {\n            W = 3200;\n            H = 2400;\n            R1 = Math.min(W, H) * R1_FRAC;\n            R2 = Math.min(W, H) * R2_FRAC;\n            sep = Math.min(W, H) * SEP_FRAC;\n            cx = W / 2;\n            cy = H / 2;\n            s1x = cx - W / 2 + R1*1.1; \n            s1y = cy + H / 2 - R1*1.1;\n            s2x = cx + W / 2 - R2*1.1; \n            s2y = cy - H / 2 + R2*1.1;\n            canvas.width = W;\n            canvas.height = H;\n        }\n        resize();\n        window.addEventListener(\"resize\", resize);\n\n        // ── Mouse tracking ────────────────────────────────────────────────\n        let mouseX = W * 2, mouseY = cy;\n        let prevX = mouseX, prevY = mouseY;\n\n        window.addEventListener(\"mousemove\", e => {\n            mouseX = e.clientX;\n            mouseY = e.clientY;\n        });\n\n        // ── Per-star cursor tidal state ───────────────────────────────────\n        const stars = [\n            { tidalAngle: 0, epsilon: 0 },  // star 1 (left,  red)\n            { tidalAngle: 0, epsilon: 0 },  // star 2 (right, gold)\n        ];\n\n        const FILL = [\"#E8C018\", \"#C8302A\"];\n\n        let lastT = null;\n\n        // Draw one star as the sum of two independent P2 tidal deformations\n        function drawStar(scx, scy, R, eps1, ang1, eps2, ang2, fill) {\n            const N = 360;\n            ctx.beginPath();\n            for (let i = 0; i <= N; i++) {\n                const theta = (i / N) * 2 * Math.PI;\n                const P2_1 = (3 * Math.cos(theta - ang1) ** 2 - 1) / 2;\n                const P2_2 = (3 * Math.cos(theta - ang2) ** 2 - 1) / 2;\n                const r = R * (1 + eps1 * P2_1 + eps2 * P2_2);\n                i === 0\n                    ? ctx.moveTo(scx + r * Math.cos(theta), scy + r * Math.sin(theta))\n                    : ctx.lineTo(scx + r * Math.cos(theta), scy + r * Math.sin(theta));\n            }\n            ctx.closePath();\n            ctx.fillStyle = fill;\n            ctx.fill();\n        }\n\n        function animate(t) {\n            requestAnimationFrame(animate);\n            if (lastT === null) { lastT = t; return; }\n            const dt = Math.min((t - lastT) / 1000, 0.05);\n            lastT = t;\n\n            const vel = Math.hypot(mouseX - prevX, mouseY - prevY) / dt;\n            prevX = mouseX; prevY = mouseY;\n\n            // Update cursor tidal state for each star independently\n            const centers = [[s1x, s1y, R1], [s2x, s2y, R2]];\n            for (let i = 0; i < 2; i++) {\n                const [scx, scy, Ri] = centers[i];\n                const dxm = mouseX - scx, dym = mouseY - scy;\n                const d_norm = Math.max(0.3, Math.hypot(dxm, dym) / Ri);\n                const angle = Math.atan2(dym, dxm);\n\n                const target = Math.min(0.06, 0.10 / d_norm ** 3)\n                    + Math.min(0.02, vel * 0.000015);\n\n                const dA = ((angle - stars[i].tidalAngle + 3 * Math.PI) % (2 * Math.PI)) - Math.PI;\n                stars[i].tidalAngle += dA * (1 - Math.exp(-dt / 0.15));\n                stars[i].epsilon += (target - stars[i].epsilon) * (1 - Math.exp(-dt / 0.2));\n            }\n\n            // Companion tidal parameters — each star uses its own radius\n            const epsBin1 = Math.min(0.15, TIDAL_SCALE * (R1 / sep) ** 3);\n            const epsBin2 = Math.min(0.15, TIDAL_SCALE * (R2 / sep) ** 3);\n            const ang1to2 = Math.atan2(s2y - s1y, s2x - s1x);  // star 1 bulges toward star 2\n            const ang2to1 = ang1to2 + Math.PI;                  // star 2 bulges toward star 1\n\n            // ── Draw ──────────────────────────────────────────────────────\n            ctx.clearRect(0, 0, W, H);\n\n            drawStar(s1x, s1y, R1, epsBin1, ang1to2, stars[0].epsilon, stars[0].tidalAngle, FILL[0]);\n            drawStar(s2x, s2y, R2, epsBin2, ang2to1, stars[1].epsilon, stars[1].tidalAngle, FILL[1]);\n\n            // Unperturbed outlines\n            ctx.lineWidth = 1.2;\n            ctx.strokeStyle = \"rgba(255,255,255,0.35)\";\n            for (const [scx, scy, Ri] of centers) {\n                ctx.setLineDash([Ri * 0.07, Ri * 0.05]);\n                ctx.beginPath();\n                ctx.arc(scx, scy, Ri, 0, 2 * Math.PI);\n                ctx.stroke();\n            }\n            ctx.setLineDash([]);\n        }\n\n        requestAnimationFrame(animate);\n    </script>\n</body>\n\n</html>",
+          "locked": true
         }
       ],
       "notes": "",
@@ -43,27 +91,6 @@
       },
       "showPageNumber": false,
       "hideFooter": true
-    },
-    {
-      "id": "2da95d7c-30ef-48ce-8a23-2cdae75adf06",
-      "elements": [
-        {
-          "id": "387d799f-89b8-4f2d-bfaa-85e018de4b0c",
-          "type": "text",
-          "x": 20,
-          "y": 0,
-          "width": 600,
-          "height": 80,
-          "zIndex": 1,
-          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 32px;\">Low mass stars</span></p>"
-        }
-      ],
-      "notes": "",
-      "background": {
-        "type": "color",
-        "color": "#ffffff"
-      },
-      "activeSection": 0
     },
     {
       "id": "a5284ebc-219d-47db-a3df-e1ea33483c16",
@@ -76,13 +103,13 @@
           "width": 920,
           "height": 80,
           "zIndex": 3,
-          "content": "<p><span style=\"color: rgb(255, 255, 255); font-size: 28px;\">Stellar rotation plays a fundamental role in the behavior of stars</span></p>"
+          "content": "<p><span style=\"color: rgb(255, 255, 255); font-family: Barlow, sans-serif; font-size: 28px;\">Stellar rotation plays a fundamental role in the behavior of stars</span></p>"
         },
         {
           "id": "5d3d4a5a-aa19-4ba5-97c5-b0dd569fddbc",
           "type": "image",
           "x": 180,
-          "y": 40,
+          "y": 80,
           "width": 560,
           "height": 420,
           "zIndex": 2,
@@ -98,73 +125,63 @@
           "width": 180,
           "height": 80,
           "zIndex": 3,
-          "content": "<p><span style=\"color: rgb(255, 255, 255); font-size: 20px;\">magnetic fields</span></p>"
-        },
-        {
-          "id": "b1dcb4f4-aa89-42bd-98f5-d0856959ac21",
-          "type": "text",
-          "x": 60,
-          "y": 220,
-          "width": 180,
-          "height": 80,
-          "zIndex": 3,
-          "content": "<p><span style=\"color: rgb(255, 255, 255); font-size: 20px;\">activity cycles</span></p>"
+          "content": "<p style=\"line-height: 1;\"><span style=\"color: rgb(255, 255, 255); font-size: 20px;\">magnetic fields</span></p>"
         },
         {
           "id": "64f1b3ca-9d17-4bb0-a3ad-d68adfd57655",
           "type": "text",
           "x": 60,
-          "y": 360,
+          "y": 240,
           "width": 180,
           "height": 80,
           "zIndex": 3,
-          "content": "<p><span style=\"color: rgb(255, 255, 255); font-size: 20px;\">mass loss</span></p>"
+          "content": "<p style=\"line-height: 1;\"><span style=\"color: rgb(255, 255, 255); font-size: 20px;\">mass loss</span></p>"
         },
         {
           "id": "4a950ed8-986c-4e2c-a05a-a4d1899dbc86",
           "type": "text",
           "x": 340,
-          "y": 400,
+          "y": 460,
           "width": 260,
           "height": 80,
           "zIndex": 3,
-          "content": "<p style=\"text-align: center;\"><span style=\"color: rgb(255, 255, 255); font-size: 20px;\">dynamical interactions</span></p>"
+          "content": "<p style=\"text-align: center; line-height: 1;\"><span style=\"color: rgb(255, 255, 255); font-size: 20px;\">dynamical interactions</span></p>"
         },
         {
           "id": "2dd10f65-000c-4e97-8f4d-a8a10dff0c3b",
           "type": "text",
-          "x": 660,
-          "y": 100,
+          "x": 60,
+          "y": 380,
           "width": 260,
           "height": 80,
           "zIndex": 3,
-          "content": "<p style=\"text-align: right;\"><span style=\"color: rgb(255, 255, 255); font-size: 20px;\">starspots and convection</span></p>"
+          "content": "<p style=\"text-align: left; line-height: 1;\"><span style=\"color: rgb(255, 255, 255); font-size: 20px;\">starspots + convection</span></p>"
         },
         {
           "id": "6a62cf29-821d-4b16-a1b6-357c576d3c7d",
           "type": "text",
-          "x": 660,
+          "x": 640,
           "y": 240,
           "width": 260,
           "height": 80,
           "zIndex": 3,
-          "content": "<p style=\"text-align: right;\"><span style=\"color: rgb(255, 255, 255); font-size: 20px;\">stellar flares</span></p>"
+          "content": "<p style=\"text-align: right; line-height: 1;\"><span style=\"color: rgb(255, 255, 255); font-size: 20px;\">dynamo process</span></p>"
         },
         {
           "id": "605d3f73-d372-4e48-ada7-b3f93186c6af",
           "type": "text",
-          "x": 660,
-          "y": 360,
+          "x": 640,
+          "y": 100,
           "width": 260,
           "height": 80,
           "zIndex": 3,
-          "content": "<p style=\"text-align: right;\"><span style=\"color: rgb(255, 255, 255); font-size: 20px;\">differential rotation</span></p>"
+          "content": "<p style=\"text-align: right; line-height: 1;\"><span style=\"color: rgb(255, 255, 255); font-size: 20px;\">differential rotation</span></p>"
         },
         {
           "id": "c38fa0c0-1d90-431f-801d-02c6af61a70a",
           "type": "callout",
           "x": 20,
-          "y": 140,
+          "y": 120,
           "width": 36,
           "height": 36,
           "zIndex": 10,
@@ -185,6 +202,278 @@
           "calloutColor": "#ef4444",
           "calloutTextColor": "#ffffff",
           "fontSize": 16
+        },
+        {
+          "id": "2381d404-e74b-45ac-ad91-dcfc7ae18544",
+          "type": "callout",
+          "x": 20,
+          "y": 400,
+          "width": 36,
+          "height": 36,
+          "zIndex": 10,
+          "calloutNumber": 3,
+          "calloutColor": "#ef4444",
+          "calloutTextColor": "#ffffff",
+          "fontSize": 16
+        },
+        {
+          "id": "478aace1-6314-44ef-8b2e-10c03f8591f2",
+          "type": "callout",
+          "x": 900,
+          "y": 120,
+          "width": 36,
+          "height": 36,
+          "zIndex": 10,
+          "calloutNumber": 4,
+          "calloutColor": "#ef4444",
+          "calloutTextColor": "#ffffff",
+          "fontSize": 16
+        },
+        {
+          "id": "4f92da8f-d4a7-4f1c-ad46-668fc5bdb9b4",
+          "type": "callout",
+          "x": 900,
+          "y": 260,
+          "width": 36,
+          "height": 36,
+          "zIndex": 10,
+          "calloutNumber": 5,
+          "calloutColor": "#ef4444",
+          "calloutTextColor": "#ffffff",
+          "fontSize": 16
+        },
+        {
+          "id": "664b3595-58bf-4983-953d-3e5cb105b767",
+          "type": "callout",
+          "x": 900,
+          "y": 400,
+          "width": 36,
+          "height": 36,
+          "zIndex": 10,
+          "calloutNumber": 6,
+          "calloutColor": "#ef4444",
+          "calloutTextColor": "#ffffff",
+          "fontSize": 16
+        },
+        {
+          "id": "9684e04f-c08a-4bbe-9dc6-ba34962644db",
+          "type": "callout",
+          "x": 320,
+          "y": 480,
+          "width": 36,
+          "height": 36,
+          "zIndex": 10,
+          "calloutNumber": 7,
+          "calloutColor": "#ef4444",
+          "calloutTextColor": "#ffffff",
+          "fontSize": 16
+        },
+        {
+          "id": "73b54ef8-9a16-448f-b9f7-81679150ca23",
+          "type": "text",
+          "x": 640,
+          "y": 380,
+          "width": 260,
+          "height": 80,
+          "zIndex": 3,
+          "content": "<p style=\"text-align: right; line-height: 1;\"><span style=\"color: rgb(255, 255, 255); font-size: 20px;\">activity cycles</span></p>"
+        }
+      ],
+      "notes": "",
+      "background": {
+        "type": "color",
+        "color": "#000000"
+      },
+      "activeSection": 0
+    },
+    {
+      "id": "73fc651e-b6ea-4105-9432-1031622e717c",
+      "elements": [
+        {
+          "id": "9876210a-e454-4d6b-a948-25cb29eb19d4",
+          "type": "text",
+          "x": 60,
+          "y": 100,
+          "width": 180,
+          "height": 80,
+          "zIndex": 3,
+          "content": "<p style=\"line-height: 1;\"><span style=\"color: rgb(255, 255, 255); font-size: 20px;\">magnetic fields</span></p>"
+        },
+        {
+          "id": "fb944d5b-42bd-4195-940d-c8768352be1b",
+          "type": "callout",
+          "x": 20,
+          "y": 120,
+          "width": 36,
+          "height": 36,
+          "zIndex": 10,
+          "calloutNumber": 1,
+          "calloutColor": "#ef4444",
+          "calloutTextColor": "#ffffff",
+          "fontSize": 16
+        },
+        {
+          "id": "47f0801d-f164-47d2-a03b-aaae012f5b03",
+          "type": "image",
+          "x": 400,
+          "y": 20,
+          "width": 560,
+          "height": 520,
+          "zIndex": 2,
+          "src": "/uploads/ed7fe396-5d8c-49fb-82eb-ae1bcf31c799.jpg",
+          "objectFit": "contain",
+          "alt": ""
+        },
+        {
+          "id": "018390ef-4f47-4384-8998-fc2a69874d27",
+          "type": "callout",
+          "x": 20,
+          "y": 260,
+          "width": 36,
+          "height": 36,
+          "zIndex": 10,
+          "calloutNumber": 2,
+          "calloutColor": "#ef4444",
+          "calloutTextColor": "#ffffff",
+          "fontSize": 16
+        },
+        {
+          "id": "6da7a9ef-cdb8-4f68-a49e-d11eed07834d",
+          "type": "text",
+          "x": 60,
+          "y": 240,
+          "width": 180,
+          "height": 80,
+          "zIndex": 3,
+          "content": "<p style=\"line-height: 1;\"><span style=\"color: rgb(255, 255, 255); font-size: 20px;\">mass loss</span></p>"
+        },
+        {
+          "id": "c6ffd990-847c-46dc-9742-a90c4e69587b",
+          "type": "callout",
+          "x": 20,
+          "y": 400,
+          "width": 36,
+          "height": 36,
+          "zIndex": 10,
+          "calloutNumber": 3,
+          "calloutColor": "#ef4444",
+          "calloutTextColor": "#ffffff",
+          "fontSize": 16
+        },
+        {
+          "id": "7ca52c77-7ed2-4a42-8b5e-72e8356afe55",
+          "type": "text",
+          "x": 60,
+          "y": 380,
+          "width": 260,
+          "height": 80,
+          "zIndex": 3,
+          "content": "<p style=\"text-align: left; line-height: 1;\"><span style=\"color: rgb(255, 255, 255); font-size: 20px;\">starspots + convection</span></p>"
+        }
+      ],
+      "notes": "",
+      "background": {
+        "type": "color",
+        "color": "#000000"
+      },
+      "activeSection": 0
+    },
+    {
+      "id": "64b11caa-7043-4399-b8f3-8ac4266c64dd",
+      "elements": [
+        {
+          "id": "a25287d2-5bc0-475c-8438-36da5daf7340",
+          "type": "text",
+          "x": 660,
+          "y": 260,
+          "width": 260,
+          "height": 80,
+          "zIndex": 3,
+          "content": "<p style=\"text-align: right; line-height: 1;\"><span style=\"color: rgb(255, 255, 255); font-size: 20px;\">dynamo process</span></p>"
+        },
+        {
+          "id": "51fc2f0f-dcf1-4c9b-9410-276505630b07",
+          "type": "callout",
+          "x": 920,
+          "y": 280,
+          "width": 36,
+          "height": 36,
+          "zIndex": 10,
+          "calloutNumber": 5,
+          "calloutColor": "#ef4444",
+          "calloutTextColor": "#ffffff",
+          "fontSize": 16
+        },
+        {
+          "id": "53cf4832-7d6f-4d36-82c4-1e6f61fb49ca",
+          "type": "image",
+          "x": 40,
+          "y": 100,
+          "width": 620,
+          "height": 440,
+          "zIndex": 2,
+          "src": "/uploads/32698af5-fed0-4697-a148-4254f19cc271.png",
+          "objectFit": "contain",
+          "alt": "",
+          "shadowX": 2,
+          "shadowY": 2,
+          "shadowBlur": 2
+        },
+        {
+          "id": "39516213-b7f7-4dba-b72e-4c53287176ee",
+          "type": "text",
+          "x": 660,
+          "y": 140,
+          "width": 260,
+          "height": 80,
+          "zIndex": 3,
+          "content": "<p style=\"text-align: right; line-height: 1;\"><span style=\"color: rgb(255, 255, 255); font-size: 20px;\">differential rotation</span></p>"
+        },
+        {
+          "id": "28f8689b-2995-4e06-8f55-74e846de0229",
+          "type": "callout",
+          "x": 924,
+          "y": 160,
+          "width": 36,
+          "height": 36,
+          "zIndex": 10,
+          "calloutNumber": 4,
+          "calloutColor": "#ef4444",
+          "calloutTextColor": "#ffffff",
+          "fontSize": 16
+        },
+        {
+          "id": "92e676cc-345c-4055-8e32-235a55da7817",
+          "type": "text",
+          "x": 20,
+          "y": 0,
+          "width": 920,
+          "height": 80,
+          "zIndex": 1,
+          "content": "<p><span style=\"font-family: Barlow, sans-serif; font-size: 28px;\">Differential rotation drives the stellar dynamo process</span></p>"
+        },
+        {
+          "id": "83066156-6825-4dce-b9c1-39bec3291e3d",
+          "type": "text",
+          "x": 660,
+          "y": 400,
+          "width": 260,
+          "height": 80,
+          "zIndex": 3,
+          "content": "<p style=\"text-align: right; line-height: 1;\"><span style=\"color: rgb(255, 255, 255); font-size: 20px;\">activity cycles</span></p>"
+        },
+        {
+          "id": "aa117ae4-e2e3-468e-845b-a45e48e4832a",
+          "type": "callout",
+          "x": 920,
+          "y": 420,
+          "width": 36,
+          "height": 36,
+          "zIndex": 10,
+          "calloutNumber": 6,
+          "calloutColor": "#ef4444",
+          "calloutTextColor": "#ffffff",
+          "fontSize": 16
         }
       ],
       "notes": "",
@@ -198,7 +487,110 @@
       "id": "03744ccd-e29a-458c-a68a-834a720623c6",
       "elements": [
         {
-          "id": "bf538e71-56d4-46db-87f6-4c4e45cc61f9",
+          "id": "c5211704-f269-4765-a281-8548ea20c002",
+          "type": "text",
+          "x": 500,
+          "y": 0,
+          "width": 440,
+          "height": 80,
+          "zIndex": 1,
+          "content": "<p style=\"text-align: right;\"><span style=\"font-family: Barlow, sans-serif; font-size: 28px;\">The stellar revolution</span></p>",
+          "rotation": 0
+        },
+        {
+          "id": "c3276373-23a1-471d-beeb-0c3ed8fe06fb",
+          "type": "image",
+          "x": 360,
+          "y": 20,
+          "width": 180,
+          "height": 160,
+          "zIndex": 2,
+          "src": "/uploads/7c5b2ba8-a5b1-4905-b7fe-8bda41f8f745.png",
+          "objectFit": "contain",
+          "alt": ""
+        },
+        {
+          "id": "5368072f-1d4d-4648-b60e-b50f39e15ca4",
+          "type": "text",
+          "x": 300,
+          "y": 140,
+          "width": 400,
+          "height": 143,
+          "zIndex": 1,
+          "content": "<p style=\"text-align: center;\"><span style=\"color: rgb(255, 255, 255); font-family: Codystar, sans-serif; font-size: 16px; font-weight: 700;\"><strong>Transiting exoplanet survey satellite</strong></span></p>",
+          "sizeMode": "auto"
+        },
+        {
+          "id": "ea77db79-9d75-4be8-935e-20b97dbcdd35",
+          "type": "image",
+          "x": 20,
+          "y": 20,
+          "width": 200,
+          "height": 140,
+          "zIndex": 2,
+          "src": "/uploads/93a26e03-ce1e-4ace-9ce1-dc87c96131a0.png",
+          "objectFit": "contain",
+          "alt": ""
+        },
+        {
+          "id": "d0c5799c-961f-471f-8f48-318f9468242f",
+          "type": "text",
+          "x": 20,
+          "y": 140,
+          "width": 220,
+          "height": 143,
+          "zIndex": 1,
+          "content": "<p><span style=\"color: rgb(255, 255, 255); font-family: Codystar, sans-serif; font-size: 16px; font-weight: 700;\"><strong>Kepler / K2 mission</strong></span></p>",
+          "sizeMode": "auto"
+        },
+        {
+          "id": "6ffadda9-24f8-4ab2-8d1a-a948db490957",
+          "type": "text",
+          "x": 500,
+          "y": 30,
+          "width": 440,
+          "height": 80,
+          "zIndex": 1,
+          "content": "<p style=\"text-align: right;\"><span style=\"color: rgb(220, 38, 38); font-family: Barlow, sans-serif; font-size: 28px;\"><em>revolution</em></span></p>",
+          "rotation": 0
+        },
+        {
+          "id": "5412cdf1-41f5-44f7-93b2-f2432c209bb5",
+          "type": "image",
+          "x": 0,
+          "y": 240,
+          "width": 400,
+          "height": 300,
+          "zIndex": 2,
+          "src": "/uploads/b2fbd6c8-9a1a-4120-93a1-0b4a720a4868.png",
+          "objectFit": "contain",
+          "alt": ""
+        },
+        {
+          "id": "35fc90de-019f-4f47-bcc3-92172bec8568",
+          "type": "image",
+          "x": 460,
+          "y": 180,
+          "width": 400,
+          "height": 300,
+          "zIndex": 2,
+          "src": "/uploads/de640b13-9a11-4916-99be-35fc6c830106.png",
+          "objectFit": "contain",
+          "alt": ""
+        }
+      ],
+      "notes": "",
+      "background": {
+        "type": "color",
+        "color": "#000000"
+      },
+      "activeSection": 0
+    },
+    {
+      "id": "a83c57be-cc50-48ad-9ea1-812031e6a64a",
+      "elements": [
+        {
+          "id": "d94320df-478f-4a70-b162-1921c9f53176",
           "type": "image",
           "x": 490,
           "y": 200,
@@ -210,17 +602,17 @@
           "alt": ""
         },
         {
-          "id": "590ee934-2fe9-4cd9-8a5d-21bba380dca7",
+          "id": "6ee754ff-e9ac-4a56-bb3e-5f2bae7771a9",
           "type": "text",
           "x": 0,
           "y": 0,
           "width": 960,
           "height": 120,
           "zIndex": 3,
-          "content": "<p style=\"text-align: center; line-height: 1;\"><span style=\"font-family: Roboto, sans-serif; font-size: 36px; font-weight: 300;\">The Role of </span><span style=\"color: rgb(37, 99, 235); font-family: Roboto, sans-serif; font-size: 36px; font-weight: 300;\">Tides</span><span style=\"font-family: Roboto, sans-serif; font-size: 36px; font-weight: 300;\"> and </span><span style=\"color: rgb(16, 185, 129); font-family: Roboto, sans-serif; font-size: 36px; font-weight: 300;\">Differential Rotation</span><span style=\"font-family: Roboto, sans-serif; font-size: 36px; font-weight: 300;\"> in the Angular Momentum Evolution of Low-Mass Stars</span></p>"
+          "content": "<p style=\"text-align: center; line-height: 1;\"><span style=\"font-size: 36px; font-weight: 300;\">The Role of </span><span style=\"color: rgb(37, 99, 235); font-size: 36px; font-weight: 300;\">Tides</span><span style=\"font-size: 36px; font-weight: 300;\"> and </span><span style=\"color: rgb(16, 185, 129); font-size: 36px; font-weight: 300;\">Differential Rotation</span><span style=\"font-size: 36px; font-weight: 300;\"> in the Angular Momentum Evolution of Low-Mass Stars</span></p>"
         },
         {
-          "id": "4def6eb2-a2c5-4e22-b0fd-3c69796712c2",
+          "id": "703e18f9-49e5-44df-a7eb-30b391292960",
           "type": "image",
           "x": 100,
           "y": 180,
@@ -237,7 +629,7 @@
           "crop": null
         },
         {
-          "id": "a1150552-335a-45af-8062-8a663ab8b44a",
+          "id": "93a40f2a-25dc-4d92-a5fa-db0376c87ff6",
           "type": "shape",
           "shape": "rounded-rect",
           "x": 100,
@@ -255,7 +647,7 @@
           "textColor": "#ffffff"
         },
         {
-          "id": "0c82a0a2-94e2-4af6-921e-c9edbcaad18f",
+          "id": "f90a9db9-ad08-4f95-8458-798b68432cf9",
           "type": "shape",
           "shape": "rounded-rect",
           "x": 520,
@@ -287,7 +679,7 @@
           "id": "e7703af0-2fb0-4d99-89bc-e916ed032b68",
           "type": "text",
           "x": 0,
-          "y": 20,
+          "y": 0,
           "width": 960,
           "height": 80,
           "zIndex": 1,
@@ -297,7 +689,7 @@
           "id": "1b98d432-4cdb-4850-a7ad-2b7d67fa5393",
           "type": "image",
           "x": 120,
-          "y": 200,
+          "y": 120,
           "width": 320,
           "height": 300,
           "zIndex": 4,
@@ -315,7 +707,7 @@
           "type": "shape",
           "shape": "rounded-rect",
           "x": 120,
-          "y": 160,
+          "y": 100,
           "width": 340,
           "height": 380,
           "zIndex": 1,
@@ -331,8 +723,8 @@
         {
           "id": "0394e99a-eb0d-4071-8104-a01f17f33d4a",
           "type": "callout",
-          "x": 560,
-          "y": 180,
+          "x": 500,
+          "y": 120,
           "width": 36,
           "height": 36,
           "zIndex": 10,
@@ -340,6 +732,72 @@
           "calloutColor": "#ef4444",
           "calloutTextColor": "#ffffff",
           "fontSize": 16
+        },
+        {
+          "id": "9ffa64fe-6a6c-4da0-9dd7-a06925bd2af4",
+          "type": "callout",
+          "x": 500,
+          "y": 240,
+          "width": 36,
+          "height": 36,
+          "zIndex": 10,
+          "calloutNumber": 2,
+          "calloutColor": "#ef4444",
+          "calloutTextColor": "#ffffff",
+          "fontSize": 16
+        },
+        {
+          "id": "7168a028-2a98-4528-903d-941b9a2fdf97",
+          "type": "text",
+          "x": 540,
+          "y": 100,
+          "width": 360,
+          "height": 100,
+          "zIndex": 3,
+          "content": "<p style=\"line-height: 0.7;\"><span style=\"color: rgb(255, 255, 255); font-family: Inter, sans-serif; font-size: 20px; font-weight: 300;\">Background: why are tidal forces important to binary evolution?</span></p>"
+        },
+        {
+          "id": "50f8a8ab-6081-4e9f-9059-4ff55c3f02ee",
+          "type": "text",
+          "x": 540,
+          "y": 220,
+          "width": 360,
+          "height": 100,
+          "zIndex": 3,
+          "content": "<p style=\"line-height: 0.7;\"><span style=\"color: rgb(255, 255, 255); font-family: Inter, sans-serif; font-size: 20px; font-weight: 300;\">Problem: can we use eclipsing binaries to constrain tidal models?</span></p>"
+        },
+        {
+          "id": "14086625-2704-4e39-a8c2-98bd84c3d402",
+          "type": "callout",
+          "x": 500,
+          "y": 360,
+          "width": 36,
+          "height": 36,
+          "zIndex": 10,
+          "calloutNumber": 3,
+          "calloutColor": "#ef4444",
+          "calloutTextColor": "#ffffff",
+          "fontSize": 16
+        },
+        {
+          "id": "a5489ecc-869c-44aa-ba4b-c145b88f2cf0",
+          "type": "text",
+          "x": 540,
+          "y": 340,
+          "width": 360,
+          "height": 140,
+          "zIndex": 3,
+          "content": "<p style=\"line-height: 0.7;\"><span style=\"color: rgb(255, 255, 255); font-family: Inter, sans-serif; font-size: 20px; font-weight: 300;\">Solutions: what do we learn from model sensitivity analysis and simulated inference?</span></p>"
+        },
+        {
+          "id": "dd270270-ade9-49c1-9e32-94188958974b",
+          "type": "text",
+          "x": 100,
+          "y": 480,
+          "width": 840,
+          "height": 100,
+          "zIndex": 3,
+          "content": "<p style=\"line-height: 0.7;\"><span style=\"color: rgb(255, 255, 255); font-size: 18px;\">Birky et al. 2025: <em>Prospects of Constraining Equilibrium Tides in Low-Mass Binary Stars</em></span></p><p style=\"line-height: 0.7;\"><span style=\"color: rgb(255, 255, 255); font-size: 18px;\">Birky &amp; Barnes 2026: <em>ALABI: Active Learning for Accelerated Bayesian Inference</em></span></p>"
         }
       ],
       "notes": "",
@@ -377,7 +835,7 @@
           "width": 920,
           "height": 80,
           "zIndex": 1,
-          "content": "<p><span style=\"font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;\">What types of binaries are we modeling?</span></p>"
+          "content": "<p><span style=\"font-family: Barlow, sans-serif; font-size: 28px;\">What types of binaries are we modeling?</span></p>"
         }
       ],
       "notes": "",
@@ -398,15 +856,15 @@
           "width": 920,
           "height": 80,
           "zIndex": 1,
-          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;\">Modeling the dynamical evolution of binary stars</span></p>"
+          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">Modeling the dynamical evolution of binary stars</span></p>"
         },
         {
           "id": "7d7a8529-750b-4cbe-bc5e-5cd8f621c8e1",
           "type": "image",
-          "x": 40,
-          "y": 100,
-          "width": 880,
-          "height": 180,
+          "x": 20,
+          "y": 160,
+          "width": 920,
+          "height": 220,
           "zIndex": 2,
           "src": "/uploads/fdb18096-1990-44e2-a475-a0ab37e3c05d.png",
           "objectFit": "contain",
@@ -424,22 +882,63 @@
       "activeSection": 1
     },
     {
-      "id": "86b1411c-e3c7-434c-9b9d-c8604317f501",
+      "id": "6dae0c11-4ab1-451c-8fa5-28a164345a5a",
       "elements": [
         {
-          "id": "15887fd7-778a-4b29-a5b9-3a4a40eb2831",
-          "type": "image",
-          "src": "/uploads/bd22d501-550c-4071-b1c3-3003b8e3ecac/8826897c-8a76-4c00-8b21-a134e20f51d4.png",
-          "x": 0,
-          "y": 80,
-          "width": 960,
-          "height": 480,
-          "objectFit": "contain",
+          "id": "4fbc05c9-c7e2-44b2-aca4-5046d0958506",
+          "type": "text",
+          "x": 20,
+          "y": 0,
+          "width": 920,
+          "height": 80,
           "zIndex": 1,
-          "imageW": 960,
+          "content": "<p style=\"text-align: left;\"><span style=\"font-family: Barlow, sans-serif; font-size: 28px;\">An introduction to tides</span></p>"
+        },
+        {
+          "id": "0c4cadd7-4759-4320-b0a3-62aa1cffed53",
+          "type": "shape",
+          "shape": "rect",
+          "x": 400,
+          "y": 0,
+          "width": 560,
+          "height": 560,
+          "zIndex": 2,
+          "fill": "#ffffff",
+          "stroke": "none",
+          "strokeWidth": 0,
+          "borderRadius": 0,
+          "opacity": 1,
+          "text": "",
+          "fontSize": 16,
+          "textColor": "#ffffff",
+          "strokeDasharray": "dotted"
+        },
+        {
+          "id": "2c8f5c47-0e7b-4ea1-a8ad-0be96e406689",
+          "type": "text",
+          "x": 20,
+          "y": 120,
+          "width": 500,
+          "height": 287,
+          "zIndex": 3,
+          "content": "<p style=\"text-align: left; line-height: 1;\"><span style=\"color: rgb(226, 232, 240); font-family: Barlow, sans-serif; font-size: 24px;\">Gravitational interactions </span></p><p style=\"text-align: left; line-height: 1;\"><span style=\"color: rgb(226, 232, 240); font-family: Barlow, sans-serif; font-size: 24px;\">can deform the shape of the star, </span></p><p style=\"text-align: left; line-height: 1;\"><span style=\"color: rgb(226, 232, 240); font-family: Barlow, sans-serif; font-size: 24px;\">introducing a \"tidal bulge\"</span></p>",
+          "sizeMode": "auto"
+        },
+        {
+          "id": "7a0af44c-856f-4400-b1a3-d1b2a8a1e97a",
+          "type": "image",
+          "x": 400,
+          "y": 80,
+          "width": 560,
+          "height": 390,
+          "zIndex": 2,
+          "src": "/uploads/14e91fd0-7414-40b5-8d9f-0472b9a69a90.png",
+          "objectFit": "contain",
+          "alt": "",
+          "imageW": 560,
           "imageH": 540,
           "imageOffsetX": 0,
-          "imageOffsetY": -56,
+          "imageOffsetY": -76,
           "crop": null
         }
       ],
@@ -460,8 +959,8 @@
           "y": 0,
           "width": 600,
           "height": 80,
-          "zIndex": 2,
-          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;\">Equilibrium tides</span></p>"
+          "zIndex": 1,
+          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">Equilibrium tides</span></p>"
         },
         {
           "id": "cf4fad1d-f957-430a-8448-6bb4def95418",
@@ -471,7 +970,7 @@
           "width": 480,
           "height": 112,
           "zIndex": 3,
-          "content": "<p style=\"line-height: 1;\"><span style=\"color: rgb(226, 232, 240); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 20px;\">Constant Phase Lag (Ferraz Mello 2008)</span></p>",
+          "content": "<p style=\"line-height: 1;\"><span style=\"color: rgb(226, 232, 240); font-family: Barlow, sans-serif; font-size: 20px;\">Constant Phase Lag (Ferraz Mello 2008)</span></p>",
           "sizeMode": "auto"
         },
         {
@@ -482,7 +981,7 @@
           "width": 340,
           "height": 80,
           "zIndex": 4,
-          "content": "<p style=\"line-height: 1;\"><span style=\"color: rgb(226, 232, 240); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 20px;\">Constant Time Lag (Hut 1881)</span></p>"
+          "content": "<p style=\"line-height: 1;\"><span style=\"color: rgb(226, 232, 240); font-family: Barlow, sans-serif; font-size: 20px;\">Constant Time Lag (Hut 1881)</span></p>"
         },
         {
           "id": "96c21b57-f37d-4fe4-bfe0-0ac3ac72ebfe",
@@ -498,22 +997,22 @@
         {
           "id": "a7beffd7-986d-4403-ad5e-b9e94e39cb37",
           "type": "text",
-          "x": 580,
+          "x": 600,
           "y": 160,
           "width": 160,
           "height": 80,
-          "zIndex": 6,
+          "zIndex": 7,
           "content": "<p><span style=\"color: rgb(226, 232, 240); font-size: 28px;\"><span data-math-latex=\"\\epsilon \\approx n \\tau\" data-math-display=\"false\" data-math-fontsize=\"24px\" data-math-color=\"#334155\" class=\"math-node math-inline\"></span></span></p>"
         },
         {
           "id": "48bc1542-8846-419d-9612-e3b96d90b6b4",
           "type": "text",
           "x": 180,
-          "y": 60,
+          "y": 80,
           "width": 540,
-          "height": 120,
+          "height": 112,
           "zIndex": 8,
-          "content": "<p style=\"text-align: center; line-height: 1;\"><span style=\"color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 20px;\">Under weak friction, we can assume one of two models:</span></p>",
+          "content": "<p style=\"text-align: center; line-height: 1;\"><span style=\"color: rgb(226, 232, 240); font-family: Barlow, sans-serif; font-size: 20px;\">Under weak friction, we can assume one of two models:</span></p>",
           "sizeMode": "auto"
         },
         {
@@ -523,7 +1022,7 @@
           "y": 180,
           "width": 580,
           "height": 400,
-          "zIndex": 7,
+          "zIndex": 6,
           "src": "/uploads/236ddf4e-dd30-4990-8c6f-e6b7bf008f4f.apng",
           "objectFit": "contain",
           "alt": ""
@@ -545,10 +1044,10 @@
           "type": "shape",
           "shape": "rect",
           "x": 0,
-          "y": 140,
+          "y": 80,
           "width": 960,
-          "height": 400,
-          "zIndex": 1,
+          "height": 480,
+          "zIndex": 2,
           "fill": "#000000",
           "stroke": "none",
           "strokeWidth": 0,
@@ -557,6 +1056,17 @@
           "text": "",
           "fontSize": 16,
           "textColor": "#ffffff"
+        },
+        {
+          "id": "e6e15377-33c4-4fc2-8003-d739d4c43cb6",
+          "type": "text",
+          "x": 140,
+          "y": 480,
+          "width": 660,
+          "height": 112,
+          "zIndex": 10,
+          "content": "<p style=\"text-align: center; line-height: 1;\"><span style=\"color: rgb(226, 232, 240); font-family: Barlow, sans-serif; font-size: 20px;\">Tidal friction causes the system to dissipate energy in the form of heat</span></p>",
+          "sizeMode": "auto"
         }
       ],
       "notes": "",
@@ -630,7 +1140,7 @@
           "width": 920,
           "height": 80,
           "zIndex": 1,
-          "content": "<p><span style=\"font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;\">Orbital evolution: Constant Phase Lag (CPL) model</span></p>"
+          "content": "<p><span style=\"font-family: Barlow, sans-serif; font-size: 28px;\">Orbital evolution: Constant Phase Lag (CPL) model</span></p>"
         }
       ],
       "notes": "",
@@ -667,7 +1177,7 @@
           "width": 920,
           "height": 80,
           "zIndex": 1,
-          "content": "<p><span style=\"font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;\">Orbital evolution: Constant Time Lag (CTL) model</span></p>"
+          "content": "<p><span style=\"font-family: Barlow, sans-serif; font-size: 28px;\">Orbital evolution: Constant Time Lag (CTL) model</span></p>"
         }
       ],
       "notes": "",
@@ -681,7 +1191,73 @@
       "id": "eafdcf2a-543b-436b-9003-b959974873fd",
       "elements": [
         {
-          "id": "1ebd2574-6949-425a-b8a3-aa4599ca7aa1",
+          "id": "fe960cb5-1a51-4749-8c93-b53ea705c77f",
+          "type": "text",
+          "x": 20,
+          "y": 0,
+          "width": 920,
+          "height": 80,
+          "zIndex": 1,
+          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">Sensitivity analysis: CTL + stellar</span></p>"
+        },
+        {
+          "id": "b3272d4d-401b-4ccf-84ed-7c83dcc10328",
+          "type": "image",
+          "x": 40,
+          "y": 80,
+          "width": 880,
+          "height": 460,
+          "zIndex": 2,
+          "src": "/uploads/07e55fef-2b26-4a85-9245-d0cbe1fcd2c7.png",
+          "objectFit": "contain",
+          "alt": ""
+        }
+      ],
+      "notes": "",
+      "background": {
+        "type": "color",
+        "color": "#ffffff"
+      },
+      "activeSection": 1
+    },
+    {
+      "id": "5048d86e-2c17-4ac3-bdb0-0a15dbf4e981",
+      "elements": [
+        {
+          "id": "e35cf924-1df9-4b35-a79a-13319c5611f9",
+          "type": "text",
+          "x": 20,
+          "y": 0,
+          "width": 920,
+          "height": 80,
+          "zIndex": 1,
+          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">Sensitivity analysis: CPL + stellar</span></p>"
+        },
+        {
+          "id": "249e7673-c58c-47c5-8189-39b6e829f970",
+          "type": "image",
+          "x": 40,
+          "y": 60,
+          "width": 880,
+          "height": 500,
+          "zIndex": 2,
+          "src": "/uploads/60fcb23e-3e09-4f1d-a7b7-67ad67b446fb.png",
+          "objectFit": "contain",
+          "alt": ""
+        }
+      ],
+      "notes": "",
+      "background": {
+        "type": "color",
+        "color": "#ffffff"
+      },
+      "activeSection": 1
+    },
+    {
+      "id": "6f9a0041-9a38-473c-a197-0f7add008278",
+      "elements": [
+        {
+          "id": "0306100f-47f1-471f-8ced-42a15c7f11ef",
           "type": "shape",
           "shape": "line",
           "x": 600,
@@ -699,14 +1275,110 @@
           "textColor": "#ffffff"
         },
         {
-          "id": "fe960cb5-1a51-4749-8c93-b53ea705c77f",
+          "id": "647c3088-74eb-43ef-a15a-6b7fc9e4d70c",
           "type": "text",
           "x": 20,
           "y": 0,
           "width": 920,
           "height": 80,
           "zIndex": 1,
-          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;\">ALABI: Active Learning for Accelerated Bayesian Inference</span></p>"
+          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">ALABI: Active Learning for Accelerated Bayesian Inference</span></p>"
+        },
+        {
+          "id": "bb62f329-47c2-43c4-a955-70f0cb79d4cf",
+          "type": "image",
+          "x": 20,
+          "y": 140,
+          "width": 400,
+          "height": 300,
+          "zIndex": 2,
+          "src": "/uploads/85376a52-5cc4-42e5-89d6-d6be50106779.gif",
+          "objectFit": "contain",
+          "alt": ""
+        }
+      ],
+      "notes": "",
+      "background": {
+        "type": "color",
+        "color": "#ffffff"
+      },
+      "activeSection": 1
+    },
+    {
+      "id": "1fa8bd97-1cc3-436c-8a43-ab100a083d5c",
+      "elements": [
+        {
+          "id": "d5420923-f57f-4030-a43f-9b982b186bb3",
+          "type": "shape",
+          "shape": "line",
+          "x": 600,
+          "y": 200,
+          "width": 280,
+          "height": 40,
+          "zIndex": 3,
+          "fill": "#3d3846",
+          "stroke": "#ffffff",
+          "strokeWidth": 0,
+          "borderRadius": 0,
+          "opacity": 1,
+          "text": "",
+          "fontSize": 16,
+          "textColor": "#ffffff"
+        },
+        {
+          "id": "bec78068-f7b7-434b-869f-35415f420ed3",
+          "type": "text",
+          "x": 20,
+          "y": 0,
+          "width": 920,
+          "height": 80,
+          "zIndex": 1,
+          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">Simulated posteriors and degeneracy analysis</span></p>"
+        },
+        {
+          "id": "15245ed3-7940-4e4c-9e75-29fe9b02f216",
+          "type": "image",
+          "x": 0,
+          "y": 80,
+          "width": 520,
+          "height": 480,
+          "zIndex": 2,
+          "src": "/uploads/e2655447-a2d2-4a9a-ae9e-ed0fed449a58.png",
+          "objectFit": "contain",
+          "alt": ""
+        },
+        {
+          "id": "fd55710d-3b0f-422f-b7e3-809f58ea23a6",
+          "type": "image",
+          "x": 560,
+          "y": 60,
+          "width": 400,
+          "height": 300,
+          "zIndex": 2,
+          "src": "/uploads/e065ab93-96b0-46f8-b3af-93481051a1bb.png",
+          "objectFit": "contain",
+          "alt": ""
+        }
+      ],
+      "notes": "",
+      "background": {
+        "type": "color",
+        "color": "#ffffff"
+      },
+      "activeSection": 1
+    },
+    {
+      "id": "2ffd2b1b-d116-43d9-8805-ad750bc5a5e2",
+      "elements": [
+        {
+          "id": "c9e10f64-5a24-4357-a973-616971f1af5f",
+          "type": "text",
+          "x": 20,
+          "y": 0,
+          "width": 920,
+          "height": 80,
+          "zIndex": 1,
+          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">Simulated posteriors and degeneracy analysis</span></p>"
         }
       ],
       "notes": "",
@@ -727,29 +1399,65 @@
           "width": 920,
           "height": 80,
           "zIndex": 1,
-          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;\">Could differential rotation explain subsynchronous binaries?</span></p>"
+          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">Population inference</span></p>"
         },
         {
-          "id": "77e8032b-eeed-4890-896e-fa7cc6966772",
+          "id": "42b199d3-604e-4e63-aa2d-afc1d4b7ef48",
+          "type": "image",
+          "x": 0,
+          "y": 80,
+          "width": 560,
+          "height": 460,
+          "zIndex": 2,
+          "src": "/uploads/b9eacb7e-27cc-4b5b-bf84-5db4cee5b957.png",
+          "objectFit": "contain",
+          "alt": ""
+        }
+      ],
+      "notes": "",
+      "background": {
+        "type": "color",
+        "color": "#ffffff"
+      },
+      "activeSection": 1
+    },
+    {
+      "id": "c44d3577-f05b-4cc6-a545-901530cbe642",
+      "elements": [
+        {
+          "id": "45528358-3567-4bc6-8ae6-4fafcad5cd13",
+          "type": "text",
+          "x": 20,
+          "y": 0,
+          "width": 920,
+          "height": 80,
+          "zIndex": 1,
+          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">Could differential rotation explain subsynchronous binaries?</span></p>"
+        },
+        {
+          "id": "d756376a-3c97-48e7-97bc-4a67df95b338",
           "type": "image",
           "x": 40,
           "y": 80,
-          "width": 540,
-          "height": 300,
+          "width": 720,
+          "height": 400,
           "zIndex": 2,
           "src": "/uploads/02af9547-8d1e-4724-bd8a-d0f117676cd6.png",
           "objectFit": "contain",
-          "alt": ""
+          "alt": "",
+          "shadowX": 2,
+          "shadowY": 2,
+          "shadowBlur": 2
         },
         {
-          "id": "ed248593-ce2f-4426-aff7-86fa5948d007",
+          "id": "c52b538c-a471-49ee-abf9-093fedf54193",
           "type": "text",
-          "x": 80,
-          "y": 340,
+          "x": 40,
+          "y": 460,
           "width": 420,
           "height": 60,
           "zIndex": 1,
-          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 20px;\">Hobson-Ritz &amp; Birky 2025</span></p>"
+          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 20px;\">Hobson-Ritz &amp; Birky 2025</span></p>"
         }
       ],
       "notes": "",
@@ -766,11 +1474,134 @@
           "id": "4bdcfc40-b401-4ff9-8a4e-db5ce3c0ab7b",
           "type": "text",
           "x": 0,
-          "y": 103.01675977653632,
+          "y": 0,
           "width": 960,
-          "height": 254.8603351955307,
+          "height": 150,
           "zIndex": 1,
-          "content": "<p style=\"text-align: center;\"><span style=\"font-family: &quot;Computer Modern Sans&quot;, sans-serif; font-size: 40px;\">Starspot GP</span></p>"
+          "content": "<p style=\"text-align: center;\"><span style=\"font-family: &quot;Computer Modern Sans&quot;, sans-serif; font-size: 40px;\">Differential Rotation</span></p>",
+          "sizeMode": "auto"
+        },
+        {
+          "id": "01c6b3c5-e4a9-4840-8960-59051074c17c",
+          "type": "image",
+          "x": 520,
+          "y": 160,
+          "width": 400,
+          "height": 300,
+          "zIndex": 2,
+          "src": "/uploads/019f43d6-6b96-43b4-91f6-6f483ea80b6a.apng",
+          "objectFit": "contain",
+          "alt": ""
+        },
+        {
+          "id": "ca8973ad-bde8-426d-a0d4-8ac88d52159a",
+          "type": "shape",
+          "shape": "rounded-rect",
+          "x": 540,
+          "y": 120,
+          "width": 340,
+          "height": 380,
+          "zIndex": 1,
+          "fill": "#000000",
+          "stroke": "#26a269",
+          "strokeWidth": 2,
+          "borderRadius": 0,
+          "opacity": 1,
+          "text": "",
+          "fontSize": 16,
+          "textColor": "#ffffff"
+        },
+        {
+          "id": "4f6b314c-0e0b-4ac8-a5f7-6b9b068f7f38",
+          "type": "callout",
+          "x": 80,
+          "y": 120,
+          "width": 36,
+          "height": 36,
+          "zIndex": 10,
+          "calloutNumber": 1,
+          "calloutColor": "#ef4444",
+          "calloutTextColor": "#ffffff",
+          "fontSize": 16
+        },
+        {
+          "id": "e98663d0-20e1-4095-b625-95b5c3468164",
+          "type": "text",
+          "x": 120,
+          "y": 100,
+          "width": 360,
+          "height": 100,
+          "zIndex": 3,
+          "content": "<p style=\"line-height: 0.7;\"><span style=\"color: rgb(255, 255, 255); font-family: Inter, sans-serif; font-size: 20px; font-weight: 300;\">Derivation: how can we represent starspots in time and frequency?</span></p>"
+        },
+        {
+          "id": "c776f09f-091f-4cc2-b678-4587b9f8af34",
+          "type": "callout",
+          "x": 80,
+          "y": 220,
+          "width": 36,
+          "height": 36,
+          "zIndex": 10,
+          "calloutNumber": 2,
+          "calloutColor": "#ef4444",
+          "calloutTextColor": "#ffffff",
+          "fontSize": 16
+        },
+        {
+          "id": "6c1b63ca-2c49-4091-beab-42b1bd5fe008",
+          "type": "text",
+          "x": 120,
+          "y": 200,
+          "width": 360,
+          "height": 120,
+          "zIndex": 3,
+          "content": "<p style=\"line-height: 0.7;\"><span style=\"color: rgb(255, 255, 255); font-family: Inter, sans-serif; font-size: 20px; font-weight: 300;\">Tool development: implementing, optimizing, and validating the model</span></p>"
+        },
+        {
+          "id": "210cee2d-4407-4d93-95c1-c736cdc50d70",
+          "type": "callout",
+          "x": 80,
+          "y": 320,
+          "width": 36,
+          "height": 36,
+          "zIndex": 10,
+          "calloutNumber": 3,
+          "calloutColor": "#ef4444",
+          "calloutTextColor": "#ffffff",
+          "fontSize": 16
+        },
+        {
+          "id": "5a31e9eb-48f2-4f6e-9f38-bcde47265e0c",
+          "type": "text",
+          "x": 120,
+          "y": 300,
+          "width": 380,
+          "height": 120,
+          "zIndex": 3,
+          "content": "<p style=\"line-height: 0.7;\"><span style=\"color: rgb(255, 255, 255); font-family: Inter, sans-serif; font-size: 20px; font-weight: 300;\">Interpretation: what physical insights can we extract from lightcurves?</span></p>"
+        },
+        {
+          "id": "05b8aeeb-3d19-4b73-ab11-92cc9a987f94",
+          "type": "callout",
+          "x": 80,
+          "y": 420,
+          "width": 36,
+          "height": 36,
+          "zIndex": 10,
+          "calloutNumber": 4,
+          "calloutColor": "#ef4444",
+          "calloutTextColor": "#ffffff",
+          "fontSize": 16
+        },
+        {
+          "id": "6946965a-9f08-4967-9cc6-ad6d95eee98a",
+          "type": "text",
+          "x": 120,
+          "y": 400,
+          "width": 380,
+          "height": 120,
+          "zIndex": 3,
+          "content": "<p style=\"line-height: 0.7;\"><span style=\"color: rgb(255, 255, 255); font-family: Inter, sans-serif; font-size: 20px; font-weight: 300;\">Application: how does this model perform on real data?</span></p>"
         }
       ],
       "notes": "",
@@ -780,60 +1611,6 @@
       },
       "showPageNumber": false,
       "hideFooter": true
-    },
-    {
-      "id": "0e95682a-c68c-4cbc-8d9b-568e685f75fc",
-      "elements": [
-        {
-          "id": "3c83d068-9fcb-4d45-9c08-3317190ab476",
-          "type": "shape",
-          "shape": "line",
-          "x": 600,
-          "y": 200,
-          "width": 280,
-          "height": 40,
-          "zIndex": 3,
-          "fill": "#3d3846",
-          "stroke": "#ffffff",
-          "strokeWidth": 0,
-          "borderRadius": 0,
-          "opacity": 1,
-          "text": "",
-          "fontSize": 16,
-          "textColor": "#ffffff"
-        },
-        {
-          "id": "469d3113-a129-4bb7-8127-f4e7203370e5",
-          "type": "text",
-          "x": 20,
-          "y": 0,
-          "width": 920,
-          "height": 80,
-          "zIndex": 1,
-          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;\">Differential rotation drives the stellar dynamo process</span></p>"
-        },
-        {
-          "id": "896a6de9-5084-40d1-a494-ab258d4cd3fc",
-          "type": "image",
-          "x": 20,
-          "y": 100,
-          "width": 580,
-          "height": 380,
-          "zIndex": 2,
-          "src": "/uploads/32698af5-fed0-4697-a148-4254f19cc271.png",
-          "objectFit": "contain",
-          "alt": "",
-          "shadowX": 2,
-          "shadowY": 2,
-          "shadowBlur": 2
-        }
-      ],
-      "notes": "",
-      "background": {
-        "type": "color",
-        "color": "#ffffff"
-      },
-      "activeSection": 2
     },
     {
       "id": "022d6231-642d-4d18-974e-f539ca50f859",
@@ -846,7 +1623,7 @@
           "width": 920,
           "height": 80,
           "zIndex": 1,
-          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;\">What if we could measure differential rotation?</span></p>"
+          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">What if we could measure differential rotation?</span></p>"
         },
         {
           "id": "c8e03883-ba91-4e49-bb6a-fde3358b1c29",
@@ -856,10 +1633,64 @@
           "width": 380,
           "height": 80,
           "zIndex": 1,
-          "content": "<p style=\"text-align: left;\"><span style=\"color: rgb(100, 116, 139); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 24px;\"><em>well, it's hard...</em></span></p>"
+          "content": "<p style=\"text-align: left;\"><span style=\"color: rgb(148, 163, 184); font-family: Barlow, sans-serif; font-size: 24px;\"><em>well, it's hard...</em></span></p>"
         },
         {
-          "id": "718adc74-ff7e-412b-ba1f-476f5e8928f8",
+          "id": "5727e679-18f9-43a0-8fa0-32997a9f94d3",
+          "type": "text",
+          "x": 20,
+          "y": 100,
+          "width": 800,
+          "height": 103,
+          "zIndex": 1,
+          "content": "<p style=\"line-height: 0.85;\"><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 24px; font-weight: 400;\">Aside from the sun, we </span><span style=\"color: rgb(220, 38, 38); font-family: Barlow, sans-serif; font-size: 24px; font-weight: 500;\">cannot spatially resolve</span><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 24px; font-weight: 500;\"><strong> </strong></span><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 24px; font-weight: 400;\">images of other stars</span></p>",
+          "sizeMode": "auto"
+        },
+        {
+          "id": "55e3d1b8-5cc2-4cdf-9f84-57415258b9a6",
+          "type": "image",
+          "x": 480,
+          "y": 180,
+          "width": 400,
+          "height": 360,
+          "zIndex": 2,
+          "src": "/uploads/c5edb70e-0d20-4c98-a7e1-b4e455ae9024.gif",
+          "objectFit": "contain",
+          "alt": ""
+        }
+      ],
+      "notes": "",
+      "background": {
+        "type": "color",
+        "color": "#ffffff"
+      },
+      "activeSection": 2
+    },
+    {
+      "id": "476a14ac-19cd-40f3-8146-f34bdb883583",
+      "elements": [
+        {
+          "id": "9f4686af-c6b6-4745-ab25-4fe757cde3ed",
+          "type": "text",
+          "x": 20,
+          "y": 0,
+          "width": 920,
+          "height": 80,
+          "zIndex": 1,
+          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">What if we could measure differential rotation?</span></p>"
+        },
+        {
+          "id": "d94fcc7e-00c7-430b-a6f4-09d53e28a224",
+          "type": "text",
+          "x": 120,
+          "y": 40,
+          "width": 380,
+          "height": 80,
+          "zIndex": 1,
+          "content": "<p style=\"text-align: left;\"><span style=\"color: rgb(148, 163, 184); font-family: Barlow, sans-serif; font-size: 24px;\"><em>well, it's hard...</em></span></p>"
+        },
+        {
+          "id": "cd3800e6-04d2-40e7-9d58-61e4af22d62a",
           "type": "image",
           "x": 420,
           "y": 80,
@@ -871,7 +1702,7 @@
           "alt": ""
         },
         {
-          "id": "4b88447c-82f2-4d9f-8d71-abeb4d8fa9ff",
+          "id": "8a94eac1-ad2d-45e2-ac6d-64c368b8bd1a",
           "type": "image",
           "x": 480,
           "y": 280,
@@ -883,25 +1714,25 @@
           "alt": ""
         },
         {
-          "id": "5727e679-18f9-43a0-8fa0-32997a9f94d3",
+          "id": "e5405b7e-c49e-4db7-9321-d086e6a95b46",
           "type": "text",
           "x": 20,
           "y": 120,
           "width": 380,
-          "height": 140,
+          "height": 180,
           "zIndex": 1,
-          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 24px;\">Degeneracies</span></p>",
+          "content": "<p style=\"line-height: 0.8;\"><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 24px;\">Furthermore, lightcurves are </span><span style=\"color: rgb(220, 38, 38); font-family: Barlow, sans-serif; font-size: 24px; font-weight: 500;\">degenerate</span><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 24px;\">: different combinations of spot parameters can produce identical lightcurves</span></p>",
           "sizeMode": "fixed"
         },
         {
-          "id": "f8e7f66b-6df2-494c-a0fb-5d92732339ca",
+          "id": "f09c7ace-2e22-42ac-9a05-c6a5a4047dc1",
           "type": "text",
           "x": 20,
           "y": 300,
-          "width": 380,
-          "height": 140,
+          "width": 420,
+          "height": 240,
           "zIndex": 1,
-          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 24px;\">Non-uniqueness</span></p>",
+          "content": "<p style=\"line-height: 0.8;\"><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 24px;\">And also </span><span style=\"color: rgb(220, 38, 38); font-family: Barlow, sans-serif; font-size: 24px; font-weight: 500;\">non-unique</span><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 24px;\">: different realizations of the same stellar/spot properties (inclination, period, differential rotation, spot lifetime) can have randomly varying individual spots that produce unique lightcurves</span></p>",
           "sizeMode": "fixed"
         }
       ],
@@ -923,7 +1754,7 @@
           "width": 920,
           "height": 80,
           "zIndex": 1,
-          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;\">What if we could measure differential rotation?</span></p>"
+          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">What if we could measure differential rotation?</span></p>"
         },
         {
           "id": "e063cc9c-d7a6-49f7-b042-7f91a16e6009",
@@ -933,7 +1764,7 @@
           "width": 380,
           "height": 80,
           "zIndex": 1,
-          "content": "<p style=\"text-align: left;\"><span style=\"color: rgb(148, 163, 184); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 24px;\"><em>maybe even hopeless...?</em></span></p>"
+          "content": "<p style=\"text-align: left;\"><span style=\"color: rgb(148, 163, 184); font-family: Barlow, sans-serif; font-size: 24px;\"><em>maybe even hopeless...?</em></span></p>"
         }
       ],
       "notes": "",
@@ -954,7 +1785,7 @@
           "width": 920,
           "height": 80,
           "zIndex": 1,
-          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;\">Methods for measuring differential rotation and their limitations</span></p>"
+          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">Methods for measuring differential rotation and their limitations</span></p>"
         }
       ],
       "notes": "",
@@ -975,7 +1806,7 @@
           "width": 920,
           "height": 80,
           "zIndex": 1,
-          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;\">What physical information do GP models encode?</span></p>"
+          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">What physical information do GP models encode?</span></p>"
         }
       ],
       "notes": "",
@@ -996,7 +1827,7 @@
           "width": 920,
           "height": 80,
           "zIndex": 1,
-          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;\">What if we could come up with an <strong><em>interpretable</em></strong> GP model?</span></p>"
+          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">What if we could come up with an <strong><em>interpretable</em></strong> GP model?</span></p>"
         },
         {
           "id": "f4414330-c424-48d4-96de-53bee7610433",
@@ -1006,7 +1837,7 @@
           "width": 820,
           "height": 143,
           "zIndex": 1,
-          "content": "<p style=\"text-align: left;\"><span style=\"color: rgb(100, 116, 139); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 24px;\"><em>in which hyperparameters of the kernel represent physical spot properties?</em></span></p>",
+          "content": "<p style=\"text-align: left;\"><span style=\"color: rgb(148, 163, 184); font-family: Barlow, sans-serif; font-size: 24px;\"><em>in which hyperparameters of the kernel represent physical spot properties?</em></span></p>",
           "sizeMode": "auto"
         }
       ],
@@ -1028,7 +1859,7 @@
           "width": 920,
           "height": 80,
           "zIndex": 1,
-          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 32px;\">A physically-motivated starspot model</span></p>"
+          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">A physically-motivated starspot model</span></p>"
         },
         {
           "id": "9ab80b83-d1fa-4fd3-b812-36e90d0a9028",
@@ -1051,6 +1882,38 @@
       "activeSection": 2
     },
     {
+      "id": "cbd0de73-331a-4789-8695-53ed1f1ab6ef",
+      "elements": [
+        {
+          "id": "b9ac8fe0-4395-4352-85aa-8bbbf22be7bf",
+          "type": "text",
+          "x": 20,
+          "y": 0,
+          "width": 920,
+          "height": 80,
+          "zIndex": 2,
+          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">Visibility function</span></p>"
+        },
+        {
+          "id": "83975b39-778c-4bd5-9ad3-4aed4a246a4f",
+          "type": "html",
+          "x": 20,
+          "y": 60,
+          "width": 960,
+          "height": 540,
+          "zIndex": 2,
+          "content": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"utf-8\">\n<title>Spot Visibility</title>\n<link  rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.4.6/jsxgraph.min.css\">\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.4.6/jsxgraphcore.js\"></script>\n<script src=\"https://d3js.org/d3.v7.min.js\"></script>\n<style>\n* { box-sizing: border-box; margin: 0; padding: 0; }\nbody { font-family: Georgia, serif; background: #fff; padding: 28px; }\n#wrap     { display: flex; flex-direction: column; align-items: center; gap: 24px; }\n#boards   { display: flex; gap: 32px; align-items: center; }\n.panel    { display: flex; flex-direction: column; align-items: center; gap: 8px; }\n.ptitle   { font-size: 13px; color: #555; letter-spacing: 0.03em; }\n#board1   { width: 360px; height: 360px; position: relative; isolation: isolate; }\n#board2   { width: 580px; height: 340px; }\n#controls { display: flex; align-items: center; gap: 48px; }\n#sliders  { display: flex; gap: 70px; }\n.slrow    { display: flex; flex-direction: column; gap: 6px; }\n.slrow label { font-size: 14px; color: #333; }\n.slrow input { width: 230px; cursor: pointer; accent-color: #BF4040; }\n.val { color: #BF4040; font-weight: bold; }\n#playBtn {\n    width: 90px; height: 36px;\n    font-size: 14px; font-family: Georgia, serif;\n    background: #BF4040; color: #fff;\n    border: none; border-radius: 6px;\n    cursor: pointer; letter-spacing: 0.04em;\n    transition: background 0.15s;\n}\n#playBtn:hover { background: #9a2828; }\n</style>\n</head>\n<body>\n<div id=\"wrap\">\n  <div id=\"boards\">\n    <div class=\"panel\">\n      <div class=\"ptitle\" id=\"t1\">Star &nbsp;(i = 90°)</div>\n      <div id=\"board1\"></div>\n    </div>\n    <div class=\"panel\">\n      <div class=\"ptitle\">Visibility &nbsp;V(Λ)</div>\n      <div id=\"board2\"></div>\n    </div>\n  </div>\n  <div id=\"controls\">\n    <button id=\"playBtn\">&#9654; Play</button>\n    <div id=\"sliders\">\n      <div class=\"slrow\">\n        <label>Spot latitude &nbsp; Φ = <span class=\"val\" id=\"lv\">30°</span></label>\n        <input type=\"range\" id=\"lsl\" min=\"-85\" max=\"85\" value=\"30\" step=\"1\">\n      </div>\n      <div class=\"slrow\">\n        <label>Inclination &nbsp;i = <span class=\"val\" id=\"iv\">90°</span></label>\n        <input type=\"range\" id=\"isl\" min=\"0\" max=\"180\" value=\"90\" step=\"1\">\n      </div>\n    </div>\n  </div>\n</div>\n\n<script>\n\"use strict\";\n\n// ── State ─────────────────────────────────────────────────────────\nlet latDeg = 30, incDeg = 90;\nlet lat = latDeg * Math.PI / 180;\nlet inc = incDeg * Math.PI / 180;\nlet phi = 0;                           // animated longitude (radians)\nlet playing = false, animId = null, lastTime = null;\nconst ROT_SPEED = 2 * Math.PI / 8000; // radians per ms → one full rotation per 8 s\n\n// ── Projection helpers ────────────────────────────────────────────\nconst gz  = (lr, p) => Math.cos(inc)*Math.sin(lr) + Math.sin(inc)*Math.cos(lr)*Math.cos(p);\nconst pX  = (lr, p) => Math.cos(lr)*Math.sin(p);\nconst pY  = (lr, p) => -Math.sin(inc)*Math.sin(lr) + Math.cos(inc)*Math.cos(lr)*Math.cos(p);\nconst visV = deg => {\n    const p = deg * Math.PI / 180;\n    return Math.sin(inc)*Math.cos(lat)*Math.cos(p) + Math.cos(inc)*Math.sin(lat);\n};\n\n// ── Board 1: Star disk projection ────────────────────────────────\nconst B1 = JXG.JSXGraph.initBoard('board1', {\n    boundingbox: [-1.42, 1.42, 1.42, -1.42],\n    keepaspectratio: true, axis: false, grid: false,\n    showNavigation: false, showCopyright: false,\n    pan: { enabled: false }, zoom: { enabled: false },\n});\n\n// Star disk — transparent fill; canvas underneath provides the shaded background\nB1.create('circle', [[0, 0], [1, 0]], {\n    fillColor: 'none', fillOpacity: 0,\n    strokeColor: '#333', strokeWidth: 1.5,\n    fixed: true, highlight: false,\n});\n\n// ── Differential latitude shading (canvas, drawn behind JSXGraph SVG) ───\n// Same technique as differential_rotation.html: per-pixel latitude → DR rate → Reds LUT\nconst BOARD_PX   = 360;\nconst STAR_R_PX  = BOARD_PX / 2.84;   // 1 math-unit in pixels (bounding-box width = 2.84)\nconst STAR_CX    = BOARD_PX / 2;\nconst STAR_CY    = BOARD_PX / 2;\nconst DR_KAPPA   = 0.2;\nconst DR_MIX     = 0.5;\nconst DR_BASE    = [255, 255, 224];    // lightyellow\n\n// Build Reds LUT (truncated 0.25–1.0, same range as differential_rotation.html)\nconst N_LUT = 256;\nconst reds_lut = new Uint8Array(N_LUT * 3);\nfor (let i = 0; i < N_LUT; i++) {\n    const c = d3.color(d3.interpolateReds(0.25 + (i / (N_LUT - 1)) * 0.75));\n    reds_lut[i*3] = c.r; reds_lut[i*3+1] = c.g; reds_lut[i*3+2] = c.b;\n}\n\nconst bgCanvas = document.createElement('canvas');\nbgCanvas.width  = BOARD_PX;\nbgCanvas.height = BOARD_PX;\nbgCanvas.style.cssText = 'position:absolute;top:0;left:0;pointer-events:none;z-index:-1;';\ndocument.getElementById('board1').insertBefore(bgCanvas, B1.renderer.svgRoot);\nconst bgCtx = bgCanvas.getContext('2d');\n\nfunction drawStarBg() {\n    const img = bgCtx.createImageData(BOARD_PX, BOARD_PX);\n    const pix = img.data;\n    const omega_eq  = 1.0;\n    const omega_min = omega_eq * (1 - DR_KAPPA);\n    const omega_rng = omega_eq - omega_min;\n\n    for (let py = 0; py < BOARD_PX; py++) {\n        for (let px = 0; px < BOARD_PX; px++) {\n            const xn = (px - STAR_CX) / STAR_R_PX;\n            const yn = (STAR_CY - py) / STAR_R_PX;   // y upward-positive\n            const r2 = xn*xn + yn*yn;\n            const i4 = (py * BOARD_PX + px) * 4;\n            if (r2 > 1.05) { pix[i4+3] = 0; continue; }\n\n            const cz     = Math.sqrt(Math.max(0, 1 - r2));\n            const sinLat = Math.max(-1, Math.min(1, -Math.sin(inc)*yn + Math.cos(inc)*cz));\n            const omega  = omega_eq * (1 - DR_KAPPA * sinLat * sinLat);\n            const tnorm  = Math.max(0, Math.min(1, (omega - omega_min) / omega_rng));\n            const li     = Math.min(N_LUT - 1, Math.round(tnorm * (N_LUT - 1)));\n\n            const disk_a = Math.min(1, Math.max(0, (1 - Math.sqrt(r2)) / (2 / STAR_R_PX)));\n            pix[i4]   = Math.round((1 - DR_MIX) * DR_BASE[0] + DR_MIX * reds_lut[li*3]);\n            pix[i4+1] = Math.round((1 - DR_MIX) * DR_BASE[1] + DR_MIX * reds_lut[li*3+1]);\n            pix[i4+2] = Math.round((1 - DR_MIX) * DR_BASE[2] + DR_MIX * reds_lut[li*3+2]);\n            pix[i4+3] = Math.round(255 * disk_a);\n        }\n    }\n    bgCtx.putImageData(img, 0, 0);\n\n    // Grid lines and spot track drawn on canvas to avoid JSXGraph NaN-gap artifacts.\n    // Each sub-path uses moveTo at the start of each visible segment and lifts the pen\n    // (resets `first`) when the visibility condition flips — no spurious connecting lines.\n    const NG = 300;\n    bgCtx.save();\n    bgCtx.beginPath();\n    bgCtx.arc(STAR_CX, STAR_CY, STAR_R_PX, 0, 2 * Math.PI);\n    bgCtx.clip();\n\n    // Latitude lines — hidden hemisphere (very faint)\n    for (const latD of [0, 30, -30, 60, -60]) {\n        const lr = latD * Math.PI / 180;\n        bgCtx.strokeStyle = 'rgba(255,255,255,0.15)';\n        bgCtx.lineWidth   = 0.5;\n        bgCtx.setLineDash([3, 3]);\n        bgCtx.beginPath();\n        let first = true;\n        for (let k = 0; k <= NG; k++) {\n            const t = k * 2 * Math.PI / NG;\n            if (gz(lr, t) < 0) {\n                const cpx = STAR_CX + pX(lr, t) * STAR_R_PX;\n                const cpy = STAR_CY - pY(lr, t) * STAR_R_PX;\n                first ? bgCtx.moveTo(cpx, cpy) : bgCtx.lineTo(cpx, cpy);\n                first = false;\n            } else { first = true; }\n        }\n        bgCtx.stroke();\n    }\n\n    // Latitude lines — visible hemisphere\n    for (const latD of [0, 30, -30, 60, -60]) {\n        const lr = latD * Math.PI / 180;\n        bgCtx.strokeStyle = 'rgba(255,255,255,' + (latD === 0 ? 0.65 : 0.40) + ')';\n        bgCtx.lineWidth   = latD === 0 ? 1.0 : 0.6;\n        bgCtx.setLineDash(latD === 0 ? [] : [4, 3]);\n        bgCtx.beginPath();\n        let first = true;\n        for (let k = 0; k <= NG; k++) {\n            const t = k * 2 * Math.PI / NG;\n            if (gz(lr, t) >= 0) {\n                const cpx = STAR_CX + pX(lr, t) * STAR_R_PX;\n                const cpy = STAR_CY - pY(lr, t) * STAR_R_PX;\n                first ? bgCtx.moveTo(cpx, cpy) : bgCtx.lineTo(cpx, cpy);\n                first = false;\n            } else { first = true; }\n        }\n        bgCtx.stroke();\n    }\n    bgCtx.setLineDash([]);\n\n    // Longitude lines — visible hemisphere only\n    for (const lonD of [-150, -120, -90, -60, -30, 30, 60, 90, 120, 150]) {\n        const ld = lonD * Math.PI / 180;\n        bgCtx.strokeStyle = 'rgba(204,204,204,0.40)';\n        bgCtx.lineWidth   = 0.6;\n        bgCtx.beginPath();\n        let first = true;\n        for (let k = 0; k <= NG; k++) {\n            const t = -Math.PI / 2 + k * Math.PI / NG;\n            if (gz(t, ld) >= 0) {\n                const cpx = STAR_CX + pX(t, ld) * STAR_R_PX;\n                const cpy = STAR_CY - pY(t, ld) * STAR_R_PX;\n                first ? bgCtx.moveTo(cpx, cpy) : bgCtx.lineTo(cpx, cpy);\n                first = false;\n            } else { first = true; }\n        }\n        bgCtx.stroke();\n    }\n\n    // Spot track — hidden half (dashed gray)\n    bgCtx.strokeStyle = 'rgba(85,85,85,0.30)';\n    bgCtx.lineWidth   = 1.5;\n    bgCtx.setLineDash([5, 4]);\n    bgCtx.beginPath();\n    let fh = true;\n    for (let k = 0; k <= NG; k++) {\n        const t = k * 2 * Math.PI / NG;\n        if (gz(lat, t) < 0) {\n            const cpx = STAR_CX + pX(lat, t) * STAR_R_PX;\n            const cpy = STAR_CY - pY(lat, t) * STAR_R_PX;\n            fh ? bgCtx.moveTo(cpx, cpy) : bgCtx.lineTo(cpx, cpy);\n            fh = false;\n        } else { fh = true; }\n    }\n    bgCtx.stroke();\n\n    // Spot track — visible half (solid dark)\n    bgCtx.strokeStyle = 'rgba(51,51,51,1.0)';\n    bgCtx.lineWidth   = 2.5;\n    bgCtx.setLineDash([]);\n    bgCtx.beginPath();\n    let fv = true;\n    for (let k = 0; k <= NG; k++) {\n        const t = k * 2 * Math.PI / NG;\n        if (gz(lat, t) >= 0) {\n            const cpx = STAR_CX + pX(lat, t) * STAR_R_PX;\n            const cpy = STAR_CY - pY(lat, t) * STAR_R_PX;\n            fv ? bgCtx.moveTo(cpx, cpy) : bgCtx.lineTo(cpx, cpy);\n            fv = false;\n        } else { fv = true; }\n    }\n    bgCtx.stroke();\n\n    bgCtx.restore();\n}\ndrawStarBg();\n\n// Spot dot — position driven by animated phi; dark gray front, light gray back\nconst spotDot = B1.create('point', [() => pX(lat, phi), () => pY(lat, phi)], {\n    fillColor: '#444', strokeColor: '#222',\n    size: 5, name: '', highlight: false,\n});\n\n// Clip spot dot to star disk so it doesn't bleed outside the boundary\n(function () {\n    const defs = document.createElementNS('http://www.w3.org/2000/svg', 'defs');\n    const clip = document.createElementNS('http://www.w3.org/2000/svg', 'clipPath');\n    clip.id = 'starClip';\n    const circ = document.createElementNS('http://www.w3.org/2000/svg', 'circle');\n    circ.setAttribute('cx', String(STAR_CX));\n    circ.setAttribute('cy', String(STAR_CY));\n    circ.setAttribute('r',  String(STAR_R_PX));\n    clip.appendChild(circ);\n    defs.appendChild(clip);\n    B1.renderer.svgRoot.insertBefore(defs, B1.renderer.svgRoot.firstChild);\n    spotDot.rendNode.setAttribute('clip-path', 'url(#starClip)');\n})();\n\n// Spin axis arrow — stems outward from north pole at top of star (y = +sin i)\nconst axisBase = B1.create('point', [() => 0, () =>  Math.sin(inc)], { visible: false });\nconst axisTip  = B1.create('point', [() => 0, () =>  1.35],          { visible: false });\nB1.create('segment', [axisBase, axisTip], {\n    strokeColor: '#888', strokeWidth: 1.5,\n    lastArrow: { type: 1, size: 6 },\n    highlight: false,\n});\n\n// ── Board 2: Visibility V(φ) ──────────────────────────────────────\nconst B2 = JXG.JSXGraph.initBoard('board2', {\n    boundingbox: [-30, 1.32, 460, -1.32],\n    axis: false, grid: false,\n    showNavigation: false, showCopyright: false,\n    pan: { enabled: false }, zoom: { enabled: false },\n});\n\n// Axes\nB2.create('segment', [[0, -1.2], [0,  1.2]], { strokeColor: '#333', strokeWidth: 1, highlight: false });\nB2.create('segment', [[0,  0  ], [360, 0 ]], { strokeColor: '#333', strokeWidth: 1, highlight: false });\n\n// x ticks + labels\n[0, 90, 180, 270, 360].forEach(d => {\n    B2.create('segment', [[d, -0.03], [d, 0.03]], { strokeColor: '#333', strokeWidth: 1, highlight: false });\n    B2.create('text', [d, -0.13, d + '°'], { fontSize: 11, color: '#333', anchorX: 'middle', fixed: true });\n});\n// y ticks + labels\n[-1, -0.5, 0.5, 1].forEach(v => {\n    B2.create('segment', [[-5, v], [5, v]], { strokeColor: '#333', strokeWidth: 1, highlight: false });\n    B2.create('text', [-9, v, v % 1 === 0 ? v.toString() : v.toFixed(1)],\n        { fontSize: 11, color: '#333', anchorX: 'right', fixed: true });\n});\n\n// V = 0 reference line\nB2.create('segment', [[0, 0], [360, 0]], { strokeColor: '#ccc', strokeWidth: 1, dash: 1, highlight: false });\n\n// Axis labels\nB2.create('text', [180, -1.28, 'Longitude  Λ  (degrees)'],\n    { fontSize: 12, color: '#555', anchorX: 'middle', fixed: true });\nB2.create('text', [-28, 0, 'V'],\n    { fontSize: 13, color: '#555', anchorX: 'middle', fixed: true });\n\n// Region labels\nB2.create('text', [368,  0.55, 'visible'], { fontSize: 14, color: '#2255cc', anchorX: 'left', fixed: true });\nB2.create('text', [368, -0.35, 'hidden' ], { fontSize: 14, color: '#999',    anchorX: 'left', fixed: true });\n\n// V(φ) curve — V < 0 dashed gray\nB2.create('curve', [\n    t => t,\n    t => { const v = visV(t); return v < 0 ? v : NaN; },\n    0, 360,\n], { strokeColor: '#aaa', strokeWidth: 2, dash: 2, highlight: false });\n\n// V(φ) curve — V ≥ 0 solid blue\nB2.create('curve', [\n    t => t,\n    t => { const v = visV(t); return v >= 0 ? v : NaN; },\n    0, 360,\n], { strokeColor: '#2255cc', strokeWidth: 2.5, highlight: false });\n\n// Current-phi marker: vertical dashed red line traversing the plot\n// Parametric curve: x = phi_deg (constant), y = t  for t ∈ [−1.2, 1.2]\nB2.create('curve', [\n    t => phi * 180 / Math.PI,\n    t => t,\n    -1.2, 1.2,\n], { strokeColor: '#BF4040', strokeWidth: 1.2, dash: 1, strokeOpacity: 0.65, highlight: false });\n\n// Dot on V(φ) curve at current phi\nconst phiDot = B2.create('point', [\n    () =>  phi * 180 / Math.PI,\n    () => visV(phi * 180 / Math.PI),\n], { fillColor: '#BF4040', strokeColor: '#800000', size: 4, name: '', highlight: false });\n\n// ── Animation loop ────────────────────────────────────────────────\nfunction animStep(ts) {\n    if (lastTime !== null) {\n        phi = (phi + ROT_SPEED * (ts - lastTime)) % (2 * Math.PI);\n    }\n    lastTime = ts;\n\n    // Update spot appearance: dark gray front, light gray back\n    const vis = gz(lat, phi) >= 0;\n    spotDot.setAttribute({\n        fillColor:     vis ? '#444' : '#ccc',\n        fillOpacity:   vis ? 1.0   : 0.5,\n        strokeColor:   vis ? '#222' : '#aaa',\n        strokeOpacity: vis ? 1.0   : 0.5,\n    });\n\n    B1.update();\n    B2.update();\n    animId = requestAnimationFrame(animStep);\n}\n\nfunction togglePlay() {\n    if (playing) {\n        cancelAnimationFrame(animId);\n        animId = null; lastTime = null;\n        playing = false;\n        document.getElementById('playBtn').innerHTML = '&#9654; Play';\n    } else {\n        playing = true;\n        document.getElementById('playBtn').innerHTML = '&#9646;&#9646; Pause';\n        animId = requestAnimationFrame(animStep);\n    }\n}\n\ndocument.getElementById('playBtn').addEventListener('click', togglePlay);\n\n// ── Sliders ───────────────────────────────────────────────────────\nfunction refresh() {\n    lat = latDeg * Math.PI / 180;\n    inc = incDeg * Math.PI / 180;\n    document.getElementById('lv').textContent = latDeg + '°';\n    document.getElementById('iv').textContent = incDeg + '°';\n    document.getElementById('t1').textContent = `Star  (i = ${incDeg}°)`;\n    drawStarBg();\n    B1.update();\n    B2.update();\n}\n\ndocument.getElementById('lsl').addEventListener('input', function () { latDeg = +this.value; refresh(); });\ndocument.getElementById('isl').addEventListener('input', function () { incDeg = +this.value; refresh(); });\n</script>\n</body>\n</html>\n",
+          "locked": true
+        }
+      ],
+      "notes": "",
+      "background": {
+        "type": "color",
+        "color": "#ffffff"
+      },
+      "activeSection": 2
+    },
+    {
       "id": "fa7160f7-29c1-415e-908f-745510415d54",
       "elements": [
         {
@@ -1061,7 +1924,7 @@
           "width": 920,
           "height": 80,
           "zIndex": 1,
-          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 32px;\">A physically-motivated starspot model</span></p>"
+          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">A physically-motivated starspot model</span></p>"
         }
       ],
       "notes": "",
@@ -1082,45 +1945,13 @@
           "width": 920,
           "height": 80,
           "zIndex": 1,
-          "content": "<p><span style=\"color: rgb(226, 232, 240); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;\">Tools for representing time series</span></p>"
+          "content": "<p><span style=\"color: rgb(226, 232, 240); font-family: Barlow, sans-serif; font-size: 28px;\">Tools for representing time series</span></p>"
         }
       ],
       "notes": "",
       "background": {
         "type": "color",
         "color": "#0a0a0f"
-      },
-      "activeSection": 2
-    },
-    {
-      "id": "cbd0de73-331a-4789-8695-53ed1f1ab6ef",
-      "elements": [
-        {
-          "id": "b9ac8fe0-4395-4352-85aa-8bbbf22be7bf",
-          "type": "text",
-          "x": 20,
-          "y": 0,
-          "width": 920,
-          "height": 80,
-          "zIndex": 1,
-          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;\">A physically-motivated starspot model</span></p>"
-        },
-        {
-          "id": "4c5a4492-24fb-4c78-929e-ea8284cd81ae",
-          "type": "text",
-          "x": 60,
-          "y": 80,
-          "width": 600,
-          "height": 143,
-          "zIndex": 1,
-          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;\">Visibility Function</span></p>",
-          "sizeMode": "auto"
-        }
-      ],
-      "notes": "",
-      "background": {
-        "type": "color",
-        "color": "#ffffff"
       },
       "activeSection": 2
     },
@@ -1156,7 +1987,7 @@
           "width": 920,
           "height": 80,
           "zIndex": 1,
-          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: &quot;JetBrains Mono&quot;, monospace; font-size: 28px;\"><strong>spotgp</strong></span><span style=\"color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;\">: a JAX based GP solver + MCMC implementation</span></p>"
+          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: &quot;JetBrains Mono&quot;, monospace; font-size: 28px;\"><strong>spotgp</strong></span><span style=\"color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;\">: </span><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">a JAX based GP solver + MCMC implementation</span></p>"
         },
         {
           "id": "7600f505-27a8-4613-a249-470867994f8f",
@@ -1182,22 +2013,12 @@
       "id": "5a64672e-21b4-4c62-a58f-237b8aed56f8",
       "elements": [
         {
-          "id": "f1468a32-7e14-45fa-8f84-0172bd8804f4",
-          "type": "text",
-          "x": 20,
-          "y": 0,
-          "width": 920,
-          "height": 80,
-          "zIndex": 1,
-          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: &quot;JetBrains Mono&quot;, monospace; font-size: 28px;\"><strong>spotgp</strong></span><span style=\"color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;\">: a JAX based GP solver + MCMC implementation</span></p>"
-        },
-        {
           "id": "9c78ef5a-a8b9-4a1a-b241-f711119f5f11",
           "type": "image",
           "x": 20,
-          "y": 80,
-          "width": 880,
-          "height": 280,
+          "y": 100,
+          "width": 920,
+          "height": 320,
           "zIndex": 2,
           "src": "/uploads/696d8317-c07f-4c50-a79d-c054edd68256.png",
           "objectFit": "contain",
@@ -1207,23 +2028,33 @@
           "id": "7c66ae48-554d-4ba1-aefd-8c763de1ddf6",
           "type": "text",
           "x": 20,
-          "y": 360,
+          "y": 400,
           "width": 920,
           "height": 143,
           "zIndex": 1,
-          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 24px;\">GPs are usually computationally slow, scaling  with n data points</span></p>",
+          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 24px;\">GPs are usually computationally slow, scaling O(n^3) with the number of data points</span></p>",
           "sizeMode": "auto"
         },
         {
           "id": "99ceb4ef-f859-44ff-8449-1871e8320f1b",
           "type": "text",
           "x": 20,
-          "y": 420,
+          "y": 457,
           "width": 920,
           "height": 143,
           "zIndex": 1,
-          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 24px;\">However, the sparse banded structure of the spotgp kernel can be solved O(b^2 n)!</span></p>",
+          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 24px;\">However, the sparse banded structure of the spotgp kernel can be solved O(b^2 n)!</span></p>",
           "sizeMode": "auto"
+        },
+        {
+          "id": "95268bd0-e26f-4571-a941-2f3a9869bb88",
+          "type": "text",
+          "x": 20,
+          "y": 0,
+          "width": 920,
+          "height": 80,
+          "zIndex": 1,
+          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: &quot;JetBrains Mono&quot;, monospace; font-size: 28px;\"><strong>spotgp</strong></span><span style=\"color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;\">: </span><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">a JAX based GP solver + MCMC implementation</span></p>"
         }
       ],
       "notes": "",
@@ -1237,26 +2068,26 @@
       "id": "38f9b904-e774-41cd-a574-ba8689bc400f",
       "elements": [
         {
-          "id": "55ef2301-1505-468b-a459-53085c61e32c",
-          "type": "text",
-          "x": 20,
-          "y": 0,
-          "width": 920,
-          "height": 80,
-          "zIndex": 1,
-          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: &quot;JetBrains Mono&quot;, monospace; font-size: 28px;\"><strong>spotgp</strong></span><span style=\"color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;\">: a JAX based GP solver + MCMC implementation</span></p>"
-        },
-        {
           "id": "a5ef69ef-4afa-443d-ae10-c2dd8d64aa21",
           "type": "image",
           "x": 60,
-          "y": 80,
+          "y": 100,
           "width": 380,
           "height": 460,
           "zIndex": 2,
           "src": "/uploads/401f00a9-616c-4f40-9b20-09a9333c1b61.png",
           "objectFit": "contain",
           "alt": ""
+        },
+        {
+          "id": "0c7dbe0e-f6e4-4430-8ed7-f5929089301a",
+          "type": "text",
+          "x": 20,
+          "y": 0,
+          "width": 920,
+          "height": 80,
+          "zIndex": 1,
+          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: &quot;JetBrains Mono&quot;, monospace; font-size: 28px;\"><strong>spotgp</strong></span><span style=\"color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;\">: </span><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">a JAX based GP solver + MCMC implementation</span></p>"
         }
       ],
       "notes": "",
@@ -1277,7 +2108,7 @@
           "width": 920,
           "height": 80,
           "zIndex": 1,
-          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;\">Under what conditions can we infer differential rotation?</span></p>"
+          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">Under what conditions can we infer </span><span style=\"color: rgb(220, 38, 38); font-family: Barlow, sans-serif; font-size: 28px;\">differential rotation</span><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">?</span></p>"
         },
         {
           "id": "f7081868-32c2-4026-9e95-50024aa6fd82",
@@ -1303,6 +2134,47 @@
       "activeSection": 2
     },
     {
+      "id": "0e97728e-9eac-470f-af7a-3fac6779b79f",
+      "elements": [
+        {
+          "id": "75eebfbb-c06a-4ee3-8f64-8ce4d4fa72b0",
+          "type": "text",
+          "x": 20,
+          "y": 0,
+          "width": 920,
+          "height": 80,
+          "zIndex": 1,
+          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">Under what conditions can we infer </span><span style=\"color: rgb(220, 38, 38); font-family: Barlow, sans-serif; font-size: 28px;\">inclination</span><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">?</span></p>"
+        },
+        {
+          "id": "1aefdcd5-f027-4798-b332-6d9294007c79",
+          "type": "image",
+          "x": 40,
+          "y": 80,
+          "width": 500,
+          "height": 480,
+          "zIndex": 2,
+          "src": "/uploads/46f212e6-6a69-47c0-858e-8c63cda6ab33.png",
+          "objectFit": "contain",
+          "alt": "",
+          "imageW": 560,
+          "imageH": 480,
+          "imageOffsetX": -40,
+          "imageOffsetY": 0,
+          "crop": null,
+          "shadowX": 2,
+          "shadowY": 2,
+          "shadowBlur": 2
+        }
+      ],
+      "notes": "",
+      "background": {
+        "type": "color",
+        "color": "#ffffff"
+      },
+      "activeSection": 2
+    },
+    {
       "id": "7d16c975-b84a-49a1-8d12-c95aca7d1ea3",
       "elements": [
         {
@@ -1313,7 +2185,7 @@
           "width": 920,
           "height": 80,
           "zIndex": 1,
-          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;\">Application to Kepler-63</span></p>"
+          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">Application to Kepler-63</span></p>"
         },
         {
           "id": "06b0b292-cfac-4ddf-865a-aa0f9057b785",
@@ -1390,7 +2262,7 @@
           "width": 380,
           "height": 143,
           "zIndex": 3,
-          "content": "<p style=\"text-align: left;\"><span style=\"color: rgb(226, 232, 240); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;\">Kepler-63 Posterior</span></p>",
+          "content": "<p style=\"text-align: left;\"><span style=\"color: rgb(226, 232, 240); font-family: Barlow, sans-serif; font-size: 28px;\">Kepler-63 Posterior</span></p>",
           "sizeMode": "auto"
         },
         {
@@ -1488,7 +2360,7 @@
           "width": 920,
           "height": 80,
           "zIndex": 1,
-          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;\">Summary</span></p>"
+          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">Summary</span></p>"
         },
         {
           "id": "f68b759b-a72c-4604-9dd6-9be143aadcdb",
@@ -1554,7 +2426,7 @@
           "width": 920,
           "height": 80,
           "zIndex": 1,
-          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;\">Future projects: science applications</span></p>"
+          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">Future projects: science applications</span></p>"
         }
       ],
       "notes": "",
@@ -1575,7 +2447,7 @@
           "width": 920,
           "height": 80,
           "zIndex": 1,
-          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;\">Future projects: extending the GP to multi-wavelength data</span></p>"
+          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">Future projects: extending the GP to multi-wavelength data</span></p>"
         },
         {
           "id": "d3c63272-fcb5-4713-8c10-98db4d38792a",
@@ -1611,7 +2483,7 @@
           "width": 920,
           "height": 80,
           "zIndex": 2,
-          "content": "<p style=\"text-align: right;\"><span style=\"color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;\">Future projects: rotation periods from LSST</span></p>"
+          "content": "<p style=\"text-align: right;\"><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">Future projects: rotation periods from LSST</span></p>"
         },
         {
           "id": "078f04a9-b69f-4792-953b-77dea173b312",
@@ -1666,7 +2538,7 @@
           "width": 920,
           "height": 80,
           "zIndex": 1,
-          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;\">[Acknowledgements]</span></p>"
+          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">[Acknowledgements]</span></p>"
         }
       ],
       "notes": "",
@@ -1687,7 +2559,7 @@
           "width": 920,
           "height": 80,
           "zIndex": 1,
-          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;\">[Final summary slide]</span></p>"
+          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">[Final summary slide]</span></p>"
         }
       ],
       "notes": "",
@@ -1699,12 +2571,15 @@
     }
   ],
   "createdAt": "2026-04-06T20:39:00.855Z",
-  "updatedAt": "2026-05-05T06:18:56.376Z",
+  "updatedAt": "2026-05-07T08:07:42.284Z",
   "showFooter": true,
   "showPageNumbers": true,
   "footerMode": "sequence",
   "sequenceSections": [
-    "Introduction",
+    {
+      "label": "Introduction",
+      "color": "#c8302a"
+    },
     {
       "label": "Binary Tides",
       "color": "#1c71d8"
@@ -1713,12 +2588,18 @@
       "label": "Starspot GP",
       "color": "#26a269"
     },
-    "Conclusion"
+    {
+      "label": "Conclusion",
+      "color": "#bf4040"
+    }
   ],
   "footerFontFamily": "'Fira Code',monospace",
-  "footerColor": "#bf4040",
+  "footerColor": "#c8302a",
   "footerInactiveColor": "#a8b4c8",
   "gridSize": 20,
   "slideWidth": 960,
-  "slideHeight": 600
+  "slideHeight": 600,
+  "guides": [],
+  "showPresentGrid": false,
+  "globalFont": "Barlow, sans-serif"
 }
