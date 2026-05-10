@@ -45,12 +45,27 @@
     }
     #fs-btn:hover { background: rgba(0,0,0,0.75); }
     :fullscreen #fs-btn, :-webkit-full-screen #fs-btn { display: none; }
+    [data-expand] { transition:box-shadow 0.2s, outline 0.2s; outline:2px solid transparent; outline-offset:2px; }
+    [data-expand]:hover { outline-color:rgba(99,102,241,0.6); box-shadow:0 0 16px rgba(99,102,241,0.25); }
+    .expand-overlay { position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.92);z-index:10000;display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:0;transition:opacity 0.2s; }
+    .expand-overlay.active { opacity:1; }
+    .expand-overlay img { max-width:90vw;max-height:90vh;object-fit:contain;cursor:default;border-radius:4px; }
+    .image-popup { position:fixed;z-index:10001;background:rgba(20,20,30,0.95);color:#fff;padding:12px 18px;border-radius:8px;font-family:-apple-system,sans-serif;font-size:15px;line-height:1.5;max-width:400px;box-shadow:0 8px 32px rgba(0,0,0,0.4);border:1px solid rgba(255,255,255,0.1);opacity:0;transition:opacity 0.2s;white-space:pre-wrap;pointer-events:auto; }
+    .image-popup.active { opacity:1; }
+    [data-popup] { transition:box-shadow 0.2s, outline 0.2s; outline:2px solid transparent; outline-offset:2px; }
+    [data-popup]:hover { outline-color:rgba(251,191,36,0.5); box-shadow:0 0 12px rgba(251,191,36,0.2); }
+    .image-caption { position:absolute;left:0;right:0;top:100%;font-size:10px;color:rgba(255,255,255,0.5);font-family:-apple-system,sans-serif;line-height:1.3;padding:3px 2px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis; }
+    .image-caption a { color:rgba(255,255,255,0.5);text-decoration:underline;text-decoration-color:rgba(255,255,255,0.25); }
+    .cite-sup { position:absolute;top:4px;right:4px;background:rgba(0,0,0,0.55);color:rgba(255,255,255,0.85);font-size:10px;font-weight:700;font-family:-apple-system,sans-serif;min-width:16px;height:16px;border-radius:8px;display:flex;align-items:center;justify-content:center;padding:0 4px;pointer-events:none;line-height:1; }
+    .slide-citations { position:absolute;right:2px;top:0;bottom:0;z-index:890;display:flex;align-items:center;pointer-events:none; }
+    .slide-citations-text { writing-mode:vertical-rl;transform:rotate(180deg);font-size:9px;color:rgba(255,255,255,0.45);font-family:-apple-system,sans-serif;line-height:1.3;white-space:nowrap; }
+    .slide-citations-text a { color:rgba(255,255,255,0.45);text-decoration:underline; }
   </style>
 </head>
 <body>
   <div class="reveal">
     <div class="slides">
-    <section data-background-color="#000000" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
+    <section data-background-color="#000000" data-transition="none" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
 <iframe srcdoc="<!DOCTYPE html>
 <html>
 
@@ -208,6 +223,7 @@
 <div style="position:absolute;left:20px;top:20px;width:574.5251396648046px;height:auto;z-index:6;overflow:visible;box-sizing:border-box; padding:8px 12px; color:white;"><p style="text-align: left; line-height: 0.75;"><span style="font-family: Barlow, sans-serif; font-size: 40px; font-weight: 400;">The Role of</span></p><p style="text-align: left; line-height: 0.75;"><span style="color: rgb(200, 48, 42); font-family: Barlow, sans-serif; font-size: 40px; font-weight: 400;">Tides</span></p><p style="text-align: left; line-height: 0.75;"><span style="font-family: Barlow, sans-serif; font-size: 40px; font-weight: 400;">and</span></p><p style="text-align: left; line-height: 0.75;"><span style="color: rgb(220, 38, 38); font-family: Barlow, sans-serif; font-size: 40px; font-weight: 400;">Differential Rotation</span></p><p style="text-align: left; line-height: 0.75;"><span style="font-family: Barlow, sans-serif; font-size: 40px; font-weight: 400;">in the</span></p><p style="text-align: left; line-height: 0.75;"><span style="font-family: Barlow, sans-serif; font-size: 40px; font-weight: 400;">Angular Momentum Evolution</span></p><p style="text-align: left; line-height: 0.75;"><span style="font-family: Barlow, sans-serif; font-size: 40px; font-weight: 400;">of Low-Mass Stars</span></p></div>
       <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span></div></div>
 
+
       
     </section>
     <section data-background-color="#000000" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
@@ -229,6 +245,7 @@
 <div style="position:absolute;left:320px;top:480px;width:36px;height:36px;z-index:10;overflow:hidden;box-sizing:border-box;border-radius:50%;background:#ef4444;display:flex;align-items:center;justify-content:center;color:#ffffff;font-size:16px;font-weight:700;font-family:-apple-system,sans-serif;">7</div>
       <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#c8302a;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span></div><span style="margin-left:12px;flex-shrink:0;">1 / 45</span></div>
 
+
       
     </section>
     <section data-background-color="#000000" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
@@ -241,11 +258,66 @@
 <div style="position:absolute;left:20px;top:400px;width:36px;height:36px;z-index:10;overflow:hidden;box-sizing:border-box;border-radius:50%;background:#ef4444;display:flex;align-items:center;justify-content:center;color:#ffffff;font-size:16px;font-weight:700;font-family:-apple-system,sans-serif;">3</div>
       <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#c8302a;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span></div><span style="margin-left:12px;flex-shrink:0;">2 / 45</span></div>
 
+
       
     </section>
     <section data-background-color="#000000" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
-<div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="font-family: Barlow, sans-serif; font-size: 28px;">Differential rotation drives the stellar dynamo process</span></p></div>
-<div style="position:absolute;left:40px;top:100px;width:620px;height:440px;z-index:2;overflow:hidden;box-sizing:border-box;box-shadow:2px 2px 2px rgba(0,0,0,0.5);"><img src="/uploads/32698af5-fed0-4697-a148-4254f19cc271.png" alt="" style="display:block;width:100%;height:100%;object-fit:contain;" /></div>
+<div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="font-family: Barlow, sans-serif; font-size: 28px; opacity: 0;">Differential rotation drives the stellar dynamo process</span></p></div>
+<iframe srcdoc="<!DOCTYPE html>
+<html>
+<head>
+<meta charset=&quot;utf-8&quot;>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600;700&amp;display=swap');
+  *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:100%; height:100%; overflow:hidden; background:transparent; }
+  body {
+    display:flex; align-items:center;
+    font-family:'Barlow',sans-serif; color:#fff;
+  }
+  .line { white-space:nowrap; }
+  .static {
+    font-size:28px; font-weight:400; letter-spacing:0.01em;
+    opacity:0;
+    animation: fadeIn 0.6s ease-out 0.2s forwards;
+  }
+  .revolve-wrap {
+    display:inline-block; perspective:600px;
+    margin-left:0.3em; vertical-align:baseline;
+  }
+  .revolve {
+    display:inline-block;
+    font-size:28px; font-weight:600; letter-spacing:0.02em;
+    transform-style:preserve-3d;
+    animation: revolveIn 1.4s cubic-bezier(0.23,1,0.32,1) 0.6s forwards,
+               drift 12s ease-in-out 2.4s infinite;
+    opacity:0;
+    transform:rotateY(-180deg);
+  }
+
+  @keyframes fadeIn {
+    to { opacity:1; }
+  }
+  @keyframes revolveIn {
+    0%   { opacity:0; transform:rotateY(-180deg); }
+    30%  { opacity:1; }
+    100% { opacity:1; transform:rotateY(0deg); }
+  }
+  @keyframes drift {
+    0%, 100% { transform:rotateY(0deg); }
+    50%      { transform:rotateY(8deg); }
+  }
+</style>
+</head>
+<body>
+  <div class=&quot;line&quot;>
+    <span class=&quot;static&quot;>Differential rotation drives the stellar</span>
+    <span class=&quot;revolve-wrap&quot;><span class=&quot;revolve&quot;>revolution</span></span>
+  </div>
+</body>
+</html>
+" style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box;border:none;" scrolling="no"></iframe>
+<div data-expand="true" style="position:absolute;left:40px;top:100px;width:620px;height:440px;z-index:2;overflow:hidden;box-sizing:border-box;box-shadow:2px 2px 2px rgba(0,0,0,0.5);border-radius:4px;cursor:pointer;"><img src="/uploads/32698af5-fed0-4697-a148-4254f19cc271.png" alt="" style="display:block;width:100%;height:100%;object-fit:contain;" /></div>
 <div style="position:absolute;left:660px;top:260px;width:260px;height:80px;z-index:3;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p style="text-align: right; line-height: 1;"><span style="color: rgb(255, 255, 255); font-size: 20px;">dynamo process</span></p></div>
 <div style="position:absolute;left:660px;top:140px;width:260px;height:80px;z-index:3;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p style="text-align: right; line-height: 1;"><span style="color: rgb(255, 255, 255); font-size: 20px;">differential rotation</span></p></div>
 <div style="position:absolute;left:660px;top:400px;width:260px;height:80px;z-index:3;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p style="text-align: right; line-height: 1;"><span style="color: rgb(255, 255, 255); font-size: 20px;">activity cycles</span></p></div>
@@ -253,6 +325,7 @@
 <div style="position:absolute;left:924px;top:160px;width:36px;height:36px;z-index:10;overflow:hidden;box-sizing:border-box;border-radius:50%;background:#ef4444;display:flex;align-items:center;justify-content:center;color:#ffffff;font-size:16px;font-weight:700;font-family:-apple-system,sans-serif;">4</div>
 <div style="position:absolute;left:920px;top:420px;width:36px;height:36px;z-index:10;overflow:hidden;box-sizing:border-box;border-radius:50%;background:#ef4444;display:flex;align-items:center;justify-content:center;color:#ffffff;font-size:16px;font-weight:700;font-family:-apple-system,sans-serif;">6</div>
       <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#c8302a;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span></div><span style="margin-left:12px;flex-shrink:0;">3 / 45</span></div>
+
 
       
     </section>
@@ -263,9 +336,10 @@
 <div style="position:absolute;left:500px;top:30px;width:440px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p style="text-align: right;"><span style="color: rgb(220, 38, 38); font-family: Barlow, sans-serif; font-size: 28px;"><em>revolution</em></span></p></div>
 <div style="position:absolute;left:360px;top:20px;width:180px;height:160px;z-index:2;overflow:hidden;box-sizing:border-box;"><img src="/uploads/7c5b2ba8-a5b1-4905-b7fe-8bda41f8f745.png" alt="" style="display:block;width:100%;height:100%;object-fit:contain;" /></div>
 <div style="position:absolute;left:20px;top:20px;width:200px;height:140px;z-index:2;overflow:hidden;box-sizing:border-box;"><img src="/uploads/93a26e03-ce1e-4ace-9ce1-dc87c96131a0.png" alt="" style="display:block;width:100%;height:100%;object-fit:contain;" /></div>
-<div style="position:absolute;left:0px;top:240px;width:400px;height:300px;z-index:2;overflow:hidden;box-sizing:border-box;"><img src="/uploads/b2fbd6c8-9a1a-4120-93a1-0b4a720a4868.png" alt="" style="display:block;width:100%;height:100%;object-fit:contain;" /></div>
-<div style="position:absolute;left:460px;top:180px;width:400px;height:300px;z-index:2;overflow:hidden;box-sizing:border-box;"><img src="/uploads/de640b13-9a11-4916-99be-35fc6c830106.png" alt="" style="display:block;width:100%;height:100%;object-fit:contain;" /></div>
+<div data-expand="true" style="position:absolute;left:20px;top:220px;width:387.9329608938547px;height:300px;z-index:2;overflow:visible;box-sizing:border-box;cursor:pointer;"><div style="width:100%;height:100%;overflow:hidden;position:relative;"><img src="/uploads/b2fbd6c8-9a1a-4120-93a1-0b4a720a4868.png" alt="" style="display:block;width:100%;height:100%;object-fit:fill;" /></div><div class="image-caption" style="text-align:right;">McQullan et al. 2014</div></div>
+<div data-expand="true" style="position:absolute;left:462.01117318435763px;top:290.88268156424584px;width:400px;height:157px;z-index:2;overflow:hidden;box-sizing:border-box;cursor:pointer;"><img src="/uploads/de640b13-9a11-4916-99be-35fc6c830106.png" alt="" style="position:absolute;left:0px;top:-72px;width:400px;height:300px;object-fit:contain;" /></div>
       <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#c8302a;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span></div><span style="margin-left:12px;flex-shrink:0;">4 / 45</span></div>
+
 
       
     </section>
@@ -276,6 +350,7 @@
 <div style="position:absolute;left:0px;top:0px;width:960px;height:120px;z-index:3;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p style="text-align: center; line-height: 1;"><span style="font-size: 36px; font-weight: 300;">The Role of </span><span style="color: rgb(37, 99, 235); font-size: 36px; font-weight: 300;">Tides</span><span style="font-size: 36px; font-weight: 300;"> and </span><span style="color: rgb(16, 185, 129); font-size: 36px; font-weight: 300;">Differential Rotation</span><span style="font-size: 36px; font-weight: 300;"> in the Angular Momentum Evolution of Low-Mass Stars</span></p></div>
 <div style="position:absolute;left:100px;top:180px;width:320px;height:300px;z-index:4;overflow:hidden;box-sizing:border-box;"><img src="/uploads/bfc6a068-f548-4452-b578-83d8b280888d.apng" alt="" style="position:absolute;left:-189px;top:-86px;width:820px;height:500px;object-fit:contain;" /></div>
       <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#c8302a;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span></div><span style="margin-left:12px;flex-shrink:0;">5 / 45</span></div>
+
 
       
     </section>
@@ -292,6 +367,7 @@
 <div style="position:absolute;left:500px;top:360px;width:36px;height:36px;z-index:10;overflow:hidden;box-sizing:border-box;border-radius:50%;background:#ef4444;display:flex;align-items:center;justify-content:center;color:#ffffff;font-size:16px;font-weight:700;font-family:-apple-system,sans-serif;">3</div>
       <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span></div></div>
 
+
       
     </section>
     <section data-background-color="#000000" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
@@ -299,12 +375,14 @@
 <div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="font-family: Barlow, sans-serif; font-size: 28px;">What types of binaries are we modeling?</span></p></div>
       <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#c8302a;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span></div><span style="margin-left:12px;flex-shrink:0;">6 / 45</span></div>
 
+
       
     </section>
-    <section data-background-color="#ffffff" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
+    <section data-background-color="#ffffff" data-transition="none" data-custom-transition="differential-rotation" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
 <div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;">Modeling the dynamical evolution of binary stars</span></p></div>
 <div style="position:absolute;left:20px;top:160px;width:920px;height:220px;z-index:2;overflow:hidden;box-sizing:border-box;box-shadow:2px 2px 2px rgba(0,0,0,0.5);"><img src="/uploads/fdb18096-1990-44e2-a475-a0ab37e3c05d.png" alt="" style="display:block;width:100%;height:100%;object-fit:contain;" /></div>
       <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#c8302a;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span></div><span style="margin-left:12px;flex-shrink:0;">7 / 45</span></div>
+
 
       
     </section>
@@ -312,8 +390,9 @@
 <div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p style="text-align: left;"><span style="font-family: Barlow, sans-serif; font-size: 28px;">An introduction to tides</span></p></div>
 <div style="position:absolute;left:400px;top:0px;width:560px;height:560px;z-index:2;overflow:hidden;box-sizing:border-box;"><svg width="100%" height="100%" viewBox="0 0 560 560" preserveAspectRatio="none" style="position:absolute;inset:0;overflow:visible;"><g fill="#ffffff" stroke="none" stroke-width="0"><rect x="0" y="0" width="560" height="560" rx="0" /></g></svg></div>
 <div style="position:absolute;left:400px;top:80px;width:560px;height:390px;z-index:2;overflow:hidden;box-sizing:border-box;"><img src="/uploads/14e91fd0-7414-40b5-8d9f-0472b9a69a90.png" alt="" style="position:absolute;left:0px;top:-76px;width:560px;height:540px;object-fit:contain;" /></div>
-<div style="position:absolute;left:20px;top:120px;width:500px;height:auto;z-index:3;overflow:visible;box-sizing:border-box; padding:8px 12px; color:white;"><p style="text-align: left; line-height: 1;"><span style="color: rgb(226, 232, 240); font-family: Barlow, sans-serif; font-size: 24px;">Gravitational interactions </span></p><p style="text-align: left; line-height: 1;"><span style="color: rgb(226, 232, 240); font-family: Barlow, sans-serif; font-size: 24px;">can deform the shape of the star, </span></p><p style="text-align: left; line-height: 1;"><span style="color: rgb(226, 232, 240); font-family: Barlow, sans-serif; font-size: 24px;">introducing a "tidal bulge"</span></p></div>
+<div style="position:absolute;left:20px;top:120px;width:500px;height:auto;z-index:3;overflow:visible;box-sizing:border-box; padding:8px 12px; color:white;"><p style="text-align: left; line-height: 0.85;"><span style="color: rgb(226, 232, 240); font-family: Barlow, sans-serif; font-size: 24px;">Gravitational interactions</span></p><p style="text-align: left; line-height: 0.85;"><span style="color: rgb(226, 232, 240); font-family: Barlow, sans-serif; font-size: 24px;">can deform the shape of the star,</span></p><p style="text-align: left; line-height: 0.85;"><span style="color: rgb(226, 232, 240); font-family: Barlow, sans-serif; font-size: 24px;">introducing a "tidal bulge"</span></p></div>
       <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#c8302a;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span></div><span style="margin-left:12px;flex-shrink:0;">8 / 45</span></div>
+
 
       
     </section>
@@ -330,12 +409,14 @@
 <div style="position:absolute;left:140px;top:480px;width:660px;height:auto;z-index:10;overflow:visible;box-sizing:border-box; padding:8px 12px; color:white;"><p style="text-align: center; line-height: 1;"><span style="color: rgb(226, 232, 240); font-family: Barlow, sans-serif; font-size: 20px;">Tidal friction causes the system to dissipate energy in the form of heat</span></p></div>
       <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#c8302a;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span></div><span style="margin-left:12px;flex-shrink:0;">9 / 45</span></div>
 
+
       
     </section>
     <section data-background-color="#000000" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
 <div style="position:absolute;left:0px;top:80px;width:960px;height:479px;z-index:1;overflow:hidden;box-sizing:border-box;"><img src="/uploads/bd22d501-550c-4071-b1c3-3003b8e3ecac/5306903b-433f-4931-981f-0de5d1b01cd8.png" alt="" style="position:absolute;left:0px;top:-61px;width:960px;height:540px;object-fit:contain;" /></div>
 <div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:3;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(255, 255, 255); font-size: 28px;">The observed behavior of short-period binaries</span></p></div>
       <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#c8302a;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span></div><span style="margin-left:12px;flex-shrink:0;">10 / 45</span></div>
+
 
       
     </section>
@@ -344,12 +425,14 @@
 <div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="font-family: Barlow, sans-serif; font-size: 28px;">Orbital evolution: Constant Phase Lag (CPL) model</span></p></div>
       <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#c8302a;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span></div><span style="margin-left:12px;flex-shrink:0;">11 / 45</span></div>
 
+
       
     </section>
-    <section data-background-color="#000000" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
+    <section data-background-color="#000000" data-transition="fade" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
 <div style="position:absolute;left:0px;top:80px;width:960px;height:480px;z-index:1;overflow:hidden;box-sizing:border-box;"><img src="/uploads/bd22d501-550c-4071-b1c3-3003b8e3ecac/6087445d-d0f5-41dc-afe6-752d64d787db.png" alt="" style="position:absolute;left:0px;top:-60px;width:960px;height:540px;object-fit:contain;" /></div>
 <div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="font-family: Barlow, sans-serif; font-size: 28px;">Orbital evolution: Constant Time Lag (CTL) model</span></p></div>
       <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#c8302a;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span></div><span style="margin-left:12px;flex-shrink:0;">12 / 45</span></div>
+
 
       
     </section>
@@ -358,12 +441,14 @@
 <div style="position:absolute;left:40px;top:80px;width:880px;height:460px;z-index:2;overflow:hidden;box-sizing:border-box;"><img src="/uploads/07e55fef-2b26-4a85-9245-d0cbe1fcd2c7.png" alt="" style="display:block;width:100%;height:100%;object-fit:contain;" /></div>
       <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#c8302a;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span></div><span style="margin-left:12px;flex-shrink:0;">13 / 45</span></div>
 
+
       
     </section>
-    <section data-background-color="#ffffff" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
+    <section data-background-color="#ffffff" data-transition="fade" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
 <div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;">Sensitivity analysis: CPL + stellar</span></p></div>
 <div style="position:absolute;left:40px;top:60px;width:880px;height:500px;z-index:2;overflow:hidden;box-sizing:border-box;"><img src="/uploads/60fcb23e-3e09-4f1d-a7b7-67ad67b446fb.png" alt="" style="display:block;width:100%;height:100%;object-fit:contain;" /></div>
       <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#c8302a;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span></div><span style="margin-left:12px;flex-shrink:0;">14 / 45</span></div>
+
 
       
     </section>
@@ -372,6 +457,7 @@
 <div style="position:absolute;left:20px;top:140px;width:400px;height:300px;z-index:2;overflow:hidden;box-sizing:border-box;"><img src="/uploads/85376a52-5cc4-42e5-89d6-d6be50106779.gif" alt="" style="display:block;width:100%;height:100%;object-fit:contain;" /></div>
 <div style="position:absolute;left:600px;top:200px;width:280px;height:40px;z-index:3;overflow:hidden;box-sizing:border-box;"><svg width="100%" height="100%" viewBox="0 0 280 40" preserveAspectRatio="none" style="position:absolute;inset:0;overflow:visible;"><line x1="3" y1="20" x2="277" y2="20" stroke="#3d3846" stroke-width="3" fill="none" /></svg></div>
       <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#c8302a;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span></div><span style="margin-left:12px;flex-shrink:0;">15 / 45</span></div>
+
 
       
     </section>
@@ -382,11 +468,13 @@
 <div style="position:absolute;left:600px;top:200px;width:280px;height:40px;z-index:3;overflow:hidden;box-sizing:border-box;"><svg width="100%" height="100%" viewBox="0 0 280 40" preserveAspectRatio="none" style="position:absolute;inset:0;overflow:visible;"><line x1="3" y1="20" x2="277" y2="20" stroke="#3d3846" stroke-width="3" fill="none" /></svg></div>
       <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#c8302a;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span></div><span style="margin-left:12px;flex-shrink:0;">16 / 45</span></div>
 
+
       
     </section>
     <section data-background-color="#ffffff" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
 <div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;">Simulated posteriors and degeneracy analysis</span></p></div>
       <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#c8302a;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span></div><span style="margin-left:12px;flex-shrink:0;">17 / 45</span></div>
+
 
       
     </section>
@@ -395,13 +483,15 @@
 <div style="position:absolute;left:0px;top:80px;width:560px;height:460px;z-index:2;overflow:hidden;box-sizing:border-box;"><img src="/uploads/b9eacb7e-27cc-4b5b-bf84-5db4cee5b957.png" alt="" style="display:block;width:100%;height:100%;object-fit:contain;" /></div>
       <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#c8302a;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span></div><span style="margin-left:12px;flex-shrink:0;">18 / 45</span></div>
 
+
       
     </section>
     <section data-background-color="#ffffff" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
 <div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;">Could differential rotation explain subsynchronous binaries?</span></p></div>
 <div style="position:absolute;left:40px;top:460px;width:420px;height:60px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 20px;">Hobson-Ritz &amp; Birky 2025</span></p></div>
-<div style="position:absolute;left:40px;top:80px;width:720px;height:400px;z-index:2;overflow:hidden;box-sizing:border-box;box-shadow:2px 2px 2px rgba(0,0,0,0.5);"><img src="/uploads/02af9547-8d1e-4724-bd8a-d0f117676cd6.png" alt="" style="display:block;width:100%;height:100%;object-fit:contain;" /></div>
+<div data-expand="true" style="position:absolute;left:40px;top:80px;width:720px;height:400px;z-index:2;overflow:hidden;box-sizing:border-box;box-shadow:2px 2px 2px rgba(0,0,0,0.5);cursor:pointer;"><img src="/uploads/02af9547-8d1e-4724-bd8a-d0f117676cd6.png" alt="" style="display:block;width:100%;height:100%;object-fit:contain;" /></div>
       <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#c8302a;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span></div><span style="margin-left:12px;flex-shrink:0;">19 / 45</span></div>
+
 
       
     </section>
@@ -419,6 +509,7 @@
 <div style="position:absolute;left:80px;top:420px;width:36px;height:36px;z-index:10;overflow:hidden;box-sizing:border-box;border-radius:50%;background:#ef4444;display:flex;align-items:center;justify-content:center;color:#ffffff;font-size:16px;font-weight:700;font-family:-apple-system,sans-serif;">4</div>
       <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span></div></div>
 
+
       
     </section>
     <section data-background-color="#ffffff" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
@@ -427,6 +518,7 @@
 <div style="position:absolute;left:20px;top:100px;width:800px;height:auto;z-index:1;overflow:visible;box-sizing:border-box; padding:8px 12px; color:white;"><p style="line-height: 0.85;"><span style="color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 24px; font-weight: 400;">Aside from the sun, we </span><span style="color: rgb(220, 38, 38); font-family: Barlow, sans-serif; font-size: 24px; font-weight: 500;">cannot spatially resolve</span><span style="color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 24px; font-weight: 500;"><strong> </strong></span><span style="color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 24px; font-weight: 400;">images of other stars</span></p></div>
 <div style="position:absolute;left:480px;top:180px;width:400px;height:360px;z-index:2;overflow:hidden;box-sizing:border-box;"><img src="/uploads/c5edb70e-0d20-4c98-a7e1-b4e455ae9024.gif" alt="" style="display:block;width:100%;height:100%;object-fit:contain;" /></div>
       <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#c8302a;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span></div><span style="margin-left:12px;flex-shrink:0;">20 / 45</span></div>
+
 
       
     </section>
@@ -439,6 +531,7 @@
 <div style="position:absolute;left:480px;top:280px;width:440px;height:280px;z-index:2;overflow:hidden;box-sizing:border-box;"><img src="/uploads/b42a3aa4-e175-4a80-a86e-904c1200b61d.png" alt="" style="display:block;width:100%;height:100%;object-fit:contain;" /></div>
       <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#c8302a;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span></div><span style="margin-left:12px;flex-shrink:0;">21 / 45</span></div>
 
+
       
     </section>
     <section data-background-color="#ffffff" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
@@ -446,17 +539,22 @@
 <div style="position:absolute;left:120px;top:40px;width:380px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p style="text-align: left;"><span style="color: rgb(148, 163, 184); font-family: Barlow, sans-serif; font-size: 24px;"><em>maybe even hopeless...?</em></span></p></div>
       <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#c8302a;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span></div><span style="margin-left:12px;flex-shrink:0;">22 / 45</span></div>
 
+
       
     </section>
     <section data-background-color="#ffffff" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
 <div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;">Methods for measuring differential rotation and their limitations</span></p></div>
+<div data-expand="true" style="position:absolute;left:100px;top:140px;width:199.55307262569835px;height:160px;z-index:2;overflow:hidden;box-sizing:border-box;border-radius:4px;cursor:pointer;"><img src="/uploads/862112f1-95ac-484b-99c8-462c705bf726.jpg" alt="" style="display:block;width:100%;height:100%;object-fit:fill;" /></div>
+<div data-expand="true" style="position:absolute;left:600px;top:140px;width:200px;height:160px;z-index:2;overflow:hidden;box-sizing:border-box;border-radius:4px;cursor:pointer;"><img src="/uploads/5bb4cb64-556e-4400-b627-d7570299d4ea.png" alt="" style="display:block;width:100%;height:100%;object-fit:fill;" /></div>
       <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#c8302a;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span></div><span style="margin-left:12px;flex-shrink:0;">23 / 45</span></div>
+
 
       
     </section>
     <section data-background-color="#ffffff" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
 <div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;">What physical information do GP models encode?</span></p></div>
       <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#c8302a;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span></div><span style="margin-left:12px;flex-shrink:0;">24 / 45</span></div>
+
 
       
     </section>
@@ -465,12 +563,14 @@
 <div style="position:absolute;left:80px;top:40px;width:820px;height:auto;z-index:1;overflow:visible;box-sizing:border-box; padding:8px 12px; color:white;"><p style="text-align: left;"><span style="color: rgb(148, 163, 184); font-family: Barlow, sans-serif; font-size: 24px;"><em>in which hyperparameters of the kernel represent physical spot properties?</em></span></p></div>
       <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#c8302a;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span></div><span style="margin-left:12px;flex-shrink:0;">25 / 45</span></div>
 
+
       
     </section>
     <section data-background-color="#ffffff" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
 <div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;">A physically-motivated starspot model</span></p></div>
 <div style="position:absolute;left:20px;top:80px;width:900px;height:400px;z-index:2;overflow:hidden;box-sizing:border-box;"><img src="/uploads/681bf995-fa33-4f19-92e5-4abb068d9707.gif" alt="" style="display:block;width:100%;height:100%;object-fit:contain;" /></div>
       <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#c8302a;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span></div><span style="margin-left:12px;flex-shrink:0;">26 / 45</span></div>
+
 
       
     </section>
@@ -885,11 +985,13 @@ document.getElementById('isl').addEventListener('input', function () { incDeg = 
 " style="position:absolute;left:20px;top:60px;width:960px;height:540px;z-index:2;overflow:hidden;box-sizing:border-box;border:none;" scrolling="no"></iframe>
       <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#c8302a;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span></div><span style="margin-left:12px;flex-shrink:0;">27 / 45</span></div>
 
+
       
     </section>
     <section data-background-color="#ffffff" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
 <div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;">A physically-motivated starspot model</span></p></div>
       <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#c8302a;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span></div><span style="margin-left:12px;flex-shrink:0;">28 / 45</span></div>
+
 
       
     </section>
@@ -897,11 +999,13 @@ document.getElementById('isl').addEventListener('input', function () { incDeg = 
 <div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(226, 232, 240); font-family: Barlow, sans-serif; font-size: 28px;">Tools for representing time series</span></p></div>
       <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#c8302a;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span></div><span style="margin-left:12px;flex-shrink:0;">29 / 45</span></div>
 
+
       
     </section>
     <section data-background-color="#0a0a0f" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
 <iframe srcdoc="<!doctype html><html><head><meta charset=&quot;utf-8&quot;><link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css&quot;><script src=&quot;https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js&quot;></script><style>*{margin:0;padding:0;box-sizing:border-box}html,body{width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:transparent;overflow:hidden;color:white}.katex{font-size:1.4em}svg{max-width:100%;max-height:100%}</style></head><body><div id=&quot;m&quot;></div><script>try{katex.render(&quot;\\begin{equation*}\n    \\boxed{\n    \\mathcal{K}(\\tau) = \\frac{N_{\\rm spot}\\,(1 - f_{\\rm spot})^2\\,\\alpha_{\\max}^4}{\\pi^2}\n    \\, \\int R_\\Gamma(\\tau) \\left[\\sum_{n} |c_n(\\Phi)|^2\\, \\cos\\!\\big(n\\omega_0(\\Phi)\\,\\tau\\big) \\right] p(\\Phi) \\, d \\Phi }\n\\end{equation*}&quot;,document.getElementById('m'),{displayMode:true,throwOnError:false})}catch(e){document.getElementById('m').textContent=e.message}</script></body></html>" style="position:absolute;left:69.8324022346369px;top:0px;width:890.1675977653631px;height:225.13966480446925px;z-index:2;overflow:hidden;box-sizing:border-box;border:none;background:transparent;" scrolling="no"></iframe>
       <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#c8302a;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span></div><span style="margin-left:12px;flex-shrink:0;">30 / 45</span></div>
+
 
       
     </section>
@@ -909,6 +1013,7 @@ document.getElementById('isl').addEventListener('input', function () { incDeg = 
 <div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(51, 65, 85); font-family: &quot;JetBrains Mono&quot;, monospace; font-size: 28px;"><strong>spotgp</strong></span><span style="color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;">: </span><span style="color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;">a JAX based GP solver + MCMC implementation</span></p></div>
 <div style="position:absolute;left:20px;top:80px;width:600px;height:460px;z-index:2;overflow:hidden;box-sizing:border-box;"><img src="/uploads/452971c7-b1df-4415-9d8d-afc999c77129.png" alt="" style="display:block;width:100%;height:100%;object-fit:contain;" /></div>
       <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#c8302a;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span></div><span style="margin-left:12px;flex-shrink:0;">31 / 45</span></div>
+
 
       
     </section>
@@ -919,12 +1024,14 @@ document.getElementById('isl').addEventListener('input', function () { incDeg = 
 <div style="position:absolute;left:20px;top:100px;width:920px;height:320px;z-index:2;overflow:hidden;box-sizing:border-box;"><img src="/uploads/696d8317-c07f-4c50-a79d-c054edd68256.png" alt="" style="display:block;width:100%;height:100%;object-fit:contain;" /></div>
       <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#c8302a;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span></div><span style="margin-left:12px;flex-shrink:0;">32 / 45</span></div>
 
+
       
     </section>
     <section data-background-color="#ffffff" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
 <div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(51, 65, 85); font-family: &quot;JetBrains Mono&quot;, monospace; font-size: 28px;"><strong>spotgp</strong></span><span style="color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;">: </span><span style="color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;">a JAX based GP solver + MCMC implementation</span></p></div>
 <div style="position:absolute;left:60px;top:100px;width:380px;height:460px;z-index:2;overflow:hidden;box-sizing:border-box;"><img src="/uploads/401f00a9-616c-4f40-9b20-09a9333c1b61.png" alt="" style="display:block;width:100%;height:100%;object-fit:contain;" /></div>
       <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#c8302a;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span></div><span style="margin-left:12px;flex-shrink:0;">33 / 45</span></div>
+
 
       
     </section>
@@ -933,6 +1040,7 @@ document.getElementById('isl').addEventListener('input', function () { incDeg = 
 <div style="position:absolute;left:20px;top:80px;width:520px;height:480px;z-index:2;overflow:hidden;box-sizing:border-box;box-shadow:2px 2px 2px rgba(0,0,0,0.5);"><img src="/uploads/41ba5051-5fc2-4885-a306-2c1486099f41.png" alt="" style="display:block;width:100%;height:100%;object-fit:contain;" /></div>
       <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#c8302a;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span></div><span style="margin-left:12px;flex-shrink:0;">34 / 45</span></div>
 
+
       
     </section>
     <section data-background-color="#ffffff" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
@@ -940,12 +1048,14 @@ document.getElementById('isl').addEventListener('input', function () { incDeg = 
 <div style="position:absolute;left:40px;top:80px;width:500px;height:480px;z-index:2;overflow:hidden;box-sizing:border-box;box-shadow:2px 2px 2px rgba(0,0,0,0.5);"><img src="/uploads/46f212e6-6a69-47c0-858e-8c63cda6ab33.png" alt="" style="position:absolute;left:-40px;top:0px;width:560px;height:480px;object-fit:contain;" /></div>
       <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#c8302a;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span></div><span style="margin-left:12px;flex-shrink:0;">35 / 45</span></div>
 
+
       
     </section>
     <section data-background-color="#ffffff" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
 <div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;">Application to Kepler-63</span></p></div>
-<div style="position:absolute;left:0px;top:100px;width:960px;height:280px;z-index:2;overflow:hidden;box-sizing:border-box;box-shadow:2px 2px 2px rgba(0,0,0,0.5);"><img src="/uploads/5a6030b8-42c1-40a7-ad10-9b5a7ec9aee4.png" alt="" style="display:block;width:100%;height:100%;object-fit:contain;" /></div>
+<div style="position:absolute;left:0px;top:100px;width:960px;height:280px;z-index:2;overflow:hidden;box-sizing:border-box;box-shadow:2px 2px 2px rgba(0,0,0,0.5);border-radius:4px;"><img src="/uploads/5a6030b8-42c1-40a7-ad10-9b5a7ec9aee4.png" alt="" style="display:block;width:100%;height:100%;object-fit:contain;" /></div>
       <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#c8302a;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span></div><span style="margin-left:12px;flex-shrink:0;">36 / 45</span></div>
+
 
       
     </section>
@@ -953,6 +1063,7 @@ document.getElementById('isl').addEventListener('input', function () { incDeg = 
 <div style="position:absolute;left:500px;top:0px;width:460px;height:600px;z-index:2;overflow:hidden;box-sizing:border-box;"><svg width="100%" height="100%" viewBox="0 0 460 600" preserveAspectRatio="none" style="position:absolute;inset:0;overflow:visible;"><g fill="#000000" stroke="none" stroke-width="0"><rect x="0" y="0" width="460" height="600" rx="0" /></g></svg></div>
 <div style="position:absolute;left:20px;top:10px;width:460px;height:560px;z-index:2;overflow:hidden;box-sizing:border-box;"><img src="/uploads/9f6d97f0-0336-41d5-be66-2c207016e88c.png" alt="" style="display:block;width:100%;height:100%;object-fit:contain;" /></div>
       <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#c8302a;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span></div><span style="margin-left:12px;flex-shrink:0;">37 / 45</span></div>
+
 
       
     </section>
@@ -962,17 +1073,20 @@ document.getElementById('isl').addEventListener('input', function () { incDeg = 
 <div style="position:absolute;left:20px;top:0px;width:380px;height:auto;z-index:3;overflow:visible;box-sizing:border-box; padding:8px 12px; color:white;"><p style="text-align: left;"><span style="color: rgb(226, 232, 240); font-family: Barlow, sans-serif; font-size: 28px;">Kepler-63 Posterior</span></p></div>
       <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#c8302a;font-weight:700;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span></div><span style="margin-left:12px;flex-shrink:0;">38 / 45</span></div>
 
+
       
     </section>
     <section data-background-color="#0a0a0f" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
 <div style="position:absolute;left:0px;top:103.01675977653632px;width:960px;height:254.8603351955307px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p style="text-align: center;"><span style="font-family: &quot;Computer Modern Sans&quot;, sans-serif; font-size: 40px;">Future and Conclusions</span></p></div>
       <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span></div></div>
 
+
       
     </section>
     <section data-background-color="#ffffff" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
 <div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;">Summary</span></p></div>
       <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#c8302a;font-weight:700;">[object Object]</span></div><span style="margin-left:12px;flex-shrink:0;">39 / 45</span></div>
+
 
       
     </section>
@@ -983,11 +1097,13 @@ document.getElementById('isl').addEventListener('input', function () { incDeg = 
 <div style="position:absolute;left:480px;top:300px;width:400px;height:260px;z-index:2;overflow:hidden;box-sizing:border-box;box-shadow:2px 2px 2px rgba(0,0,0,0.5);"><img src="/uploads/b3f64836-198a-4c0e-9f82-4a1742253937.png" alt="" style="display:block;width:100%;height:100%;object-fit:contain;" /></div>
       <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#c8302a;font-weight:700;">[object Object]</span></div><span style="margin-left:12px;flex-shrink:0;">40 / 45</span></div>
 
+
       
     </section>
     <section data-background-color="#ffffff" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
 <div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;">Future projects: science applications</span></p></div>
       <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#c8302a;font-weight:700;">[object Object]</span></div><span style="margin-left:12px;flex-shrink:0;">41 / 45</span></div>
+
 
       
     </section>
@@ -996,6 +1112,7 @@ document.getElementById('isl').addEventListener('input', function () { incDeg = 
 <div style="position:absolute;left:40px;top:100px;width:600px;height:460px;z-index:2;overflow:hidden;box-sizing:border-box;box-shadow:2px 2px 2px rgba(0,0,0,0.5);"><img src="/uploads/f3f77826-ba0c-472f-b67c-f1b18bc28967.png" alt="" style="display:block;width:100%;height:100%;object-fit:contain;" /></div>
       <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#c8302a;font-weight:700;">[object Object]</span></div><span style="margin-left:12px;flex-shrink:0;">42 / 45</span></div>
 
+
       
     </section>
     <section data-background-color="#ffffff" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
@@ -1003,11 +1120,13 @@ document.getElementById('isl').addEventListener('input', function () { incDeg = 
 <div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:2;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p style="text-align: right;"><span style="color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;">Future projects: rotation periods from LSST</span></p></div>
       <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#c8302a;font-weight:700;">[object Object]</span></div><span style="margin-left:12px;flex-shrink:0;">43 / 45</span></div>
 
+
       
     </section>
     <section data-background-color="#0a0a0f" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
 <div style="position:absolute;left:0px;top:103.01675977653632px;width:960px;height:254.8603351955307px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p style="text-align: center;"><span style="font-family: &quot;Computer Modern Sans&quot;, sans-serif; font-size: 40px;">Ackowledgements</span></p></div>
       <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span></div></div>
+
 
       
     </section>
@@ -1015,11 +1134,13 @@ document.getElementById('isl').addEventListener('input', function () { incDeg = 
 <div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;">[Acknowledgements]</span></p></div>
       <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#c8302a;font-weight:700;">[object Object]</span></div><span style="margin-left:12px;flex-shrink:0;">44 / 45</span></div>
 
+
       
     </section>
     <section data-background-color="#ffffff" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
 <div style="position:absolute;left:20px;top:0px;width:920px;height:80px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p><span style="color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;">[Final summary slide]</span></p></div>
       <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#a8b4c8;font-weight:400;">[object Object]</span><span style="color:#c8302a;font-weight:700;">[object Object]</span></div><span style="margin-left:12px;flex-shrink:0;">45 / 45</span></div>
+
 
       
     </section>
@@ -1030,7 +1151,11 @@ document.getElementById('isl').addEventListener('input', function () { incDeg = 
   <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/highlight/highlight.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
   <script>
+    var _customTransitions = ['differential-rotation'];
+    var _globalTransition = 'slide';
+    var _isGlobalCustom = _customTransitions.indexOf(_globalTransition) !== -1;
     Reveal.initialize({
       hash: true,
       width: 960,
@@ -1039,7 +1164,7 @@ document.getElementById('isl').addEventListener('input', function () { incDeg = 
       minScale: 0,
       maxScale: 10,
       center: false,
-      transition: 'slide',
+      transition: _isGlobalCustom ? 'none' : _globalTransition,
       plugins: [ RevealNotes, RevealHighlight ]
     });
     Reveal.on('ready', function() {
@@ -1052,6 +1177,126 @@ document.getElementById('isl').addEventListener('input', function () { incDeg = 
         } catch(e) {}
       });
     });
+    // ── Custom transitions (differential rotation) ───────────────────────
+    (function() {
+      var prevH = 0, prevV = 0;
+      Reveal.on('ready', function(e) { prevH = e.indexh || 0; prevV = e.indexv || 0; });
+      Reveal.on('slidechanged', function(e) {
+        var prev = e.previousSlide;
+        var transName = null;
+        if (prev && prev.getAttribute('data-custom-transition'))
+          transName = prev.getAttribute('data-custom-transition');
+        else if (_isGlobalCustom)
+          transName = _globalTransition;
+        var dir = 1;
+        if ((e.indexh || 0) < prevH || ((e.indexh || 0) === prevH && (e.indexv || 0) < prevV)) dir = -1;
+        prevH = e.indexh || 0;
+        prevV = e.indexv || 0;
+        if (transName === 'differential-rotation') drTransition(dir);
+      });
+      function drTransition(dir) {
+        var N = 16;
+        var vw = window.innerWidth, vh = window.innerHeight;
+        var bh = vh / N;
+        var BAUHAUS = ['#CC0000', '#003399', '#FFCC00'];
+        var overlay = document.createElement('div');
+        overlay.style.cssText = 'position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:9998;pointer-events:none;overflow:hidden;';
+        var pending = N;
+        for (var i = 0; i < N; i++) {
+          var band = document.createElement('div');
+          band.style.cssText = 'position:absolute;left:0;width:100%;background:#000;box-sizing:border-box;';
+          band.style.top = (i * bh) + 'px';
+          band.style.height = (bh + 0.5) + 'px';
+          if (i < N - 1) {
+            band.style.borderBottom = '1.5px solid ' + BAUHAUS[i % 3];
+          }
+          overlay.appendChild(band);
+          var lat = Math.PI * ((i + 0.5) / N - 0.5);
+          var cos2 = Math.cos(lat); cos2 = cos2 * cos2;
+          var dur = 0.4 + 1.0 * (1 - cos2);
+          gsap.to(band, {
+            x: dir * (vw + 20),
+            duration: dur,
+            ease: 'none',
+            onComplete: function() { pending--; if (pending <= 0) overlay.remove(); }
+          });
+        }
+        document.body.appendChild(overlay);
+      }
+    })();
+
+    // ── Image click interactions (popup + expand) ─────────────────────
+    (function() {
+      function dismissAll() {
+        var p = document.querySelector('.image-popup');
+        if (p) { p.classList.remove('active'); setTimeout(function() { p.remove(); }, 200); }
+        var ov = document.querySelector('.expand-overlay');
+        if (ov) { ov.classList.remove('active'); setTimeout(function() { ov.remove(); }, 200); }
+      }
+      function showPopup(el, anchor) {
+        var old = document.querySelector('.image-popup');
+        if (old) old.remove();
+        var text = el.getAttribute('data-popup');
+        var pos = el.getAttribute('data-popup-pos') || 'below';
+        var fs = el.getAttribute('data-popup-fs') || '15';
+        var rect = anchor.getBoundingClientRect();
+        var p = document.createElement('div');
+        p.className = 'image-popup';
+        p.textContent = text;
+        p.style.fontSize = fs + 'px';
+        if (pos === 'center') {
+          p.style.left = (rect.left + rect.width/2) + 'px';
+          p.style.top = (rect.top + rect.height/2) + 'px';
+          p.style.transform = 'translate(-50%,-50%)';
+        } else if (pos === 'side') {
+          p.style.top = (rect.top + rect.height/2) + 'px';
+          if (rect.right + 320 < window.innerWidth) {
+            p.style.left = (rect.right + 12) + 'px';
+            p.style.transform = 'translateY(-50%)';
+          } else {
+            p.style.left = (rect.left - 12) + 'px';
+            p.style.transform = 'translate(-100%,-50%)';
+          }
+        } else {
+          p.style.left = (rect.left + rect.width/2) + 'px';
+          p.style.top = (rect.bottom + 12) + 'px';
+          p.style.transform = 'translateX(-50%)';
+        }
+        document.body.appendChild(p);
+        requestAnimationFrame(function() { p.classList.add('active'); });
+      }
+      document.addEventListener('click', function(e) {
+        if (e.target.closest('.image-popup')) return;
+        var ov = e.target.closest('.expand-overlay');
+        if (ov) {
+          if (e.target.tagName === 'IMG') return;
+          dismissAll(); return;
+        }
+        var el = e.target.closest('[data-popup],[data-expand]');
+        if (!el) { dismissAll(); return; }
+        e.stopPropagation();
+        dismissAll();
+        var hasPopup = el.hasAttribute('data-popup');
+        var hasExpand = el.hasAttribute('data-expand');
+        var img = el.querySelector('img');
+        if (hasExpand && img) {
+          var overlay = document.createElement('div');
+          overlay.className = 'expand-overlay';
+          var big = document.createElement('img');
+          big.src = img.src;
+          big.onclick = function(ev) { ev.stopPropagation(); };
+          overlay.appendChild(big);
+          document.body.appendChild(overlay);
+          requestAnimationFrame(function() {
+            overlay.classList.add('active');
+            if (hasPopup) showPopup(el, big);
+          });
+        } else if (hasPopup) {
+          showPopup(el, el);
+        }
+      });
+      document.addEventListener('keydown', function(e) { if (e.key === 'Escape') dismissAll(); });
+    })();
   </script>
 </body>
 </html>
