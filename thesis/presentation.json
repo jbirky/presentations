@@ -14,7 +14,7 @@
           "id": "2be9ae9c-9f4b-4685-a26c-08418e871572",
           "type": "text",
           "width": 574.5251396648046,
-          "height": 531,
+          "height": 511,
           "zIndex": 6,
           "content": "<p style=\"text-align: left; line-height: 0.75;\"><span style=\"font-family: Barlow, sans-serif; font-size: 40px; font-weight: 400;\">The Role of</span></p><p style=\"text-align: left; line-height: 0.75;\"><span style=\"color: rgb(200, 48, 42); font-family: Barlow, sans-serif; font-size: 40px; font-weight: 400;\">Tides</span></p><p style=\"text-align: left; line-height: 0.75;\"><span style=\"font-family: Barlow, sans-serif; font-size: 40px; font-weight: 400;\">and</span></p><p style=\"text-align: left; line-height: 0.75;\"><span style=\"color: rgb(220, 38, 38); font-family: Barlow, sans-serif; font-size: 40px; font-weight: 400;\">Differential Rotation</span></p><p style=\"text-align: left; line-height: 0.75;\"><span style=\"font-family: Barlow, sans-serif; font-size: 40px; font-weight: 400;\">in the</span></p><p style=\"text-align: left; line-height: 0.75;\"><span style=\"font-family: Barlow, sans-serif; font-size: 40px; font-weight: 400;\">Angular Momentum Evolution</span></p><p style=\"text-align: left; line-height: 0.75;\"><span style=\"font-family: Barlow, sans-serif; font-size: 40px; font-weight: 400;\">of Low-Mass Stars</span></p>",
           "sizeMode": "auto"
@@ -43,7 +43,7 @@
           "id": "65388c36-839d-4422-b780-f77d1c98efb0",
           "type": "text",
           "width": 228.6033519553073,
-          "height": 95,
+          "height": 91,
           "zIndex": 2,
           "content": "<p style=\"text-align: right; line-height: 0.7;\"><span style=\"font-family: &quot;Barlow Condensed&quot;, sans-serif; font-size: 28px; font-weight: 200;\">Jess Birky</span></p>",
           "sizeMode": "auto",
@@ -55,7 +55,7 @@
           "id": "8de43eed-ade3-4fd8-9f92-82981b175e7c",
           "type": "text",
           "width": 380,
-          "height": 95,
+          "height": 91,
           "zIndex": 3,
           "content": "<p style=\"text-align: right; line-height: 0.7;\"><span style=\"font-family: &quot;Barlow Condensed&quot;, sans-serif; font-size: 28px; font-weight: 200;\">PhD Defense, 15 May 2026</span></p>",
           "sizeMode": "auto",
@@ -67,7 +67,7 @@
           "id": "5ea4d2a5-3199-4363-968e-ae14f8ca7470",
           "type": "text",
           "width": 700,
-          "height": 95,
+          "height": 91,
           "zIndex": 4,
           "content": "<p style=\"text-align: right; line-height: 0.7;\"><span style=\"font-family: &quot;Barlow Condensed&quot;, sans-serif; font-size: 28px; font-weight: 200;\">Committee: Rory Barnes, Eric Agol, Jim Davenport, Miguel Morales</span></p>",
           "sizeMode": "auto",
@@ -287,7 +287,7 @@
         "color": "#000000"
       },
       "slideGroup": null,
-      "autoAnimate": true,
+      "autoAnimate": false,
       "activeSection": 0,
       "autoAnimateEasing": "ease-in-out",
       "autoAnimateDuration": 0.8
@@ -383,7 +383,7 @@
         "color": "#000000"
       },
       "slideGroup": null,
-      "autoAnimate": true,
+      "autoAnimate": false,
       "activeSection": 0,
       "autoAnimateEasing": "ease-in-out",
       "autoAnimateDuration": 0.8
@@ -493,12 +493,12 @@
         {
           "x": 20,
           "y": 0,
-          "id": "11a9aed2-9242-444b-896b-41ec13391dc5",
-          "type": "html",
+          "id": "042ec343-bf24-477a-9acd-4d4c549ac91c",
+          "type": "text",
           "width": 920,
           "height": 80,
-          "zIndex": 1,
-          "content": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"utf-8\">\n<style>\n  @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600;700&display=swap');\n  *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }\n  html, body { width:100%; height:100%; overflow:hidden; background:transparent; }\n  body {\n    display:flex; align-items:center;\n    font-family:'Barlow',sans-serif; color:#fff;\n  }\n  .line { white-space:nowrap; }\n  .static {\n    font-size:28px; font-weight:400; letter-spacing:0.01em;\n    opacity:0;\n    animation: fadeIn 0.6s ease-out 0.2s forwards;\n  }\n  .revolve-wrap {\n    display:inline-block; perspective:600px;\n    margin-left:0.3em; vertical-align:baseline;\n  }\n  .revolve {\n    display:inline-block;\n    font-size:28px; font-weight:600; letter-spacing:0.02em;\n    transform-style:preserve-3d;\n    animation: revolveIn 1.4s cubic-bezier(0.23,1,0.32,1) 0.6s forwards,\n               drift 12s ease-in-out 2.4s infinite;\n    opacity:0;\n    transform:rotateY(-180deg);\n  }\n\n  @keyframes fadeIn {\n    to { opacity:1; }\n  }\n  @keyframes revolveIn {\n    0%   { opacity:0; transform:rotateY(-180deg); }\n    30%  { opacity:1; }\n    100% { opacity:1; transform:rotateY(0deg); }\n  }\n  @keyframes drift {\n    0%, 100% { transform:rotateY(0deg); }\n    50%      { transform:rotateY(8deg); }\n  }\n</style>\n</head>\n<body>\n  <div class=\"line\">\n    <span class=\"static\">Differential rotation drives the stellar</span>\n    <span class=\"revolve-wrap\"><span class=\"revolve\">revolution</span></span>\n  </div>\n</body>\n</html>\n"
+          "zIndex": 3,
+          "content": "<p><span style=\"color: rgb(255, 255, 255); font-family: Barlow, sans-serif; font-size: 28px;\">Differential rotation drives stellar dynamos</span></p>"
         }
       ],
       "background": {
@@ -514,17 +514,6 @@
       "id": "03744ccd-e29a-458c-a68a-834a720623c6",
       "notes": "",
       "elements": [
-        {
-          "x": 500,
-          "y": 0,
-          "id": "c5211704-f269-4765-a281-8548ea20c002",
-          "type": "text",
-          "width": 440,
-          "height": 80,
-          "zIndex": 1,
-          "content": "<p style=\"text-align: right;\"><span style=\"font-family: Barlow, sans-serif; font-size: 28px;\">The stellar revolution</span></p>",
-          "rotation": 0
-        },
         {
           "x": 360,
           "y": 20,
@@ -543,7 +532,7 @@
           "id": "5368072f-1d4d-4648-b60e-b50f39e15ca4",
           "type": "text",
           "width": 400,
-          "height": 143,
+          "height": 138,
           "zIndex": 1,
           "content": "<p style=\"text-align: center;\"><span style=\"color: rgb(255, 255, 255); font-family: Codystar, sans-serif; font-size: 16px; font-weight: 700;\"><strong>Transiting exoplanet survey satellite</strong></span></p>",
           "sizeMode": "auto"
@@ -566,21 +555,10 @@
           "id": "d0c5799c-961f-471f-8f48-318f9468242f",
           "type": "text",
           "width": 220,
-          "height": 143,
+          "height": 138,
           "zIndex": 1,
           "content": "<p><span style=\"color: rgb(255, 255, 255); font-family: Codystar, sans-serif; font-size: 16px; font-weight: 700;\"><strong>Kepler / K2 mission</strong></span></p>",
           "sizeMode": "auto"
-        },
-        {
-          "x": 500,
-          "y": 30,
-          "id": "6ffadda9-24f8-4ab2-8d1a-a948db490957",
-          "type": "text",
-          "width": 440,
-          "height": 80,
-          "zIndex": 1,
-          "content": "<p style=\"text-align: right;\"><span style=\"color: rgb(220, 38, 38); font-family: Barlow, sans-serif; font-size: 28px;\"><em>revolution</em></span></p>",
-          "rotation": 0
         },
         {
           "x": 20,
@@ -615,6 +593,19 @@
           "imageOffsetX": 0,
           "imageOffsetY": -72,
           "clickToExpand": true
+        },
+        {
+          "x": 640,
+          "y": 0,
+          "id": "847ccd50-1712-4a60-99ab-53f7b94c2b09",
+          "type": "html",
+          "width": 300,
+          "height": 100,
+          "locked": true,
+          "zIndex": 2,
+          "content": "<html>\n  <head>\n  <meta charset=\"utf-8\">\n  <style>\n    @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600;700&display=swap');\n    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }\n    html, body { width:100%; height:100%; overflow:hidden; background:transparent; }\n    body {\n      display:flex; align-items:center; justify-content:flex-end;\n      font-family:'Barlow',sans-serif; color:#fff;\n      padding-right: 20px;\n    }\n    .container { text-align:right; }\n    .line { white-space:nowrap; }\n    .line-revolve {\n      height: 36px;\n      position: relative;\n    }\n    .static {\n      font-size:28px; font-weight:400; letter-spacing:0.01em;\n      opacity:0;\n      animation: fadeIn 0.6s ease-out 0.2s forwards;\n    }\n    .revolve-wrap {\n      display:block;\n      perspective:6000px;\n      position: absolute;\n      right: 0;\n      top: 0;\n      transform: scale(0.1);\n      transform-origin: right top;\n      overflow: visible;\n    }\n    .revolve {\n      display:inline-block;\n      font-size:280px; font-weight:600; font-style:italic; letter-spacing:0.02em;\n      color: #ef4444;\n      transform-style:preserve-3d;\n      animation: revolveIn 1.4s cubic-bezier(0.23,1,0.32,1) 0.6s forwards,\n                 drift 12s ease-in-out 2.4s infinite;\n      opacity:0;\n      transform:rotateY(-180deg);\n      white-space:nowrap;\n    }\n\n    @keyframes fadeIn {\n      to { opacity:1; }\n    }\n    @keyframes revolveIn {\n      0%   { opacity:0; transform:rotateY(-180deg); }\n      30%  { opacity:1; }\n      100% { opacity:1; transform:rotateY(0deg); }\n    }\n    @keyframes drift {\n      0%, 100% { transform:rotateY(0deg); }\n      50%      { transform:rotateY(8deg); }\n    }\n  </style>\n  </head>\n  <body>\n    <div class=\"container\">\n      <div class=\"line\">\n        <span class=\"static\">The stellar revolution</span>\n      </div>\n      <div class=\"line-revolve\">\n        <div class=\"revolve-wrap\"><span class=\"revolve\">revolution</span></div>\n      </div>\n    </div>\n  </body>\n  </html>",
+          "animationEnter": "slideRight",
+          "animationDuration": 1000
         }
       ],
       "background": {
@@ -960,7 +951,7 @@
           "id": "2c8f5c47-0e7b-4ea1-a8ad-0be96e406689",
           "type": "text",
           "width": 500,
-          "height": 259,
+          "height": 249,
           "zIndex": 3,
           "content": "<p style=\"text-align: left; line-height: 0.85;\"><span style=\"color: rgb(226, 232, 240); font-family: Barlow, sans-serif; font-size: 24px;\">Gravitational interactions</span></p><p style=\"text-align: left; line-height: 0.85;\"><span style=\"color: rgb(226, 232, 240); font-family: Barlow, sans-serif; font-size: 24px;\">can deform the shape of the star,</span></p><p style=\"text-align: left; line-height: 0.85;\"><span style=\"color: rgb(226, 232, 240); font-family: Barlow, sans-serif; font-size: 24px;\">introducing a \"tidal bulge\"</span></p>",
           "sizeMode": "auto"
@@ -1009,7 +1000,7 @@
           "id": "cf4fad1d-f957-430a-8448-6bb4def95418",
           "type": "text",
           "width": 480,
-          "height": 112,
+          "height": 108,
           "zIndex": 3,
           "content": "<p style=\"line-height: 1;\"><span style=\"color: rgb(226, 232, 240); font-family: Barlow, sans-serif; font-size: 20px;\">Constant Phase Lag (Ferraz Mello 2008)</span></p>",
           "sizeMode": "auto"
@@ -1030,7 +1021,7 @@
           "id": "96c21b57-f37d-4fe4-bfe0-0ac3ac72ebfe",
           "type": "text",
           "width": 200,
-          "height": 162,
+          "height": 156,
           "zIndex": 5,
           "content": "<p><span style=\"color: rgb(226, 232, 240); font-size: 28px;\"><span data-math-latex=\"\\epsilon \\approx \\mathcal{Q}^{-1}\" data-math-display=\"true\" data-math-fontsize=\"32px\" data-math-color=\"#000000\" class=\"math-node math-display\"></span></span></p>",
           "sizeMode": "auto"
@@ -1051,7 +1042,7 @@
           "id": "48bc1542-8846-419d-9612-e3b96d90b6b4",
           "type": "text",
           "width": 540,
-          "height": 112,
+          "height": 108,
           "zIndex": 8,
           "content": "<p style=\"text-align: center; line-height: 1;\"><span style=\"color: rgb(226, 232, 240); font-family: Barlow, sans-serif; font-size: 20px;\">Under weak friction, we can assume one of two models:</span></p>",
           "sizeMode": "auto"
@@ -1104,7 +1095,7 @@
           "id": "e6e15377-33c4-4fc2-8003-d739d4c43cb6",
           "type": "text",
           "width": 660,
-          "height": 112,
+          "height": 108,
           "zIndex": 10,
           "content": "<p style=\"text-align: center; line-height: 1;\"><span style=\"color: rgb(226, 232, 240); font-family: Barlow, sans-serif; font-size: 20px;\">Tidal friction causes the system to dissipate energy in the form of heat</span></p>",
           "sizeMode": "auto"
@@ -1302,24 +1293,6 @@
       "notes": "",
       "elements": [
         {
-          "x": 600,
-          "y": 200,
-          "id": "0306100f-47f1-471f-8ced-42a15c7f11ef",
-          "fill": "#3d3846",
-          "text": "",
-          "type": "shape",
-          "shape": "line",
-          "width": 280,
-          "height": 40,
-          "stroke": "#ffffff",
-          "zIndex": 3,
-          "opacity": 1,
-          "fontSize": 16,
-          "textColor": "#ffffff",
-          "strokeWidth": 0,
-          "borderRadius": 0
-        },
-        {
           "x": 20,
           "y": 0,
           "id": "647c3088-74eb-43ef-a15a-6b7fc9e4d70c",
@@ -1352,24 +1325,6 @@
       "id": "1fa8bd97-1cc3-436c-8a43-ab100a083d5c",
       "notes": "",
       "elements": [
-        {
-          "x": 600,
-          "y": 200,
-          "id": "d5420923-f57f-4030-a43f-9b982b186bb3",
-          "fill": "#3d3846",
-          "text": "",
-          "type": "shape",
-          "shape": "line",
-          "width": 280,
-          "height": 40,
-          "stroke": "#ffffff",
-          "zIndex": 3,
-          "opacity": 1,
-          "fontSize": 16,
-          "textColor": "#ffffff",
-          "strokeWidth": 0,
-          "borderRadius": 0
-        },
         {
           "x": 20,
           "y": 0,
@@ -2644,13 +2599,33 @@
         "color": "#ffffff"
       },
       "activeSection": 3
+    },
+    {
+      "id": "e7c91524-1b5b-4e68-b9eb-5382ae4ee49f",
+      "notes": "",
+      "elements": [
+        {
+          "x": -100,
+          "y": 0,
+          "id": "11728a72-29e8-4752-92ca-e83865d76385",
+          "type": "html",
+          "width": 400,
+          "height": 100,
+          "zIndex": 2,
+          "content": "<html>\n  <head>\n  <meta charset=\"utf-8\">\n  <style>\n    @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600;700&display=swap');\n    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }\n    html, body { width:100%; height:100%; overflow:hidden; background:transparent; }\n    body {\n      display:flex; align-items:center; justify-content:flex-end;\n      font-family:'Barlow',sans-serif; color:#fff;\n      padding-right: 20px;\n    }\n    .container { text-align:right; }\n    .line { white-space:nowrap; }\n    .line-revolve {\n      height: 36px;\n      position: relative;\n    }\n    .static {\n      font-size:28px; font-weight:400; letter-spacing:0.01em;\n      opacity:0;\n      animation: fadeIn 0.6s ease-out 0.2s forwards;\n    }\n    .revolve-wrap {\n      display:block;\n      perspective:6000px;\n      position: absolute;\n      right: 0;\n      top: 0;\n      transform: scale(0.1);\n      transform-origin: right top;\n      overflow: visible;\n    }\n    .revolve {\n      display:inline-block;\n      font-size:280px; font-weight:600; font-style:italic; letter-spacing:0.02em;\n      color: #ef4444;\n      transform-style:preserve-3d;\n      animation: revolveIn 1.4s cubic-bezier(0.23,1,0.32,1) 0.6s forwards,\n                 drift 12s ease-in-out 2.4s infinite;\n      opacity:0;\n      transform:rotateY(-180deg);\n      white-space:nowrap;\n    }\n\n    @keyframes fadeIn {\n      to { opacity:1; }\n    }\n    @keyframes revolveIn {\n      0%   { opacity:0; transform:rotateY(-180deg); }\n      30%  { opacity:1; }\n      100% { opacity:1; transform:rotateY(0deg); }\n    }\n    @keyframes drift {\n      0%, 100% { transform:rotateY(0deg); }\n      50%      { transform:rotateY(8deg); }\n    }\n  </style>\n  </head>\n  <body>\n    <div class=\"container\">\n      <div class=\"line\">\n        <span class=\"static\">The stellar revolution</span>\n      </div>\n      <div class=\"line-revolve\">\n        <div class=\"revolve-wrap\"><span class=\"revolve\">revolution</span></div>\n      </div>\n    </div>\n  </body>\n  </html>"
+        }
+      ],
+      "background": {
+        "type": "color",
+        "color": "#000000"
+      }
     }
   ],
   "gridSize": 20,
   "createdAt": "2026-04-06T20:39:00.855Z",
   "expiresAt": null,
   "showClock": true,
-  "updatedAt": "2026-05-10T23:15:48.712Z",
+  "updatedAt": "2026-05-11T00:28:49.838Z",
   "footerMode": "sequence",
   "globalFont": "Barlow, sans-serif",
   "showFooter": true,
