@@ -14,7 +14,7 @@
           "id": "2be9ae9c-9f4b-4685-a26c-08418e871572",
           "type": "text",
           "width": 574.5251396648046,
-          "height": 511,
+          "height": 531,
           "zIndex": 6,
           "content": "<p style=\"text-align: left; line-height: 0.75;\"><span style=\"font-family: Barlow, sans-serif; font-size: 40px; font-weight: 400;\">The Role of</span></p><p style=\"text-align: left; line-height: 0.75;\"><span style=\"color: rgb(200, 48, 42); font-family: Barlow, sans-serif; font-size: 40px; font-weight: 400;\">Tides</span></p><p style=\"text-align: left; line-height: 0.75;\"><span style=\"font-family: Barlow, sans-serif; font-size: 40px; font-weight: 400;\">and</span></p><p style=\"text-align: left; line-height: 0.75;\"><span style=\"color: rgb(220, 38, 38); font-family: Barlow, sans-serif; font-size: 40px; font-weight: 400;\">Differential Rotation</span></p><p style=\"text-align: left; line-height: 0.75;\"><span style=\"font-family: Barlow, sans-serif; font-size: 40px; font-weight: 400;\">in the</span></p><p style=\"text-align: left; line-height: 0.75;\"><span style=\"font-family: Barlow, sans-serif; font-size: 40px; font-weight: 400;\">Angular Momentum Evolution</span></p><p style=\"text-align: left; line-height: 0.75;\"><span style=\"font-family: Barlow, sans-serif; font-size: 40px; font-weight: 400;\">of Low-Mass Stars</span></p>",
           "sizeMode": "auto"
@@ -43,7 +43,7 @@
           "id": "65388c36-839d-4422-b780-f77d1c98efb0",
           "type": "text",
           "width": 228.6033519553073,
-          "height": 91,
+          "height": 95,
           "zIndex": 2,
           "content": "<p style=\"text-align: right; line-height: 0.7;\"><span style=\"font-family: &quot;Barlow Condensed&quot;, sans-serif; font-size: 28px; font-weight: 200;\">Jess Birky</span></p>",
           "sizeMode": "auto",
@@ -55,7 +55,7 @@
           "id": "8de43eed-ade3-4fd8-9f92-82981b175e7c",
           "type": "text",
           "width": 380,
-          "height": 91,
+          "height": 95,
           "zIndex": 3,
           "content": "<p style=\"text-align: right; line-height: 0.7;\"><span style=\"font-family: &quot;Barlow Condensed&quot;, sans-serif; font-size: 28px; font-weight: 200;\">PhD Defense, 15 May 2026</span></p>",
           "sizeMode": "auto",
@@ -67,7 +67,7 @@
           "id": "5ea4d2a5-3199-4363-968e-ae14f8ca7470",
           "type": "text",
           "width": 700,
-          "height": 91,
+          "height": 95,
           "zIndex": 4,
           "content": "<p style=\"text-align: right; line-height: 0.7;\"><span style=\"font-family: &quot;Barlow Condensed&quot;, sans-serif; font-size: 28px; font-weight: 200;\">Committee: Rory Barnes, Eric Agol, Jim Davenport, Miguel Morales</span></p>",
           "sizeMode": "auto",
@@ -93,6 +93,211 @@
       "slideGroup": null,
       "transition": "none",
       "showPageNumber": false
+    },
+    {
+      "id": "2b5036e5-5f9a-4af4-9e6a-205c2ee663c8",
+      "notes": "",
+      "elements": [
+        {
+          "x": 20,
+          "y": 20,
+          "id": "7b3b358e-24c5-4701-b1d8-bc65416a094c",
+          "type": "text",
+          "width": 574.5251396648046,
+          "height": 531,
+          "zIndex": 6,
+          "content": "<p style=\"text-align: left; line-height: 0.75;\"><span style=\"color: rgb(255, 255, 255); font-family: Barlow, sans-serif; font-size: 40px; font-weight: 400;\">The Role of</span></p><p style=\"text-align: left; line-height: 0.75;\"><span style=\"color: rgb(255, 255, 255); font-family: Barlow, sans-serif; font-size: 40px; font-weight: 400;\">Tides</span></p><p style=\"text-align: left; line-height: 0.75;\"><span style=\"color: rgb(255, 255, 255); font-family: Barlow, sans-serif; font-size: 40px; font-weight: 400;\">and</span></p><p style=\"text-align: left; line-height: 0.75;\"><span style=\"color: rgb(255, 255, 255); font-family: Barlow, sans-serif; font-size: 40px; font-weight: 400;\">Differential Rotation</span></p><p style=\"text-align: left; line-height: 0.75;\"><span style=\"color: rgb(255, 255, 255); font-family: Barlow, sans-serif; font-size: 40px; font-weight: 400;\">in the</span></p><p style=\"text-align: left; line-height: 0.75;\"><span style=\"color: rgb(255, 255, 255); font-family: Barlow, sans-serif; font-size: 40px; font-weight: 400;\">Angular Momentum Evolution</span></p><p style=\"text-align: left; line-height: 0.75;\"><span style=\"color: rgb(255, 255, 255); font-family: Barlow, sans-serif; font-size: 40px; font-weight: 400;\">of </span><span style=\"color: rgb(220, 38, 38); font-family: Barlow, sans-serif; font-size: 40px; font-weight: 400;\">Low-Mass Stars</span></p>",
+          "sizeMode": "auto"
+        },
+        {
+          "x": 20,
+          "y": 440,
+          "id": "86526875-b1f7-4f1c-a986-1d13d6ceee57",
+          "type": "text",
+          "width": 920,
+          "height": 103,
+          "zIndex": 3,
+          "content": "<p style=\"text-align: right; line-height: 0.85;\"><span style=\"color: rgb(255, 255, 255); font-family: Barlow, sans-serif; font-size: 24px;\"><em>First, what are low-mass stars and why are they interesting?</em></span></p>",
+          "fragment": true,
+          "sizeMode": "auto",
+          "fragmentIndex": 1,
+          "fragmentAnimation": "slide-right"
+        }
+      ],
+      "background": {
+        "type": "color",
+        "color": "#000000"
+      },
+      "hideFooter": true,
+      "slideGroup": null,
+      "transition": "none",
+      "showPageNumber": true
+    },
+    {
+      "id": "4e9b92bc-824d-4f84-ad80-afa3c3511f56",
+      "notes": "",
+      "elements": [
+        {
+          "x": 0,
+          "y": -40,
+          "id": "99ea9901-92dc-4da0-a965-8db4b22443ff",
+          "type": "html",
+          "width": 960,
+          "height": 640,
+          "locked": true,
+          "zIndex": 2,
+          "content": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"utf-8\">\n<title>Stellar Internal Structure</title>\n<style>\n* { box-sizing: border-box; margin: 0; padding: 0; }\nbody {\n    background: #000000;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    min-height: 100vh;\n}\ncanvas { display: block; cursor: pointer; }\n</style>\n</head>\n<body>\n<canvas id=\"c\"></canvas>\n<script>\n\"use strict\";\n\nconst canvas = document.getElementById('c');\nconst ctx = canvas.getContext('2d');\n\nconst W = 900, H = 400;\nconst dpr = Math.max(3, window.devicePixelRatio || 1);\ncanvas.width = W * dpr;\ncanvas.height = H * dpr;\ncanvas.style.width = W + 'px';\ncanvas.style.height = H + 'px';\nctx.scale(dpr, dpr);\n\n// ── Star definitions ─────────────────────────────────────────────\nconst stars = [\n    {\n        name: 'High-mass star', mass: 'M > 1.5 M⊙',\n        cx: 155, cy: 178, R: 120,\n        zones: [\n            { type: 'convective', rf: [0, 0.25], nCells: 4 },\n            { type: 'radiative',  rf: [0.25, 1.0] }\n        ]\n    },\n    {\n        name: 'Sun-like star', mass: '0.5 < M < 1.5 M⊙',\n        cx: 450, cy: 178, R: 98,\n        zones: [\n            { type: 'radiative',  rf: [0, 0.65] },\n            { type: 'convective', rf: [0.65, 1.0], nCells: 6 }\n        ]\n    },\n    {\n        name: 'Low-mass star', mass: 'M < 0.5 M⊙',\n        cx: 740, cy: 178, R: 68,\n        zones: [\n            { type: 'convective', rf: [0, 1.0], nCells: 6 }\n        ]\n    }\n];\n\n// ── Particle classes ─────────────────────────────────────────────\nconst allParticles = [];\n\nclass RadParticle {\n    constructor(s, z) {\n        this.s = s;\n        this.z = z;\n        this.rMin = Math.max(z.rf[0] * s.R, 6);\n        this.rMax = z.rf[1] * s.R - 2;\n        this.reset();\n    }\n\n    reset() {\n        this.r  = this.rMin + Math.random() * (this.rMax - this.rMin);\n        this.th = Math.random() * Math.PI * 2;\n        this.spd = 0.18 + Math.random() * 0.28;\n        this.dth = (Math.random() - 0.5) * 0.005;\n        this.sz  = 5 + Math.random() * 3;\n    }\n\n    update() {\n        this.r  += this.spd;\n        this.th += this.dth;\n        if (Math.random() < 0.03) this.dth = (Math.random() - 0.5) * 0.006;\n        if (this.r > this.rMax) {\n            this.r  = this.rMin;\n            this.th = Math.random() * Math.PI * 2;\n        }\n    }\n\n    xy() {\n        return [this.s.cx + this.r * Math.cos(this.th),\n                this.s.cy - this.r * Math.sin(this.th)];\n    }\n\n    angle() { return -this.th; }\n\n    alpha() {\n        const t = (this.r - this.rMin) / (this.rMax - this.rMin);\n        return 0.25 + Math.sin(t * Math.PI) * 0.55;\n    }\n}\n\nclass ConvParticle {\n    constructor(s, z, ci) {\n        this.s = s;\n        this.z = z;\n        this.rMin = Math.max(z.rf[0] * s.R, 7);\n        this.rMax = z.rf[1] * s.R - 2;\n        const n = z.nCells;\n        this.thC = 2 * Math.PI * ci / n;\n        this.thW = Math.PI / n * 0.72;\n        this.rMid = (this.rMin + this.rMax) / 2;\n        const dir = ci % 2 === 0 ? 1 : -1;\n        this.rH  = (this.rMax - this.rMin) / 2 * 0.82 * dir;\n        this.ph  = 0;\n        this.spd = 0.019 + Math.random() * 0.007;\n        this.sz  = 5 + Math.random() * 2;\n    }\n\n    update() {\n        this.ph += this.spd;\n        if (this.ph > Math.PI * 2) this.ph -= Math.PI * 2;\n    }\n\n    _r()  { return this.rMid + this.rH * Math.sin(this.ph); }\n    _th() { return this.thC + this.thW * Math.cos(this.ph); }\n\n    xy() {\n        const r = this._r(), th = this._th();\n        return [this.s.cx + r * Math.cos(th),\n                this.s.cy - r * Math.sin(th)];\n    }\n\n    angle() {\n        const r  = this._r(), th = this._th();\n        const dr  = this.rH  * Math.cos(this.ph);\n        const dth = -this.thW * Math.sin(this.ph);\n        const vx =  dr * Math.cos(th) - r * dth * Math.sin(th);\n        const vy = -(dr * Math.sin(th) + r * dth * Math.cos(th));\n        return Math.atan2(vy, vx);\n    }\n\n    alpha() { return 0.45 + 0.35 * Math.abs(Math.cos(this.ph)); }\n}\n\n// ── Create particles ─────────────────────────────────────────────\nfor (const s of stars) {\n    for (const z of s.zones) {\n        if (z.type === 'radiative') {\n            const n = Math.max(18, Math.round(35 * (z.rf[1] - z.rf[0])));\n            for (let i = 0; i < n; i++) allParticles.push(new RadParticle(s, z));\n        } else {\n            for (let c = 0; c < z.nCells; c++) {\n                for (let p = 0; p < 4; p++) {\n                    const cp = new ConvParticle(s, z, c);\n                    cp.ph = Math.PI * 2 * p / 4 + (Math.random() - 0.5) * 0.25;\n                    allParticles.push(cp);\n                }\n            }\n        }\n    }\n}\n\n// ── Background starfield ─────────────────────────────────────────\nconst bgStars = Array.from({length: 100}, () => ({\n    x: Math.random() * W,\n    y: Math.random() * H,\n    r: 0.3 + Math.random() * 0.9,\n    a: 0.12 + Math.random() * 0.35\n}));\n\n// ── Drawing helpers ──────────────────────────────────────────────\nfunction drawArrow(x, y, ang, sz, col, a) {\n    ctx.save();\n    ctx.globalAlpha = a;\n    ctx.translate(x, y);\n    ctx.rotate(ang);\n\n    ctx.beginPath();\n    ctx.moveTo(-sz, 0);\n    ctx.lineTo(sz * 0.2, 0);\n    ctx.strokeStyle = col;\n    ctx.lineWidth = 1.6;\n    ctx.stroke();\n\n    ctx.beginPath();\n    ctx.moveTo(sz, 0);\n    ctx.lineTo(sz * 0.1, -sz * 0.38);\n    ctx.lineTo(sz * 0.25, 0);\n    ctx.lineTo(sz * 0.1,  sz * 0.38);\n    ctx.closePath();\n    ctx.fillStyle = col;\n    ctx.fill();\n\n    ctx.restore();\n}\n\nfunction drawStarBody(star) {\n    const { cx, cy, R, zones } = star;\n\n    // Glow\n    const glow = ctx.createRadialGradient(cx, cy, R * 0.8, cx, cy, R * 1.45);\n    glow.addColorStop(0, 'rgba(255, 170, 70, 0.10)');\n    glow.addColorStop(1, 'rgba(255, 170, 70, 0)');\n    ctx.beginPath();\n    ctx.arc(cx, cy, R * 1.45, 0, Math.PI * 2);\n    ctx.fillStyle = glow;\n    ctx.fill();\n\n    // Zones (outermost first so inner zones paint over)\n    const sorted = [...zones].sort((a, b) => b.rf[1] - a.rf[1]);\n    for (const z of sorted) {\n        const rIn  = z.rf[0] * R;\n        const rOut = z.rf[1] * R;\n        const lIn  = 89 - z.rf[0] * 47;\n        const lOut = 89 - z.rf[1] * 47;\n\n        const g = ctx.createRadialGradient(cx, cy, Math.max(rIn, 1), cx, cy, rOut);\n        if (z.type === 'radiative') {\n            g.addColorStop(0, `hsl(48, 94%, ${lIn}%)`);\n            g.addColorStop(1, `hsl(44, 88%, ${Math.max(lOut, 38)}%)`);\n        } else {\n            g.addColorStop(0, `hsl(30, 91%, ${lIn}%)`);\n            g.addColorStop(1, `hsl(16, 84%, ${Math.max(lOut, 33)}%)`);\n        }\n        ctx.beginPath();\n        ctx.arc(cx, cy, rOut, 0, Math.PI * 2);\n        ctx.fillStyle = g;\n        ctx.fill();\n    }\n\n    // Zone boundaries (dashed)\n    for (const z of zones) {\n        if (z.rf[0] > 0.01) {\n            ctx.beginPath();\n            ctx.arc(cx, cy, z.rf[0] * R, 0, Math.PI * 2);\n            ctx.strokeStyle = 'rgba(255,255,255,0.28)';\n            ctx.lineWidth = 1.5;\n            ctx.setLineDash([5, 4]);\n            ctx.stroke();\n            ctx.setLineDash([]);\n        }\n    }\n\n    // Star outline\n    ctx.beginPath();\n    ctx.arc(cx, cy, R, 0, Math.PI * 2);\n    ctx.strokeStyle = 'rgba(255,140,40,0.35)';\n    ctx.lineWidth = 2;\n    ctx.stroke();\n}\n\nfunction drawLabels(star) {\n    const { cx, cy, R, name, mass, zones } = star;\n\n    ctx.textAlign = 'center';\n\n    // Name\n    ctx.fillStyle = '#eee';\n    ctx.font = 'bold 17px Georgia, serif';\n    ctx.textBaseline = 'bottom';\n    ctx.fillText(name, cx, cy - R - 26);\n\n    // Mass range\n    ctx.fillStyle = '#aaa';\n    ctx.font = '14px Georgia, serif';\n    ctx.fillText(mass, cx, cy - R - 8);\n\n    // Zone labels below star\n    ctx.font = '13px Georgia, serif';\n    let ly = cy + R + 24;\n    for (const z of zones) {\n        let label;\n        if (z.type === 'convective') {\n            if (z.rf[0] < 0.01 && z.rf[1] > 0.99) label = 'Fully convective';\n            else if (z.rf[0] < 0.01) label = 'Convective core';\n            else label = 'Convective envelope';\n        } else {\n            if (z.rf[0] < 0.01) label = 'Radiative core';\n            else label = 'Radiative envelope';\n        }\n        ctx.fillStyle = z.type === 'convective' ? '#FF8A65' : '#FFE082';\n        ctx.fillText(label, cx, ly);\n        ly += 20;\n    }\n}\n\nfunction drawLegend() {\n    const y = H - 28;\n    ctx.font = '12px Georgia, serif';\n    ctx.textBaseline = 'middle';\n    ctx.textAlign = 'left';\n\n    // Radiative\n    drawArrow(W / 2 - 235, y, 0, 8, '#FFD54F', 0.85);\n    ctx.globalAlpha = 1;\n    ctx.fillStyle = '#999';\n    ctx.fillText('Radiative transport (photon diffusion)', W / 2 - 220, y);\n\n    // Convective\n    drawArrow(W / 2 + 75, y, Math.PI * 0.3, 8, '#FF6E40', 0.85);\n    ctx.globalAlpha = 1;\n    ctx.fillStyle = '#999';\n    ctx.fillText('Convective transport (fluid motion)', W / 2 + 90, y);\n}\n\n// ── Animation loop ───────────────────────────────────────────────\nlet playing = true;\n\nfunction frame() {\n    // Background\n    ctx.fillStyle = '#000000';\n    ctx.fillRect(0, 0, W, H);\n\n    // Starfield\n    for (const s of bgStars) {\n        ctx.beginPath();\n        ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);\n        ctx.fillStyle = `rgba(180,200,240,${s.a})`;\n        ctx.fill();\n    }\n\n    // Draw star bodies\n    for (const star of stars) drawStarBody(star);\n\n    // Update and draw particles\n    if (playing) {\n        for (const p of allParticles) p.update();\n    }\n\n    for (const p of allParticles) {\n        const [x, y] = p.xy();\n        const dx = x - p.s.cx, dy = y - p.s.cy;\n        const d = Math.sqrt(dx * dx + dy * dy);\n        const rIn  = p.z.rf[0] * p.s.R;\n        const rOut = p.z.rf[1] * p.s.R;\n\n        if (d >= rIn - 1 && d <= rOut + 1) {\n            const col = p instanceof RadParticle ? '#FFD54F' : '#FF6E40';\n            drawArrow(x, y, p.angle(), p.sz, col, p.alpha());\n        }\n    }\n\n    // Labels on top\n    for (const star of stars) drawLabels(star);\n\n    drawLegend();\n\n    requestAnimationFrame(frame);\n}\n\ncanvas.addEventListener('click', () => { playing = !playing; });\n\nframe();\n</script>\n</body>\n</html>\n"
+        },
+        {
+          "x": 20.000000000000014,
+          "y": 0,
+          "id": "1642b242-3dfb-4aff-8963-1bffee4b05cb",
+          "type": "text",
+          "width": 920,
+          "height": 80,
+          "zIndex": 3,
+          "content": "<p><span style=\"color: rgb(255, 255, 255); font-family: Barlow, sans-serif; font-size: 28px;\">The mass of a star determines its structure</span></p>"
+        },
+        {
+          "x": 20,
+          "y": 480,
+          "id": "0566783d-bf19-4bda-8db6-3e44bf2775d6",
+          "type": "text",
+          "width": 920,
+          "height": 80,
+          "zIndex": 3,
+          "content": "<p><span style=\"color: rgb(255, 255, 255); font-family: Barlow, sans-serif; font-size: 24px;\">Low-mass stars (M &lt; 1.5 Msun) have convective exteriors</span></p>"
+        }
+      ],
+      "background": {
+        "type": "color",
+        "color": "#000000"
+      },
+      "slideGroup": null,
+      "autoAnimate": false,
+      "activeSection": 0,
+      "autoAnimateEasing": "ease-in-out",
+      "autoAnimateDuration": 0.8
+    },
+    {
+      "id": "1c1568af-7e63-480d-852d-229d490a5c25",
+      "notes": "",
+      "elements": [
+        {
+          "x": 0,
+          "y": 98.32402234636871,
+          "id": "c780f2c5-b590-4e95-8a17-ff27ed9ed974",
+          "type": "timeline",
+          "items": [
+            {
+              "id": "14f723bc-8152-4c99-8829-db6ffaf392e7",
+              "date": "-800",
+              "side": "top",
+              "image": "https://parallax-presentations.com/uploads/0aa2f678-1d77-44ec-b7ad-6c4ef4871eb0.jpg",
+              "label": "First written record of sunspots",
+              "description": "Gan De, China",
+              "connectorLength": 0
+            },
+            {
+              "id": "a75e8203-97fe-414d-94d9-bb69988c00a3",
+              "date": "1128",
+              "side": "bottom",
+              "image": "https://parallax-presentations.com/uploads/0cb776e7-4c9d-4111-80c3-7bb682ba6f45.png",
+              "label": "First known drawing of sunspots",
+              "description": "John of Worcester"
+            },
+            {
+              "id": "f49705ad-a910-45da-a57e-d43ee03a8860",
+              "date": "1250",
+              "side": "top",
+              "image": "https://parallax-presentations.com/uploads/616009d2-8d79-4db4-a3db-0e6095055d85.jpeg",
+              "label": "Yuan and Ming dynasty records",
+              "description": "China"
+            },
+            {
+              "id": "96c4afe3-60e5-4d86-a217-1db89e3afb53",
+              "date": "1610",
+              "side": "bottom",
+              "image": "https://parallax-presentations.com/uploads/eeba0dca-c3ba-48e7-9e82-1a4c5599d075.gif",
+              "label": "First telescope observations",
+              "description": "Thomas Harriot",
+              "connectorLength": 80
+            },
+            {
+              "id": "519a51d5-bd49-4a42-8ae0-506faea5ec3a",
+              "date": "-300",
+              "side": "bottom",
+              "image": "",
+              "label": "Other early literature",
+              "description": "Theophrastus of Athens"
+            },
+            {
+              "id": "1f2459d5-6bb3-4e7d-ace9-a6c469946ba1",
+              "date": "2010",
+              "side": "bottom",
+              "image": "https://parallax-presentations.com/uploads/49a10243-7c22-48d3-947e-0a2659ad2163.jpg",
+              "label": "Solar dynamics obs",
+              "description": "NASA"
+            }
+          ],
+          "width": 960,
+          "height": 424.9162011173184,
+          "zIndex": 2,
+          "endDate": "2100",
+          "dotColor": "#c8302a",
+          "fontSize": 11,
+          "lineColor": "#ffffff",
+          "startDate": "-1000",
+          "textColor": "#ffffff",
+          "tickSpacing": "100year"
+        }
+      ],
+      "background": {
+        "type": "color",
+        "color": "#000000"
+      },
+      "slideGroup": null,
+      "autoAnimate": false,
+      "activeSection": 0,
+      "autoAnimateEasing": "ease-in-out",
+      "autoAnimateDuration": 0.8
+    },
+    {
+      "id": "bd5d86f9-4a4b-4e10-9af3-137f2cc0fda9",
+      "notes": "",
+      "elements": [
+        {
+          "x": 0,
+          "y": 100,
+          "id": "f702243d-8d84-4d1d-94e4-0650e3faee50",
+          "alt": "",
+          "src": "/uploads/8a14f50a-e9cc-4fb0-84f6-e350facb745f.jpg",
+          "type": "image",
+          "width": 960,
+          "height": 426.03351955307255,
+          "zIndex": 2,
+          "objectFit": "contain"
+        },
+        {
+          "x": 20,
+          "y": 0,
+          "id": "8d95ab50-5d8c-449a-9a98-41517b0ab459",
+          "type": "text",
+          "width": 920,
+          "height": 80,
+          "zIndex": 3,
+          "content": "<p><span style=\"color: rgb(255, 255, 255); font-family: Barlow, sans-serif; font-size: 28px;\">Multi-wavelength view of the Sun from the Solar Dynamics Observatory</span></p>"
+        }
+      ],
+      "background": {
+        "type": "color",
+        "color": "#000000"
+      },
+      "slideGroup": null,
+      "autoAnimate": false,
+      "activeSection": 0,
+      "autoAnimateEasing": "ease-in-out",
+      "autoAnimateDuration": 0.8
     },
     {
       "id": "a5284ebc-219d-47db-a3df-e1ea33483c16",
@@ -329,7 +534,9 @@
           "width": 560,
           "height": 520,
           "zIndex": 2,
-          "objectFit": "contain"
+          "objectFit": "contain",
+          "borderRadius": 4,
+          "citationText": "Solar Dynamics Observatory"
         },
         {
           "x": 20,
@@ -353,29 +560,6 @@
           "height": 80,
           "zIndex": 3,
           "content": "<p style=\"line-height: 1;\"><span style=\"color: rgb(255, 255, 255); font-size: 20px;\">mass loss</span></p>"
-        },
-        {
-          "x": 20,
-          "y": 400,
-          "id": "2381d404-e74b-45ac-ad91-dcfc7ae18544",
-          "type": "callout",
-          "width": 36,
-          "height": 36,
-          "zIndex": 10,
-          "fontSize": 16,
-          "calloutColor": "#ef4444",
-          "calloutNumber": 3,
-          "calloutTextColor": "#ffffff"
-        },
-        {
-          "x": 60,
-          "y": 380,
-          "id": "2dd10f65-000c-4e97-8f4d-a8a10dff0c3b",
-          "type": "text",
-          "width": 260,
-          "height": 80,
-          "zIndex": 3,
-          "content": "<p style=\"text-align: left; line-height: 1;\"><span style=\"color: rgb(255, 255, 255); font-size: 20px;\">starspots + convection</span></p>"
         }
       ],
       "background": {
@@ -505,19 +689,65 @@
         "type": "color",
         "color": "#000000"
       },
-      "autoAnimate": true,
+      "autoAnimate": false,
       "activeSection": 0,
       "autoAnimateEasing": "ease-in-out",
       "autoAnimateDuration": 0.8
     },
     {
-      "id": "03744ccd-e29a-458c-a68a-834a720623c6",
+      "id": "3768ae17-6177-4f9f-bce9-c432b905a6a5",
       "notes": "",
       "elements": [
         {
-          "x": 360,
+          "x": 20,
+          "y": 0,
+          "id": "8730c7de-fcad-4dd7-b752-915f726724cc",
+          "type": "text",
+          "width": 920,
+          "height": 80,
+          "zIndex": 1,
+          "content": "<p><span style=\"font-family: Barlow, sans-serif; font-size: 28px; opacity: 0;\">Differential rotation drives the stellar dynamo process</span></p>"
+        },
+        {
+          "x": 20,
+          "y": 0,
+          "id": "5bf26a1d-df13-4f81-b4e9-517a1f2b23e4",
+          "type": "text",
+          "width": 920,
+          "height": 156,
+          "zIndex": 3,
+          "content": "<p style=\"line-height: 0.85;\"><span style=\"color: rgb(255, 255, 255); font-family: Barlow, sans-serif; font-size: 24px;\">While there is a lot we know about the Sun, it only a single data point among all the stars in the Universe (billions of which we have observations for)</span></p>",
+          "sizeMode": "auto"
+        },
+        {
+          "x": 20,
+          "y": 180,
+          "id": "89053081-39bb-4bbc-93a8-af2c5862900a",
+          "type": "text",
+          "width": 920,
+          "height": 156,
+          "zIndex": 3,
+          "content": "<p style=\"line-height: 0.85;\"><span style=\"color: rgb(255, 255, 255); font-family: Barlow, sans-serif; font-size: 24px;\">To build a complete physical picture of how stars work, we need to understand how stellar structure and rotation evolves as a function of mass and age</span></p>",
+          "sizeMode": "auto"
+        }
+      ],
+      "background": {
+        "type": "color",
+        "color": "#000000"
+      },
+      "autoAnimate": false,
+      "activeSection": 0,
+      "autoAnimateEasing": "ease-in-out",
+      "autoAnimateDuration": 0.8
+    },
+    {
+      "id": "174d19c0-ad95-40f1-a506-8da722c37cba",
+      "notes": "",
+      "elements": [
+        {
+          "x": 280,
           "y": 20,
-          "id": "c3276373-23a1-471d-beeb-0c3ed8fe06fb",
+          "id": "3df33065-3c8b-4532-8f98-cfc8554a7a4a",
           "alt": "",
           "src": "/uploads/7c5b2ba8-a5b1-4905-b7fe-8bda41f8f745.png",
           "type": "image",
@@ -527,20 +757,20 @@
           "objectFit": "contain"
         },
         {
-          "x": 300,
+          "x": 180,
           "y": 140,
-          "id": "5368072f-1d4d-4648-b60e-b50f39e15ca4",
+          "id": "04f06494-9a93-4117-a7f6-86184583ae18",
           "type": "text",
           "width": 400,
-          "height": 138,
+          "height": 112,
           "zIndex": 1,
-          "content": "<p style=\"text-align: center;\"><span style=\"color: rgb(255, 255, 255); font-family: Codystar, sans-serif; font-size: 16px; font-weight: 700;\"><strong>Transiting exoplanet survey satellite</strong></span></p>",
+          "content": "<p style=\"text-align: center; line-height: 1;\"><span style=\"color: rgb(255, 255, 255); font-family: Codystar, sans-serif; font-size: 16px; font-weight: 700;\"><strong>Transiting exoplanet</strong></span></p>",
           "sizeMode": "auto"
         },
         {
           "x": 20,
           "y": 20,
-          "id": "ea77db79-9d75-4be8-935e-20b97dbcdd35",
+          "id": "cef03537-1178-476a-9b9c-f70c9a4d53d2",
           "alt": "",
           "src": "/uploads/93a26e03-ce1e-4ace-9ce1-dc87c96131a0.png",
           "type": "image",
@@ -552,52 +782,18 @@
         {
           "x": 20,
           "y": 140,
-          "id": "d0c5799c-961f-471f-8f48-318f9468242f",
+          "id": "f7a6656b-d282-4245-b25f-174f3082bbc1",
           "type": "text",
           "width": 220,
-          "height": 138,
+          "height": 143,
           "zIndex": 1,
           "content": "<p><span style=\"color: rgb(255, 255, 255); font-family: Codystar, sans-serif; font-size: 16px; font-weight: 700;\"><strong>Kepler / K2 mission</strong></span></p>",
           "sizeMode": "auto"
         },
         {
-          "x": 20,
-          "y": 220,
-          "id": "5412cdf1-41f5-44f7-93b2-f2432c209bb5",
-          "alt": "",
-          "src": "/uploads/b2fbd6c8-9a1a-4120-93a1-0b4a720a4868.png",
-          "type": "image",
-          "width": 387.9329608938547,
-          "height": 300,
-          "zIndex": 2,
-          "objectFit": "fill",
-          "citationMode": "caption",
-          "citationText": "McQullan et al. 2014",
-          "citationAlign": "right",
-          "clickToExpand": true
-        },
-        {
-          "x": 462.01117318435763,
-          "y": 290.88268156424584,
-          "id": "35fc90de-019f-4f47-bcc3-92172bec8568",
-          "alt": "",
-          "src": "/uploads/de640b13-9a11-4916-99be-35fc6c830106.png",
-          "crop": null,
-          "type": "image",
-          "width": 400,
-          "height": 157,
-          "imageH": 300,
-          "imageW": 400,
-          "zIndex": 2,
-          "objectFit": "contain",
-          "imageOffsetX": 0,
-          "imageOffsetY": -72,
-          "clickToExpand": true
-        },
-        {
           "x": 640,
           "y": 0,
-          "id": "847ccd50-1712-4a60-99ab-53f7b94c2b09",
+          "id": "ec8e5158-16f0-4ca7-8f0b-03cced186096",
           "type": "html",
           "width": 300,
           "height": 100,
@@ -606,6 +802,64 @@
           "content": "<html>\n  <head>\n  <meta charset=\"utf-8\">\n  <style>\n    @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600;700&display=swap');\n    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }\n    html, body { width:100%; height:100%; overflow:hidden; background:transparent; }\n    body {\n      display:flex; align-items:center; justify-content:flex-end;\n      font-family:'Barlow',sans-serif; color:#fff;\n      padding-right: 20px;\n    }\n    .container { text-align:right; }\n    .line { white-space:nowrap; }\n    .line-revolve {\n      height: 36px;\n      position: relative;\n    }\n    .static {\n      font-size:28px; font-weight:400; letter-spacing:0.01em;\n      opacity:0;\n      animation: fadeIn 0.6s ease-out 0.2s forwards;\n    }\n    .revolve-wrap {\n      display:block;\n      perspective:6000px;\n      position: absolute;\n      right: 0;\n      top: 0;\n      transform: scale(0.1);\n      transform-origin: right top;\n      overflow: visible;\n    }\n    .revolve {\n      display:inline-block;\n      font-size:280px; font-weight:600; font-style:italic; letter-spacing:0.02em;\n      color: #ef4444;\n      transform-style:preserve-3d;\n      animation: revolveIn 1.4s cubic-bezier(0.23,1,0.32,1) 0.6s forwards,\n                 drift 12s ease-in-out 2.4s infinite;\n      opacity:0;\n      transform:rotateY(-180deg);\n      white-space:nowrap;\n    }\n\n    @keyframes fadeIn {\n      to { opacity:1; }\n    }\n    @keyframes revolveIn {\n      0%   { opacity:0; transform:rotateY(-180deg); }\n      30%  { opacity:1; }\n      100% { opacity:1; transform:rotateY(0deg); }\n    }\n    @keyframes drift {\n      0%, 100% { transform:rotateY(0deg); }\n      50%      { transform:rotateY(8deg); }\n    }\n  </style>\n  </head>\n  <body>\n    <div class=\"container\">\n      <div class=\"line\">\n        <span class=\"static\">The stellar revolution</span>\n      </div>\n      <div class=\"line-revolve\">\n        <div class=\"revolve-wrap\"><span class=\"revolve\">revolution</span></div>\n      </div>\n    </div>\n  </body>\n  </html>",
           "animationEnter": "slideRight",
           "animationDuration": 1000
+        },
+        {
+          "x": 20,
+          "y": 240,
+          "id": "bae310fe-429e-415b-8687-9cd0bef0ad8f",
+          "src": "/uploads/b3df53ec-21fd-4497-b187-46ee88381f52/fb455317-d820-455a-9922-d1c97387bea9.mp4",
+          "loop": true,
+          "type": "video",
+          "muted": true,
+          "width": 480,
+          "height": 270,
+          "locked": true,
+          "poster": "",
+          "zIndex": 2,
+          "autoplay": true,
+          "controls": true,
+          "objectFit": "contain",
+          "startTime": 10,
+          "playbackRate": 1.5
+        },
+        {
+          "x": 540,
+          "y": 200,
+          "id": "13beaa64-1b81-4615-8794-3795a30ac85e",
+          "alt": "",
+          "src": "/uploads/fb1bb758-c759-4ac1-a604-ce0ee8d36d35.png",
+          "type": "image",
+          "width": 420,
+          "height": 320,
+          "zIndex": 2,
+          "fragment": true,
+          "objectFit": "fill",
+          "borderRadius": 4,
+          "fragmentIndex": 1
+        },
+        {
+          "x": 180,
+          "y": 160,
+          "id": "05ef5d14-d78a-4a80-a373-94a1626b4b04",
+          "type": "text",
+          "width": 400,
+          "height": 112,
+          "zIndex": 1,
+          "content": "<p style=\"text-align: center; line-height: 1;\"><span style=\"color: rgb(255, 255, 255); font-family: Codystar, sans-serif; font-size: 16px; font-weight: 700;\"><strong>Satellite Survey</strong></span></p>",
+          "sizeMode": "auto"
+        },
+        {
+          "x": 460,
+          "y": 140,
+          "id": "4a086e69-8ca8-44cb-ab44-d0d28c88cc41",
+          "type": "text",
+          "width": 500,
+          "height": 103,
+          "zIndex": 3,
+          "content": "<p style=\"text-align: right; line-height: 0.85;\"><span style=\"color: rgb(226, 232, 240); font-family: Barlow, sans-serif; font-size: 24px;\">Rotation periods for &gt;1 million stars!</span></p>",
+          "fragment": true,
+          "sizeMode": "auto",
+          "fragmentIndex": 1
         }
       ],
       "background": {
@@ -613,6 +867,440 @@
         "color": "#000000"
       },
       "activeSection": 0
+    },
+    {
+      "id": "d2481bec-4191-4ede-9a52-5bb7a585fc86",
+      "notes": "",
+      "elements": [
+        {
+          "x": 20,
+          "y": 0,
+          "id": "85da7f0e-ec5f-4427-8cc8-589059374466",
+          "type": "text",
+          "width": 920,
+          "height": 80,
+          "zIndex": 3,
+          "content": "<p><span style=\"color: rgb(255, 255, 255); font-family: Barlow, sans-serif; font-size: 28px;\">Stellar rotation plays a fundamental role in the behavior of stars</span></p>"
+        },
+        {
+          "x": 180,
+          "y": 80,
+          "id": "c738c944-71cd-4f39-9aa4-197755c20ff2",
+          "alt": "",
+          "src": "/uploads/74e10ea3-98f8-491a-bc73-c43a72ed28b6.apng",
+          "type": "image",
+          "width": 560,
+          "height": 420,
+          "zIndex": 2,
+          "objectFit": "contain"
+        },
+        {
+          "x": 60,
+          "y": 100,
+          "id": "a9bdafc6-2c1d-4ace-9b57-61cbba812ca1",
+          "type": "text",
+          "width": 180,
+          "height": 80,
+          "zIndex": 3,
+          "content": "<p style=\"line-height: 1;\"><span style=\"color: rgb(255, 255, 255); font-size: 20px;\">magnetic fields</span></p>"
+        },
+        {
+          "x": 60,
+          "y": 240,
+          "id": "74598914-d7f8-4886-b1e4-eb1f61ac36f2",
+          "type": "text",
+          "width": 180,
+          "height": 80,
+          "zIndex": 3,
+          "content": "<p style=\"line-height: 1;\"><span style=\"color: rgb(255, 255, 255); font-size: 20px;\">mass loss</span></p>"
+        },
+        {
+          "x": 340,
+          "y": 460,
+          "id": "d0b5dbef-0658-470d-8d4a-a012a4cb562f",
+          "type": "text",
+          "width": 260,
+          "height": 80,
+          "zIndex": 3,
+          "content": "<p style=\"text-align: center; line-height: 1;\"><span style=\"color: rgb(255, 255, 255); font-size: 20px;\">dynamical interactions</span></p>"
+        },
+        {
+          "x": 60,
+          "y": 380,
+          "id": "61c4ef4f-91b1-4b55-a36a-c450dff8700a",
+          "type": "text",
+          "width": 260,
+          "height": 80,
+          "zIndex": 3,
+          "content": "<p style=\"text-align: left; line-height: 1;\"><span style=\"color: rgb(255, 255, 255); font-size: 20px;\">starspots + convection</span></p>"
+        },
+        {
+          "x": 640,
+          "y": 240,
+          "id": "798bf235-9bbe-4554-b680-e2c8ce17d4f5",
+          "type": "text",
+          "width": 260,
+          "height": 80,
+          "zIndex": 3,
+          "content": "<p style=\"text-align: right; line-height: 1;\"><span style=\"color: rgb(255, 255, 255); font-size: 20px;\">dynamo process</span></p>"
+        },
+        {
+          "x": 640,
+          "y": 100,
+          "id": "b4279e13-0a26-4dc5-90f6-f789fe15a77b",
+          "type": "text",
+          "width": 260,
+          "height": 80,
+          "zIndex": 3,
+          "content": "<p style=\"text-align: right; line-height: 1;\"><span style=\"color: rgb(255, 255, 255); font-size: 20px;\">differential rotation</span></p>"
+        },
+        {
+          "x": 20,
+          "y": 120,
+          "id": "275e8a56-883a-4b12-80fc-4ce481a833c6",
+          "type": "callout",
+          "width": 36,
+          "height": 36,
+          "zIndex": 10,
+          "fontSize": 16,
+          "calloutColor": "#ef4444",
+          "calloutNumber": 1,
+          "calloutTextColor": "#ffffff"
+        },
+        {
+          "x": 20,
+          "y": 260,
+          "id": "df237b61-7f26-4c53-b520-27b1260c2f84",
+          "type": "callout",
+          "width": 36,
+          "height": 36,
+          "zIndex": 10,
+          "fontSize": 16,
+          "calloutColor": "#ef4444",
+          "calloutNumber": 2,
+          "calloutTextColor": "#ffffff"
+        },
+        {
+          "x": 20,
+          "y": 400,
+          "id": "0a794572-cd8b-4553-9c28-e89cc269cf71",
+          "type": "callout",
+          "width": 36,
+          "height": 36,
+          "zIndex": 10,
+          "fontSize": 16,
+          "calloutColor": "#ef4444",
+          "calloutNumber": 3,
+          "calloutTextColor": "#ffffff"
+        },
+        {
+          "x": 900,
+          "y": 120,
+          "id": "88352b0d-a6a6-4739-9807-7b941de27992",
+          "type": "callout",
+          "width": 36,
+          "height": 36,
+          "zIndex": 10,
+          "fontSize": 16,
+          "calloutColor": "#ef4444",
+          "calloutNumber": 4,
+          "calloutTextColor": "#ffffff"
+        },
+        {
+          "x": 900,
+          "y": 260,
+          "id": "1e188edd-6c79-4fa8-8f7a-a3b20b448790",
+          "type": "callout",
+          "width": 36,
+          "height": 36,
+          "zIndex": 10,
+          "fontSize": 16,
+          "calloutColor": "#ef4444",
+          "calloutNumber": 5,
+          "calloutTextColor": "#ffffff"
+        },
+        {
+          "x": 900,
+          "y": 400,
+          "id": "71e824cd-05de-4e31-8080-2716af0186ad",
+          "type": "callout",
+          "width": 36,
+          "height": 36,
+          "zIndex": 10,
+          "fontSize": 16,
+          "calloutColor": "#ef4444",
+          "calloutNumber": 6,
+          "calloutTextColor": "#ffffff"
+        },
+        {
+          "x": 320,
+          "y": 480,
+          "id": "ec7cbd8d-9a45-4b7d-a9cf-3eccae7cf0d7",
+          "type": "callout",
+          "width": 36,
+          "height": 36,
+          "zIndex": 10,
+          "fontSize": 16,
+          "calloutColor": "#ef4444",
+          "calloutNumber": 7,
+          "calloutTextColor": "#ffffff"
+        },
+        {
+          "x": 640,
+          "y": 380,
+          "id": "d65918ba-6090-4bb6-bbc0-2709d851b5e4",
+          "type": "text",
+          "width": 260,
+          "height": 80,
+          "zIndex": 3,
+          "content": "<p style=\"text-align: right; line-height: 1;\"><span style=\"color: rgb(255, 255, 255); font-size: 20px;\">activity cycles</span></p>"
+        }
+      ],
+      "background": {
+        "type": "color",
+        "color": "#000000"
+      },
+      "slideGroup": "aa81ddc5-977c-46e8-b9f6-b6d6506fe7f6",
+      "autoAnimate": false,
+      "activeSection": 0,
+      "autoAnimateEasing": "ease-in-out",
+      "autoAnimateDuration": 0.8
+    },
+    {
+      "id": "9493d701-9279-4c68-9353-128621c8274c",
+      "notes": "",
+      "elements": [
+        {
+          "x": 20,
+          "y": 0,
+          "id": "107d7b46-bea7-420d-b201-6b5565e8fd6c",
+          "type": "text",
+          "width": 920,
+          "height": 80,
+          "zIndex": 3,
+          "content": "<p><span style=\"color: rgb(255, 255, 255); font-family: Barlow, sans-serif; font-size: 28px;\">My thesis focuses on two key aspects of stellar rotation:</span></p>"
+        },
+        {
+          "x": 180,
+          "y": 80,
+          "id": "17652662-df6d-41db-b734-034a067426c7",
+          "alt": "",
+          "src": "/uploads/74e10ea3-98f8-491a-bc73-c43a72ed28b6.apng",
+          "type": "image",
+          "width": 560,
+          "height": 420,
+          "zIndex": 2,
+          "objectFit": "contain"
+        },
+        {
+          "x": 60,
+          "y": 100,
+          "id": "65d64005-3bb6-4ed8-871b-878852cc9afb",
+          "type": "text",
+          "width": 180,
+          "height": 80,
+          "zIndex": 3,
+          "content": "<p style=\"line-height: 1;\"><span style=\"color: rgb(255, 255, 255); font-size: 20px;\">magnetic fields</span></p>"
+        },
+        {
+          "x": 60,
+          "y": 240,
+          "id": "abe1784e-8b80-4da8-8bd1-57ffde374374",
+          "type": "text",
+          "width": 180,
+          "height": 80,
+          "zIndex": 3,
+          "content": "<p style=\"line-height: 1;\"><span style=\"color: rgb(255, 255, 255); font-size: 20px;\">mass loss</span></p>"
+        },
+        {
+          "x": 340,
+          "y": 460,
+          "id": "a9fccb84-e62d-4e40-a09c-85671a50fc74",
+          "type": "text",
+          "width": 260,
+          "height": 80,
+          "zIndex": 3,
+          "content": "<p style=\"text-align: center; line-height: 1;\"><span style=\"color: rgb(255, 255, 255); font-size: 20px;\">dynamical interactions</span></p>"
+        },
+        {
+          "x": 60,
+          "y": 380,
+          "id": "f5397c5c-4f5d-48b5-9741-a5e12ba8395d",
+          "type": "text",
+          "width": 260,
+          "height": 80,
+          "zIndex": 3,
+          "content": "<p style=\"text-align: left; line-height: 1;\"><span style=\"color: rgb(255, 255, 255); font-size: 20px;\">starspots + convection</span></p>"
+        },
+        {
+          "x": 640,
+          "y": 240,
+          "id": "3b0b2e64-efd3-4049-a280-7141e31f9a0d",
+          "type": "text",
+          "width": 260,
+          "height": 80,
+          "zIndex": 3,
+          "content": "<p style=\"text-align: right; line-height: 1;\"><span style=\"color: rgb(255, 255, 255); font-size: 20px;\">dynamo process</span></p>"
+        },
+        {
+          "x": 640,
+          "y": 100,
+          "id": "60e1d63a-9ad2-44bc-a4eb-0ab2c0d30b4c",
+          "type": "text",
+          "width": 260,
+          "height": 80,
+          "zIndex": 3,
+          "content": "<p style=\"text-align: right; line-height: 1;\"><span style=\"color: rgb(255, 255, 255); font-size: 20px;\">differential rotation</span></p>"
+        },
+        {
+          "x": 20,
+          "y": 120,
+          "id": "98a584cc-f62f-4aab-9f4b-aa2ef429029e",
+          "type": "callout",
+          "width": 36,
+          "height": 36,
+          "zIndex": 10,
+          "fontSize": 16,
+          "calloutColor": "#ef4444",
+          "calloutNumber": 1,
+          "calloutTextColor": "#ffffff"
+        },
+        {
+          "x": 20,
+          "y": 260,
+          "id": "e49b6d56-81f1-4197-bebd-4f206d3f9401",
+          "type": "callout",
+          "width": 36,
+          "height": 36,
+          "zIndex": 10,
+          "fontSize": 16,
+          "calloutColor": "#ef4444",
+          "calloutNumber": 2,
+          "calloutTextColor": "#ffffff"
+        },
+        {
+          "x": 20,
+          "y": 400,
+          "id": "2f3f12ff-ccfd-4f9b-afa8-81a343c24cef",
+          "type": "callout",
+          "width": 36,
+          "height": 36,
+          "zIndex": 10,
+          "fontSize": 16,
+          "calloutColor": "#ef4444",
+          "calloutNumber": 3,
+          "calloutTextColor": "#ffffff"
+        },
+        {
+          "x": 900,
+          "y": 120,
+          "id": "2aad0009-ab88-4c24-94c3-ea99cee6189d",
+          "type": "callout",
+          "width": 36,
+          "height": 36,
+          "zIndex": 10,
+          "fontSize": 16,
+          "calloutColor": "#ef4444",
+          "calloutNumber": 4,
+          "calloutTextColor": "#ffffff"
+        },
+        {
+          "x": 900,
+          "y": 260,
+          "id": "a710d93e-340f-42b8-bd64-4828db36be76",
+          "type": "callout",
+          "width": 36,
+          "height": 36,
+          "zIndex": 10,
+          "fontSize": 16,
+          "calloutColor": "#ef4444",
+          "calloutNumber": 5,
+          "calloutTextColor": "#ffffff"
+        },
+        {
+          "x": 900,
+          "y": 400,
+          "id": "a2569cb0-07be-4345-b9ef-488ede392e48",
+          "type": "callout",
+          "width": 36,
+          "height": 36,
+          "zIndex": 10,
+          "fontSize": 16,
+          "calloutColor": "#ef4444",
+          "calloutNumber": 6,
+          "calloutTextColor": "#ffffff"
+        },
+        {
+          "x": 320,
+          "y": 480,
+          "id": "fdef3e4c-1862-4077-a5f7-3b51c59b4291",
+          "type": "callout",
+          "width": 36,
+          "height": 36,
+          "zIndex": 10,
+          "fontSize": 16,
+          "calloutColor": "#ef4444",
+          "calloutNumber": 7,
+          "calloutTextColor": "#ffffff"
+        },
+        {
+          "x": 640,
+          "y": 380,
+          "id": "1f2c2666-4416-426b-b8fb-3b583fcaef9a",
+          "type": "text",
+          "width": 260,
+          "height": 80,
+          "zIndex": 3,
+          "content": "<p style=\"text-align: right; line-height: 1;\"><span style=\"color: rgb(255, 255, 255); font-size: 20px;\">activity cycles</span></p>"
+        },
+        {
+          "x": 280,
+          "y": 440,
+          "id": "cffc3ab2-663a-49a8-a0ea-403683ffbf92",
+          "fill": "none",
+          "text": "",
+          "type": "shape",
+          "shape": "rounded-rect",
+          "width": 360,
+          "height": 120,
+          "stroke": "#ffffff",
+          "zIndex": 17,
+          "opacity": 1,
+          "fontSize": 16,
+          "textColor": "#ffffff",
+          "strokeWidth": 2,
+          "borderRadius": 0,
+          "animationEnter": "zoomIn"
+        },
+        {
+          "x": 600,
+          "y": 80,
+          "id": "20467c0a-4ba0-4f66-ac16-e9f934358f49",
+          "fill": "none",
+          "text": "",
+          "type": "shape",
+          "shape": "rounded-rect",
+          "width": 360,
+          "height": 120,
+          "stroke": "#ffffff",
+          "zIndex": 17,
+          "opacity": 1,
+          "fontSize": 16,
+          "textColor": "#ffffff",
+          "strokeWidth": 2,
+          "borderRadius": 0,
+          "animationEnter": "zoomIn"
+        }
+      ],
+      "background": {
+        "type": "color",
+        "color": "#000000"
+      },
+      "slideGroup": "aa81ddc5-977c-46e8-b9f6-b6d6506fe7f6",
+      "autoAnimate": true,
+      "activeSection": 0,
+      "autoAnimateEasing": "ease-in-out",
+      "autoAnimateDuration": 0.8
     },
     {
       "id": "a83c57be-cc50-48ad-9ea1-812031e6a64a",
@@ -890,24 +1578,82 @@
           "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">Modeling the dynamical evolution of binary stars</span></p>"
         },
         {
-          "x": 20,
-          "y": 160,
+          "x": 60,
+          "y": 100,
           "id": "7d7a8529-750b-4cbe-bc5e-5cd8f621c8e1",
           "alt": "",
           "src": "/uploads/fdb18096-1990-44e2-a475-a0ab37e3c05d.png",
+          "crop": null,
           "type": "image",
-          "width": 920,
-          "height": 220,
+          "width": 340,
+          "height": 181,
+          "imageH": 220,
+          "imageW": 920,
           "zIndex": 2,
           "shadowX": 2,
           "shadowY": 2,
           "objectFit": "contain",
-          "shadowBlur": 2
+          "shadowBlur": 2,
+          "borderRadius": 4,
+          "citationText": "Hut 1981",
+          "imageOffsetX": 0,
+          "imageOffsetY": -22,
+          "citationColor": "#5e5c64"
+        },
+        {
+          "x": 480,
+          "y": 100,
+          "id": "b0d35e36-010e-4df1-8d49-54e60c026d51",
+          "alt": "",
+          "src": "/uploads/fdb18096-1990-44e2-a475-a0ab37e3c05d.png",
+          "crop": null,
+          "type": "image",
+          "width": 360,
+          "height": 180,
+          "imageH": 220,
+          "imageW": 920,
+          "zIndex": 2,
+          "shadowX": 2,
+          "shadowY": 2,
+          "fragment": true,
+          "objectFit": "contain",
+          "shadowBlur": 2,
+          "borderRadius": 4,
+          "citationText": "Baraffe et al. 2015",
+          "imageOffsetX": -337,
+          "imageOffsetY": -24,
+          "citationColor": "#5e5c64",
+          "fragmentIndex": 1
+        },
+        {
+          "x": 480,
+          "y": 340,
+          "id": "ba09b6a9-b8d7-4670-9ee7-45c9b7410280",
+          "alt": "",
+          "src": "/uploads/fdb18096-1990-44e2-a475-a0ab37e3c05d.png",
+          "crop": null,
+          "type": "image",
+          "width": 231,
+          "height": 180,
+          "imageH": 220,
+          "imageW": 920,
+          "zIndex": 2,
+          "shadowX": 2,
+          "shadowY": 2,
+          "fragment": true,
+          "objectFit": "contain",
+          "shadowBlur": 2,
+          "borderRadius": 4,
+          "citationText": "Matt et al. 2015",
+          "imageOffsetX": -690,
+          "imageOffsetY": -23,
+          "citationColor": "#5e5c64",
+          "fragmentIndex": 2
         }
       ],
       "background": {
         "type": "color",
-        "color": "#ffffff"
+        "color": "#f8f9fa"
       },
       "transition": "differential-rotation",
       "activeSection": 1
@@ -951,7 +1697,7 @@
           "id": "2c8f5c47-0e7b-4ea1-a8ad-0be96e406689",
           "type": "text",
           "width": 500,
-          "height": 249,
+          "height": 259,
           "zIndex": 3,
           "content": "<p style=\"text-align: left; line-height: 0.85;\"><span style=\"color: rgb(226, 232, 240); font-family: Barlow, sans-serif; font-size: 24px;\">Gravitational interactions</span></p><p style=\"text-align: left; line-height: 0.85;\"><span style=\"color: rgb(226, 232, 240); font-family: Barlow, sans-serif; font-size: 24px;\">can deform the shape of the star,</span></p><p style=\"text-align: left; line-height: 0.85;\"><span style=\"color: rgb(226, 232, 240); font-family: Barlow, sans-serif; font-size: 24px;\">introducing a \"tidal bulge\"</span></p>",
           "sizeMode": "auto"
@@ -1000,7 +1746,7 @@
           "id": "cf4fad1d-f957-430a-8448-6bb4def95418",
           "type": "text",
           "width": 480,
-          "height": 108,
+          "height": 112,
           "zIndex": 3,
           "content": "<p style=\"line-height: 1;\"><span style=\"color: rgb(226, 232, 240); font-family: Barlow, sans-serif; font-size: 20px;\">Constant Phase Lag (Ferraz Mello 2008)</span></p>",
           "sizeMode": "auto"
@@ -1021,7 +1767,7 @@
           "id": "96c21b57-f37d-4fe4-bfe0-0ac3ac72ebfe",
           "type": "text",
           "width": 200,
-          "height": 156,
+          "height": 162,
           "zIndex": 5,
           "content": "<p><span style=\"color: rgb(226, 232, 240); font-size: 28px;\"><span data-math-latex=\"\\epsilon \\approx \\mathcal{Q}^{-1}\" data-math-display=\"true\" data-math-fontsize=\"32px\" data-math-color=\"#000000\" class=\"math-node math-display\"></span></span></p>",
           "sizeMode": "auto"
@@ -1042,7 +1788,7 @@
           "id": "48bc1542-8846-419d-9612-e3b96d90b6b4",
           "type": "text",
           "width": 540,
-          "height": 108,
+          "height": 112,
           "zIndex": 8,
           "content": "<p style=\"text-align: center; line-height: 1;\"><span style=\"color: rgb(226, 232, 240); font-family: Barlow, sans-serif; font-size: 20px;\">Under weak friction, we can assume one of two models:</span></p>",
           "sizeMode": "auto"
@@ -1095,7 +1841,7 @@
           "id": "e6e15377-33c4-4fc2-8003-d739d4c43cb6",
           "type": "text",
           "width": 660,
-          "height": 108,
+          "height": 112,
           "zIndex": 10,
           "content": "<p style=\"text-align: center; line-height: 1;\"><span style=\"color: rgb(226, 232, 240); font-family: Barlow, sans-serif; font-size: 20px;\">Tidal friction causes the system to dissipate energy in the form of heat</span></p>",
           "sizeMode": "auto"
@@ -1232,12 +1978,33 @@
           "width": 920,
           "height": 80,
           "zIndex": 1,
+          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">Central question: can we infer tidal Q parameters from observations?</span></p>"
+        }
+      ],
+      "background": {
+        "type": "color",
+        "color": "#ffffff"
+      },
+      "activeSection": 1
+    },
+    {
+      "id": "97cdb7d0-1c68-46a3-a857-d305edf5dcd7",
+      "notes": "",
+      "elements": [
+        {
+          "x": 20,
+          "y": 0,
+          "id": "5607e2cf-0a0e-4033-aa13-e8138a943f4b",
+          "type": "text",
+          "width": 920,
+          "height": 80,
+          "zIndex": 1,
           "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">Sensitivity analysis: CTL + stellar</span></p>"
         },
         {
           "x": 40,
           "y": 80,
-          "id": "b3272d4d-401b-4ccf-84ed-7c83dcc10328",
+          "id": "98912db4-a1d8-4f2b-9292-00ce6994cc53",
           "alt": "",
           "src": "/uploads/07e55fef-2b26-4a85-9245-d0cbe1fcd2c7.png",
           "type": "image",
@@ -1614,6 +2381,53 @@
       "showPresentGrid": true
     },
     {
+      "id": "d3175344-b1d4-46a4-a397-b9537369e90e",
+      "notes": "",
+      "elements": [
+        {
+          "x": 0,
+          "y": 0,
+          "id": "94f8e215-8301-43cd-93dd-b9c0e26c7005",
+          "type": "text",
+          "width": 960,
+          "height": 150,
+          "zIndex": 1,
+          "content": "<p style=\"text-align: center;\"><span style=\"font-family: &quot;Computer Modern Sans&quot;, sans-serif; font-size: 40px;\">Differential Rotation</span></p>",
+          "sizeMode": "auto"
+        },
+        {
+          "x": 80,
+          "y": 120,
+          "id": "cbb20d40-3f3b-4d8a-a922-02ff7dbcd3fc",
+          "type": "callout",
+          "width": 36,
+          "height": 36,
+          "zIndex": 10,
+          "fontSize": 16,
+          "calloutColor": "#ef4444",
+          "calloutNumber": 1,
+          "calloutTextColor": "#ffffff"
+        },
+        {
+          "x": 120,
+          "y": 100,
+          "id": "f9cfe5b6-8c45-4f0e-a1d3-222468b42cfa",
+          "type": "text",
+          "width": 360,
+          "height": 100,
+          "zIndex": 3,
+          "content": "<p style=\"line-height: 0.7;\"><span style=\"color: rgb(255, 255, 255); font-family: Inter, sans-serif; font-size: 20px; font-weight: 300;\">Derivation: how can we represent starspots in time and frequency?</span></p>"
+        }
+      ],
+      "background": {
+        "type": "color",
+        "color": "#0a0a0f"
+      },
+      "hideFooter": true,
+      "showPageNumber": false,
+      "showPresentGrid": true
+    },
+    {
       "id": "022d6231-642d-4d18-974e-f539ca50f859",
       "notes": "",
       "elements": [
@@ -1635,7 +2449,9 @@
           "width": 380,
           "height": 80,
           "zIndex": 1,
-          "content": "<p style=\"text-align: left;\"><span style=\"color: rgb(148, 163, 184); font-family: Barlow, sans-serif; font-size: 24px;\"><em>well, it's hard...</em></span></p>"
+          "content": "<p style=\"text-align: left;\"><span style=\"color: rgb(148, 163, 184); font-family: Barlow, sans-serif; font-size: 24px;\"><em>well, it's hard...</em></span></p>",
+          "fragment": false,
+          "fragmentIndex": 1
         },
         {
           "x": 20,
@@ -1659,6 +2475,17 @@
           "height": 360,
           "zIndex": 2,
           "objectFit": "contain"
+        },
+        {
+          "x": 0,
+          "y": 220,
+          "id": "228b2b6d-0ce4-47a9-b282-0e240778a035",
+          "type": "html",
+          "width": 880,
+          "height": 120,
+          "locked": true,
+          "zIndex": 2,
+          "content": "<!DOCTYPE html><html><head><meta charset=\"utf-8\">\n<style>\n@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Playfair+Display:wght@400;500;600;700;800;900&family=Bebas+Neue&family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&family=Space+Mono:wght@400;700&family=Source+Sans+3:wght@300;400;500;600;700;800;900&family=Merriweather:wght@300;400;700;900&family=Fira+Code:wght@300;400;500;600;700&family=Comfortaa:wght@300;400;500;600;700&family=Codystar:wght@300;400&display=swap');\n*{margin:0;padding:0;box-sizing:border-box}\nhtml,body{width:1000%;height:1000%;overflow:hidden;background:transparent;transform:scale(0.1);transform-origin:0 0}\nbody{display:flex;align-items:center;justify-content:center;font-family:'Barlow', sans-serif;color:#9a9996;font-style:italic}\n</style>\n<style>\n.tw{font-size:4800px;white-space:nowrap;overflow:hidden;border-right:3px solid #9a9996;width:0;animation:tw-type 2s steps(18) forwards,tw-blink 0.6s step-end infinite}\n@keyframes tw-type{to{width:18ch}}\n@keyframes tw-blink{50%{border-color:transparent}}\n</style></head><body><div class=\"tw\">well, it's hard...</div></body></html>"
         }
       ],
       "background": {
@@ -1776,6 +2603,50 @@
       "activeSection": 2
     },
     {
+      "id": "28ce9581-cd28-4fee-a59a-b5485bf8ef4b",
+      "notes": "",
+      "elements": [
+        {
+          "x": 20,
+          "y": 0,
+          "id": "de9aaa46-c86f-4195-9212-f1889bd1f163",
+          "type": "text",
+          "width": 920,
+          "height": 80,
+          "zIndex": 1,
+          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">Parameterizing differential rotation</span></p>"
+        },
+        {
+          "x": 0,
+          "y": 80,
+          "id": "6da8086b-178e-4b5f-b0d9-4803a1d41df8",
+          "type": "text",
+          "width": 600,
+          "height": 161,
+          "zIndex": 1,
+          "content": "<p><span style=\"color: rgb(30, 41, 59); font-size: 28px;\"><span data-math-latex=\"\\Omega(\\Phi) = \\Omega_{\\rm eq} (1 - \\kappa \\sin^2\\Phi)\" data-math-display=\"true\" data-math-fontsize=\"32px\" data-math-color=\"rgb(148, 163, 184)\" class=\"math-node math-display\"></span></span></p>",
+          "sizeMode": "auto"
+        },
+        {
+          "x": 460,
+          "y": -20,
+          "id": "5cffd2ea-6fa5-4d19-a6df-cf503a6795ec",
+          "type": "latex",
+          "width": 500,
+          "height": 380,
+          "locked": true,
+          "zIndex": 2,
+          "content": "\\begin{align*}\n  \\Phi &= \\mathrm{latitude} \\\\\n  \\Omega_{\\rm eq} &= \\mathrm{equitorial \\,\\, period} \\\\\n  \\kappa &= \\mathrm{differential \\,\\, rotation \\,\\, shear} \n\\end{align*}",
+          "textColor": "#241f31"
+        }
+      ],
+      "background": {
+        "type": "color",
+        "color": "#ffffff"
+      },
+      "activeSection": 2
+    },
+    {
       "id": "15b792ec-3ec4-4731-948d-bf347cd44f0c",
       "notes": "",
       "elements": [
@@ -1787,10 +2658,10 @@
           "width": 920,
           "height": 80,
           "zIndex": 1,
-          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">Methods for measuring differential rotation and their limitations</span></p>"
+          "content": "<p><span style=\"color: rgb(226, 232, 240); font-family: Barlow, sans-serif; font-size: 28px;\">Methods for measuring differential rotation and their limitations</span></p>"
         },
         {
-          "x": 100,
+          "x": 20,
           "y": 140,
           "id": "7fa85c05-3b85-47aa-86fe-8e0e1cd6fc38",
           "alt": "",
@@ -1804,7 +2675,7 @@
           "clickToExpand": true
         },
         {
-          "x": 600,
+          "x": 300,
           "y": 140,
           "id": "707e6ced-3759-4c80-9fb6-5091a99d507c",
           "alt": "",
@@ -1816,6 +2687,143 @@
           "objectFit": "fill",
           "borderRadius": 4,
           "clickToExpand": true
+        },
+        {
+          "x": 20,
+          "y": 80,
+          "id": "3eb6c75c-8710-4b8d-b8ef-e5dfca208dfa",
+          "type": "text",
+          "width": 200,
+          "height": 97,
+          "zIndex": 1,
+          "content": "<p style=\"line-height: 0.7;\"><span style=\"font-family: Roboto, sans-serif; font-size: 20px; font-weight: 300;\">asteroseismology</span></p>",
+          "sizeMode": "auto"
+        },
+        {
+          "x": 300,
+          "y": 80,
+          "id": "e94a1bb8-cd77-41b9-a591-80ce3f1c951e",
+          "type": "text",
+          "width": 200,
+          "height": 97,
+          "zIndex": 1,
+          "content": "<p style=\"line-height: 0.7;\"><span style=\"font-family: Roboto, sans-serif; font-size: 20px; font-weight: 300;\">doppler imaging</span></p>",
+          "sizeMode": "auto"
+        },
+        {
+          "x": 560,
+          "y": 80,
+          "id": "ecaa732a-41c9-441d-a343-cd7bebb92941",
+          "type": "text",
+          "width": 200,
+          "height": 97,
+          "zIndex": 1,
+          "content": "<p style=\"line-height: 0.7;\"><span style=\"font-family: Roboto, sans-serif; font-size: 20px; font-weight: 300;\">transit mapping</span></p>",
+          "sizeMode": "auto"
+        },
+        {
+          "x": 60,
+          "y": 320,
+          "id": "d18c5a4e-516f-4718-858c-9a8adebd2d04",
+          "type": "text",
+          "width": 280,
+          "height": 97,
+          "zIndex": 1,
+          "content": "<p style=\"line-height: 0.7;\"><span style=\"font-family: Roboto, sans-serif; font-size: 20px; font-weight: 300;\">spectral fourier transform</span></p>",
+          "sizeMode": "auto"
+        },
+        {
+          "x": 400,
+          "y": 320,
+          "id": "4fdd5e80-9e5c-4669-8f02-2df39292f218",
+          "type": "text",
+          "width": 280,
+          "height": 97,
+          "zIndex": 1,
+          "content": "<p style=\"line-height: 0.7;\"><span style=\"font-family: Roboto, sans-serif; font-size: 20px; font-weight: 300;\">periodogram</span></p>",
+          "sizeMode": "auto"
+        },
+        {
+          "x": 660,
+          "y": 320,
+          "id": "1b6ffb57-36c8-4a8e-9a68-d4b61d1d4f65",
+          "type": "text",
+          "width": 280,
+          "height": 97,
+          "zIndex": 1,
+          "content": "<p style=\"line-height: 0.7;\"><span style=\"font-family: Roboto, sans-serif; font-size: 20px; font-weight: 300;\">gaussian processes</span></p>",
+          "sizeMode": "auto"
+        }
+      ],
+      "background": {
+        "type": "color",
+        "color": "#000000"
+      },
+      "activeSection": 2
+    },
+    {
+      "id": "52f26bc8-7a66-494c-82e8-13c104d81675",
+      "notes": "",
+      "elements": [
+        {
+          "x": 20,
+          "y": 0,
+          "id": "3b4c8ac2-513f-48d3-8566-86339064b3c8",
+          "type": "text",
+          "width": 920,
+          "height": 80,
+          "zIndex": 1,
+          "content": "<p><span style=\"color: rgb(30, 41, 59); font-family: Barlow, sans-serif; font-size: 28px;\">Measuring differential rotation: the transit method</span></p>"
+        },
+        {
+          "x": 440,
+          "y": 120,
+          "id": "a5ac6d85-c46f-4ff8-b6a4-30fd83f6f4da",
+          "alt": "",
+          "src": "/uploads/91ee64be-fa3d-476c-b39b-25cd5c0ee362.png",
+          "type": "image",
+          "width": 500,
+          "height": 360,
+          "zIndex": 2,
+          "shadowX": 2,
+          "shadowY": 2,
+          "objectFit": "contain",
+          "shadowBlur": 2,
+          "borderRadius": 4,
+          "citationText": "Davenport PhD thesis",
+          "citationAlign": "right"
+        },
+        {
+          "x": 60,
+          "y": 320,
+          "id": "bae6148e-a505-4d2c-bdd0-2a275668ba84",
+          "alt": "",
+          "src": "/uploads/3d7402cb-2163-4b5d-9605-6ef85da5039d.png",
+          "type": "image",
+          "width": 360,
+          "height": 240,
+          "zIndex": 2,
+          "shadowX": 2,
+          "shadowY": 2,
+          "objectFit": "contain",
+          "shadowBlur": 2,
+          "borderRadius": 4
+        },
+        {
+          "x": 60,
+          "y": 100,
+          "id": "ae88ff43-574d-48e8-a351-1381b8b1b79d",
+          "alt": "",
+          "src": "/uploads/0dc9c6d1-2217-40f3-88bc-d5d4b07c1a8c.png",
+          "type": "image",
+          "width": 360,
+          "height": 220,
+          "zIndex": 2,
+          "shadowX": 2,
+          "shadowY": 2,
+          "objectFit": "contain",
+          "shadowBlur": 2,
+          "borderRadius": 4
         }
       ],
       "background": {
@@ -1857,7 +2865,7 @@
           "width": 920,
           "height": 80,
           "zIndex": 1,
-          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">What if we could come up with an <strong><em>interpretable</em></strong> GP model?</span></p>"
+          "content": "<p><span style=\"color: rgb(226, 232, 240); font-family: Barlow, sans-serif; font-size: 28px;\">What if we could come up with an <strong><em>interpretable</em></strong> GP model?</span></p>"
         },
         {
           "x": 80,
@@ -1869,11 +2877,67 @@
           "zIndex": 1,
           "content": "<p style=\"text-align: left;\"><span style=\"color: rgb(148, 163, 184); font-family: Barlow, sans-serif; font-size: 24px;\"><em>in which hyperparameters of the kernel represent physical spot properties?</em></span></p>",
           "sizeMode": "auto"
+        },
+        {
+          "x": 520,
+          "y": 170,
+          "id": "0da146c1-75fc-4e8b-b51b-bb94212fa65b",
+          "alt": "",
+          "src": "/uploads/019f43d6-6b96-43b4-91f6-6f483ea80b6a.apng",
+          "type": "image",
+          "width": 400,
+          "height": 300,
+          "zIndex": 2,
+          "snapRef": "mc",
+          "objectFit": "contain"
+        },
+        {
+          "x": 40,
+          "y": 180,
+          "id": "7794caec-f398-498b-ada4-baab6a406f0d",
+          "src": "/uploads/b3df53ec-21fd-4497-b187-46ee88381f52/bff421d3-64a2-499d-abf8-ec4dbcda7a23.mp4",
+          "loop": true,
+          "type": "video",
+          "muted": true,
+          "width": 480,
+          "height": 270,
+          "locked": true,
+          "poster": "",
+          "zIndex": 2,
+          "autoplay": true,
+          "controls": true,
+          "objectFit": "contain",
+          "startTime": 8,
+          "playbackRate": 2
+        },
+        {
+          "x": 180,
+          "y": 131.5,
+          "id": "55b9a13b-2952-4373-86b7-5ea000af7a51",
+          "type": "text",
+          "width": 200,
+          "height": 97,
+          "zIndex": 1,
+          "content": "<p style=\"text-align: center; line-height: 0.7;\"><span style=\"font-family: Roboto, sans-serif; font-size: 20px; font-weight: 300;\">the sun</span></p>",
+          "snapRef": "mc",
+          "sizeMode": "auto"
+        },
+        {
+          "x": 620,
+          "y": 131.5,
+          "id": "2ca91d07-9423-4ce9-97f8-1eea9b2885bb",
+          "type": "text",
+          "width": 200,
+          "height": 97,
+          "zIndex": 1,
+          "content": "<p style=\"text-align: center; line-height: 0.7;\"><span style=\"font-family: Roboto, sans-serif; font-size: 20px; font-weight: 300;\">a model</span></p>",
+          "snapRef": "mc",
+          "sizeMode": "auto"
         }
       ],
       "background": {
         "type": "color",
-        "color": "#ffffff"
+        "color": "#000000"
       },
       "activeSection": 2
     },
@@ -1889,19 +2953,77 @@
           "width": 920,
           "height": 80,
           "zIndex": 1,
-          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">A physically-motivated starspot model</span></p>"
+          "content": "<p style=\"line-height: 0.8;\"><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">A physically-motivated starspot model</span></p>"
         },
         {
-          "x": 20,
-          "y": 80,
+          "x": 40,
+          "y": 200,
           "id": "9ab80b83-d1fa-4fd3-b812-36e90d0a9028",
           "alt": "",
           "src": "/uploads/681bf995-fa33-4f19-92e5-4abb068d9707.gif",
           "type": "image",
-          "width": 900,
-          "height": 400,
+          "width": 880,
+          "height": 380,
           "zIndex": 2,
           "objectFit": "contain"
+        },
+        {
+          "x": 40,
+          "y": 80,
+          "id": "ca461d05-6d97-47f6-9022-f283c6220783",
+          "type": "text",
+          "width": 520,
+          "height": 140,
+          "zIndex": 1,
+          "content": "<p style=\"line-height: 0.8;\"><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 20px;\">Model from Kipping 2012 presents a simple starspot model that produces quasi-periodic lightcurves</span></p>"
+        },
+        {
+          "x": 540,
+          "y": -30,
+          "id": "eca683b8-5c8e-4435-9172-9c7618624961",
+          "type": "latex",
+          "width": 440,
+          "height": 280,
+          "locked": true,
+          "zIndex": 2,
+          "content": "\\begin{align*}\n\\small\n  P_{\\rm eq} &= \\mathrm{rotation \\,\\, period \\,\\, at \\,\\, equator} \\\\\n  I &= \\mathrm{inclination} \\\\\n  \\kappa &= \\mathrm{differential \\,\\, rotation \\,\\, shear} \\\\\n  \\ell_{\\rm spot} &= \\mathrm{spot \\,\\, lifetime} \\\\\n  \\tau_{\\rm spot} &= \\mathrm{spot \\,\\, emergence/decay \\,\\, timescale} \\\\\n  \\alpha_{\\rm max} &= \\mathrm{max \\,\\, spot \\,\\, size} \\\\\n  N_{\\rm spot} &= \\mathrm{number \\,\\, of \\,\\, spots}\n\\end{align*}",
+          "fontSize": 14,
+          "textColor": "#3d3846"
+        }
+      ],
+      "background": {
+        "type": "color",
+        "color": "#ffffff"
+      },
+      "activeSection": 2
+    },
+    {
+      "id": "65b7c8bd-e9cc-4b08-a527-a5e37a22dcbe",
+      "notes": "",
+      "elements": [
+        {
+          "x": 20,
+          "y": 120,
+          "id": "a1286b77-b88c-4f0f-83dc-e69588b2c640",
+          "type": "text",
+          "width": 920,
+          "height": 237,
+          "zIndex": 1,
+          "content": "<p style=\"text-align: center; line-height: 1;\"><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">To understand how lightcurves encode information about the surface of the star (differential rotation and inclination) and spot properties (spot lifetimes, sizes, contrasts, numbers), let's break down this model further</span></p>",
+          "sizeMode": "auto"
+        },
+        {
+          "x": 40,
+          "y": 340,
+          "id": "97f1d529-174f-41ab-95d5-4bae96411a51",
+          "type": "text",
+          "width": 920,
+          "height": 112,
+          "zIndex": 1,
+          "content": "<p style=\"text-align: center; line-height: 1;\"><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">First let's examine how a single spot affects the observed flux...</span></p>",
+          "fragment": true,
+          "sizeMode": "auto",
+          "fragmentIndex": 1
         }
       ],
       "background": {
@@ -1922,7 +3044,7 @@
           "width": 920,
           "height": 80,
           "zIndex": 2,
-          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">Visibility function</span></p>"
+          "content": "<p style=\"line-height: 0.9;\"><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">Visibility function: describes the dip in flux due to a rotating spot</span></p>"
         },
         {
           "x": 20,
@@ -1953,8 +3075,64 @@
           "type": "text",
           "width": 920,
           "height": 80,
+          "zIndex": 3,
+          "content": "<p style=\"line-height: 0.9;\"><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">Envelope function: describes the growth and decay of spot sizes over time</span></p>"
+        },
+        {
+          "x": 0,
+          "y": 40,
+          "id": "4117bc21-293e-4fd2-8fcf-05f286b6bfc5",
+          "type": "html",
+          "width": 960,
+          "height": 540,
+          "locked": true,
+          "zIndex": 2,
+          "content": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"utf-8\">\n<title>Spot Envelope Γ(t)</title>\n<link  rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.4.6/jsxgraph.min.css\">\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.4.6/jsxgraphcore.js\"></script>\n<style>\n* { box-sizing: border-box; margin: 0; padding: 0; }\nbody { font-family: Georgia, serif; background: #fff; padding: 28px; }\n#wrap     { display: flex; flex-direction: column; align-items: center; gap: 24px; }\n#boards   { display: flex; gap: 32px; align-items: center; }\n.panel    { display: flex; flex-direction: column; align-items: center; gap: 8px; }\n.ptitle   { font-size: 13px; color: #555; letter-spacing: 0.03em; }\n#board1   { width: 360px; height: 360px; position: relative; isolation: isolate; }\n#board2   { width: 580px; height: 340px; }\n#controls { display: flex; align-items: center; gap: 40px; }\n#sliders  { display: flex; gap: 50px; }\n.slrow    { display: flex; flex-direction: column; gap: 6px; }\n.slrow label { font-size: 14px; color: #333; }\n.slrow input { width: 200px; cursor: pointer; accent-color: #BF4040; }\n.val { color: #BF4040; font-weight: bold; }\n#playBtn {\n    width: 90px; height: 36px;\n    font-size: 14px; font-family: Georgia, serif;\n    background: #BF4040; color: #fff;\n    border: none; border-radius: 6px;\n    cursor: pointer; letter-spacing: 0.04em;\n    transition: background 0.15s;\n}\n#playBtn:hover { background: #9a2828; }\n</style>\n</head>\n<body>\n<div id=\"wrap\">\n  <div id=\"boards\">\n    <div class=\"panel\">\n      <div class=\"ptitle\" id=\"t1\">Star</div>\n      <div id=\"board1\"></div>\n    </div>\n    <div class=\"panel\">\n      <div class=\"ptitle\">Envelope &nbsp;Γ(t)</div>\n      <div id=\"board2\"></div>\n    </div>\n  </div>\n  <div id=\"controls\">\n    <button id=\"playBtn\">&#9654; Play</button>\n    <div id=\"sliders\">\n      <div class=\"slrow\">\n        <label>Plateau &nbsp;ℓ = <span class=\"val\" id=\"lv\">5.0</span> days</label>\n        <input type=\"range\" id=\"lsl\" min=\"0\" max=\"30\" value=\"5\" step=\"0.5\">\n      </div>\n      <div class=\"slrow\">\n        <label>Rise/decay &nbsp;τ = <span class=\"val\" id=\"tv\">5.0</span> days</label>\n        <input type=\"range\" id=\"tsl\" min=\"0.5\" max=\"15\" value=\"5\" step=\"0.25\">\n      </div>\n      <div class=\"slrow\">\n        <label>Spot size &nbsp;α<sub>max</sub> = <span class=\"val\" id=\"av\">0.30</span> rad</label>\n        <input type=\"range\" id=\"asl\" min=\"0.05\" max=\"0.60\" value=\"0.30\" step=\"0.01\">\n      </div>\n    </div>\n  </div>\n</div>\n\n<script>\n\"use strict\";\n\n// ── State ─────────────────────────────────────────────────────────\nlet ell = 5, taus = 5, alphaMax = 0.30;\nlet tCur = 0;\nlet playing = false, animId = null, lastTime = null;\n\n// Derived timing\nlet tsim, tmax;\nfunction updateTiming() {\n    tsim = ell + 2 * taus + 4;\n    tmax = 2 + taus + ell / 2;\n}\nupdateTiming();\n\n// ── Envelope function ─────────────────────────────────────────────\nfunction gamma(t) {\n    const dt = t - tmax;\n    const half = ell / 2;\n    if      (dt < -(half + taus)) return 0;\n    else if (dt < -half)          return (dt + half + taus) / taus;\n    else if (dt <=  half)         return 1;\n    else if (dt <   half + taus)  return (half + taus - dt) / taus;\n    else                          return 0;\n}\n\n// ── Board 1: Star disk ───────────────────────────────────────────\nconst B1 = JXG.JSXGraph.initBoard('board1', {\n    boundingbox: [-1.42, 1.42, 1.42, -1.42],\n    keepaspectratio: true, axis: false, grid: false,\n    showNavigation: false, showCopyright: false,\n    pan: { enabled: false }, zoom: { enabled: false },\n});\n\n// Star outline (JSXGraph — drawn on top of the canvas star)\nB1.create('circle', [[0, 0], [1, 0]], {\n    fillColor: 'none', fillOpacity: 0,\n    strokeColor: '#555', strokeWidth: 1.5,\n    fixed: true, highlight: false,\n});\n\n// ── Limb-darkened star disk (canvas behind JSXGraph SVG) ──────────\nconst BOARD_PX  = 360;\nconst STAR_R_PX = BOARD_PX / 2.84;\nconst STAR_CX   = BOARD_PX / 2;\nconst STAR_CY   = BOARD_PX / 2;\n\nconst bgCanvas = document.createElement('canvas');\nbgCanvas.width  = BOARD_PX;\nbgCanvas.height = BOARD_PX;\nbgCanvas.style.cssText = 'position:absolute;top:0;left:0;pointer-events:none;z-index:-1;';\ndocument.getElementById('board1').insertBefore(bgCanvas, B1.renderer.svgRoot);\nconst bgCtx = bgCanvas.getContext('2d');\n\nfunction drawStarDisk() {\n    bgCtx.clearRect(0, 0, BOARD_PX, BOARD_PX);\n    const grad = bgCtx.createRadialGradient(\n        STAR_CX, STAR_CY, 0,\n        STAR_CX, STAR_CY, STAR_R_PX\n    );\n    grad.addColorStop(0.00, '#FFFDE7');\n    grad.addColorStop(0.35, '#FFF9C4');\n    grad.addColorStop(0.60, '#FFF176');\n    grad.addColorStop(0.78, '#FFD54F');\n    grad.addColorStop(0.90, '#FFAB00');\n    grad.addColorStop(0.97, '#E89800');\n    grad.addColorStop(1.00, '#D48500');\n    bgCtx.beginPath();\n    bgCtx.arc(STAR_CX, STAR_CY, STAR_R_PX, 0, 2 * Math.PI);\n    bgCtx.fillStyle = grad;\n    bgCtx.fill();\n}\ndrawStarDisk();\n\n// ── Spot circle (JSXGraph, on top of the star canvas) ─────────────\nlet spotR = 0;\nconst spotCenter = B1.create('point', [0, 0], {\n    visible: false, fixed: true\n});\nconst spotCircle = B1.create('circle', [spotCenter, function() { return spotR; }], {\n    fillColor: '#3A2518',\n    fillOpacity: 0.88,\n    strokeColor: '#2A1508',\n    strokeWidth: 1.2,\n    highlight: false, fixed: true,\n});\n\n// Clip spot to star disk (same technique as spot_visibility.html)\n(function () {\n    const svg  = B1.renderer.svgRoot;\n    const defs = document.createElementNS('http://www.w3.org/2000/svg', 'defs');\n    const clip = document.createElementNS('http://www.w3.org/2000/svg', 'clipPath');\n    clip.id = 'starClip';\n    const circ = document.createElementNS('http://www.w3.org/2000/svg', 'circle');\n    circ.setAttribute('cx', String(STAR_CX));\n    circ.setAttribute('cy', String(STAR_CY));\n    circ.setAttribute('r',  String(STAR_R_PX));\n    clip.appendChild(circ);\n    defs.appendChild(clip);\n    svg.insertBefore(defs, svg.firstChild);\n    // Apply clip to the circle's SVG group\n    spotCircle.rendNode.setAttribute('clip-path', 'url(#starClip)');\n})();\n\n// Time label below star\nconst timeText = B1.create('text', [\n    0, -1.26,\n    function() { return 't = ' + tCur.toFixed(1) + ' d'; }\n], {\n    fontSize: 14, color: '#555', anchorX: 'middle',\n    highlight: false, fixed: true,\n});\n\n// Spot size label\nconst alphaText = B1.create('text', [\n    0, -1.10,\n    function() {\n        const g = gamma(tCur);\n        if (g < 1e-4) return '';\n        return 'α = ' + (alphaMax * g).toFixed(3) + ' rad';\n    }\n], {\n    fontSize: 11, color: '#888', anchorX: 'middle',\n    highlight: false, fixed: true,\n});\n\n// ── Board 2: Envelope plot ───────────────────────────────────────\nconst B2 = JXG.JSXGraph.initBoard('board2', {\n    boundingbox: [-1.5, 1.22, 21, -0.22],\n    axis: false, grid: false,\n    showNavigation: false, showCopyright: false,\n    pan: { enabled: false }, zoom: { enabled: false },\n});\n\n// ── Custom axes ──────────────────────────────────────────────────\n// x-axis\nB2.create('segment', [[0, 0], [100, 0]], {\n    strokeColor: '#333', strokeWidth: 1, highlight: false, fixed: true });\n// y-axis\nB2.create('segment', [[0, -0.2], [0, 1.18]], {\n    strokeColor: '#333', strokeWidth: 1, highlight: false, fixed: true });\n\n// y-axis ticks and labels\n[0.5, 1.0].forEach(function(v) {\n    B2.create('segment', [[-0.25, v], [0.25, v]], {\n        strokeColor: '#333', strokeWidth: 0.6, highlight: false, fixed: true });\n    B2.create('text', [-0.6, v, v === 1 ? '1' : v.toFixed(1)], {\n        fontSize: 11, color: '#555', anchorX: 'right', anchorY: 'middle',\n        highlight: false, fixed: true });\n});\n\n// x-axis ticks (every 5 days, up to 70)\nconst xTicks = [];\nfor (let k = 5; k <= 70; k += 5) {\n    const seg = B2.create('segment', [[k, -0.02], [k, 0.02]], {\n        strokeColor: '#333', strokeWidth: 0.6, highlight: false, fixed: true });\n    const lbl = B2.create('text', [k, -0.07, k.toString()], {\n        fontSize: 10, color: '#555', anchorX: 'middle',\n        highlight: false, fixed: true });\n    xTicks.push({ seg: seg, lbl: lbl, pos: k });\n}\n\n// Axis labels\nconst xAxisLabel = B2.create('text', [\n    function() { return tsim / 2; },\n    -0.18,\n    'Time [days]'\n], { fontSize: 12, color: '#555', anchorX: 'middle', highlight: false, fixed: true });\n\nB2.create('text', [-1.2, 0.55, 'Γ'], {\n    fontSize: 14, color: '#555', anchorX: 'middle',\n    highlight: false, fixed: true });\n\n// ── Envelope curve — full shape (static, light gray) ─────────────\nconst fullCurve = B2.create('curve', [\n    function(t) { return t; },\n    function(t) { return gamma(t); },\n    0, 100\n], {\n    strokeColor: '#bbb', strokeWidth: 2, dash: 0,\n    highlight: false, numberPointsHigh: 600,\n});\n\n// ── Traced portion (dark, builds up to current time) ─────────────\nconst traceCurve = B2.create('curve', [\n    function(t) { return t; },\n    function(t) { return t <= tCur ? gamma(t) : NaN; },\n    0, 100\n], {\n    strokeColor: '#2166AC', strokeWidth: 2.8,\n    highlight: false, numberPointsHigh: 600,\n});\n\n// ── Filled area under traced curve ───────────────────────────────\nconst fillCurve = B2.create('curve', [[], []], {\n    strokeWidth: 0,\n    fillColor: '#2166AC', fillOpacity: 0.08,\n    highlight: false,\n});\nfillCurve.updateDataArray = function() {\n    const N = 300;\n    const tEnd = Math.min(tCur, tsim);\n    if (tEnd <= 0) { this.dataX = []; this.dataY = []; return; }\n    const xs = [0], ys = [0];\n    for (let i = 0; i <= N; i++) {\n        const t = i / N * tEnd;\n        xs.push(t);\n        ys.push(gamma(t));\n    }\n    xs.push(tEnd); ys.push(0);\n    xs.push(0);    ys.push(0);\n    this.dataX = xs;\n    this.dataY = ys;\n};\n\n// ── Time marker: vertical dashed line ────────────────────────────\nB2.create('curve', [\n    function(s) { return tCur; },\n    function(s) { return s; },\n    -0.05, 1.15\n], {\n    strokeColor: '#BF4040', strokeWidth: 1.3, dash: 1,\n    strokeOpacity: 0.7, highlight: false,\n});\n\n// ── Dot on curve ─────────────────────────────────────────────────\nB2.create('point', [\n    function() { return tCur; },\n    function() { return gamma(tCur); }\n], {\n    fillColor: '#BF4040', strokeColor: '#800000',\n    size: 4, name: '', highlight: false,\n});\n\n// ── Gamma value label ────────────────────────────────────────────\nB2.create('text', [\n    function() { return tCur + 0.5; },\n    function() { return Math.max(gamma(tCur) + 0.07, 0.08); },\n    function() {\n        const g = gamma(tCur);\n        return g > 1e-4 ? 'Γ = ' + g.toFixed(2) : '';\n    }\n], {\n    fontSize: 11, color: '#BF4040', anchorX: 'left',\n    highlight: false, fixed: true,\n});\n\n// ── Phase labels (positioned at midpoints of each phase) ─────────\nconst riseLabel = B2.create('text', [\n    function() { return tmax - ell / 2 - taus / 2; },\n    -0.10,\n    'rise'\n], {\n    fontSize: 11, color: '#888', anchorX: 'middle',\n    cssStyle: 'font-style: italic',\n    highlight: false, fixed: true,\n});\n\nconst platLabel = B2.create('text', [\n    function() { return tmax; },\n    -0.10,\n    'plateau'\n], {\n    fontSize: 11, color: '#888', anchorX: 'middle',\n    cssStyle: 'font-style: italic',\n    highlight: false, fixed: true,\n});\n\nconst decayLabel = B2.create('text', [\n    function() { return tmax + ell / 2 + taus / 2; },\n    -0.10,\n    'decay'\n], {\n    fontSize: 11, color: '#888', anchorX: 'middle',\n    cssStyle: 'font-style: italic',\n    highlight: false, fixed: true,\n});\n\n// ── Dimension annotation: ℓ bracket above plateau ────────────────\nconst lPt1 = B2.create('point', [\n    function() { return tmax - ell / 2; }, 1.10\n], { visible: false });\nconst lPt2 = B2.create('point', [\n    function() { return tmax + ell / 2; }, 1.10\n], { visible: false });\nconst lBracket = B2.create('segment', [lPt1, lPt2], {\n    strokeColor: '#999', strokeWidth: 1,\n    firstArrow: { type: 2, size: 5 },\n    lastArrow:  { type: 2, size: 5 },\n    highlight: false,\n});\nconst lAnnot = B2.create('text', [\n    function() { return tmax; },\n    1.16,\n    function() { return 'ℓ = ' + ell.toFixed(1); }\n], {\n    fontSize: 10, color: '#999', anchorX: 'middle',\n    highlight: false, fixed: true,\n});\n\n// ── Dimension annotation: τ bracket on rise ramp ─────────────────\nconst tPt1 = B2.create('point', [\n    function() { return tmax - ell / 2 - taus; }, 0.55\n], { visible: false });\nconst tPt2 = B2.create('point', [\n    function() { return tmax - ell / 2; }, 0.55\n], { visible: false });\nconst tBracket = B2.create('segment', [tPt1, tPt2], {\n    strokeColor: '#999', strokeWidth: 1,\n    firstArrow: { type: 2, size: 5 },\n    lastArrow:  { type: 2, size: 5 },\n    highlight: false,\n});\nconst tAnnot = B2.create('text', [\n    function() { return tmax - ell / 2 - taus / 2; },\n    0.63,\n    function() { return 'τ = ' + taus.toFixed(1); }\n], {\n    fontSize: 10, color: '#999', anchorX: 'middle',\n    highlight: false, fixed: true,\n});\n\n// ── Animation loop ───────────────────────────────────────────────\nconst ANIM_SECS = 8;\n\nfunction animStep(ts) {\n    if (lastTime !== null) {\n        const dt = (ts - lastTime) / 1000;\n        tCur += dt * (tsim / ANIM_SECS);\n        if (tCur > tsim) tCur = 0;\n    }\n    lastTime = ts;\n\n    // Update spot radius\n    const g = gamma(tCur);\n    spotR = g > 1e-6 ? Math.sin(alphaMax * g) : 0;\n\n    B1.update();\n    B2.update();\n    animId = requestAnimationFrame(animStep);\n}\n\nfunction togglePlay() {\n    if (playing) {\n        cancelAnimationFrame(animId);\n        animId = null; lastTime = null;\n        playing = false;\n        document.getElementById('playBtn').innerHTML = '&#9654; Play';\n    } else {\n        playing = true;\n        document.getElementById('playBtn').innerHTML = '&#9646;&#9646; Pause';\n        animId = requestAnimationFrame(animStep);\n    }\n}\ndocument.getElementById('playBtn').addEventListener('click', togglePlay);\n\n// ── Refresh when parameters change ───────────────────────────────\nfunction refresh() {\n    updateTiming();\n\n    // Update bounding box for envelope plot\n    const xMax = tsim + 1;\n    B2.setBoundingBox([-xMax * 0.07, 1.22, xMax, -0.22], false);\n\n    // Show/hide x-axis ticks\n    for (let i = 0; i < xTicks.length; i++) {\n        const vis = xTicks[i].pos <= tsim + 0.5;\n        xTicks[i].seg.setAttribute({ visible: vis });\n        xTicks[i].lbl.setAttribute({ visible: vis });\n    }\n\n    // Reset time if it's beyond new tsim\n    if (tCur > tsim) tCur = 0;\n\n    // Update spot\n    const g = gamma(tCur);\n    spotR = g > 1e-6 ? Math.sin(alphaMax * g) : 0;\n\n    // Update labels\n    document.getElementById('lv').textContent = ell.toFixed(1);\n    document.getElementById('tv').textContent = taus.toFixed(1);\n    document.getElementById('av').textContent = alphaMax.toFixed(2);\n\n    B1.update();\n    B2.update();\n}\n\n// ── Sliders ──────────────────────────────────────────────────────\ndocument.getElementById('lsl').addEventListener('input', function() {\n    ell = +this.value; refresh();\n});\ndocument.getElementById('tsl').addEventListener('input', function() {\n    taus = +this.value; refresh();\n});\ndocument.getElementById('asl').addEventListener('input', function() {\n    alphaMax = +this.value; refresh();\n});\n\n// Initial render\nrefresh();\n</script>\n</body>\n</html>\n"
+        }
+      ],
+      "background": {
+        "type": "color",
+        "color": "#ffffff"
+      },
+      "activeSection": 2
+    },
+    {
+      "id": "9c31e201-54c7-4da8-84e0-446ccc24f4ff",
+      "notes": "",
+      "elements": [
+        {
+          "x": 20,
+          "y": 80,
+          "id": "914a169b-5a47-4b96-8404-d80f9b02ecdf",
+          "type": "text",
+          "width": 920,
+          "height": 80,
           "zIndex": 1,
-          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">A physically-motivated starspot model</span></p>"
+          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">Envelope function: describes the growth and decay of spot sizes over time</span></p>"
+        },
+        {
+          "x": 20,
+          "y": 0,
+          "id": "523f7a42-fbd2-4fea-bd22-b834c70280bc",
+          "type": "text",
+          "width": 920,
+          "height": 80,
+          "zIndex": 2,
+          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">Visibility function: describes the dip in flux due to a rotating spot</span></p>",
+          "fragment": false,
+          "fragmentIndex": 1,
+          "fragmentAnimation": "fade-down"
+        },
+        {
+          "x": 120,
+          "y": 40,
+          "id": "26da6aff-a150-41fa-8231-a96c254c5197",
+          "type": "text",
+          "width": 60,
+          "height": 143,
+          "zIndex": 2,
+          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">x</span></p>",
+          "sizeMode": "auto"
         }
       ],
       "background": {
@@ -1985,12 +3163,82 @@
       "activeSection": 2
     },
     {
+      "id": "63906fb4-18a2-4118-9e25-f1176dfa13f2",
+      "notes": "",
+      "elements": [
+        {
+          "x": 0,
+          "y": 100,
+          "id": "b44209c2-2d71-463b-8592-d7e2be244710",
+          "type": "html",
+          "width": 960,
+          "height": 540,
+          "locked": true,
+          "zIndex": 2,
+          "content": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"utf-8\">\n<title>Fourier Decomposition — Starspot Lightcurve</title>\n<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.4.6/jsxgraph.min.css\">\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.4.6/jsxgraphcore.js\"></script>\n<style>\n* { box-sizing: border-box; margin: 0; padding: 0; }\nbody { font-family: Georgia, serif; background: #fff; padding: 16px; }\n#wrap     { display: flex; flex-direction: column; align-items: center; gap: 10px; }\nh2        { font-size: 16px; font-weight: normal; color: #333; letter-spacing: 0.03em; }\n.sub      { font-size: 11px; color: #888; margin-top: 2px; }\n#panels   { display: flex; gap: 12px; align-items: flex-start; }\n.panel    { display: flex; flex-direction: column; align-items: center; gap: 3px; }\n.ptitle   { font-size: 11px; color: #555; letter-spacing: 0.03em; }\n#b1       { width: 540px; height: 240px; }\n#sp-wrap  { position: relative; width: 376px; height: 240px; }\n#sp       { display: block; }\n#controls { display: flex; align-items: center; gap: 24px; }\n.slrow    { display: flex; flex-direction: column; align-items: center; gap: 4px; }\n.slrow label { font-size: 12px; color: #333; }\n.slrow input[type=range] { width: 320px; cursor: pointer; accent-color: #BF4040; }\n.val      { color: #BF4040; font-weight: bold; }\n.chk      { font-size: 11px; color: #555; cursor: pointer; user-select: none; display: flex; align-items: center; gap: 4px; }\n.chk input { accent-color: #BF4040; cursor: pointer; }\n.legend   { display: flex; gap: 16px; font-size: 11px; color: #555; }\n.legend span { display: flex; align-items: center; gap: 4px; }\n.lsw      { display: inline-block; width: 16px; height: 2px; }\n</style>\n</head>\n<body>\n<div id=\"wrap\">\n  <div style=\"text-align:center\">\n    <h2>Fourier Decomposition &mdash; Starspot Lightcurve</h2>\n    <div class=\"sub\">P<sub>rot</sub> = 5 days &nbsp;&middot;&nbsp; modes ordered by amplitude</div>\n  </div>\n  <div class=\"legend\">\n    <span><span class=\"lsw\" style=\"background:#bbb;border-top:1px dashed #999\"></span> Original</span>\n    <span><span class=\"lsw\" style=\"background:#333;height:3px\"></span> Reconstruction</span>\n  </div>\n  <div id=\"panels\">\n    <div class=\"panel\">\n      <div class=\"ptitle\">Time series</div>\n      <div id=\"b1\"></div>\n    </div>\n    <div class=\"panel\">\n      <div class=\"ptitle\">Amplitude spectrum</div>\n      <div id=\"sp-wrap\">\n        <canvas id=\"sp\"></canvas>\n      </div>\n    </div>\n  </div>\n  <div id=\"controls\">\n    <div class=\"slrow\">\n      <label>Modes &nbsp; n = <span class=\"val\" id=\"nv\">0</span>\n        &nbsp;&nbsp;&middot;&nbsp;&nbsp;\n        Power captured: <span class=\"val\" id=\"pv\">0.0</span>%</label>\n      <input type=\"range\" id=\"sl\" min=\"0\" max=\"30\" value=\"0\" step=\"1\">\n    </div>\n    <label class=\"chk\">\n      <input type=\"checkbox\" id=\"showComp\"> Show components\n    </label>\n  </div>\n</div>\n\n<script>\n\"use strict\";\n\n// ── Data ─────────────────────────────────────────────────────────\nconst N = 334, dt = 0.15;\nconst tArr = Array.from({length: N}, (_, i) => +(i * dt).toFixed(4));\nconst fArr = [\n0.982930,0.985350,0.988316,0.991725,0.995457,0.998942,1.000000,0.999996,0.998618,0.995300,\n0.992466,0.990388,0.989056,0.988425,0.988422,0.988950,0.989899,0.991149,0.992573,0.994021,\n0.995371,0.996532,0.997304,0.995719,0.992266,0.988400,0.984854,0.981917,0.979745,0.978470,\n0.978191,0.978843,0.978992,0.978655,0.978733,0.979230,0.980140,0.981472,0.983241,0.984056,\n0.983093,0.982544,0.982793,0.984597,0.987534,0.990955,0.994733,0.998451,0.999610,0.996867,\n0.992870,0.989091,0.985685,0.982776,0.980467,0.978839,0.977155,0.973733,0.970627,0.968581,\n0.967667,0.967915,0.969315,0.971818,0.975287,0.977279,0.975130,0.972778,0.971279,0.970666,\n0.970946,0.972234,0.973920,0.973789,0.973256,0.973493,0.974527,0.976365,0.978994,0.982371,\n0.986425,0.989960,0.989746,0.987446,0.985745,0.984232,0.982383,0.980189,0.978188,0.976887,\n0.976193,0.976238,0.977160,0.978888,0.981329,0.984365,0.987803,0.991509,0.994719,0.993278,\n0.989043,0.984160,0.978314,0.972106,0.966308,0.961077,0.956579,0.952968,0.950376,0.949243,\n0.950097,0.952308,0.955815,0.960366,0.965506,0.968405,0.967026,0.964822,0.962798,0.961515,\n0.961081,0.961142,0.960768,0.959916,0.959868,0.962282,0.965558,0.969490,0.973313,0.976091,\n0.977927,0.979273,0.978712,0.975631,0.973206,0.971579,0.970264,0.968315,0.965490,0.962564,\n0.960235,0.958546,0.957501,0.957109,0.957378,0.958316,0.959919,0.962125,0.964149,0.965624,\n0.967210,0.969282,0.971332,0.973089,0.974344,0.975723,0.977250,0.978350,0.978262,0.977123,\n0.975762,0.974802,0.974482,0.974495,0.973587,0.971531,0.969774,0.968154,0.966666,0.964941,\n0.961392,0.956248,0.951156,0.945825,0.940742,0.936827,0.935549,0.937393,0.941041,0.946282,\n0.951766,0.956186,0.961340,0.966808,0.971779,0.976515,0.981241,0.982039,0.979294,0.976344,\n0.973790,0.971573,0.969789,0.968306,0.966338,0.964298,0.962543,0.961153,0.958407,0.954463,\n0.950416,0.947349,0.945678,0.943662,0.938915,0.935001,0.933734,0.935620,0.939791,0.943981,\n0.947282,0.952550,0.958981,0.966268,0.972314,0.977074,0.982098,0.987322,0.992558,0.997172,\n0.999571,0.997731,0.994185,0.990821,0.987788,0.983840,0.978455,0.973294,0.967439,0.961500,\n0.956866,0.952816,0.947941,0.944290,0.942508,0.942665,0.944716,0.945435,0.943950,0.944204,\n0.946536,0.950882,0.957021,0.962765,0.966360,0.969947,0.974526,0.979399,0.982447,0.985100,\n0.988255,0.991819,0.995692,0.999149,0.999807,0.997998,0.995778,0.994143,0.993037,0.991001,\n0.987493,0.984270,0.980678,0.975952,0.971454,0.967127,0.963221,0.960709,0.959574,0.959711,\n0.960981,0.962614,0.965638,0.970046,0.975614,0.982158,0.989169,0.994814,0.997704,0.998737,\n0.999297,0.999698,0.999923,0.999973,0.999940,0.999877,0.999754,0.999583,0.999391,0.999214,\n0.999068,0.998064,0.994578,0.987913,0.978899,0.970074,0.962770,0.957131,0.952918,0.950656,\n0.950257,0.951566,0.954380,0.958461,0.963548,0.969377,0.975688,0.981795,0.986381,0.990120,\n0.992679,0.991672,0.988102,0.984784,0.981506,0.978558,0.975829,0.973548,0.971765,0.970513,\n0.969774,0.969514,0.969817,0.970799,0.972537,0.974871,0.975150,0.971407,0.964872,0.959074,\n0.954857,0.952354,0.949082,0.944721];\n\n// ── DFT ──────────────────────────────────────────────────────────\nconst fMean = fArr.reduce((s, v) => s + v, 0) / N;\nconst nFreqs = Math.floor(N / 2);\nconst modes = [];\n\nfor (let k = 1; k <= nFreqs; k++) {\n    let ak = 0, bk = 0;\n    for (let i = 0; i < N; i++) {\n        const angle = 2 * Math.PI * k * i / N;\n        ak += (fArr[i] - fMean) * Math.cos(angle);\n        bk += (fArr[i] - fMean) * Math.sin(angle);\n    }\n    ak *= 2 / N;\n    bk *= 2 / N;\n    const amp = Math.sqrt(ak * ak + bk * bk);\n    const phase = Math.atan2(bk, ak);\n    const freq = k / (N * dt);\n    modes.push({ k, amp, phase, freq });\n}\n\nmodes.sort((a, b) => b.amp - a.amp);\n\nconst totalPower = modes.reduce((s, m) => s + m.amp * m.amp, 0);\nconst maxAmp = modes[0].amp;\n\n// ── State ────────────────────────────────────────────────────────\nlet nModes = 0, showComp = false;\nconst maxSlider = 30;\nconst HC = ['#2166AC','#B2182B','#1B7837','#E08214','#7B3294',\n            '#00796B','#C2185B','#1565C0','#6A1B9A','#D84315'];\nconst maxComp = 10;\n\n// ── Board 1: Time series ─────────────────────────────────────────\nconst B1 = JXG.JSXGraph.initBoard('b1', {\n    boundingbox: [-5, 1.008, 52, 0.906],\n    axis: false, grid: false,\n    showNavigation: false, showCopyright: false,\n    pan: { enabled: false }, zoom: { enabled: false },\n});\n\n// Axes\nB1.create('segment', [[0, 0.924], [0, 1.006]], {\n    strokeColor: '#444', strokeWidth: 1, highlight: false, fixed: true });\nB1.create('segment', [[0, 0.924], [51, 0.924]], {\n    strokeColor: '#444', strokeWidth: 1, highlight: false, fixed: true });\n\n// Y ticks\n[0.94, 0.96, 0.98, 1.00].forEach(v => {\n    B1.create('segment', [[-0.6, v], [0, v]], {\n        strokeColor: '#444', strokeWidth: 0.7, highlight: false, fixed: true });\n    B1.create('text', [-1.2, v, v.toFixed(2)], {\n        fontSize: 9, color: '#666', anchorX: 'right', anchorY: 'middle',\n        fixed: true, highlight: false });\n});\n\n// X ticks\n[0, 10, 20, 30, 40, 50].forEach(v => {\n    B1.create('segment', [[v, 0.924], [v, 0.922]], {\n        strokeColor: '#444', strokeWidth: 0.7, highlight: false, fixed: true });\n    B1.create('text', [v, 0.917, String(v)], {\n        fontSize: 9, color: '#666', anchorX: 'middle', anchorY: 'middle',\n        fixed: true, highlight: false });\n});\n\n// Grid\n[0.94, 0.96, 0.98, 1.00].forEach(v => {\n    B1.create('segment', [[0, v], [50, v]], {\n        strokeColor: '#f0f0f0', strokeWidth: 0.5, highlight: false, fixed: true });\n});\n[10, 20, 30, 40].forEach(v => {\n    B1.create('segment', [[v, 0.924], [v, 1.005]], {\n        strokeColor: '#f0f0f0', strokeWidth: 0.5, highlight: false, fixed: true });\n});\n\n// Axis labels\nB1.create('text', [25, 0.911, 'Time (days)'], {\n    fontSize: 10, color: '#555', anchorX: 'middle', fixed: true, highlight: false });\nB1.create('text', [-4.0, 0.966, 'Flux'], {\n    fontSize: 10, color: '#555', anchorX: 'middle', anchorY: 'middle',\n    rotate: 90, fixed: true, highlight: false });\n\n// Original lightcurve (dashed gray)\nB1.create('curve', [tArr, fArr], {\n    strokeColor: '#bbb', strokeWidth: 1.5, dash: 2, highlight: false });\n\n// Reconstruction curve\nconst reconCurve = B1.create('curve', [[], []], {\n    strokeColor: '#333', strokeWidth: 2.2, highlight: false });\nreconCurve.updateDataArray = function () {\n    this.dataX = tArr;\n    this.dataY = new Array(N);\n    for (let i = 0; i < N; i++) {\n        let val = fMean;\n        for (let m = 0; m < nModes; m++) {\n            val += modes[m].amp * Math.cos(2 * Math.PI * modes[m].k * i / N - modes[m].phase);\n        }\n        this.dataY[i] = val;\n    }\n};\n\n// Individual component curves (top 10 by amplitude)\nfor (let ci = 0; ci < maxComp; ci++) {\n    const cc = ci;\n    const curve = B1.create('curve', [[], []], {\n        strokeColor: HC[cc], strokeWidth: 1.2, strokeOpacity: 0.5, highlight: false });\n    curve.updateDataArray = function () {\n        if (!showComp || cc >= nModes) { this.dataX = []; this.dataY = []; return; }\n        const m = modes[cc];\n        this.dataX = tArr;\n        this.dataY = new Array(N);\n        for (let i = 0; i < N; i++) {\n            this.dataY[i] = fMean + m.amp * Math.cos(2 * Math.PI * m.k * i / N - m.phase);\n        }\n    };\n}\n\n// Mean line (dotted)\nB1.create('segment', [[0, fMean], [50, fMean]], {\n    strokeColor: '#aaa', strokeWidth: 0.8, dash: 3, highlight: false, fixed: true });\n\n// ── Spectrum panel (canvas) ─────────────────────────────────────\nconst spCanvas = document.getElementById('sp');\nconst spW = 376, spH = 240;\nconst dpr = Math.max(2, window.devicePixelRatio || 1);\nspCanvas.width = spW * dpr;\nspCanvas.height = spH * dpr;\nspCanvas.style.width = spW + 'px';\nspCanvas.style.height = spH + 'px';\nconst sctx = spCanvas.getContext('2d');\nsctx.scale(dpr, dpr);\n\nconst spPad = { left: 44, right: 12, top: 12, bottom: 40 };\nconst spPlotW = spW - spPad.left - spPad.right;\nconst spPlotH = spH - spPad.top - spPad.bottom;\nconst fMax = 1.0;\nconst aMax = maxAmp * 1.15;\n\nfunction spX(f) { return spPad.left + f / fMax * spPlotW; }\nfunction spY(a) { return spPad.top + (aMax - a) / aMax * spPlotH; }\n\n// Pre-sort modes by frequency for background spectrum drawing\nconst modesByFreq = modes.slice().sort((a, b) => a.k - b.k);\nconst freqCutoff = Math.floor(fMax * N * dt);\n\nfunction drawSpectrum() {\n    const c = sctx;\n    c.clearRect(0, 0, spW, spH);\n\n    c.fillStyle = '#fafafa';\n    c.fillRect(spPad.left, spPad.top, spPlotW, spPlotH);\n\n    // Grid\n    c.strokeStyle = '#e8e8e8';\n    c.lineWidth = 0.5;\n    const ampTicks = [];\n    for (let a = 0; a <= aMax; a += 0.005) ampTicks.push(a);\n    ampTicks.forEach(a => {\n        c.beginPath(); c.moveTo(spPad.left, spY(a)); c.lineTo(spPad.left + spPlotW, spY(a)); c.stroke();\n    });\n    [0.2, 0.4, 0.6, 0.8, 1.0].forEach(f => {\n        c.beginPath(); c.moveTo(spX(f), spPad.top); c.lineTo(spX(f), spPad.top + spPlotH); c.stroke();\n    });\n\n    // P_rot marker\n    const fRot = 1 / 5;\n    c.setLineDash([4, 3]);\n    c.strokeStyle = '#BF4040';\n    c.lineWidth = 0.8;\n    c.beginPath(); c.moveTo(spX(fRot), spPad.top); c.lineTo(spX(fRot), spPad.top + spPlotH); c.stroke();\n    c.setLineDash([]);\n\n    c.fillStyle = '#BF4040';\n    c.font = '9px Georgia, serif';\n    c.textAlign = 'center'; c.textBaseline = 'bottom';\n    c.fillText('Pᵣₒₜ', spX(fRot), spPad.top - 1);\n\n    // Background spectrum (gray stems)\n    c.strokeStyle = '#ddd';\n    c.lineWidth = 1.5;\n    const y0 = spY(0);\n    for (let i = 0; i < modesByFreq.length; i++) {\n        const m = modesByFreq[i];\n        if (m.freq > fMax) break;\n        c.beginPath();\n        c.moveTo(spX(m.freq), y0);\n        c.lineTo(spX(m.freq), spY(m.amp));\n        c.stroke();\n    }\n\n    // Active modes (colored when showing components)\n    c.lineWidth = 2.5;\n    for (let i = 0; i < nModes; i++) {\n        const m = modes[i];\n        if (m.freq > fMax) continue;\n        c.strokeStyle = showComp && i < maxComp ? HC[i] : '#2166AC';\n        c.beginPath();\n        c.moveTo(spX(m.freq), y0);\n        c.lineTo(spX(m.freq), spY(m.amp));\n        c.stroke();\n    }\n\n    // Dots on active stems\n    for (let i = 0; i < nModes; i++) {\n        const m = modes[i];\n        if (m.freq > fMax) continue;\n        c.fillStyle = showComp && i < maxComp ? HC[i] : '#2166AC';\n        c.beginPath();\n        c.arc(spX(m.freq), spY(m.amp), 3, 0, Math.PI * 2);\n        c.fill();\n    }\n\n    // Axes\n    c.strokeStyle = '#444';\n    c.lineWidth = 1;\n    c.beginPath();\n    c.moveTo(spPad.left, spPad.top);\n    c.lineTo(spPad.left, spPad.top + spPlotH);\n    c.lineTo(spPad.left + spPlotW, spPad.top + spPlotH);\n    c.stroke();\n\n    // X ticks\n    c.fillStyle = '#666';\n    c.font = '9px Georgia, serif';\n    [0, 0.2, 0.4, 0.6, 0.8, 1.0].forEach(f => {\n        const px = spX(f);\n        c.strokeStyle = '#444'; c.lineWidth = 1;\n        c.beginPath(); c.moveTo(px, spPad.top + spPlotH); c.lineTo(px, spPad.top + spPlotH + 4); c.stroke();\n        c.fillStyle = '#666';\n        c.textAlign = 'center'; c.textBaseline = 'top';\n        c.fillText(f.toFixed(1), px, spPad.top + spPlotH + 5);\n    });\n\n    // Y ticks\n    const yTickStep = maxAmp > 0.015 ? 0.005 : 0.002;\n    for (let a = 0; a <= aMax; a += yTickStep) {\n        if (a === 0) continue;\n        const py = spY(a);\n        if (py < spPad.top) continue;\n        c.strokeStyle = '#444'; c.lineWidth = 1;\n        c.beginPath(); c.moveTo(spPad.left, py); c.lineTo(spPad.left - 4, py); c.stroke();\n        c.fillStyle = '#666';\n        c.textAlign = 'right'; c.textBaseline = 'middle';\n        c.fillText(a.toFixed(3), spPad.left - 6, py);\n    }\n\n    // X axis label\n    c.fillStyle = '#555';\n    c.font = '10px Georgia, serif';\n    c.textAlign = 'center'; c.textBaseline = 'top';\n    c.fillText('Frequency (cycles/day)', spPad.left + spPlotW / 2, spPad.top + spPlotH + 22);\n\n    // Y axis label\n    c.save();\n    c.translate(12, spPad.top + spPlotH / 2);\n    c.rotate(-Math.PI / 2);\n    c.textAlign = 'center'; c.textBaseline = 'middle';\n    c.fillText('Amplitude', 0, 0);\n    c.restore();\n}\n\n// ── Refresh ──────────────────────────────────────────────────────\nfunction refresh() {\n    nModes = +document.getElementById('sl').value;\n    showComp = document.getElementById('showComp').checked;\n    document.getElementById('nv').textContent = nModes;\n\n    let captured = 0;\n    for (let i = 0; i < nModes; i++) captured += modes[i].amp * modes[i].amp;\n    document.getElementById('pv').textContent = (captured / totalPower * 100).toFixed(1);\n\n    B1.update();\n    drawSpectrum();\n}\n\ndocument.getElementById('sl').addEventListener('input', refresh);\ndocument.getElementById('showComp').addEventListener('change', refresh);\nrefresh();\n</script>\n</body>\n</html>\n"
+        },
+        {
+          "x": 20,
+          "y": 0,
+          "id": "60109d58-1cca-4ddb-acf7-6f3797e65725",
+          "type": "text",
+          "width": 920,
+          "height": 80,
+          "zIndex": 2,
+          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">Defining the power spectral distribution</span></p>",
+          "fragment": false,
+          "fragmentIndex": 1,
+          "fragmentAnimation": "fade-down"
+        }
+      ],
+      "background": {
+        "type": "color",
+        "color": "#ffffff"
+      },
+      "activeSection": 2
+    },
+    {
+      "id": "8aa5f96f-4a4f-4205-a02d-6cadfeb673d4",
+      "notes": "",
+      "elements": [
+        {
+          "x": 0,
+          "y": 100,
+          "id": "38b49db2-9f02-44b7-86d0-a3ba7caf5170",
+          "type": "html",
+          "width": 960,
+          "height": 540,
+          "locked": true,
+          "zIndex": 2,
+          "content": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"utf-8\">\n<title>Autocorrelation Visualization</title>\n<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.4.6/jsxgraph.min.css\">\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.4.6/jsxgraphcore.js\"></script>\n<style>\n* { box-sizing: border-box; margin: 0; padding: 0; }\nbody { font-family: Georgia, serif; background: #fff; padding: 16px; }\n#wrap     { display: flex; flex-direction: column; align-items: center; gap: 10px; }\nh2        { font-size: 16px; font-weight: normal; color: #333; letter-spacing: 0.03em; }\n.sub      { font-size: 11px; color: #888; margin-top: 2px; }\n#boards   { display: flex; gap: 12px; align-items: flex-start; }\n.panel    { display: flex; flex-direction: column; align-items: center; gap: 3px; }\n.ptitle   { font-size: 11px; color: #555; letter-spacing: 0.03em; }\n#board1   { width: 400px; height: 200px; }\n#sc-wrap  { position: relative; width: 220px; height: 220px; }\n#sc       { display: block; }\n#acf-wrap { position: relative; width: 284px; height: 220px; }\n#acf      { display: block; }\n#controls { display: flex; align-items: center; gap: 24px; }\n.slrow    { display: flex; flex-direction: column; align-items: center; gap: 4px; }\n.slrow label { font-size: 12px; color: #333; }\n.slrow input { width: 320px; cursor: pointer; accent-color: #BF4040; }\n.val      { color: #BF4040; font-weight: bold; }\n.legend   { display: flex; gap: 16px; font-size: 11px; color: #555; }\n.legend span { display: flex; align-items: center; gap: 4px; }\n.lswatch  { display: inline-block; width: 16px; height: 2px; }\n</style>\n</head>\n<body>\n<div id=\"wrap\">\n  <div>\n    <h2>Autocorrelation Visualization</h2>\n    <div class=\"sub\" style=\"text-align:center\">spotgp lightcurve &nbsp;·&nbsp; P<sub>rot</sub> = 5 days</div>\n  </div>\n  <div class=\"legend\">\n    <span><span class=\"lswatch\" style=\"background:#2166AC\"></span> f(t)</span>\n    <span><span class=\"lswatch\" style=\"background:#BF4040\"></span> f(t + τ)</span>\n  </div>\n  <div id=\"boards\">\n    <div class=\"panel\">\n      <div class=\"ptitle\">Lightcurve</div>\n      <div id=\"board1\"></div>\n    </div>\n    <div class=\"panel\">\n      <div class=\"ptitle\" id=\"sc-title\">Lag scatter &nbsp;(τ = 0.00 d)</div>\n      <div id=\"sc-wrap\">\n        <canvas id=\"sc\"></canvas>\n      </div>\n    </div>\n    <div class=\"panel\">\n      <div class=\"ptitle\">Autocorrelation</div>\n      <div id=\"acf-wrap\">\n        <canvas id=\"acf\"></canvas>\n      </div>\n    </div>\n  </div>\n  <div id=\"controls\">\n    <div class=\"slrow\">\n      <label>Time lag &nbsp; τ = <span class=\"val\" id=\"lv\">0.00</span> days\n        &nbsp;&nbsp;·&nbsp;&nbsp;\n        r = <span class=\"val\" id=\"rv\">1.000</span></label>\n      <input type=\"range\" id=\"sl\" min=\"0\" max=\"166\" value=\"0\" step=\"1\">\n    </div>\n  </div>\n</div>\n\n<script>\n\"use strict\";\n\n// ── Data ─────────────────────────────────────────────────────────\nconst N = 334, dt = 0.15;\nconst tArr = Array.from({length: N}, (_, i) => +(i * dt).toFixed(4));\nconst fArr = [\n0.982930,0.985350,0.988316,0.991725,0.995457,0.998942,1.000000,0.999996,0.998618,0.995300,\n0.992466,0.990388,0.989056,0.988425,0.988422,0.988950,0.989899,0.991149,0.992573,0.994021,\n0.995371,0.996532,0.997304,0.995719,0.992266,0.988400,0.984854,0.981917,0.979745,0.978470,\n0.978191,0.978843,0.978992,0.978655,0.978733,0.979230,0.980140,0.981472,0.983241,0.984056,\n0.983093,0.982544,0.982793,0.984597,0.987534,0.990955,0.994733,0.998451,0.999610,0.996867,\n0.992870,0.989091,0.985685,0.982776,0.980467,0.978839,0.977155,0.973733,0.970627,0.968581,\n0.967667,0.967915,0.969315,0.971818,0.975287,0.977279,0.975130,0.972778,0.971279,0.970666,\n0.970946,0.972234,0.973920,0.973789,0.973256,0.973493,0.974527,0.976365,0.978994,0.982371,\n0.986425,0.989960,0.989746,0.987446,0.985745,0.984232,0.982383,0.980189,0.978188,0.976887,\n0.976193,0.976238,0.977160,0.978888,0.981329,0.984365,0.987803,0.991509,0.994719,0.993278,\n0.989043,0.984160,0.978314,0.972106,0.966308,0.961077,0.956579,0.952968,0.950376,0.949243,\n0.950097,0.952308,0.955815,0.960366,0.965506,0.968405,0.967026,0.964822,0.962798,0.961515,\n0.961081,0.961142,0.960768,0.959916,0.959868,0.962282,0.965558,0.969490,0.973313,0.976091,\n0.977927,0.979273,0.978712,0.975631,0.973206,0.971579,0.970264,0.968315,0.965490,0.962564,\n0.960235,0.958546,0.957501,0.957109,0.957378,0.958316,0.959919,0.962125,0.964149,0.965624,\n0.967210,0.969282,0.971332,0.973089,0.974344,0.975723,0.977250,0.978350,0.978262,0.977123,\n0.975762,0.974802,0.974482,0.974495,0.973587,0.971531,0.969774,0.968154,0.966666,0.964941,\n0.961392,0.956248,0.951156,0.945825,0.940742,0.936827,0.935549,0.937393,0.941041,0.946282,\n0.951766,0.956186,0.961340,0.966808,0.971779,0.976515,0.981241,0.982039,0.979294,0.976344,\n0.973790,0.971573,0.969789,0.968306,0.966338,0.964298,0.962543,0.961153,0.958407,0.954463,\n0.950416,0.947349,0.945678,0.943662,0.938915,0.935001,0.933734,0.935620,0.939791,0.943981,\n0.947282,0.952550,0.958981,0.966268,0.972314,0.977074,0.982098,0.987322,0.992558,0.997172,\n0.999571,0.997731,0.994185,0.990821,0.987788,0.983840,0.978455,0.973294,0.967439,0.961500,\n0.956866,0.952816,0.947941,0.944290,0.942508,0.942665,0.944716,0.945435,0.943950,0.944204,\n0.946536,0.950882,0.957021,0.962765,0.966360,0.969947,0.974526,0.979399,0.982447,0.985100,\n0.988255,0.991819,0.995692,0.999149,0.999807,0.997998,0.995778,0.994143,0.993037,0.991001,\n0.987493,0.984270,0.980678,0.975952,0.971454,0.967127,0.963221,0.960709,0.959574,0.959711,\n0.960981,0.962614,0.965638,0.970046,0.975614,0.982158,0.989169,0.994814,0.997704,0.998737,\n0.999297,0.999698,0.999923,0.999973,0.999940,0.999877,0.999754,0.999583,0.999391,0.999214,\n0.999068,0.998064,0.994578,0.987913,0.978899,0.970074,0.962770,0.957131,0.952918,0.950656,\n0.950257,0.951566,0.954380,0.958461,0.963548,0.969377,0.975688,0.981795,0.986381,0.990120,\n0.992679,0.991672,0.988102,0.984784,0.981506,0.978558,0.975829,0.973548,0.971765,0.970513,\n0.969774,0.969514,0.969817,0.970799,0.972537,0.974871,0.975150,0.971407,0.964872,0.959074,\n0.954857,0.952354,0.949082,0.944721];\n\n// ── Helpers ──────────────────────────────────────────────────────\nlet lagK = 0;\n\nfunction pearsonR(k) {\n    const n = N - k;\n    if (n < 2) return 0;\n    let sx = 0, sy = 0, sxx = 0, syy = 0, sxy = 0;\n    for (let i = 0; i < n; i++) {\n        const x = fArr[i], y = fArr[i + k];\n        sx += x; sy += y;\n        sxx += x * x; syy += y * y;\n        sxy += x * y;\n    }\n    const num = n * sxy - sx * sy;\n    const den = Math.sqrt((n * sxx - sx * sx) * (n * syy - sy * sy));\n    return den === 0 ? 0 : num / den;\n}\n\n// ── Board 1: Lightcurve ──────────────────────────────────────────\nconst B1 = JXG.JSXGraph.initBoard('board1', {\n    boundingbox: [-5, 1.008, 53, 0.908],\n    axis: false, grid: false,\n    showNavigation: false, showCopyright: false,\n    pan: { enabled: false }, zoom: { enabled: false },\n});\n\n// Axes\nB1.create('segment', [[0, 0.924], [0, 1.006]], {\n    strokeColor: '#444', strokeWidth: 1, highlight: false, fixed: true });\nB1.create('segment', [[0, 0.924], [51, 0.924]], {\n    strokeColor: '#444', strokeWidth: 1, highlight: false, fixed: true });\n\n// Y ticks\n[0.94, 0.96, 0.98, 1.00].forEach(v => {\n    B1.create('segment', [[-0.6, v], [0, v]], {\n        strokeColor: '#444', strokeWidth: 0.7, highlight: false, fixed: true });\n    B1.create('text', [-1.2, v, v.toFixed(2)], {\n        fontSize: 10, color: '#666', anchorX: 'right', anchorY: 'middle',\n        fixed: true, highlight: false });\n});\n\n// X ticks\n[0, 10, 20, 30, 40, 50].forEach(v => {\n    B1.create('segment', [[v, 0.924], [v, 0.922]], {\n        strokeColor: '#444', strokeWidth: 0.7, highlight: false, fixed: true });\n    B1.create('text', [v, 0.918, String(v)], {\n        fontSize: 10, color: '#666', anchorX: 'middle', anchorY: 'middle',\n        fixed: true, highlight: false });\n});\n\n// Axis labels\nB1.create('text', [25, 0.9165, 'Time (days)'], {\n    fontSize: 11, color: '#555', anchorX: 'middle', fixed: true, highlight: false });\nB1.create('text', [-3.5, 0.966, 'Flux'], {\n    fontSize: 11, color: '#555', anchorX: 'middle', anchorY: 'middle',\n    rotate: 90, fixed: true, highlight: false });\n\n// Light grid\n[0.94, 0.96, 0.98, 1.00].forEach(v => {\n    B1.create('segment', [[0, v], [50, v]], {\n        strokeColor: '#eee', strokeWidth: 0.5, highlight: false, fixed: true });\n});\n[10, 20, 30, 40].forEach(v => {\n    B1.create('segment', [[v, 0.924], [v, 1.005]], {\n        strokeColor: '#eee', strokeWidth: 0.5, highlight: false, fixed: true });\n});\n\n// Shade for excluded region\nconst shade = B1.create('curve', [[], []], {\n    strokeWidth: 0, fillColor: '#000', fillOpacity: 0.06, highlight: false });\nshade.updateDataArray = function () {\n    if (lagK === 0) { this.dataX = []; this.dataY = []; return; }\n    const tc = (N - lagK - 1) * dt;\n    this.dataX = [tc, 53, 53, tc, tc];\n    this.dataY = [0.908, 0.908, 1.008, 1.008, 0.908];\n};\n\n// Background full lightcurve\nB1.create('curve', [tArr, fArr], {\n    strokeColor: '#ddd', strokeWidth: 1.8, highlight: false });\n\n// Blue: f(t) in comparison window\nconst blueCurve = B1.create('curve', [[], []], {\n    strokeColor: '#2166AC', strokeWidth: 2.2, highlight: false });\nblueCurve.updateDataArray = function () {\n    const n = N - lagK;\n    this.dataX = tArr.slice(0, n);\n    this.dataY = fArr.slice(0, n);\n};\n\n// Red: f(t+τ) plotted at t\nconst redCurve = B1.create('curve', [[], []], {\n    strokeColor: '#BF4040', strokeWidth: 2, strokeOpacity: 0.65, highlight: false });\nredCurve.updateDataArray = function () {\n    if (lagK === 0) { this.dataX = []; this.dataY = []; return; }\n    const n = N - lagK;\n    this.dataX = tArr.slice(0, n);\n    this.dataY = fArr.slice(lagK, lagK + n);\n};\n\n// Lag marker line\nconst lagLine = B1.create('segment', [\n    [() => lagK * dt, 0.924],\n    [() => lagK * dt, 1.006]\n], {\n    strokeColor: '#BF4040', strokeWidth: 1.2, dash: 2,\n    highlight: false, fixed: true });\n\nB1.create('text', [\n    () => lagK * dt + 1, 1.003,\n    () => lagK > 0 ? 'τ' : ''\n], {\n    fontSize: 12, color: '#BF4040', anchorX: 'left',\n    fixed: true, highlight: false });\n\n// ── Canvas scatter plot ──────────────────────────────────────────\nconst scCanvas = document.getElementById('sc');\nconst scW = 220, scH = 220;\nconst dpr = Math.max(2, window.devicePixelRatio || 1);\nscCanvas.width = scW * dpr;\nscCanvas.height = scH * dpr;\nscCanvas.style.width = scW + 'px';\nscCanvas.style.height = scH + 'px';\nconst sctx = scCanvas.getContext('2d');\nsctx.scale(dpr, dpr);\n\nconst scPad = { left: 38, right: 8, top: 8, bottom: 38 };\nconst plotSz = scW - scPad.left - scPad.right;\nconst fMin = 0.928, fMax = 1.006;\nconst fRng = fMax - fMin;\n\nfunction sX(v) { return scPad.left + (v - fMin) / fRng * plotSz; }\nfunction sY(v) { return scPad.top  + (fMax - v) / fRng * plotSz; }\n\nfunction drawScatter() {\n    const c = sctx;\n    c.clearRect(0, 0, scW, scH);\n\n    // Plot background\n    c.fillStyle = '#fafafa';\n    c.fillRect(scPad.left, scPad.top, plotSz, plotSz);\n\n    // Grid\n    c.strokeStyle = '#e8e8e8';\n    c.lineWidth = 0.5;\n    [0.94, 0.96, 0.98, 1.00].forEach(v => {\n        c.beginPath(); c.moveTo(sX(v), scPad.top); c.lineTo(sX(v), scPad.top + plotSz); c.stroke();\n        c.beginPath(); c.moveTo(scPad.left, sY(v)); c.lineTo(scPad.left + plotSz, sY(v)); c.stroke();\n    });\n\n    // 1:1 diagonal\n    c.setLineDash([5, 4]);\n    c.strokeStyle = '#bbb';\n    c.lineWidth = 1;\n    c.beginPath();\n    c.moveTo(sX(fMin), sY(fMin));\n    c.lineTo(sX(fMax), sY(fMax));\n    c.stroke();\n    c.setLineDash([]);\n\n    // Scatter dots\n    const n = N - lagK;\n    c.fillStyle = 'rgba(191, 64, 64, 0.45)';\n    for (let i = 0; i < n; i++) {\n        c.beginPath();\n        c.arc(sX(fArr[i]), sY(fArr[i + lagK]), 2, 0, Math.PI * 2);\n        c.fill();\n    }\n\n    // Axes\n    c.strokeStyle = '#444';\n    c.lineWidth = 1;\n    c.beginPath();\n    c.moveTo(scPad.left, scPad.top);\n    c.lineTo(scPad.left, scPad.top + plotSz);\n    c.lineTo(scPad.left + plotSz, scPad.top + plotSz);\n    c.stroke();\n\n    // Tick marks & labels\n    c.fillStyle = '#666';\n    c.font = '10px Georgia, serif';\n    [0.94, 0.96, 0.98, 1.00].forEach(v => {\n        const px = sX(v), py = sY(v);\n        // X ticks\n        c.beginPath(); c.moveTo(px, scPad.top + plotSz); c.lineTo(px, scPad.top + plotSz + 4); c.stroke();\n        c.textAlign = 'center'; c.textBaseline = 'top';\n        c.fillText(v.toFixed(2), px, scPad.top + plotSz + 6);\n        // Y ticks\n        c.beginPath(); c.moveTo(scPad.left, py); c.lineTo(scPad.left - 4, py); c.stroke();\n        c.textAlign = 'right'; c.textBaseline = 'middle';\n        c.fillText(v.toFixed(2), scPad.left - 6, py);\n    });\n\n    // Axis labels\n    c.fillStyle = '#555';\n    c.font = '12px Georgia, serif';\n    c.textAlign = 'center'; c.textBaseline = 'top';\n    c.fillText('f(t)', scPad.left + plotSz / 2, scPad.top + plotSz + 24);\n\n    c.save();\n    c.translate(14, scPad.top + plotSz / 2);\n    c.rotate(-Math.PI / 2);\n    c.textAlign = 'center'; c.textBaseline = 'middle';\n    c.fillText('f(t + τ)', 0, 0);\n    c.restore();\n\n    // Correlation coefficient\n    const r = pearsonR(lagK);\n    c.fillStyle = '#BF4040';\n    c.font = 'bold 12px Georgia, serif';\n    c.textAlign = 'right'; c.textBaseline = 'top';\n    c.fillText('r = ' + r.toFixed(3), scPad.left + plotSz - 6, scPad.top + 8);\n\n    // N pairs\n    c.fillStyle = '#999';\n    c.font = '10px Georgia, serif';\n    c.fillText('n = ' + n, scPad.left + plotSz - 4, scPad.top + 20);\n\n    // Update external displays\n    document.getElementById('rv').textContent = r.toFixed(3);\n}\n\n// ── ACF Panel ───────────────────────────────────────────────────\nconst acfCanvas = document.getElementById('acf');\nconst acfW = 284, acfH = 220;\nacfCanvas.width = acfW * dpr;\nacfCanvas.height = acfH * dpr;\nacfCanvas.style.width = acfW + 'px';\nacfCanvas.style.height = acfH + 'px';\nconst actx = acfCanvas.getContext('2d');\nactx.scale(dpr, dpr);\n\nconst maxK = 166;\nconst acfVals = new Float64Array(maxK + 1);\nfor (let k = 0; k <= maxK; k++) acfVals[k] = pearsonR(k);\n\nconst acfPad = { left: 38, right: 10, top: 10, bottom: 38 };\nconst acfPlotW = acfW - acfPad.left - acfPad.right;\nconst acfPlotH = acfH - acfPad.top - acfPad.bottom;\nconst tauMax = 25;\nconst rMin = -0.55, rMax = 1.05, rRng = rMax - rMin;\n\nfunction aX(tau) { return acfPad.left + tau / tauMax * acfPlotW; }\nfunction aY(r)   { return acfPad.top + (rMax - r) / rRng * acfPlotH; }\n\nfunction drawACF() {\n    const c = actx;\n    c.clearRect(0, 0, acfW, acfH);\n\n    c.fillStyle = '#fafafa';\n    c.fillRect(acfPad.left, acfPad.top, acfPlotW, acfPlotH);\n\n    c.strokeStyle = '#e8e8e8';\n    c.lineWidth = 0.5;\n    [-0.5, 0.5, 1.0].forEach(v => {\n        c.beginPath(); c.moveTo(acfPad.left, aY(v)); c.lineTo(acfPad.left + acfPlotW, aY(v)); c.stroke();\n    });\n    [5, 10, 15, 20, 25].forEach(v => {\n        c.beginPath(); c.moveTo(aX(v), acfPad.top); c.lineTo(aX(v), acfPad.top + acfPlotH); c.stroke();\n    });\n\n    c.setLineDash([5, 4]);\n    c.strokeStyle = '#bbb';\n    c.lineWidth = 0.8;\n    c.beginPath(); c.moveTo(acfPad.left, aY(0)); c.lineTo(acfPad.left + acfPlotW, aY(0)); c.stroke();\n    c.setLineDash([]);\n\n    c.strokeStyle = '#2166AC';\n    c.lineWidth = 2;\n    c.beginPath();\n    for (let k = 0; k <= maxK; k++) {\n        const x = aX(k * dt), y = aY(acfVals[k]);\n        if (k === 0) c.moveTo(x, y); else c.lineTo(x, y);\n    }\n    c.stroke();\n\n    const xLag = aX(lagK * dt);\n    c.strokeStyle = '#BF4040';\n    c.lineWidth = 1.5;\n    c.setLineDash([6, 4]);\n    c.beginPath();\n    c.moveTo(xLag, acfPad.top);\n    c.lineTo(xLag, acfPad.top + acfPlotH);\n    c.stroke();\n    c.setLineDash([]);\n\n    c.fillStyle = '#BF4040';\n    c.beginPath();\n    c.arc(xLag, aY(acfVals[lagK]), 4, 0, Math.PI * 2);\n    c.fill();\n\n    c.strokeStyle = '#444';\n    c.lineWidth = 1;\n    c.beginPath();\n    c.moveTo(acfPad.left, acfPad.top);\n    c.lineTo(acfPad.left, acfPad.top + acfPlotH);\n    c.lineTo(acfPad.left + acfPlotW, acfPad.top + acfPlotH);\n    c.stroke();\n\n    c.fillStyle = '#666';\n    c.font = '10px Georgia, serif';\n    [0, 5, 10, 15, 20, 25].forEach(v => {\n        const px = aX(v);\n        c.strokeStyle = '#444'; c.lineWidth = 1;\n        c.beginPath(); c.moveTo(px, acfPad.top + acfPlotH); c.lineTo(px, acfPad.top + acfPlotH + 4); c.stroke();\n        c.fillStyle = '#666';\n        c.textAlign = 'center'; c.textBaseline = 'top';\n        c.fillText(v, px, acfPad.top + acfPlotH + 6);\n    });\n\n    [-0.5, 0.0, 0.5, 1.0].forEach(v => {\n        const py = aY(v);\n        c.strokeStyle = '#444'; c.lineWidth = 1;\n        c.beginPath(); c.moveTo(acfPad.left, py); c.lineTo(acfPad.left - 4, py); c.stroke();\n        c.fillStyle = '#666';\n        c.textAlign = 'right'; c.textBaseline = 'middle';\n        c.fillText(v.toFixed(1), acfPad.left - 6, py);\n    });\n\n    c.fillStyle = '#555';\n    c.font = '12px Georgia, serif';\n    c.textAlign = 'center'; c.textBaseline = 'top';\n    c.fillText('τ (days)', acfPad.left + acfPlotW / 2, acfPad.top + acfPlotH + 24);\n\n    c.save();\n    c.translate(14, acfPad.top + acfPlotH / 2);\n    c.rotate(-Math.PI / 2);\n    c.textAlign = 'center'; c.textBaseline = 'middle';\n    c.fillText('r(τ)', 0, 0);\n    c.restore();\n}\n\n// ── Refresh ──────────────────────────────────────────────────────\nfunction refresh() {\n    lagK = +document.getElementById('sl').value;\n    const lagDays = (lagK * dt).toFixed(2);\n    document.getElementById('lv').textContent = lagDays;\n    document.getElementById('sc-title').innerHTML =\n        'Lag scatter &nbsp;(τ = ' + lagDays + ' d)';\n\n    B1.update();\n    drawScatter();\n    drawACF();\n}\n\ndocument.getElementById('sl').addEventListener('input', refresh);\n\n// Initial draw\nrefresh();\n</script>\n</body>\n</html>\n"
+        },
+        {
+          "x": 20,
+          "y": 0,
+          "id": "60b072ad-2200-4d39-87ab-164202e04118",
+          "type": "text",
+          "width": 920,
+          "height": 80,
+          "zIndex": 2,
+          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">Defining the kernel (autocorrelation) function</span></p>",
+          "fragment": false,
+          "fragmentIndex": 1,
+          "fragmentAnimation": "fade-down"
+        }
+      ],
+      "background": {
+        "type": "color",
+        "color": "#ffffff"
+      },
+      "activeSection": 2
+    },
+    {
       "id": "ccb14aef-7ddd-46bc-9f3d-d3c9cc9b2bb0",
       "notes": "",
       "elements": [
         {
-          "x": 69.8324022346369,
-          "y": 0,
+          "x": 50,
+          "y": 60,
           "id": "e1c47f8d-609f-47c4-af72-9bdbe33acaad",
           "type": "latex",
           "width": 890.1675977653631,
@@ -1998,44 +3246,31 @@
           "locked": true,
           "zIndex": 2,
           "content": "\\begin{equation*}\n    \\boxed{\n    \\mathcal{K}(\\tau) = \\frac{N_{\\rm spot}\\,(1 - f_{\\rm spot})^2\\,\\alpha_{\\max}^4}{\\pi^2}\n    \\, \\int R_\\Gamma(\\tau) \\left[\\sum_{n} |c_n(\\Phi)|^2\\, \\cos\\!\\big(n\\omega_0(\\Phi)\\,\\tau\\big) \\right] p(\\Phi) \\, d \\Phi }\n\\end{equation*}"
+        },
+        {
+          "x": 20,
+          "y": 0,
+          "id": "305d3410-8913-43c9-b79e-155ffaaaf1ff",
+          "type": "text",
+          "width": 920,
+          "height": 80,
+          "zIndex": 1,
+          "content": "<p style=\"text-align: center;\"><span style=\"color: rgb(226, 232, 240); font-family: Barlow, sans-serif; font-size: 28px;\">How do we use the kernel function to </span><span style=\"color: rgb(220, 38, 38); font-family: Barlow, sans-serif; font-size: 28px;\"><em>infer</em></span><span style=\"color: rgb(226, 232, 240); font-family: Barlow, sans-serif; font-size: 28px;\"> spot parameters from data?</span></p>"
+        },
+        {
+          "x": 20,
+          "y": 280,
+          "id": "5d749be2-a091-4867-9676-d841bf76b72b",
+          "type": "text",
+          "width": 920,
+          "height": 80,
+          "zIndex": 1,
+          "content": "<p style=\"text-align: center;\"><span style=\"color: rgb(226, 232, 240); font-family: Barlow, sans-serif; font-size: 28px;\">We can do this using a tool called Gaussian processes</span></p>"
         }
       ],
       "background": {
         "type": "color",
         "color": "#0a0a0f"
-      },
-      "activeSection": 2
-    },
-    {
-      "id": "0fa05a0d-78c4-465e-90ff-0a346fac210a",
-      "notes": "",
-      "elements": [
-        {
-          "x": 20,
-          "y": 0,
-          "id": "56ca1afa-aa7d-4a78-8188-68c46aa5c6b4",
-          "type": "text",
-          "width": 920,
-          "height": 80,
-          "zIndex": 1,
-          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: &quot;JetBrains Mono&quot;, monospace; font-size: 28px;\"><strong>spotgp</strong></span><span style=\"color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;\">: </span><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">a JAX based GP solver + MCMC implementation</span></p>"
-        },
-        {
-          "x": 20,
-          "y": 80,
-          "id": "7600f505-27a8-4613-a249-470867994f8f",
-          "alt": "",
-          "src": "/uploads/452971c7-b1df-4415-9d8d-afc999c77129.png",
-          "type": "image",
-          "width": 600,
-          "height": 460,
-          "zIndex": 2,
-          "objectFit": "contain"
-        }
-      ],
-      "background": {
-        "type": "color",
-        "color": "#ffffff"
       },
       "activeSection": 2
     },
@@ -2139,12 +3374,57 @@
           "width": 920,
           "height": 80,
           "zIndex": 1,
+          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">Cramer-Rao analysis</span></p>"
+        },
+        {
+          "x": 60,
+          "y": 80,
+          "id": "3a46edd7-af42-4488-8517-a13ba158f3e3",
+          "type": "text",
+          "width": 840,
+          "height": 80,
+          "zIndex": 1,
+          "content": "<p style=\"line-height: 0.8;\"><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 24px;\">Under what conditions/regions of parameter space is it possible to constrain DR and inclination?</span></p>"
+        },
+        {
+          "x": 480,
+          "y": 160,
+          "id": "bddff009-514d-4445-bef1-03505d77a036",
+          "alt": "",
+          "src": "/uploads/a13960c4-31f1-4502-a9cc-8bcb732d6418.png",
+          "type": "image",
+          "width": 440,
+          "height": 380,
+          "zIndex": 2,
+          "fragment": true,
+          "objectFit": "contain",
+          "fragmentIndex": 1
+        }
+      ],
+      "background": {
+        "type": "color",
+        "color": "#ffffff"
+      },
+      "activeSection": 2
+    },
+    {
+      "id": "d9ad8223-5978-48af-a12d-544c0bc80c78",
+      "notes": "",
+      "elements": [
+        {
+          "x": 20,
+          "y": 0,
+          "id": "d54ec9ec-18a5-4d2b-8b94-1e41b7a9eb0b",
+          "type": "text",
+          "width": 920,
+          "height": 80,
+          "zIndex": 1,
           "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">Under what conditions can we infer </span><span style=\"color: rgb(220, 38, 38); font-family: Barlow, sans-serif; font-size: 28px;\">differential rotation</span><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">?</span></p>"
         },
         {
           "x": 20,
           "y": 80,
-          "id": "f7081868-32c2-4026-9e95-50024aa6fd82",
+          "id": "83d6bce0-28de-4494-a91b-6109ab0889f8",
           "alt": "",
           "src": "/uploads/41ba5051-5fc2-4885-a306-2c1486099f41.png",
           "type": "image",
@@ -2154,7 +3434,8 @@
           "shadowX": 2,
           "shadowY": 2,
           "objectFit": "contain",
-          "shadowBlur": 2
+          "shadowBlur": 2,
+          "borderRadius": 4
         }
       ],
       "background": {
@@ -2194,8 +3475,30 @@
           "shadowY": 2,
           "objectFit": "contain",
           "shadowBlur": 2,
+          "borderRadius": 4,
           "imageOffsetX": -40,
           "imageOffsetY": 0
+        }
+      ],
+      "background": {
+        "type": "color",
+        "color": "#ffffff"
+      },
+      "activeSection": 2
+    },
+    {
+      "id": "8ee45f5f-5181-4019-8b93-73c4dea81e79",
+      "notes": "",
+      "elements": [
+        {
+          "x": 20,
+          "y": 0,
+          "id": "ac4f9c57-6c9f-4b72-8962-17277a1c928e",
+          "type": "text",
+          "width": 920,
+          "height": 80,
+          "zIndex": 1,
+          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">How does this method perform with observational noise?</span></p>"
         }
       ],
       "background": {
@@ -2338,18 +3641,95 @@
       "activeSection": 2
     },
     {
-      "id": "75937404-446a-4cc5-91f2-72fdd3aebb67",
+      "id": "c4cf9d35-253d-4b12-acd5-3efd08e663a6",
+      "notes": "",
+      "elements": [
+        {
+          "x": 20,
+          "y": 0,
+          "id": "f244ff38-e305-4ea9-9e74-0352e2355ed3",
+          "type": "text",
+          "width": 380,
+          "height": 143,
+          "zIndex": 3,
+          "content": "<p style=\"text-align: left;\"><span style=\"color: rgb(226, 232, 240); font-family: Barlow, sans-serif; font-size: 28px;\">Conclusions</span></p>",
+          "sizeMode": "auto"
+        },
+        {
+          "x": 20,
+          "y": 80,
+          "id": "48d4a360-6bf0-4ea2-846b-b1b2cc59af62",
+          "type": "text",
+          "width": 900,
+          "height": 187,
+          "zIndex": 3,
+          "content": "<p style=\"text-align: left; line-height: 0.7;\"><span style=\"color: rgb(226, 232, 240); font-family: Barlow, sans-serif; font-size: 20px; font-weight: 400;\">Using model sensitivity analysis and simulated inference, I show that </span><span style=\"color: rgb(220, 38, 38); font-family: Barlow, sans-serif; font-size: 20px; font-weight: 400;\"><strong>inferring tidal Qs from individual binaries is an ill-posed problem</strong></span><span style=\"color: rgb(226, 232, 240); font-family: Barlow, sans-serif; font-size: 20px; font-weight: 400;\"> and alternatively, </span><span style=\"color: rgb(220, 38, 38); font-family: Barlow, sans-serif; font-size: 20px; font-weight: 400;\"><strong>population constraints from samples of EB spin-orbit ratios</strong></span><span style=\"color: rgb(226, 232, 240); font-family: Barlow, sans-serif; font-size: 20px; font-weight: 400;\"> may provide better leverage for constraining tides(Birky et al. 2025, Birky et al. 2026)</span></p>",
+          "fragment": true,
+          "sizeMode": "auto",
+          "fragmentIndex": 1,
+          "animationEnter": "none"
+        },
+        {
+          "x": 20,
+          "y": 360,
+          "id": "7356aa01-ab0e-4e6b-9488-52bc49a9b5ee",
+          "type": "text",
+          "width": 920,
+          "height": 141,
+          "zIndex": 3,
+          "content": "<p style=\"text-align: left; line-height: 0.7;\"><span style=\"color: rgb(226, 232, 240); font-family: Barlow, sans-serif; font-size: 20px;\">Finally, I develop a novel, physically motivated Gaussian process kernel for </span><span style=\"color: rgb(220, 38, 38); font-family: Barlow, sans-serif; font-size: 20px;\">inferring differential rotation, inclination, and starspot properties <em>just</em> from stellar lightcurves</span><span style=\"color: rgb(226, 232, 240); font-family: Barlow, sans-serif; font-size: 20px;\"> (Birky et al. in prep)</span></p>",
+          "fragment": true,
+          "sizeMode": "auto",
+          "fragmentIndex": 3
+        },
+        {
+          "x": 20,
+          "y": 460,
+          "id": "f8a8c426-f83f-4fe9-a2b0-eb351832358b",
+          "type": "text",
+          "width": 920,
+          "height": 95,
+          "zIndex": 3,
+          "content": "<p style=\"text-align: left; line-height: 0.7;\"><span style=\"color: rgb(226, 232, 240); font-family: Barlow, sans-serif; font-size: 20px;\">So what comes next?</span></p>",
+          "fragment": true,
+          "sizeMode": "auto",
+          "fragmentIndex": 4
+        },
+        {
+          "x": 20,
+          "y": 220,
+          "id": "b3885a25-f430-4f74-bfb1-a88316620a54",
+          "type": "text",
+          "width": 900,
+          "height": 187,
+          "zIndex": 3,
+          "content": "<p style=\"text-align: left; line-height: 0.7;\"><span style=\"color: rgb(226, 232, 240); font-family: Barlow, sans-serif; font-size: 20px;\">Furthermore, EB population in Kepler and TESS show a significant population of </span><span style=\"color: rgb(220, 38, 38); font-family: Barlow, sans-serif; font-size: 20px;\">subsynchronous binaries</span><span style=\"color: rgb(226, 232, 240); font-family: Barlow, sans-serif; font-size: 20px;\"> which </span><span style=\"color: rgb(220, 38, 38); font-family: Barlow, sans-serif; font-size: 20px;\">cannot be explained by tides</span><span style=\"color: rgb(226, 232, 240); font-family: Barlow, sans-serif; font-size: 20px;\"> and </span><span style=\"color: rgb(220, 38, 38); font-family: Barlow, sans-serif; font-size: 20px;\">may be due to differential rotation</span><span style=\"color: rgb(226, 232, 240); font-family: Barlow, sans-serif; font-size: 20px;\"> (Hobson-Ritz &amp; Birky et al. 2025)</span></p>",
+          "fragment": true,
+          "sizeMode": "auto",
+          "fragmentIndex": 2,
+          "fragmentAnimation": "fade-in"
+        }
+      ],
+      "background": {
+        "type": "color",
+        "color": "#000000"
+      },
+      "activeSection": 2
+    },
+    {
+      "id": "1ba1e06e-c17f-49d7-8fec-8f1daa0b895b",
       "notes": "",
       "elements": [
         {
           "x": 0,
           "y": 103.01675977653632,
-          "id": "56a3d63f-0ad2-4bd3-a264-2fab6ab0ab07",
+          "id": "91a4187a-1907-4729-9212-0f96af7f7c52",
           "type": "text",
           "width": 960,
-          "height": 254.8603351955307,
+          "height": 150,
           "zIndex": 1,
-          "content": "<p style=\"text-align: center;\"><span style=\"font-family: &quot;Computer Modern Sans&quot;, sans-serif; font-size: 40px;\">Future and Conclusions</span></p>"
+          "content": "<p style=\"text-align: center;\"><span style=\"font-family: &quot;Computer Modern Sans&quot;, sans-serif; font-size: 40px;\">Future Work</span></p>",
+          "sizeMode": "auto"
         }
       ],
       "background": {
@@ -2360,49 +3740,40 @@
       "showPageNumber": false
     },
     {
-      "id": "09e8ddfd-a97f-43c9-9517-1ded20049cc0",
+      "id": "0fa05a0d-78c4-465e-90ff-0a346fac210a",
       "notes": "",
       "elements": [
         {
           "x": 20,
           "y": 0,
-          "id": "12ed08a4-1c57-408b-bb9a-d4ed4cff482b",
+          "id": "56ca1afa-aa7d-4a78-8188-68c46aa5c6b4",
           "type": "text",
           "width": 920,
           "height": 80,
           "zIndex": 1,
-          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;\">Summary</span></p>"
-        }
-      ],
-      "background": {
-        "type": "color",
-        "color": "#ffffff"
-      },
-      "activeSection": 3
-    },
-    {
-      "id": "92f0dd30-fbc0-4bb9-bd40-53913652882a",
-      "notes": "",
-      "elements": [
-        {
-          "x": 20,
-          "y": 0,
-          "id": "f50ca129-84a1-47a0-b155-de1959bcefbd",
-          "type": "text",
-          "width": 920,
-          "height": 80,
-          "zIndex": 1,
-          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">Summary</span></p>"
+          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: &quot;JetBrains Mono&quot;, monospace; font-size: 28px;\"><strong>spotgp</strong></span><span style=\"color: rgb(51, 65, 85); font-family: &quot;Latin Modern Roman&quot;, serif; font-size: 28px;\">: </span><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">a JAX based GP solver + MCMC implementation</span></p>"
         },
         {
-          "x": 20,
-          "y": 120,
-          "id": "f68b759b-a72c-4604-9dd6-9be143aadcdb",
+          "x": 40,
+          "y": 40,
+          "id": "7600f505-27a8-4613-a249-470867994f8f",
+          "alt": "",
+          "src": "/uploads/452971c7-b1df-4415-9d8d-afc999c77129.png",
+          "type": "image",
+          "width": 480,
+          "height": 440,
+          "zIndex": 2,
+          "objectFit": "contain"
+        },
+        {
+          "x": 520,
+          "y": 100,
+          "id": "679f8f0e-b88f-4c61-9f35-026c9bd5a03d",
           "alt": "",
           "src": "/uploads/e20e85b1-a1fb-4da2-8302-8acd7fd52d0e.png",
           "type": "image",
-          "width": 440,
-          "height": 440,
+          "width": 420,
+          "height": 420,
           "zIndex": 2,
           "shadowX": 2,
           "shadowY": 2,
@@ -2410,41 +3781,21 @@
           "shadowBlur": 2
         },
         {
-          "x": 480,
-          "y": 20,
-          "id": "bf8b8642-d2db-4e3f-8cee-207ffc3a553b",
-          "alt": "",
-          "src": "/uploads/61a222b3-5481-407f-b46e-f543cc130e52.png",
-          "type": "image",
-          "width": 400,
-          "height": 260,
-          "zIndex": 2,
-          "shadowX": 2,
-          "shadowY": 2,
-          "objectFit": "contain",
-          "shadowBlur": 2
-        },
-        {
-          "x": 480,
-          "y": 300,
-          "id": "5fbe1e09-0dcc-4e8c-b7db-462bd7b63ce4",
-          "alt": "",
-          "src": "/uploads/b3f64836-198a-4c0e-9f82-4a1742253937.png",
-          "type": "image",
-          "width": 400,
-          "height": 260,
-          "zIndex": 2,
-          "shadowX": 2,
-          "shadowY": 2,
-          "objectFit": "contain",
-          "shadowBlur": 2
+          "x": 80,
+          "y": 160,
+          "id": "86fcfda9-0dab-4fd8-a139-de755e4b8307",
+          "type": "text",
+          "width": 600,
+          "height": 180,
+          "zIndex": 1,
+          "content": "<p><span style=\"font-size: 32px; color: #94a3b8\">New text</span></p>"
         }
       ],
       "background": {
         "type": "color",
         "color": "#ffffff"
       },
-      "activeSection": 3
+      "activeSection": 2
     },
     {
       "id": "adaf3451-91ab-4472-a9ec-0fd011183436",
@@ -2459,6 +3810,25 @@
           "height": 80,
           "zIndex": 1,
           "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">Future projects: science applications</span></p>"
+        },
+        {
+          "x": 440,
+          "y": 120,
+          "id": "198b0657-04d6-409f-8e1f-d01dbed10915",
+          "alt": "",
+          "src": "/uploads/e3286d52-927d-4b7f-afcd-97ab28af1199.jpeg",
+          "type": "image",
+          "width": 480,
+          "height": 380,
+          "zIndex": 2,
+          "shadowX": 2,
+          "shadowY": 2,
+          "objectFit": "contain",
+          "shadowBlur": 3,
+          "borderRadius": 4,
+          "citationMode": "side",
+          "citationText": "Gastine et al. 2013",
+          "citationColor": "#5e5c64"
         }
       ],
       "background": {
@@ -2605,14 +3975,77 @@
       "notes": "",
       "elements": [
         {
-          "x": -100,
+          "x": 0,
           "y": 0,
-          "id": "11728a72-29e8-4752-92ca-e83865d76385",
+          "id": "6bffa991-84ba-412b-99bc-7c97a919bc55",
           "type": "html",
-          "width": 400,
-          "height": 100,
+          "width": 960,
+          "height": 540,
+          "locked": true,
+          "zIndex": 1,
+          "content": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"utf-8\">\n<title>Tidal Star</title>\n<style>\n* { margin: 0; padding: 0; }\nbody { background: #000; overflow: hidden; }\ncanvas { display: block; }\n</style>\n</head>\n<body>\n<canvas id=\"c\"></canvas>\n<script>\n\"use strict\";\n\nconst canvas = document.getElementById(\"c\");\nconst ctx    = canvas.getContext(\"2d\");\n\nlet W, H, R, cx, cy;\nconst dpr = window.devicePixelRatio || 1;\n\nfunction resize() {\n    W = window.innerWidth;\n    H = window.innerHeight;\n    R = Math.min(W, H) * 0.38;\n    cx = W / 2;\n    cy = H / 2;\n    canvas.width  = W * dpr;\n    canvas.height = H * dpr;\n    canvas.style.width  = W + \"px\";\n    canvas.style.height = H + \"px\";\n    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);\n}\nresize();\nwindow.addEventListener(\"resize\", resize);\n\n// ── Mouse tracking ────────────────────────────────────────────────\nlet mouseX = cx + R * 2, mouseY = cy;\nlet prevX  = mouseX, prevY = mouseY;\n\nwindow.addEventListener(\"mousemove\", e => {\n    mouseX = e.clientX;\n    mouseY = e.clientY;\n});\n\n// ── Tidal state ───────────────────────────────────────────────────\nlet tidalAngle = 0.0;\nlet epsilon    = 0.0;\nlet lastT      = null;\n\nfunction animate(t) {\n    requestAnimationFrame(animate);\n    if (lastT === null) { lastT = t; return; }\n    const dt = Math.min((t - lastT) / 1000, 0.05);\n    lastT = t;\n\n    // Direction and distance from star center to mouse\n    const dx     = mouseX - cx, dy = mouseY - cy;\n    const d_px   = Math.sqrt(dx * dx + dy * dy);\n    const d_norm = Math.max(0.3, d_px / R);   // normalized to star radius\n    const angle  = Math.atan2(dy, dx);\n\n    // Mouse velocity\n    const vel = Math.hypot(mouseX - prevX, mouseY - prevY) / dt;\n    prevX = mouseX; prevY = mouseY;\n\n    // Target epsilon: only perturb when cursor is outside the unperturbed radius\n    const targetEps = d_px > R\n        ? Math.min(0.12, 0.15 / (d_norm ** 3)) + Math.min(0.03, vel * 0.00002)\n        : 0.0;\n\n    // Exponential lag on direction and amplitude\n    const dAngle = ((angle - tidalAngle + 3 * Math.PI) % (2 * Math.PI)) - Math.PI;\n    tidalAngle += dAngle * (1 - Math.exp(-dt / 0.15));\n    epsilon    += (targetEps - epsilon) * (1 - Math.exp(-dt / 0.2));\n\n    // ── Draw ──────────────────────────────────────────────────────\n    ctx.clearRect(0, 0, W * dpr, H * dpr);\n\n    // Deformed star\n    const N = 360;\n    ctx.beginPath();\n    for (let i = 0; i <= N; i++) {\n        const theta = (i / N) * 2 * Math.PI;\n        const alpha = theta - tidalAngle;\n        const cosA  = Math.cos(alpha);\n        const P2    = (3 * cosA * cosA - 1) / 2;\n        const r     = R * (1 + epsilon * P2);\n        const x     = cx + r * Math.cos(theta);\n        const y     = cy + r * Math.sin(theta);\n        i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);\n    }\n    ctx.closePath();\n    ctx.fillStyle = \"#BF4040\";\n    ctx.fill();\n\n    // Unperturbed outline (dashed circle)\n    ctx.beginPath();\n    ctx.arc(cx, cy, R, 0, 2 * Math.PI);\n    ctx.setLineDash([R * 0.07, R * 0.05]);\n    ctx.lineWidth   = 1.2;\n    ctx.strokeStyle = \"rgba(255,255,255,0.35)\";\n    ctx.stroke();\n    ctx.setLineDash([]);\n}\n\nrequestAnimationFrame(animate);\n</script>\n</body>\n</html>\n"
+        },
+        {
+          "x": 20,
+          "y": 0,
+          "id": "6452b4f7-35d2-4cae-a11e-a4f502235863",
+          "type": "text",
+          "width": 380,
+          "height": 143,
+          "zIndex": 3,
+          "content": "<p style=\"text-align: left;\"><span style=\"color: rgb(226, 232, 240); font-family: Barlow, sans-serif; font-size: 28px;\">Conclusions</span></p>",
+          "sizeMode": "auto"
+        },
+        {
+          "x": 669.5,
+          "y": 0,
+          "id": "b67c0781-c521-470f-bac8-a8f17b2e60ac",
+          "type": "text",
+          "width": 261,
+          "height": 97,
+          "zIndex": 1,
+          "content": "<p style=\"text-align: center; line-height: 0.7;\"><a target=\"_blank\" rel=\"noopener noreferrer\" class=\"orb-link\" href=\"https://bit.ly/3RkkPti\"><span style=\"color: rgb(255, 255, 255); font-family: Roboto, sans-serif; font-size: 24px;\">bit.ly/3RkkPti</span></a></p>",
+          "snapRef": "mc",
+          "sizeMode": "auto"
+        },
+        {
+          "x": 720,
+          "y": 60,
+          "id": "c29523c0-d401-4b08-bcd2-1ac0ccee8cfe",
+          "alt": "",
+          "src": "/uploads/6d579af5-2093-4c67-8956-155a163ecf45.png",
+          "type": "image",
+          "width": 220,
+          "height": 220,
           "zIndex": 2,
-          "content": "<html>\n  <head>\n  <meta charset=\"utf-8\">\n  <style>\n    @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600;700&display=swap');\n    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }\n    html, body { width:100%; height:100%; overflow:hidden; background:transparent; }\n    body {\n      display:flex; align-items:center; justify-content:flex-end;\n      font-family:'Barlow',sans-serif; color:#fff;\n      padding-right: 20px;\n    }\n    .container { text-align:right; }\n    .line { white-space:nowrap; }\n    .line-revolve {\n      height: 36px;\n      position: relative;\n    }\n    .static {\n      font-size:28px; font-weight:400; letter-spacing:0.01em;\n      opacity:0;\n      animation: fadeIn 0.6s ease-out 0.2s forwards;\n    }\n    .revolve-wrap {\n      display:block;\n      perspective:6000px;\n      position: absolute;\n      right: 0;\n      top: 0;\n      transform: scale(0.1);\n      transform-origin: right top;\n      overflow: visible;\n    }\n    .revolve {\n      display:inline-block;\n      font-size:280px; font-weight:600; font-style:italic; letter-spacing:0.02em;\n      color: #ef4444;\n      transform-style:preserve-3d;\n      animation: revolveIn 1.4s cubic-bezier(0.23,1,0.32,1) 0.6s forwards,\n                 drift 12s ease-in-out 2.4s infinite;\n      opacity:0;\n      transform:rotateY(-180deg);\n      white-space:nowrap;\n    }\n\n    @keyframes fadeIn {\n      to { opacity:1; }\n    }\n    @keyframes revolveIn {\n      0%   { opacity:0; transform:rotateY(-180deg); }\n      30%  { opacity:1; }\n      100% { opacity:1; transform:rotateY(0deg); }\n    }\n    @keyframes drift {\n      0%, 100% { transform:rotateY(0deg); }\n      50%      { transform:rotateY(8deg); }\n    }\n  </style>\n  </head>\n  <body>\n    <div class=\"container\">\n      <div class=\"line\">\n        <span class=\"static\">The stellar revolution</span>\n      </div>\n      <div class=\"line-revolve\">\n        <div class=\"revolve-wrap\"><span class=\"revolve\">revolution</span></div>\n      </div>\n    </div>\n  </body>\n  </html>"
+          "objectFit": "contain",
+          "borderRadius": 6
+        },
+        {
+          "x": 400,
+          "y": 0,
+          "id": "861e07f8-0b1a-43ef-b00d-c8bfc6d994b7",
+          "type": "text",
+          "width": 380,
+          "height": 543,
+          "zIndex": 3,
+          "content": "<p><span style=\"font-family: Roboto, sans-serif; font-size: 20px;\">view the interactive slides:</span></p>",
+          "snapRef": "lr",
+          "rotation": 306,
+          "sizeMode": "auto"
+        },
+        {
+          "x": 580,
+          "y": 345,
+          "id": "b86a13c5-71b6-412f-a215-aba32021b572",
+          "type": "text",
+          "width": 380,
+          "height": 95,
+          "zIndex": 3,
+          "content": "<p style=\"text-align: right; line-height: 0.7;\"><span style=\"font-size: 20px;\">build your own slides:</span></p>",
+          "snapRef": "lr",
+          "rotation": 0,
+          "sizeMode": "auto"
         }
       ],
       "background": {
@@ -2625,7 +4058,7 @@
   "createdAt": "2026-04-06T20:39:00.855Z",
   "expiresAt": null,
   "showClock": true,
-  "updatedAt": "2026-05-11T00:28:49.838Z",
+  "updatedAt": "2026-05-13T22:13:17.660Z",
   "footerMode": "sequence",
   "globalFont": "Barlow, sans-serif",
   "showFooter": true,
