@@ -95,13 +95,57 @@
       "showPageNumber": false
     },
     {
-      "id": "12634ad7-99bd-41ec-8f05-2b0dd899476c",
+      "id": "4e9b92bc-824d-4f84-ad80-afa3c3511f56",
       "notes": "",
       "elements": [
         {
+          "x": 40,
+          "y": 140,
+          "id": "a13cb309-0034-4dd5-a0f6-07f9ae6bc5b9",
+          "type": "text",
+          "width": 800,
+          "height": 143,
+          "zIndex": 1,
+          "content": "<p><span style=\"color: rgb(255, 255, 255); font-family: Roboto, sans-serif; font-size: 24px;\"><em>(1) What are </em></span><span style=\"color: rgb(220, 38, 38); font-family: Roboto, sans-serif; font-size: 24px;\"><em>low-mass stars</em></span><span style=\"color: rgb(255, 255, 255); font-family: Roboto, sans-serif; font-size: 24px;\"><em> and why are they interesting?</em></span></p>",
+          "sizeMode": "auto"
+        },
+        {
+          "x": 80,
+          "y": 240,
+          "id": "2ed76041-6248-4a39-a4a3-9a5adc58005c",
+          "type": "text",
+          "width": 800,
+          "height": 143,
+          "zIndex": 1,
+          "content": "<p><span style=\"color: rgb(255, 255, 255); font-family: Roboto, sans-serif; font-size: 24px;\"><em>(2) Why is </em></span><span style=\"color: rgb(220, 38, 38); font-family: Roboto, sans-serif; font-size: 24px;\"><em>rotation</em></span><span style=\"color: rgb(255, 255, 255); font-family: Roboto, sans-serif; font-size: 24px;\"><em> fundamental to understanding stellar physics?</em></span></p>",
+          "sizeMode": "auto"
+        },
+        {
+          "x": 100,
+          "y": 340,
+          "id": "d95e382f-7a72-471e-a7de-d91449627cb8",
+          "type": "text",
+          "width": 860,
+          "height": 143,
+          "zIndex": 1,
+          "content": "<p><span style=\"color: rgb(255, 255, 255); font-family: Roboto, sans-serif; font-size: 24px;\"><em>(3) What can we infer about </em></span><span style=\"color: rgb(220, 38, 38); font-family: Roboto, sans-serif; font-size: 24px;\"><em>tides</em></span><span style=\"color: rgb(255, 255, 255); font-family: Roboto, sans-serif; font-size: 24px;\"><em> from the spin-orbit dynamics of </em></span><span style=\"color: rgb(220, 38, 38); font-family: Roboto, sans-serif; font-size: 24px;\"><em>binary stars</em></span><span style=\"color: rgb(255, 255, 255); font-family: Roboto, sans-serif; font-size: 24px;\"><em>?</em></span></p>",
+          "sizeMode": "auto"
+        },
+        {
+          "x": 160,
+          "y": 440,
+          "id": "8274feae-1868-43dd-ad4a-1f1d5519ae29",
+          "type": "text",
+          "width": 760,
+          "height": 143,
+          "zIndex": 1,
+          "content": "<p><span style=\"color: rgb(255, 255, 255); font-family: Roboto, sans-serif; font-size: 24px;\"><em>(4) How can we measure the </em></span><span style=\"color: rgb(220, 38, 38); font-family: Roboto, sans-serif; font-size: 24px;\"><em>differential rotation</em></span><span style=\"color: rgb(255, 255, 255); font-family: Roboto, sans-serif; font-size: 24px;\"><em> rate of a star?</em></span></p>",
+          "sizeMode": "auto"
+        },
+        {
           "x": 0,
-          "y": 80,
-          "id": "315ea53d-33ae-4359-9915-d0257ba890a0",
+          "y": 40,
+          "id": "301338ec-ed70-4e36-84bb-56b86a091951",
           "type": "text",
           "width": 960,
           "height": 150,
@@ -112,19 +156,22 @@
       ],
       "background": {
         "type": "color",
-        "color": "#0a0a0f"
+        "color": "#000000"
       },
-      "hideFooter": true,
-      "showPageNumber": false
+      "slideGroup": null,
+      "autoAnimate": false,
+      "activeSection": 0,
+      "autoAnimateEasing": "ease-in-out",
+      "autoAnimateDuration": 0.8
     },
     {
-      "id": "4e9b92bc-824d-4f84-ad80-afa3c3511f56",
+      "id": "9243e322-3de6-4193-97d5-e9e5c671a1de",
       "notes": "",
       "elements": [
         {
           "x": 0,
           "y": -20,
-          "id": "99ea9901-92dc-4da0-a965-8db4b22443ff",
+          "id": "d1e236cb-0b08-40f3-9e38-f60a75c259f5",
           "type": "html",
           "width": 960,
           "height": 640,
@@ -135,7 +182,7 @@
         {
           "x": 20.000000000000014,
           "y": 0,
-          "id": "1642b242-3dfb-4aff-8963-1bffee4b05cb",
+          "id": "0fa0dd4b-1a55-47f3-bab2-6c80f077ff2b",
           "type": "text",
           "width": 920,
           "height": 80,
@@ -145,7 +192,7 @@
         {
           "x": 20,
           "y": 480,
-          "id": "0566783d-bf19-4bda-8db6-3e44bf2775d6",
+          "id": "bd0f26a1-cd74-4a66-8d8a-d70e2f8460d5",
           "type": "text",
           "width": 920,
           "height": 80,
@@ -847,8 +894,8 @@
           "width": 560,
           "height": 520,
           "zIndex": 2,
-          "objectFit": "contain",
-          "borderRadius": 4,
+          "objectFit": "fill",
+          "borderRadius": 10,
           "citationText": "Solar Dynamics Observatory"
         },
         {
@@ -955,7 +1002,8 @@
           "width": 320,
           "height": 160,
           "zIndex": 2,
-          "objectFit": "contain",
+          "objectFit": "fill",
+          "borderRadius": 4,
           "citationText": "Swedish Solar Telescope"
         },
         {
@@ -968,7 +1016,8 @@
           "width": 420,
           "height": 240,
           "zIndex": 2,
-          "objectFit": "contain",
+          "objectFit": "fill",
+          "borderRadius": 4,
           "citationText": "Solar Dynamics Observatory"
         }
       ],
@@ -2376,39 +2425,40 @@
       "activeSection": 1
     },
     {
-      "id": "222f30fd-cf16-458b-ad0f-f74ce1d5c183",
+      "id": "eafdcf2a-543b-436b-9003-b959974873fd",
       "notes": "",
       "elements": [
         {
-          "x": 0,
-          "y": 80,
-          "id": "ef3314f8-0e0f-4e28-bdaa-a244a18b110d",
-          "src": "/uploads/bd22d501-550c-4071-b1c3-3003b8e3ecac/6ff2029f-d392-423a-8b11-f6c5f466af0c.png",
-          "crop": null,
-          "type": "image",
-          "width": 960,
-          "height": 479,
-          "imageH": 540,
-          "imageW": 960,
-          "zIndex": 1,
-          "objectFit": "contain",
-          "imageOffsetX": 0,
-          "imageOffsetY": -57
-        },
-        {
           "x": 20,
           "y": 0,
-          "id": "fdc6f0c5-4fbf-46d8-b59a-1fbbce264c38",
+          "id": "fe960cb5-1a51-4749-8c93-b53ea705c77f",
           "type": "text",
-          "width": 920,
+          "width": 940,
           "height": 80,
           "zIndex": 1,
-          "content": "<p><span style=\"font-family: Barlow, sans-serif; font-size: 28px;\">Orbital evolution: Constant Phase Lag (CPL) model</span></p>"
+          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 24px;\">Key question: can we infer tidal parameters (e.g. time lag constant) from observations?</span></p>"
+        },
+        {
+          "x": 336.87150837988827,
+          "y": 109.9441340782123,
+          "id": "01bded70-c17e-4720-945a-e4c8b7ddfcc1",
+          "alt": "",
+          "src": "/uploads/a3f6ac17-4c53-4ed1-82e6-d4cc261fc0c7.gif",
+          "type": "image",
+          "width": 603.1284916201117,
+          "height": 430.0558659217877,
+          "zIndex": 2,
+          "shadowX": 2,
+          "shadowY": 2,
+          "snapRef": "lr",
+          "objectFit": "contain",
+          "shadowBlur": 2,
+          "borderRadius": 5
         }
       ],
       "background": {
         "type": "color",
-        "color": "#000000"
+        "color": "#ffffff"
       },
       "activeSection": 1
     },
@@ -2448,28 +2498,7 @@
         "color": "#000000"
       },
       "transition": "fade",
-      "autoAnimate": true,
-      "activeSection": 1
-    },
-    {
-      "id": "eafdcf2a-543b-436b-9003-b959974873fd",
-      "notes": "",
-      "elements": [
-        {
-          "x": 20,
-          "y": 0,
-          "id": "fe960cb5-1a51-4749-8c93-b53ea705c77f",
-          "type": "text",
-          "width": 920,
-          "height": 80,
-          "zIndex": 1,
-          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">Central question: can we infer tidal Q parameters from observations?</span></p>"
-        }
-      ],
-      "background": {
-        "type": "color",
-        "color": "#ffffff"
-      },
+      "autoAnimate": false,
       "activeSection": 1
     },
     {
@@ -2506,53 +2535,18 @@
       "activeSection": 1
     },
     {
-      "id": "5048d86e-2c17-4ac3-bdb0-0a15dbf4e981",
-      "notes": "",
-      "elements": [
-        {
-          "x": 20,
-          "y": 0,
-          "id": "e35cf924-1df9-4b35-a79a-13319c5611f9",
-          "type": "text",
-          "width": 920,
-          "height": 80,
-          "zIndex": 1,
-          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">Sensitivity analysis: CPL + stellar</span></p>"
-        },
-        {
-          "x": 40,
-          "y": 60,
-          "id": "249e7673-c58c-47c5-8189-39b6e829f970",
-          "alt": "",
-          "src": "/uploads/60fcb23e-3e09-4f1d-a7b7-67ad67b446fb.png",
-          "type": "image",
-          "width": 880,
-          "height": 500,
-          "zIndex": 2,
-          "objectFit": "contain"
-        }
-      ],
-      "background": {
-        "type": "color",
-        "color": "#ffffff"
-      },
-      "transition": "fade",
-      "autoAnimate": true,
-      "activeSection": 1
-    },
-    {
       "id": "6f9a0041-9a38-473c-a197-0f7add008278",
       "notes": "",
       "elements": [
         {
           "x": 20,
-          "y": 0,
+          "y": 80,
           "id": "647c3088-74eb-43ef-a15a-6b7fc9e4d70c",
           "type": "text",
-          "width": 920,
+          "width": 680,
           "height": 80,
           "zIndex": 1,
-          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">ALABI: Active Learning for Accelerated Bayesian Inference</span></p>"
+          "content": "<p style=\"text-align: left;\"><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 24px;\">ALABI: Active Learning for Accelerated Bayesian Inference</span></p>"
         },
         {
           "x": 20,
@@ -2565,6 +2559,16 @@
           "height": 300,
           "zIndex": 2,
           "objectFit": "contain"
+        },
+        {
+          "x": 20,
+          "y": 0,
+          "id": "72abe5db-eba1-4665-8d04-c0ff813eb63c",
+          "type": "text",
+          "width": 920,
+          "height": 80,
+          "zIndex": 1,
+          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">How correlations between parameters (degeneracies) affect inference?</span></p>"
         }
       ],
       "background": {
@@ -2600,7 +2604,7 @@
           "objectFit": "contain"
         },
         {
-          "x": 560,
+          "x": 540,
           "y": 60,
           "id": "fd55710d-3b0f-422f-b7e3-809f58ea23a6",
           "alt": "",
@@ -2609,7 +2613,33 @@
           "width": 400,
           "height": 300,
           "zIndex": 2,
-          "objectFit": "contain"
+          "shadowX": 2,
+          "shadowY": 2,
+          "fragment": true,
+          "objectFit": "contain",
+          "shadowBlur": 2,
+          "borderRadius": 5,
+          "fragmentIndex": 1
+        },
+        {
+          "x": 260,
+          "y": 315,
+          "id": "353799db-6c27-45e8-9897-521ffd1396d3",
+          "fill": "none",
+          "text": "",
+          "type": "shape",
+          "shape": "rect",
+          "width": 140,
+          "height": 120,
+          "stroke": "#dc2626",
+          "zIndex": 4,
+          "opacity": 1,
+          "fontSize": 16,
+          "fragment": true,
+          "textColor": "#ffffff",
+          "strokeWidth": 2,
+          "borderRadius": 0,
+          "fragmentIndex": 1
         }
       ],
       "background": {
@@ -2935,7 +2965,7 @@
           "height": 80,
           "zIndex": 1,
           "content": "<p style=\"text-align: left;\"><span style=\"color: rgb(148, 163, 184); font-family: Barlow, sans-serif; font-size: 24px;\"><em>well, it's hard...</em></span></p>",
-          "fragment": false,
+          "fragment": true,
           "fragmentIndex": 1
         },
         {
@@ -2947,7 +2977,9 @@
           "height": 103,
           "zIndex": 1,
           "content": "<p style=\"line-height: 0.85;\"><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 24px; font-weight: 400;\">Aside from the sun, we </span><span style=\"color: rgb(220, 38, 38); font-family: Barlow, sans-serif; font-size: 24px; font-weight: 500;\">cannot spatially resolve</span><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 24px; font-weight: 500;\"><strong> </strong></span><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 24px; font-weight: 400;\">images of other stars</span></p>",
-          "sizeMode": "auto"
+          "fragment": true,
+          "sizeMode": "auto",
+          "fragmentIndex": 2
         },
         {
           "x": 480,
@@ -2960,17 +2992,6 @@
           "height": 360,
           "zIndex": 2,
           "objectFit": "contain"
-        },
-        {
-          "x": 0,
-          "y": 220,
-          "id": "228b2b6d-0ce4-47a9-b282-0e240778a035",
-          "type": "html",
-          "width": 880,
-          "height": 120,
-          "locked": true,
-          "zIndex": 2,
-          "content": "<!DOCTYPE html><html><head><meta charset=\"utf-8\">\n<style>\n@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Playfair+Display:wght@400;500;600;700;800;900&family=Bebas+Neue&family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&family=Space+Mono:wght@400;700&family=Source+Sans+3:wght@300;400;500;600;700;800;900&family=Merriweather:wght@300;400;700;900&family=Fira+Code:wght@300;400;500;600;700&family=Comfortaa:wght@300;400;500;600;700&family=Codystar:wght@300;400&display=swap');\n*{margin:0;padding:0;box-sizing:border-box}\nhtml,body{width:1000%;height:1000%;overflow:hidden;background:transparent;transform:scale(0.1);transform-origin:0 0}\nbody{display:flex;align-items:center;justify-content:center;font-family:'Barlow', sans-serif;color:#9a9996;font-style:italic}\n</style>\n<style>\n.tw{font-size:4800px;white-space:nowrap;overflow:hidden;border-right:3px solid #9a9996;width:0;animation:tw-type 2s steps(18) forwards,tw-blink 0.6s step-end infinite}\n@keyframes tw-type{to{width:18ch}}\n@keyframes tw-blink{50%{border-color:transparent}}\n</style></head><body><div class=\"tw\">well, it's hard...</div></body></html>"
         }
       ],
       "background": {
@@ -3099,7 +3120,7 @@
           "width": 920,
           "height": 80,
           "zIndex": 1,
-          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">Further empirical evidence suggests its a terrible idea</span></p>"
+          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">Further empirical evidence suggests it is a terrible idea</span></p>"
         }
       ],
       "background": {
@@ -3660,6 +3681,73 @@
       "activeSection": 2
     },
     {
+      "id": "fd69db76-e485-48fb-bf34-f64b88ce720a",
+      "notes": "",
+      "elements": [
+        {
+          "x": 20,
+          "y": 0,
+          "id": "8a8c67a1-22c4-4096-9ad7-b2330f687858",
+          "type": "text",
+          "width": 680,
+          "height": 80,
+          "zIndex": 2,
+          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 24px;\">So now we have a model for flux as a function of time</span></p>",
+          "fragment": false,
+          "fragmentIndex": 1,
+          "fragmentAnimation": "fade-down"
+        },
+        {
+          "x": 520,
+          "y": 80,
+          "id": "2056182f-e017-4fc3-a701-2878084bdce7",
+          "alt": "",
+          "src": "/uploads/a07f72ee-e695-421d-9297-f8cc30cdd655.png",
+          "crop": null,
+          "type": "image",
+          "width": 357,
+          "height": 444,
+          "imageH": 600,
+          "imageW": 600,
+          "zIndex": 2,
+          "objectFit": "contain",
+          "imageOffsetX": 0,
+          "imageOffsetY": -63
+        },
+        {
+          "x": 80,
+          "y": 60,
+          "id": "fcd01886-8441-4769-9ae5-c03a9b33749a",
+          "type": "text",
+          "width": 280,
+          "height": 80,
+          "zIndex": 2,
+          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 24px;\"><em>...but does this help us?</em></span></p>",
+          "fragment": false,
+          "fragmentIndex": 1,
+          "fragmentAnimation": "fade-down"
+        },
+        {
+          "x": 20,
+          "y": 140,
+          "id": "b4a59612-7f61-4964-919b-309f7f13fdd1",
+          "type": "text",
+          "width": 440,
+          "height": 80,
+          "zIndex": 2,
+          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 24px;\">Kinda, not really</span></p>",
+          "fragment": false,
+          "fragmentIndex": 1,
+          "fragmentAnimation": "fade-down"
+        }
+      ],
+      "background": {
+        "type": "color",
+        "color": "#ffffff"
+      },
+      "activeSection": 2
+    },
+    {
       "id": "879b1fb6-9a55-4c2d-83e8-30ccaae3c190",
       "notes": "",
       "elements": [
@@ -3895,38 +3983,83 @@
       "notes": "",
       "elements": [
         {
-          "x": 20,
-          "y": 0,
-          "id": "0b4a003c-2390-4af3-9c46-738991061096",
-          "type": "text",
-          "width": 920,
-          "height": 80,
-          "zIndex": 1,
-          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">Cramer-Rao analysis</span></p>"
-        },
-        {
-          "x": 60,
-          "y": 80,
+          "x": 40,
+          "y": 20,
           "id": "3a46edd7-af42-4488-8517-a13ba158f3e3",
           "type": "text",
-          "width": 840,
+          "width": 880,
           "height": 80,
           "zIndex": 1,
-          "content": "<p style=\"line-height: 0.8;\"><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 24px;\">Under what conditions/regions of parameter space is it possible to constrain DR and inclination?</span></p>"
+          "content": "<p style=\"line-height: 0.8;\"><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 20px;\">Under what conditions/regions of parameter space is it possible to constrain DR and inclination?</span></p>"
         },
         {
-          "x": 480,
-          "y": 160,
+          "x": 0,
+          "y": 100,
           "id": "bddff009-514d-4445-bef1-03505d77a036",
           "alt": "",
           "src": "/uploads/a13960c4-31f1-4502-a9cc-8bcb732d6418.png",
           "type": "image",
-          "width": 440,
-          "height": 380,
+          "width": 480,
+          "height": 440,
           "zIndex": 2,
-          "fragment": true,
+          "fragment": false,
           "objectFit": "contain",
           "fragmentIndex": 1
+        },
+        {
+          "x": 380,
+          "y": 500,
+          "id": "a4cb7100-c6ba-47ce-8cb1-8f7614b8904c",
+          "type": "text",
+          "width": 560,
+          "height": 80,
+          "zIndex": 2,
+          "content": "<p style=\"line-height: 0.7;\"><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 16px;\">(for those who care about math, this is very easy to do with JAX autograd!)</span></p>"
+        },
+        {
+          "x": 500,
+          "y": 80,
+          "id": "c679d8aa-ce44-4b7a-bbd0-f51f0e05c18e",
+          "type": "text",
+          "width": 400,
+          "height": 150,
+          "zIndex": 1,
+          "content": "<p style=\"line-height: 0.8;\"><span style=\"color: rgb(30, 41, 59); font-family: Barlow, sans-serif; font-size: 20px; font-weight: 500;\">Main idea:</span><span style=\"color: rgb(30, 41, 59); font-family: Barlow, sans-serif; font-size: 20px;\"> we can use Cramer-Rao analysis to the theoretical lower uncertainty bound</span></p>",
+          "sizeMode": "auto"
+        },
+        {
+          "x": 480,
+          "y": 380,
+          "id": "736b73af-672a-44e1-a111-701550186981",
+          "alt": "",
+          "src": "/uploads/6f158e89-bf33-44f5-b9f7-5aed6c7925e1.png",
+          "type": "image",
+          "width": 260,
+          "height": 120,
+          "zIndex": 2,
+          "objectFit": "contain"
+        },
+        {
+          "x": 700,
+          "y": 360,
+          "id": "ce331f85-9360-4385-8cd8-2b40e8472de3",
+          "alt": "",
+          "src": "/uploads/439f174c-af49-4b7c-86a2-ef4bd4409795.png",
+          "type": "image",
+          "width": 240,
+          "height": 140,
+          "zIndex": 2,
+          "objectFit": "contain"
+        },
+        {
+          "x": 500,
+          "y": 180,
+          "id": "1fc4d624-3e61-4992-ae59-1bccb9299aee",
+          "type": "text",
+          "width": 400,
+          "height": 160,
+          "zIndex": 1,
+          "content": "<p style=\"line-height: 0.8;\"><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 20px;\">This allows us to quickly test what parameter regions are even viable for inference without running computationally-expensive simulations (e.g. MCMC)</span></p>"
         }
       ],
       "background": {
@@ -4366,6 +4499,82 @@
       "activeSection": 3
     },
     {
+      "id": "c6dabeb2-f6cb-436f-b4c8-2d681297cf74",
+      "notes": "",
+      "elements": [
+        {
+          "x": 20,
+          "y": 0,
+          "id": "90f165e6-1a88-40ee-8669-742f9b2e3a77",
+          "type": "text",
+          "width": 920,
+          "height": 80,
+          "zIndex": 2,
+          "content": "<p style=\"text-align: right;\"><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">My next pipe dream: a probabilistic framework for EPRV</span></p>"
+        },
+        {
+          "x": 20,
+          "y": 140,
+          "id": "8a5ed32a-f58c-46b9-bef9-884678439113",
+          "alt": "",
+          "src": "/uploads/c28538c4-7e5c-4ee5-b7dc-18eaa9863e2a.png",
+          "type": "image",
+          "width": 420,
+          "height": 320,
+          "zIndex": 2,
+          "shadowX": 2,
+          "shadowY": 2,
+          "objectFit": "contain",
+          "shadowBlur": 2,
+          "borderRadius": 4,
+          "clickToExpand": true
+        },
+        {
+          "x": 20,
+          "y": 80,
+          "id": "b626130f-1c11-4f41-bed4-085278ffa889",
+          "type": "text",
+          "width": 400,
+          "height": 112,
+          "zIndex": 2,
+          "content": "<p style=\"line-height: 1;\"><span style=\"color: rgb(51, 65, 85); font-family: Roboto, sans-serif; font-size: 20px;\">now: a temporal kernel for spot variability</span></p>",
+          "sizeMode": "auto"
+        },
+        {
+          "x": 480,
+          "y": 80,
+          "id": "078e91b2-89ff-4a12-9400-fcd9c585e2f9",
+          "type": "text",
+          "width": 460,
+          "height": 144,
+          "zIndex": 2,
+          "content": "<p style=\"line-height: 0.7;\"><span style=\"color: rgb(51, 65, 85); font-family: Roboto, sans-serif; font-size: 20px;\">future: a spectral-temporal kernel for spot, oscillations, granulations, instrumental noise</span></p>",
+          "sizeMode": "auto"
+        },
+        {
+          "x": 500,
+          "y": 180,
+          "id": "025d4ee5-d593-4d56-a7e1-00447bfb0f5a",
+          "alt": "",
+          "src": "/uploads/27f68d72-b479-4df8-b1d3-3b8fd96e998d.png",
+          "type": "image",
+          "width": 440,
+          "height": 340,
+          "zIndex": 2,
+          "shadowX": 2,
+          "shadowY": 2,
+          "objectFit": "contain",
+          "shadowBlur": 2,
+          "clickToExpand": true
+        }
+      ],
+      "background": {
+        "type": "color",
+        "color": "#ffffff"
+      },
+      "activeSection": 3
+    },
+    {
       "id": "f7eda8bb-0fa7-40d3-88b3-59a2ee8dd50d",
       "notes": "",
       "elements": [
@@ -4426,83 +4635,6 @@
           "height": 540,
           "zIndex": 1,
           "objectFit": "contain"
-        }
-      ],
-      "background": {
-        "type": "color",
-        "color": "#ffffff"
-      },
-      "activeSection": 3
-    },
-    {
-      "id": "c6dabeb2-f6cb-436f-b4c8-2d681297cf74",
-      "notes": "",
-      "elements": [
-        {
-          "x": 20,
-          "y": 0,
-          "id": "90f165e6-1a88-40ee-8669-742f9b2e3a77",
-          "type": "text",
-          "width": 920,
-          "height": 80,
-          "zIndex": 2,
-          "content": "<p style=\"text-align: right;\"><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">My next pipe dream: a probabilistic framework for EPRV</span></p>"
-        },
-        {
-          "x": 480,
-          "y": 180,
-          "id": "a7efdc91-0a7b-47aa-81e1-de2291c6ca7d",
-          "alt": "",
-          "src": "/uploads/c301f5a0-867e-4ade-934b-30d95f88c1f7.png",
-          "type": "image",
-          "width": 460,
-          "height": 360,
-          "zIndex": 2,
-          "shadowX": 2,
-          "shadowY": 2,
-          "objectFit": "contain",
-          "shadowBlur": 2,
-          "borderRadius": 4,
-          "clickToExpand": true
-        },
-        {
-          "x": 20,
-          "y": 140,
-          "id": "8a5ed32a-f58c-46b9-bef9-884678439113",
-          "alt": "",
-          "src": "/uploads/c28538c4-7e5c-4ee5-b7dc-18eaa9863e2a.png",
-          "type": "image",
-          "width": 420,
-          "height": 320,
-          "zIndex": 2,
-          "shadowX": 2,
-          "shadowY": 2,
-          "objectFit": "contain",
-          "shadowBlur": 2,
-          "borderRadius": 4,
-          "clickToExpand": true
-        },
-        {
-          "x": 20,
-          "y": 80,
-          "id": "b626130f-1c11-4f41-bed4-085278ffa889",
-          "type": "text",
-          "width": 400,
-          "height": 112,
-          "zIndex": 2,
-          "content": "<p style=\"line-height: 1;\"><span style=\"color: rgb(51, 65, 85); font-family: Roboto, sans-serif; font-size: 20px;\">now: a temporal kernel for spot variability</span></p>",
-          "sizeMode": "auto"
-        },
-        {
-          "x": 480,
-          "y": 80,
-          "id": "078e91b2-89ff-4a12-9400-fcd9c585e2f9",
-          "type": "text",
-          "width": 460,
-          "height": 144,
-          "zIndex": 2,
-          "content": "<p style=\"line-height: 0.7;\"><span style=\"color: rgb(51, 65, 85); font-family: Roboto, sans-serif; font-size: 20px;\">future: a spectral-temporal kernel for spot, oscillations, granulations, and activity cycles</span></p>",
-          "sizeMode": "auto"
         }
       ],
       "background": {
@@ -4653,7 +4785,7 @@
   "createdAt": "2026-04-06T20:39:00.855Z",
   "expiresAt": null,
   "showClock": true,
-  "updatedAt": "2026-05-14T09:11:12.893Z",
+  "updatedAt": "2026-05-14T20:33:21.841Z",
   "footerMode": "sequence",
   "globalFont": "Barlow, sans-serif",
   "showFooter": true,
