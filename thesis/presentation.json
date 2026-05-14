@@ -20,14 +20,14 @@
           "sizeMode": "auto"
         },
         {
-          "x": 100,
+          "x": 387.4860335195531,
           "y": 460,
           "id": "7130e74c-7c00-4710-b454-adab12933c5f",
           "fill": "#6366f1",
           "text": "",
           "type": "shape",
           "shape": "line",
-          "width": 860,
+          "width": 572.5139664804469,
           "height": 40,
           "stroke": "#ffffff",
           "zIndex": 5,
@@ -45,7 +45,7 @@
           "width": 228.6033519553073,
           "height": 95,
           "zIndex": 2,
-          "content": "<p style=\"text-align: right; line-height: 0.7;\"><span style=\"font-family: &quot;Barlow Condensed&quot;, sans-serif; font-size: 28px; font-weight: 200;\">Jess Birky</span></p>",
+          "content": "<p style=\"text-align: right; line-height: 0.7;\"><span style=\"font-family: &quot;Barlow Condensed&quot;, sans-serif; font-size: 24px; font-weight: 200;\">Jess Birky</span></p>",
           "sizeMode": "auto",
           "lineHeight": 1
         },
@@ -57,7 +57,7 @@
           "width": 380,
           "height": 95,
           "zIndex": 3,
-          "content": "<p style=\"text-align: right; line-height: 0.7;\"><span style=\"font-family: &quot;Barlow Condensed&quot;, sans-serif; font-size: 28px; font-weight: 200;\">PhD Defense, 15 May 2026</span></p>",
+          "content": "<p style=\"text-align: right; line-height: 0.7;\"><span style=\"font-family: &quot;Barlow Condensed&quot;, sans-serif; font-size: 24px; font-weight: 200;\"> UW Astronomy PhD Defense, 15 May 2026</span></p>",
           "sizeMode": "auto",
           "lineHeight": 1
         },
@@ -69,20 +69,20 @@
           "width": 700,
           "height": 95,
           "zIndex": 4,
-          "content": "<p style=\"text-align: right; line-height: 0.7;\"><span style=\"font-family: &quot;Barlow Condensed&quot;, sans-serif; font-size: 28px; font-weight: 200;\">Committee: Rory Barnes, Eric Agol, Jim Davenport, Miguel Morales</span></p>",
+          "content": "<p style=\"text-align: right; line-height: 0.7;\"><span style=\"font-family: &quot;Barlow Condensed&quot;, sans-serif; font-size: 24px; font-weight: 200;\">Committee: Rory Barnes, Eric Agol, Jim Davenport, Miguel Morales</span></p>",
           "sizeMode": "auto",
           "lineHeight": 1
         },
         {
-          "x": -400,
-          "y": -100,
+          "x": 40,
+          "y": 20,
           "id": "f943c37a-f22d-4b9f-862e-8162c484f0cf",
           "type": "html",
-          "width": 1400,
-          "height": 1000,
+          "width": 5000,
+          "height": 4000,
           "locked": true,
           "zIndex": 1,
-          "content": "<!DOCTYPE html>\n<html>\n\n<head>\n    <meta charset=\"utf-8\">\n    <title>Tidal Binary</title>\n    <style>\n        * {\n            margin: 0;\n            padding: 0;\n        }\n\n        body {\n            background: #000;\n            overflow: hidden;\n        }\n\n        canvas {\n            display: block;\n            width: 1600px;   /* CSS display size — can differ from drawing resolution */                        \n            height: 1200px;   \n        }\n    </style>\n</head>\n\n<body>\n    <canvas id=\"c\"></canvas>\n    <script>\n        \"use strict\";\n\n        const canvas = document.getElementById(\"c\");\n        const ctx = canvas.getContext(\"2d\");\n\n        let W, H, R1, R2, cx, cy, sep, s1x, s1y, s2x, s2y;\n\n        // ── Configuration ─────────────────────────────────────────────────\n        const R1_FRAC = 0.25;   // star 1 radius as fraction of min(W,H)\n        const R2_FRAC = 0.2;   // star 2 radius as fraction of min(W,H)\n        const SEP_FRAC = 0.75;   // center-to-center separation as fraction of min(W,H)\n        const TIDAL_SCALE = 2;    // binary tidal amplitude: eps = TIDAL_SCALE * (R/sep)^3\n\n        function resize() {\n            W = 3200;\n            H = 2400;\n            R1 = Math.min(W, H) * R1_FRAC;\n            R2 = Math.min(W, H) * R2_FRAC;\n            sep = Math.min(W, H) * SEP_FRAC;\n            cx = W / 2;\n            cy = H / 2;\n            s1x = cx - W / 2 + R1*1.1; \n            s1y = cy + H / 2 - R1*1.1;\n            s2x = cx + W / 2 - R2*1.1; \n            s2y = cy - H / 2 + R2*1.1;\n            canvas.width = W;\n            canvas.height = H;\n        }\n        resize();\n        window.addEventListener(\"resize\", resize);\n\n        // ── Mouse tracking ────────────────────────────────────────────────\n        let mouseX = W * 2, mouseY = cy;\n        let prevX = mouseX, prevY = mouseY;\n\n        window.addEventListener(\"mousemove\", e => {\n            mouseX = e.clientX;\n            mouseY = e.clientY;\n        });\n\n        // ── Per-star cursor tidal state ───────────────────────────────────\n        const stars = [\n            { tidalAngle: 0, epsilon: 0 },  // star 1 (left,  red)\n            { tidalAngle: 0, epsilon: 0 },  // star 2 (right, gold)\n        ];\n\n        const FILL = [\"#E8C018\", \"#C8302A\"];\n\n        let lastT = null;\n\n        // Draw one star as the sum of two independent P2 tidal deformations\n        function drawStar(scx, scy, R, eps1, ang1, eps2, ang2, fill) {\n            const N = 360;\n            ctx.beginPath();\n            for (let i = 0; i <= N; i++) {\n                const theta = (i / N) * 2 * Math.PI;\n                const P2_1 = (3 * Math.cos(theta - ang1) ** 2 - 1) / 2;\n                const P2_2 = (3 * Math.cos(theta - ang2) ** 2 - 1) / 2;\n                const r = R * (1 + eps1 * P2_1 + eps2 * P2_2);\n                i === 0\n                    ? ctx.moveTo(scx + r * Math.cos(theta), scy + r * Math.sin(theta))\n                    : ctx.lineTo(scx + r * Math.cos(theta), scy + r * Math.sin(theta));\n            }\n            ctx.closePath();\n            ctx.fillStyle = fill;\n            ctx.fill();\n        }\n\n        function animate(t) {\n            requestAnimationFrame(animate);\n            if (lastT === null) { lastT = t; return; }\n            const dt = Math.min((t - lastT) / 1000, 0.05);\n            lastT = t;\n\n            const vel = Math.hypot(mouseX - prevX, mouseY - prevY) / dt;\n            prevX = mouseX; prevY = mouseY;\n\n            // Update cursor tidal state for each star independently\n            const centers = [[s1x, s1y, R1], [s2x, s2y, R2]];\n            for (let i = 0; i < 2; i++) {\n                const [scx, scy, Ri] = centers[i];\n                const dxm = mouseX - scx, dym = mouseY - scy;\n                const d_norm = Math.max(0.3, Math.hypot(dxm, dym) / Ri);\n                const angle = Math.atan2(dym, dxm);\n\n                const target = Math.min(0.06, 0.10 / d_norm ** 3)\n                    + Math.min(0.02, vel * 0.000015);\n\n                const dA = ((angle - stars[i].tidalAngle + 3 * Math.PI) % (2 * Math.PI)) - Math.PI;\n                stars[i].tidalAngle += dA * (1 - Math.exp(-dt / 0.15));\n                stars[i].epsilon += (target - stars[i].epsilon) * (1 - Math.exp(-dt / 0.2));\n            }\n\n            // Companion tidal parameters — each star uses its own radius\n            const epsBin1 = Math.min(0.15, TIDAL_SCALE * (R1 / sep) ** 3);\n            const epsBin2 = Math.min(0.15, TIDAL_SCALE * (R2 / sep) ** 3);\n            const ang1to2 = Math.atan2(s2y - s1y, s2x - s1x);  // star 1 bulges toward star 2\n            const ang2to1 = ang1to2 + Math.PI;                  // star 2 bulges toward star 1\n\n            // ── Draw ──────────────────────────────────────────────────────\n            ctx.clearRect(0, 0, W, H);\n\n            drawStar(s1x, s1y, R1, epsBin1, ang1to2, stars[0].epsilon, stars[0].tidalAngle, FILL[0]);\n            drawStar(s2x, s2y, R2, epsBin2, ang2to1, stars[1].epsilon, stars[1].tidalAngle, FILL[1]);\n\n            // Unperturbed outlines\n            ctx.lineWidth = 1.2;\n            ctx.strokeStyle = \"rgba(255,255,255,0.35)\";\n            for (const [scx, scy, Ri] of centers) {\n                ctx.setLineDash([Ri * 0.07, Ri * 0.05]);\n                ctx.beginPath();\n                ctx.arc(scx, scy, Ri, 0, 2 * Math.PI);\n                ctx.stroke();\n            }\n            ctx.setLineDash([]);\n        }\n\n        requestAnimationFrame(animate);\n    </script>\n</body>\n\n</html>"
+          "content": "<!DOCTYPE html>\n<html>\n\n<head>\n    <meta charset=\"utf-8\">\n    <title>Tidal Binary</title>\n    <style>\n        * {\n            margin: 0;\n            padding: 0;\n        }\n\n        body {\n            background: #000;\n            overflow: hidden;\n        }\n\n        canvas {\n            display: block;\n            width: 1000px;   /* CSS display size — can differ from drawing resolution */                        \n            height: 700px;   \n        }\n    </style>\n</head>\n\n<body>\n    <canvas id=\"c\"></canvas>\n    <script>\n        \"use strict\";\n\n        const canvas = document.getElementById(\"c\");\n        const ctx = canvas.getContext(\"2d\");\n\n        let W, H, R1, R2, cx, cy, sep, s1x, s1y, s2x, s2y;\n\n        // ── Configuration ─────────────────────────────────────────────────\n        const TIDAL_SCALE = 1.2;    // binary tidal amplitude: eps = TIDAL_SCALE * (R/sep)^3\n\n        function resize() {\n            W = 1000 * 3/2;\n            H = 700 * 3/2;\n            R1 = 260;\n            R2 = 200;\n            sep = 360;\n            cx = W / 2;\n            cy = H / 2;\n            s1x = 200; \n            s1y = cy + H / 2 - R1;\n            s2x = cx + 600; \n            s2y = cy - H / 2 + R2;\n            canvas.width = W;\n            canvas.height = H;\n        }\n        resize();\n        window.addEventListener(\"resize\", resize);\n\n        // ── Mouse tracking ────────────────────────────────────────────────\n        let mouseX = W * 2, mouseY = cy;\n        let prevX = mouseX, prevY = mouseY;\n\n        window.addEventListener(\"mousemove\", e => {\n            mouseX = e.clientX;\n            mouseY = e.clientY;\n        });\n\n        // ── Per-star cursor tidal state ───────────────────────────────────\n        const stars = [\n            { tidalAngle: 0, epsilon: 0 },  // star 1 (left,  red)\n            { tidalAngle: 0, epsilon: 0 },  // star 2 (right, gold)\n        ];\n\n        const FILL = [\"#E8C018\", \"#C8302A\"];\n\n        let lastT = null;\n\n        // Draw one star as the sum of two independent P2 tidal deformations\n        function drawStar(scx, scy, R, eps1, ang1, eps2, ang2, fill) {\n            const N = 360;\n            ctx.beginPath();\n            for (let i = 0; i <= N; i++) {\n                const theta = (i / N) * 2 * Math.PI;\n                const P2_1 = (3 * Math.cos(theta - ang1) ** 2 - 1) / 2;\n                const P2_2 = (3 * Math.cos(theta - ang2) ** 2 - 1) / 2;\n                const r = R * (1 + eps1 * P2_1 + eps2 * P2_2);\n                i === 0\n                    ? ctx.moveTo(scx + r * Math.cos(theta), scy + r * Math.sin(theta))\n                    : ctx.lineTo(scx + r * Math.cos(theta), scy + r * Math.sin(theta));\n            }\n            ctx.closePath();\n            ctx.fillStyle = fill;\n            ctx.fill();\n        }\n\n        function animate(t) {\n            requestAnimationFrame(animate);\n            if (lastT === null) { lastT = t; return; }\n            const dt = Math.min((t - lastT) / 1000, 0.05);\n            lastT = t;\n\n            const vel = Math.hypot(mouseX - prevX, mouseY - prevY) / dt;\n            prevX = mouseX; prevY = mouseY;\n\n            // Update cursor tidal state for each star independently\n            const centers = [[s1x, s1y, R1], [s2x, s2y, R2]];\n            for (let i = 0; i < 2; i++) {\n                const [scx, scy, Ri] = centers[i];\n                const dxm = mouseX - scx, dym = mouseY - scy;\n                const d_norm = Math.max(0.3, Math.hypot(dxm, dym) / Ri);\n                const angle = Math.atan2(dym, dxm);\n\n                const target = Math.min(0.06, 0.10 / d_norm ** 3)\n                    + Math.min(0.02, vel * 0.000015);\n\n                const dA = ((angle - stars[i].tidalAngle + 3 * Math.PI) % (2 * Math.PI)) - Math.PI;\n                stars[i].tidalAngle += dA * (1 - Math.exp(-dt / 0.15));\n                stars[i].epsilon += (target - stars[i].epsilon) * (1 - Math.exp(-dt / 0.2));\n            }\n\n            // Companion tidal parameters — each star uses its own radius\n            const epsBin1 = Math.min(0.15, TIDAL_SCALE * (R1 / sep) ** 3);\n            const epsBin2 = Math.min(0.15, TIDAL_SCALE * (R2 / sep) ** 3);\n            const ang1to2 = Math.atan2(s2y - s1y, s2x - s1x);  // star 1 bulges toward star 2\n            const ang2to1 = ang1to2 + Math.PI;                  // star 2 bulges toward star 1\n\n            // ── Draw ──────────────────────────────────────────────────────\n            ctx.clearRect(0, 0, W, H);\n\n            drawStar(s1x, s1y, R1, epsBin1, ang1to2, stars[0].epsilon, stars[0].tidalAngle, FILL[0]);\n            drawStar(s2x, s2y, R2, epsBin2, ang2to1, stars[1].epsilon, stars[1].tidalAngle, FILL[1]);\n\n            // Unperturbed outlines\n            ctx.lineWidth = 1.2;\n            ctx.strokeStyle = \"rgba(255,255,255,0.35)\";\n            for (const [scx, scy, Ri] of centers) {\n                ctx.setLineDash([Ri * 0.07, Ri * 0.05]);\n                ctx.beginPath();\n                ctx.arc(scx, scy, Ri, 0, 2 * Math.PI);\n                ctx.stroke();\n            }\n            ctx.setLineDash([]);\n        }\n\n        requestAnimationFrame(animate);\n    </script>\n</body>\n\n</html>"
         }
       ],
       "background": {
@@ -95,43 +95,27 @@
       "showPageNumber": false
     },
     {
-      "id": "2b5036e5-5f9a-4af4-9e6a-205c2ee663c8",
+      "id": "12634ad7-99bd-41ec-8f05-2b0dd899476c",
       "notes": "",
       "elements": [
         {
-          "x": 20,
-          "y": 20,
-          "id": "7b3b358e-24c5-4701-b1d8-bc65416a094c",
+          "x": 0,
+          "y": 80,
+          "id": "315ea53d-33ae-4359-9915-d0257ba890a0",
           "type": "text",
-          "width": 574.5251396648046,
-          "height": 531,
-          "zIndex": 6,
-          "content": "<p style=\"text-align: left; line-height: 0.75;\"><span style=\"color: rgb(255, 255, 255); font-family: Barlow, sans-serif; font-size: 40px; font-weight: 400;\">The Role of</span></p><p style=\"text-align: left; line-height: 0.75;\"><span style=\"color: rgb(255, 255, 255); font-family: Barlow, sans-serif; font-size: 40px; font-weight: 400;\">Tides</span></p><p style=\"text-align: left; line-height: 0.75;\"><span style=\"color: rgb(255, 255, 255); font-family: Barlow, sans-serif; font-size: 40px; font-weight: 400;\">and</span></p><p style=\"text-align: left; line-height: 0.75;\"><span style=\"color: rgb(255, 255, 255); font-family: Barlow, sans-serif; font-size: 40px; font-weight: 400;\">Differential Rotation</span></p><p style=\"text-align: left; line-height: 0.75;\"><span style=\"color: rgb(255, 255, 255); font-family: Barlow, sans-serif; font-size: 40px; font-weight: 400;\">in the</span></p><p style=\"text-align: left; line-height: 0.75;\"><span style=\"color: rgb(255, 255, 255); font-family: Barlow, sans-serif; font-size: 40px; font-weight: 400;\">Angular Momentum Evolution</span></p><p style=\"text-align: left; line-height: 0.75;\"><span style=\"color: rgb(255, 255, 255); font-family: Barlow, sans-serif; font-size: 40px; font-weight: 400;\">of </span><span style=\"color: rgb(220, 38, 38); font-family: Barlow, sans-serif; font-size: 40px; font-weight: 400;\">Low-Mass Stars</span></p>",
+          "width": 960,
+          "height": 150,
+          "zIndex": 1,
+          "content": "<p style=\"text-align: center;\"><span style=\"font-family: &quot;Computer Modern Sans&quot;, sans-serif; font-size: 40px;\">Overview</span></p>",
           "sizeMode": "auto"
-        },
-        {
-          "x": 20,
-          "y": 440,
-          "id": "86526875-b1f7-4f1c-a986-1d13d6ceee57",
-          "type": "text",
-          "width": 920,
-          "height": 103,
-          "zIndex": 3,
-          "content": "<p style=\"text-align: right; line-height: 0.85;\"><span style=\"color: rgb(255, 255, 255); font-family: Barlow, sans-serif; font-size: 24px;\"><em>First, what are low-mass stars and why are they interesting?</em></span></p>",
-          "fragment": true,
-          "sizeMode": "auto",
-          "fragmentIndex": 1,
-          "fragmentAnimation": "slide-right"
         }
       ],
       "background": {
         "type": "color",
-        "color": "#000000"
+        "color": "#0a0a0f"
       },
       "hideFooter": true,
-      "slideGroup": null,
-      "transition": "none",
-      "showPageNumber": true
+      "showPageNumber": false
     },
     {
       "id": "4e9b92bc-824d-4f84-ad80-afa3c3511f56",
@@ -139,7 +123,7 @@
       "elements": [
         {
           "x": 0,
-          "y": -40,
+          "y": -20,
           "id": "99ea9901-92dc-4da0-a965-8db4b22443ff",
           "type": "html",
           "width": 960,
@@ -180,87 +164,416 @@
       "autoAnimateDuration": 0.8
     },
     {
-      "id": "1c1568af-7e63-480d-852d-229d490a5c25",
+      "id": "d4741696-8b56-4508-a972-ed0b7d403191",
       "notes": "",
       "elements": [
         {
+          "x": 20,
+          "y": 0,
+          "id": "d45c6bcd-7bb8-45f6-a23a-3bfc8934690b",
+          "type": "text",
+          "width": 920,
+          "height": 80,
+          "zIndex": 3,
+          "content": "<p><span style=\"color: rgb(255, 255, 255); font-family: Barlow, sans-serif; font-size: 28px;\">A timeline of sunspot discoveries</span></p>"
+        },
+        {
           "x": 0,
-          "y": 98.32402234636871,
-          "id": "c780f2c5-b590-4e95-8a17-ff27ed9ed974",
-          "type": "timeline",
-          "items": [
-            {
-              "id": "14f723bc-8152-4c99-8829-db6ffaf392e7",
-              "date": "-800",
-              "side": "top",
-              "image": "https://parallax-presentations.com/uploads/0aa2f678-1d77-44ec-b7ad-6c4ef4871eb0.jpg",
-              "label": "First written record of sunspots",
-              "description": "Gan De, China",
-              "connectorLength": 0
-            },
-            {
-              "id": "a75e8203-97fe-414d-94d9-bb69988c00a3",
-              "date": "1128",
-              "side": "bottom",
-              "image": "https://parallax-presentations.com/uploads/0cb776e7-4c9d-4111-80c3-7bb682ba6f45.png",
-              "label": "First known drawing of sunspots",
-              "description": "John of Worcester"
-            },
-            {
-              "id": "f49705ad-a910-45da-a57e-d43ee03a8860",
-              "date": "1250",
-              "side": "top",
-              "image": "https://parallax-presentations.com/uploads/616009d2-8d79-4db4-a3db-0e6095055d85.jpeg",
-              "label": "Yuan and Ming dynasty records",
-              "description": "China"
-            },
-            {
-              "id": "96c4afe3-60e5-4d86-a217-1db89e3afb53",
-              "date": "1610",
-              "side": "bottom",
-              "image": "https://parallax-presentations.com/uploads/eeba0dca-c3ba-48e7-9e82-1a4c5599d075.gif",
-              "label": "First telescope observations",
-              "description": "Thomas Harriot",
-              "connectorLength": 80
-            },
-            {
-              "id": "519a51d5-bd49-4a42-8ae0-506faea5ec3a",
-              "date": "-300",
-              "side": "bottom",
-              "image": "",
-              "label": "Other early literature",
-              "description": "Theophrastus of Athens"
-            },
-            {
-              "id": "1f2459d5-6bb3-4e7d-ace9-a6c469946ba1",
-              "date": "2010",
-              "side": "bottom",
-              "image": "https://parallax-presentations.com/uploads/49a10243-7c22-48d3-947e-0a2659ad2163.jpg",
-              "label": "Solar dynamics obs",
-              "description": "NASA"
-            }
-          ],
+          "y": 280,
+          "id": "5e941b94-7a09-42ea-bba1-ff57da3b533a",
+          "fill": "#6366f1",
+          "text": "",
+          "type": "shape",
+          "shape": "line",
           "width": 960,
-          "height": 424.9162011173184,
+          "height": 40,
+          "stroke": "#ffffff",
           "zIndex": 2,
-          "endDate": "2100",
-          "dotColor": "#c8302a",
-          "fontSize": 11,
-          "lineColor": "#ffffff",
-          "startDate": "-1000",
+          "opacity": 1,
+          "fontSize": 16,
           "textColor": "#ffffff",
-          "tickSpacing": "100year"
+          "strokeWidth": 0,
+          "borderRadius": 0
+        },
+        {
+          "x": 30,
+          "y": 280,
+          "id": "6fae453b-ffc6-4cda-93ec-cc8a40f8fd22",
+          "fill": "#6366f1",
+          "text": "",
+          "type": "shape",
+          "shape": "line",
+          "width": 60,
+          "height": 20,
+          "stroke": "#ffffff",
+          "zIndex": 3,
+          "opacity": 1,
+          "fontSize": 16,
+          "rotation": 90,
+          "textColor": "#ffffff",
+          "strokeWidth": 0,
+          "borderRadius": 0,
+          "strokeDasharray": "dotted"
+        },
+        {
+          "x": 20,
+          "y": 140,
+          "id": "59d0c37f-4932-4f01-b18c-7543408ed309",
+          "alt": "",
+          "src": "/uploads/e94ea48a-764e-428a-9279-986809bde570.jpg",
+          "type": "image",
+          "width": 80,
+          "height": 120,
+          "zIndex": 2,
+          "objectFit": "contain",
+          "clickToExpand": true
+        },
+        {
+          "x": 20,
+          "y": 300,
+          "id": "0c2b7fed-889b-420e-bc81-8a9fd7af35de",
+          "type": "text",
+          "width": 80,
+          "height": 112,
+          "zIndex": 3,
+          "content": "<p style=\"text-align: center; line-height: 1;\"><span style=\"color: rgb(255, 255, 255); font-size: 14px;\">800 BC</span></p>",
+          "sizeMode": "auto"
+        },
+        {
+          "x": 0,
+          "y": 80,
+          "id": "99db0090-bfc8-4606-b556-56e8b7316041",
+          "type": "text",
+          "width": 180,
+          "height": 96,
+          "zIndex": 3,
+          "content": "<p style=\"text-align: center; line-height: 0.7;\"><span style=\"color: rgb(255, 255, 255); font-size: 14px;\">First record of starspots</span></p>",
+          "sizeMode": "auto"
+        },
+        {
+          "x": 180,
+          "y": 340,
+          "id": "4b377f8b-bd5a-4f5c-a3bc-6f95af1eed57",
+          "fill": "#6366f1",
+          "text": "",
+          "type": "shape",
+          "shape": "line",
+          "width": 60,
+          "height": 20,
+          "stroke": "#ffffff",
+          "zIndex": 3,
+          "opacity": 1,
+          "fontSize": 16,
+          "rotation": 90,
+          "textColor": "#ffffff",
+          "strokeWidth": 0,
+          "borderRadius": 0,
+          "strokeDasharray": "dotted"
+        },
+        {
+          "x": 170,
+          "y": 260,
+          "id": "7b8126f2-18a0-42d6-b4a8-2db46ad99846",
+          "type": "text",
+          "width": 80,
+          "height": 112,
+          "zIndex": 3,
+          "content": "<p style=\"text-align: center; line-height: 1;\"><span style=\"color: rgb(255, 255, 255); font-size: 14px;\">300 BC</span></p>",
+          "sizeMode": "auto"
+        },
+        {
+          "x": 0,
+          "y": 320,
+          "id": "682a710a-2782-4e34-99e4-edbd8805d630",
+          "type": "text",
+          "width": 120,
+          "height": 112,
+          "zIndex": 3,
+          "content": "<p style=\"text-align: center; line-height: 1;\"><span style=\"color: rgb(255, 255, 255); font-size: 14px;\">China</span></p>",
+          "sizeMode": "auto"
+        },
+        {
+          "x": 120,
+          "y": 380,
+          "id": "78ca9c8d-c273-4d81-967a-b88f7fabf352",
+          "type": "text",
+          "width": 180,
+          "height": 96,
+          "zIndex": 3,
+          "content": "<p style=\"text-align: center; line-height: 0.7;\"><span style=\"color: rgb(255, 255, 255); font-size: 14px;\">Other early records</span></p>",
+          "sizeMode": "auto"
+        },
+        {
+          "x": 130,
+          "y": 240,
+          "id": "91d5336c-f64b-49b2-a665-ecb93621ee49",
+          "type": "text",
+          "width": 160,
+          "height": 112,
+          "zIndex": 3,
+          "content": "<p style=\"text-align: center; line-height: 1;\"><span style=\"color: rgb(255, 255, 255); font-size: 14px;\">Theophrastus, Greece</span></p>",
+          "sizeMode": "auto"
+        },
+        {
+          "x": 490,
+          "y": 270,
+          "id": "cd36bc49-35f1-4032-8ebd-9b2b9ec796ce",
+          "fill": "#6366f1",
+          "text": "",
+          "type": "shape",
+          "shape": "line",
+          "width": 80,
+          "height": 20,
+          "stroke": "#ffffff",
+          "zIndex": 3,
+          "opacity": 1,
+          "fontSize": 16,
+          "rotation": 90,
+          "textColor": "#ffffff",
+          "strokeWidth": 0,
+          "borderRadius": 0,
+          "strokeDasharray": "dotted"
+        },
+        {
+          "x": 470,
+          "y": 300,
+          "id": "feb6e67f-1ad9-47b0-902a-566f2d30bfc5",
+          "type": "text",
+          "width": 120,
+          "height": 112,
+          "zIndex": 3,
+          "content": "<p style=\"text-align: center; line-height: 1;\"><span style=\"color: rgb(255, 255, 255); font-size: 14px;\">1128</span></p>",
+          "sizeMode": "auto"
+        },
+        {
+          "x": 440,
+          "y": 140,
+          "id": "924111b7-99d0-45f4-bad1-bd0485026061",
+          "alt": "",
+          "src": "/uploads/740d1adc-f7b6-4060-94e0-d9896ff813fd.jpg",
+          "type": "image",
+          "width": 180,
+          "height": 100,
+          "zIndex": 2,
+          "objectFit": "contain",
+          "clickToExpand": true
+        },
+        {
+          "x": 450,
+          "y": 80,
+          "id": "fe6ec6ee-3925-42c4-935e-b81ce74b561a",
+          "type": "text",
+          "width": 160,
+          "height": 112,
+          "zIndex": 3,
+          "content": "<p style=\"text-align: center; line-height: 1;\"><span style=\"color: rgb(255, 255, 255); font-size: 14px;\">First know drawing</span></p>",
+          "sizeMode": "auto"
+        },
+        {
+          "x": 450,
+          "y": 320,
+          "id": "084feae6-4554-49c6-a2f6-d297e66d40a6",
+          "type": "text",
+          "width": 160,
+          "height": 112,
+          "zIndex": 3,
+          "content": "<p style=\"text-align: center; line-height: 1;\"><span style=\"color: rgb(255, 255, 255); font-size: 14px;\">John of Worcheshire</span></p>",
+          "sizeMode": "auto"
+        },
+        {
+          "x": 620,
+          "y": 340,
+          "id": "ac267897-0df9-4464-9604-4df1de18ea60",
+          "fill": "#6366f1",
+          "text": "",
+          "type": "shape",
+          "shape": "line",
+          "width": 60,
+          "height": 20,
+          "stroke": "#ffffff",
+          "zIndex": 3,
+          "opacity": 1,
+          "fontSize": 16,
+          "rotation": 90,
+          "textColor": "#ffffff",
+          "strokeWidth": 0,
+          "borderRadius": 0,
+          "strokeDasharray": "dotted"
+        },
+        {
+          "x": 570,
+          "y": 260,
+          "id": "91ea7d43-0073-4b6b-911d-46242908a0fa",
+          "type": "text",
+          "width": 160,
+          "height": 112,
+          "zIndex": 3,
+          "content": "<p style=\"text-align: center; line-height: 1;\"><span style=\"color: rgb(255, 255, 255); font-size: 14px;\">1260 - 1640</span></p>",
+          "sizeMode": "auto"
+        },
+        {
+          "x": 560,
+          "y": 240,
+          "id": "278455bc-9884-40c8-8529-f6498e98d7a1",
+          "type": "text",
+          "width": 200,
+          "height": 112,
+          "zIndex": 3,
+          "content": "<p style=\"text-align: center; line-height: 1;\"><span style=\"color: rgb(255, 255, 255); font-size: 14px;\">Yuan &amp; Ming dynasty records</span></p>",
+          "sizeMode": "auto"
+        },
+        {
+          "x": 560,
+          "y": 380,
+          "id": "4626210d-162f-4d0b-9749-08dd7207e8d6",
+          "alt": "",
+          "src": "/uploads/0eb3b4cd-23b6-4d03-bd8c-682d1a74187a.jpeg",
+          "type": "image",
+          "width": 180,
+          "height": 120,
+          "zIndex": 2,
+          "objectFit": "contain",
+          "clickToExpand": true
+        },
+        {
+          "x": 740,
+          "y": 280,
+          "id": "b26b11a8-8a1f-4d81-913b-0deda224f6c9",
+          "fill": "#6366f1",
+          "text": "",
+          "type": "shape",
+          "shape": "line",
+          "width": 60,
+          "height": 20,
+          "stroke": "#ffffff",
+          "zIndex": 3,
+          "opacity": 1,
+          "fontSize": 16,
+          "rotation": 90,
+          "textColor": "#ffffff",
+          "strokeWidth": 0,
+          "borderRadius": 0,
+          "strokeDasharray": "dotted"
+        },
+        {
+          "x": 640,
+          "y": 140,
+          "id": "12948122-dd75-4e96-9b7e-7ba76bef8c73",
+          "alt": "",
+          "src": "/uploads/7555ad27-cc02-485a-b7dd-3e8d4756c1a2.png",
+          "type": "image",
+          "width": 280,
+          "height": 120,
+          "zIndex": 2,
+          "objectFit": "contain",
+          "clickToExpand": true
+        },
+        {
+          "x": 680,
+          "y": 80,
+          "id": "270068fa-1d10-4496-aa04-3eece2c009f9",
+          "type": "text",
+          "width": 200,
+          "height": 112,
+          "zIndex": 3,
+          "content": "<p style=\"text-align: center; line-height: 1;\"><span style=\"color: rgb(255, 255, 255); font-size: 14px;\">First telescope observations</span></p>",
+          "sizeMode": "auto"
+        },
+        {
+          "x": 690,
+          "y": 300,
+          "id": "a324f212-de93-4df4-a45b-c012722c65a6",
+          "type": "text",
+          "width": 160,
+          "height": 112,
+          "zIndex": 3,
+          "content": "<p style=\"text-align: center; line-height: 1;\"><span style=\"color: rgb(255, 255, 255); font-size: 14px;\">1600 -</span></p>",
+          "sizeMode": "auto"
+        },
+        {
+          "x": 860,
+          "y": 340,
+          "id": "6d83e0d6-5e2b-452c-a158-477e72fd7131",
+          "fill": "#6366f1",
+          "text": "",
+          "type": "shape",
+          "shape": "line",
+          "width": 60,
+          "height": 20,
+          "stroke": "#ffffff",
+          "zIndex": 3,
+          "opacity": 1,
+          "fontSize": 16,
+          "rotation": 90,
+          "textColor": "#ffffff",
+          "strokeWidth": 0,
+          "borderRadius": 0,
+          "strokeDasharray": "dotted"
+        },
+        {
+          "x": 840,
+          "y": 260,
+          "id": "102cd031-0187-4896-b14a-84720612c7f1",
+          "type": "text",
+          "width": 100,
+          "height": 112,
+          "zIndex": 3,
+          "content": "<p style=\"text-align: center; line-height: 1;\"><span style=\"color: rgb(255, 255, 255); font-size: 14px;\">2010 -</span></p>",
+          "sizeMode": "auto"
+        },
+        {
+          "x": 820,
+          "y": 380,
+          "id": "7baf1a9a-ed1a-4382-896e-f8357a19e0a5",
+          "alt": "",
+          "src": "/uploads/f3c73025-9de7-4f4e-9074-1da097eb63f3.png",
+          "type": "image",
+          "width": 140,
+          "height": 120,
+          "zIndex": 2,
+          "objectFit": "contain"
+        },
+        {
+          "x": 760,
+          "y": 480,
+          "id": "3db01719-696b-4d1b-879e-a5effd4f27a7",
+          "type": "text",
+          "width": 200,
+          "height": 112,
+          "zIndex": 3,
+          "content": "<p style=\"text-align: center; line-height: 1;\"><span style=\"color: rgb(255, 255, 255); font-size: 14px;\">Solar Dynamics Observatory</span></p>",
+          "sizeMode": "auto"
+        },
+        {
+          "x": 820,
+          "y": 240,
+          "id": "c97b8198-7174-419d-9642-1ca64c1a600e",
+          "type": "text",
+          "width": 140,
+          "height": 112,
+          "zIndex": 3,
+          "content": "<p style=\"text-align: center; line-height: 1;\"><span style=\"color: rgb(255, 255, 255); font-size: 14px;\">NASA</span></p>",
+          "sizeMode": "auto"
+        },
+        {
+          "x": 740,
+          "y": 360,
+          "id": "3644fe0a-cc47-476a-92cc-5b3d727d8dad",
+          "alt": "",
+          "src": "/uploads/c90f6c18-8a5b-4c75-bc6b-954f22a86d21.gif",
+          "type": "image",
+          "width": 80,
+          "height": 100,
+          "zIndex": 2,
+          "objectFit": "contain"
         }
       ],
       "background": {
         "type": "color",
-        "color": "#000000"
+        "color": "#0a0a0f"
       },
-      "slideGroup": null,
-      "autoAnimate": false,
-      "activeSection": 0,
-      "autoAnimateEasing": "ease-in-out",
-      "autoAnimateDuration": 0.8
+      "hideFooter": true,
+      "showPageNumber": false
     },
     {
       "id": "bd5d86f9-4a4b-4e10-9af3-137f2cc0fda9",
@@ -560,6 +873,18 @@
           "height": 80,
           "zIndex": 3,
           "content": "<p style=\"line-height: 1;\"><span style=\"color: rgb(255, 255, 255); font-size: 20px;\">mass loss</span></p>"
+        },
+        {
+          "x": 20,
+          "y": 360,
+          "id": "0289d615-7583-4300-84c8-d06d9c01f327",
+          "type": "text",
+          "width": 360,
+          "height": 140,
+          "zIndex": 3,
+          "content": "<p style=\"line-height: 0.7;\"><span style=\"color: rgb(255, 255, 255); font-family: Barlow, sans-serif; font-size: 20px;\">Ions flow out from open magnetic field lines, causing the star to slowly lose mass and spin down over time</span></p>",
+          "fragment": true,
+          "fragmentIndex": 1
         }
       ],
       "background": {
@@ -567,6 +892,90 @@
         "color": "#000000"
       },
       "slideGroup": null,
+      "autoAnimate": false,
+      "activeSection": 0,
+      "autoAnimateEasing": "ease-in-out",
+      "autoAnimateDuration": 0.8
+    },
+    {
+      "id": "86071ac6-59bf-4ed9-85b2-5ceead06de59",
+      "notes": "",
+      "elements": [
+        {
+          "x": 20,
+          "y": 0,
+          "id": "36dcba1a-4868-4ceb-be9b-ceacff3efe73",
+          "type": "text",
+          "width": 920,
+          "height": 80,
+          "zIndex": 1,
+          "content": "<p><span style=\"font-family: Barlow, sans-serif; font-size: 28px; opacity: 0;\">Differential rotation drives the stellar dynamo process</span></p>"
+        },
+        {
+          "x": 20,
+          "y": 80,
+          "id": "4d392709-99cd-400c-8780-ec134ef73254",
+          "type": "text",
+          "width": 520,
+          "height": 201,
+          "zIndex": 3,
+          "content": "<p style=\"line-height: 0.8;\"><span style=\"color: rgb(255, 255, 255); font-family: Barlow, sans-serif; font-size: 20px;\">Convective motion on the surface Sun can create cooler temperature regions, which appear as dark spots relative to the photosphere</span></p>",
+          "sizeMode": "auto"
+        },
+        {
+          "x": 80,
+          "y": 400,
+          "id": "f7bd6710-1ddf-446a-b01c-dfb74e05b505",
+          "type": "text",
+          "width": 260,
+          "height": 80,
+          "zIndex": 3,
+          "content": "<p style=\"text-align: left; line-height: 1;\"><span style=\"color: rgb(255, 255, 255); font-size: 20px;\">starspots + convection</span></p>"
+        },
+        {
+          "x": 40,
+          "y": 420,
+          "id": "49ffd1d2-0f21-46a5-9434-19cce18feb0c",
+          "type": "callout",
+          "width": 36,
+          "height": 36,
+          "zIndex": 10,
+          "fontSize": 16,
+          "calloutColor": "#ef4444",
+          "calloutNumber": 3,
+          "calloutTextColor": "#ffffff"
+        },
+        {
+          "x": 620,
+          "y": 60,
+          "id": "94b62288-0ae0-4b72-88ad-c4237c81e8ee",
+          "alt": "",
+          "src": "/uploads/d99837d2-5047-4387-a755-618632591796.jpg",
+          "type": "image",
+          "width": 320,
+          "height": 160,
+          "zIndex": 2,
+          "objectFit": "contain",
+          "citationText": "Swedish Solar Telescope"
+        },
+        {
+          "x": 520,
+          "y": 280,
+          "id": "7ac6173f-5d3d-49fe-b5ad-ddca79178221",
+          "alt": "",
+          "src": "/uploads/3043bea0-c8e9-48ab-b475-0df7c01ef6c7.jpg",
+          "type": "image",
+          "width": 420,
+          "height": 240,
+          "zIndex": 2,
+          "objectFit": "contain",
+          "citationText": "Solar Dynamics Observatory"
+        }
+      ],
+      "background": {
+        "type": "color",
+        "color": "#000000"
+      },
       "autoAnimate": false,
       "activeSection": 0,
       "autoAnimateEasing": "ease-in-out",
@@ -652,9 +1061,66 @@
           "content": "<p><span style=\"font-family: Barlow, sans-serif; font-size: 28px; opacity: 0;\">Differential rotation drives the stellar dynamo process</span></p>"
         },
         {
+          "x": 20,
+          "y": 0,
+          "id": "042ec343-bf24-477a-9acd-4d4c549ac91c",
+          "type": "text",
+          "width": 920,
+          "height": 80,
+          "zIndex": 3,
+          "content": "<p><span style=\"color: rgb(255, 255, 255); font-family: Barlow, sans-serif; font-size: 28px;\">Differential rotation drives the solar dynamo process</span></p>"
+        }
+      ],
+      "background": {
+        "type": "color",
+        "color": "#000000"
+      },
+      "autoAnimate": false,
+      "activeSection": 0,
+      "autoAnimateEasing": "ease-in-out",
+      "autoAnimateDuration": 0.8
+    },
+    {
+      "id": "f04293a5-7ca3-4981-aec1-f4afb46a4885",
+      "notes": "",
+      "elements": [
+        {
+          "x": 660,
+          "y": 260,
+          "id": "f45d7429-6084-43eb-817d-428476891866",
+          "type": "text",
+          "width": 260,
+          "height": 80,
+          "zIndex": 3,
+          "content": "<p style=\"text-align: right; line-height: 1;\"><span style=\"color: rgb(255, 255, 255); font-size: 20px;\">dynamo process</span></p>"
+        },
+        {
+          "x": 920,
+          "y": 280,
+          "id": "f10bc76a-b979-4b2b-9dd6-a342982c2a0e",
+          "type": "callout",
+          "width": 36,
+          "height": 36,
+          "zIndex": 10,
+          "fontSize": 16,
+          "calloutColor": "#ef4444",
+          "calloutNumber": 5,
+          "calloutTextColor": "#ffffff"
+        },
+        {
+          "x": 20,
+          "y": 0,
+          "id": "90f324c5-8341-4af7-b5ef-e2856b1c7b63",
+          "type": "text",
+          "width": 920,
+          "height": 80,
+          "zIndex": 1,
+          "content": "<p><span style=\"font-family: Barlow, sans-serif; font-size: 28px; opacity: 0;\">Differential rotation drives the stellar dynamo process</span></p>"
+        },
+        {
           "x": 660,
           "y": 400,
-          "id": "73b54ef8-9a16-448f-b9f7-81679150ca23",
+          "id": "d0943ecd-f5a4-4264-a6cc-77c60ed37ec1",
           "type": "text",
           "width": 260,
           "height": 80,
@@ -664,7 +1130,7 @@
         {
           "x": 920,
           "y": 420,
-          "id": "664b3595-58bf-4983-953d-3e5cb105b767",
+          "id": "770555a3-4746-452a-ac0d-31068cc99898",
           "type": "callout",
           "width": 36,
           "height": 36,
@@ -675,14 +1141,33 @@
           "calloutTextColor": "#ffffff"
         },
         {
-          "x": 20,
-          "y": 0,
-          "id": "042ec343-bf24-477a-9acd-4d4c549ac91c",
+          "x": 540,
+          "y": 20,
+          "id": "b0f3b6fb-3248-4a08-b79d-e316f9a30394",
           "type": "text",
-          "width": 920,
-          "height": 80,
+          "width": 400,
+          "height": 180,
           "zIndex": 3,
-          "content": "<p><span style=\"color: rgb(255, 255, 255); font-family: Barlow, sans-serif; font-size: 28px;\">Differential rotation drives stellar dynamos</span></p>"
+          "content": "<p style=\"text-align: right; line-height: 0.7;\"><span style=\"color: rgb(255, 255, 255); font-family: Barlow, sans-serif; font-size: 20px;\">The dynamo process causes the Sun to oscillate between </span><span style=\"color: rgb(220, 38, 38); font-family: Barlow, sans-serif; font-size: 20px;\">minimum phases</span><span style=\"color: rgb(255, 255, 255); font-family: Barlow, sans-serif; font-size: 20px;\"> (with few spots, low magnetic activity) and </span><span style=\"color: rgb(220, 38, 38); font-family: Barlow, sans-serif; font-size: 20px;\">maximum phases </span><span style=\"color: rgb(255, 255, 255); font-family: Barlow, sans-serif; font-size: 20px;\">(high spots, high magnetic activity) on an </span><span style=\"color: rgb(220, 38, 38); font-family: Barlow, sans-serif; font-size: 20px;\">~11 year cycle</span></p>",
+          "fragment": true,
+          "fragmentIndex": 1
+        },
+        {
+          "x": 20,
+          "y": 140,
+          "id": "27fd7b19-2eb7-4019-9076-8ea4ef9b0418",
+          "src": "/uploads/b3df53ec-21fd-4497-b187-46ee88381f52/b97d7bb4-5a68-45a1-87b0-5f947d24fc73.mp4",
+          "loop": false,
+          "type": "video",
+          "muted": false,
+          "width": 580,
+          "height": 380,
+          "locked": true,
+          "poster": "",
+          "zIndex": 2,
+          "autoplay": false,
+          "controls": true,
+          "objectFit": "contain"
         }
       ],
       "background": {
@@ -1655,7 +2140,7 @@
         "type": "color",
         "color": "#f8f9fa"
       },
-      "transition": "differential-rotation",
+      "transition": null,
       "activeSection": 1
     },
     {
@@ -2603,6 +3088,27 @@
       "activeSection": 2
     },
     {
+      "id": "2cd1da90-3ea1-4628-a6df-04742c44d1fa",
+      "notes": "",
+      "elements": [
+        {
+          "x": 20,
+          "y": 0,
+          "id": "61ba8197-35d2-4d4f-8b97-51165edef147",
+          "type": "text",
+          "width": 920,
+          "height": 80,
+          "zIndex": 1,
+          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">Further empirical evidence suggests its a terrible idea</span></p>"
+        }
+      ],
+      "background": {
+        "type": "color",
+        "color": "#ffffff"
+      },
+      "activeSection": 2
+    },
+    {
       "id": "28ce9581-cd28-4fee-a59a-b5485bf8ef4b",
       "notes": "",
       "elements": [
@@ -2628,8 +3134,8 @@
           "sizeMode": "auto"
         },
         {
-          "x": 460,
-          "y": -20,
+          "x": 520,
+          "y": 60,
           "id": "5cffd2ea-6fa5-4d19-a6df-cf503a6795ec",
           "type": "latex",
           "width": 500,
@@ -2638,6 +3144,18 @@
           "zIndex": 2,
           "content": "\\begin{align*}\n  \\Phi &= \\mathrm{latitude} \\\\\n  \\Omega_{\\rm eq} &= \\mathrm{equitorial \\,\\, period} \\\\\n  \\kappa &= \\mathrm{differential \\,\\, rotation \\,\\, shear} \n\\end{align*}",
           "textColor": "#241f31"
+        },
+        {
+          "x": 64.46927374301676,
+          "y": 203.29608938547486,
+          "id": "6a4dc207-f21d-4787-97bd-1da138db1654",
+          "alt": "",
+          "src": "/uploads/f602d73b-3a8e-4621-9ce1-3c2f954b2bf0.png",
+          "type": "image",
+          "width": 471.06145251396646,
+          "height": 333.51955307262574,
+          "zIndex": 2,
+          "objectFit": "contain"
         }
       ],
       "background": {
@@ -3160,7 +3678,17 @@
         "type": "color",
         "color": "#0a0a0f"
       },
-      "activeSection": 2
+      "layoutGrid": {
+        "rows": 0,
+        "snap": true,
+        "gutter": 20,
+        "columns": 3,
+        "enabled": false,
+        "marginX": 40,
+        "marginY": 40
+      },
+      "activeSection": 2,
+      "showPresentGrid": true
     },
     {
       "id": "63906fb4-18a2-4118-9e25-f1176dfa13f2",
@@ -3265,7 +3793,7 @@
           "width": 920,
           "height": 80,
           "zIndex": 1,
-          "content": "<p style=\"text-align: center;\"><span style=\"color: rgb(226, 232, 240); font-family: Barlow, sans-serif; font-size: 28px;\">We can do this using a tool called Gaussian processes</span></p>"
+          "content": "<p style=\"text-align: center;\"><span style=\"color: rgb(226, 232, 240); font-family: Barlow, sans-serif; font-size: 28px;\">We can do this using a tool called a Gaussian process</span></p>"
         }
       ],
       "background": {
@@ -3907,6 +4435,83 @@
       "activeSection": 3
     },
     {
+      "id": "c6dabeb2-f6cb-436f-b4c8-2d681297cf74",
+      "notes": "",
+      "elements": [
+        {
+          "x": 20,
+          "y": 0,
+          "id": "90f165e6-1a88-40ee-8669-742f9b2e3a77",
+          "type": "text",
+          "width": 920,
+          "height": 80,
+          "zIndex": 2,
+          "content": "<p style=\"text-align: right;\"><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">My next pipe dream: a probabilistic framework for EPRV</span></p>"
+        },
+        {
+          "x": 480,
+          "y": 180,
+          "id": "a7efdc91-0a7b-47aa-81e1-de2291c6ca7d",
+          "alt": "",
+          "src": "/uploads/c301f5a0-867e-4ade-934b-30d95f88c1f7.png",
+          "type": "image",
+          "width": 460,
+          "height": 360,
+          "zIndex": 2,
+          "shadowX": 2,
+          "shadowY": 2,
+          "objectFit": "contain",
+          "shadowBlur": 2,
+          "borderRadius": 4,
+          "clickToExpand": true
+        },
+        {
+          "x": 20,
+          "y": 140,
+          "id": "8a5ed32a-f58c-46b9-bef9-884678439113",
+          "alt": "",
+          "src": "/uploads/c28538c4-7e5c-4ee5-b7dc-18eaa9863e2a.png",
+          "type": "image",
+          "width": 420,
+          "height": 320,
+          "zIndex": 2,
+          "shadowX": 2,
+          "shadowY": 2,
+          "objectFit": "contain",
+          "shadowBlur": 2,
+          "borderRadius": 4,
+          "clickToExpand": true
+        },
+        {
+          "x": 20,
+          "y": 80,
+          "id": "b626130f-1c11-4f41-bed4-085278ffa889",
+          "type": "text",
+          "width": 400,
+          "height": 112,
+          "zIndex": 2,
+          "content": "<p style=\"line-height: 1;\"><span style=\"color: rgb(51, 65, 85); font-family: Roboto, sans-serif; font-size: 20px;\">now: a temporal kernel for spot variability</span></p>",
+          "sizeMode": "auto"
+        },
+        {
+          "x": 480,
+          "y": 80,
+          "id": "078e91b2-89ff-4a12-9400-fcd9c585e2f9",
+          "type": "text",
+          "width": 460,
+          "height": 144,
+          "zIndex": 2,
+          "content": "<p style=\"line-height: 0.7;\"><span style=\"color: rgb(51, 65, 85); font-family: Roboto, sans-serif; font-size: 20px;\">future: a spectral-temporal kernel for spot, oscillations, granulations, and activity cycles</span></p>",
+          "sizeMode": "auto"
+        }
+      ],
+      "background": {
+        "type": "color",
+        "color": "#ffffff"
+      },
+      "activeSection": 3
+    },
+    {
       "id": "f796888b-ce14-4f37-a4b5-942fa2bfbd3b",
       "notes": "",
       "elements": [
@@ -3950,27 +4555,6 @@
       "activeSection": 3
     },
     {
-      "id": "9dc106b6-f9be-4547-870f-b87713e5f03b",
-      "notes": "",
-      "elements": [
-        {
-          "x": 20,
-          "y": 0,
-          "id": "476966d7-4641-4daf-9425-dd02b41ffedb",
-          "type": "text",
-          "width": 920,
-          "height": 80,
-          "zIndex": 1,
-          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">[Final summary slide]</span></p>"
-        }
-      ],
-      "background": {
-        "type": "color",
-        "color": "#ffffff"
-      },
-      "activeSection": 3
-    },
-    {
       "id": "e7c91524-1b5b-4e68-b9eb-5382ae4ee49f",
       "notes": "",
       "elements": [
@@ -3983,7 +4567,7 @@
           "height": 540,
           "locked": true,
           "zIndex": 1,
-          "content": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"utf-8\">\n<title>Tidal Star</title>\n<style>\n* { margin: 0; padding: 0; }\nbody { background: #000; overflow: hidden; }\ncanvas { display: block; }\n</style>\n</head>\n<body>\n<canvas id=\"c\"></canvas>\n<script>\n\"use strict\";\n\nconst canvas = document.getElementById(\"c\");\nconst ctx    = canvas.getContext(\"2d\");\n\nlet W, H, R, cx, cy;\nconst dpr = window.devicePixelRatio || 1;\n\nfunction resize() {\n    W = window.innerWidth;\n    H = window.innerHeight;\n    R = Math.min(W, H) * 0.38;\n    cx = W / 2;\n    cy = H / 2;\n    canvas.width  = W * dpr;\n    canvas.height = H * dpr;\n    canvas.style.width  = W + \"px\";\n    canvas.style.height = H + \"px\";\n    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);\n}\nresize();\nwindow.addEventListener(\"resize\", resize);\n\n// ── Mouse tracking ────────────────────────────────────────────────\nlet mouseX = cx + R * 2, mouseY = cy;\nlet prevX  = mouseX, prevY = mouseY;\n\nwindow.addEventListener(\"mousemove\", e => {\n    mouseX = e.clientX;\n    mouseY = e.clientY;\n});\n\n// ── Tidal state ───────────────────────────────────────────────────\nlet tidalAngle = 0.0;\nlet epsilon    = 0.0;\nlet lastT      = null;\n\nfunction animate(t) {\n    requestAnimationFrame(animate);\n    if (lastT === null) { lastT = t; return; }\n    const dt = Math.min((t - lastT) / 1000, 0.05);\n    lastT = t;\n\n    // Direction and distance from star center to mouse\n    const dx     = mouseX - cx, dy = mouseY - cy;\n    const d_px   = Math.sqrt(dx * dx + dy * dy);\n    const d_norm = Math.max(0.3, d_px / R);   // normalized to star radius\n    const angle  = Math.atan2(dy, dx);\n\n    // Mouse velocity\n    const vel = Math.hypot(mouseX - prevX, mouseY - prevY) / dt;\n    prevX = mouseX; prevY = mouseY;\n\n    // Target epsilon: only perturb when cursor is outside the unperturbed radius\n    const targetEps = d_px > R\n        ? Math.min(0.12, 0.15 / (d_norm ** 3)) + Math.min(0.03, vel * 0.00002)\n        : 0.0;\n\n    // Exponential lag on direction and amplitude\n    const dAngle = ((angle - tidalAngle + 3 * Math.PI) % (2 * Math.PI)) - Math.PI;\n    tidalAngle += dAngle * (1 - Math.exp(-dt / 0.15));\n    epsilon    += (targetEps - epsilon) * (1 - Math.exp(-dt / 0.2));\n\n    // ── Draw ──────────────────────────────────────────────────────\n    ctx.clearRect(0, 0, W * dpr, H * dpr);\n\n    // Deformed star\n    const N = 360;\n    ctx.beginPath();\n    for (let i = 0; i <= N; i++) {\n        const theta = (i / N) * 2 * Math.PI;\n        const alpha = theta - tidalAngle;\n        const cosA  = Math.cos(alpha);\n        const P2    = (3 * cosA * cosA - 1) / 2;\n        const r     = R * (1 + epsilon * P2);\n        const x     = cx + r * Math.cos(theta);\n        const y     = cy + r * Math.sin(theta);\n        i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);\n    }\n    ctx.closePath();\n    ctx.fillStyle = \"#BF4040\";\n    ctx.fill();\n\n    // Unperturbed outline (dashed circle)\n    ctx.beginPath();\n    ctx.arc(cx, cy, R, 0, 2 * Math.PI);\n    ctx.setLineDash([R * 0.07, R * 0.05]);\n    ctx.lineWidth   = 1.2;\n    ctx.strokeStyle = \"rgba(255,255,255,0.35)\";\n    ctx.stroke();\n    ctx.setLineDash([]);\n}\n\nrequestAnimationFrame(animate);\n</script>\n</body>\n</html>\n"
+          "content": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"utf-8\">\n<title>Tidal Star</title>\n<style>\n* { margin: 0; padding: 0; }\nbody { background: #000; overflow: hidden; }\ncanvas { display: block; }\n</style>\n</head>\n<body>\n<canvas id=\"c\"></canvas>\n<script>\n\"use strict\";\n\nconst canvas = document.getElementById(\"c\");\nconst ctx    = canvas.getContext(\"2d\");\n\nlet W, H, R, cx, cy;\nconst dpr = window.devicePixelRatio || 1;\n\nfunction resize() {\n    W = window.innerWidth;\n    H = window.innerHeight;\n    R = 200;\n    cx = 880;\n    cy = 120;\n    canvas.width  = W * dpr;\n    canvas.height = H * dpr;\n    canvas.style.width  = W + \"px\";\n    canvas.style.height = H + \"px\";\n    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);\n}\nresize();\nwindow.addEventListener(\"resize\", resize);\n\n// ── Mouse tracking ────────────────────────────────────────────────\nlet mouseX = cx + R * 2, mouseY = cy;\nlet prevX  = mouseX, prevY = mouseY;\n\nwindow.addEventListener(\"mousemove\", e => {\n    mouseX = e.clientX;\n    mouseY = e.clientY;\n});\n\n// ── Tidal state ───────────────────────────────────────────────────\nlet tidalAngle = 0.0;\nlet epsilon    = 0.0;\nlet lastT      = null;\n\nfunction animate(t) {\n    requestAnimationFrame(animate);\n    if (lastT === null) { lastT = t; return; }\n    const dt = Math.min((t - lastT) / 1000, 0.05);\n    lastT = t;\n\n    // Direction and distance from star center to mouse\n    const dx     = mouseX - cx, dy = mouseY - cy;\n    const d_px   = Math.sqrt(dx * dx + dy * dy);\n    const d_norm = Math.max(0.3, d_px / R);   // normalized to star radius\n    const angle  = Math.atan2(dy, dx);\n\n    // Mouse velocity\n    const vel = Math.hypot(mouseX - prevX, mouseY - prevY) / dt;\n    prevX = mouseX; prevY = mouseY;\n\n    // Target epsilon: only perturb when cursor is outside the unperturbed radius\n    const targetEps = d_px > R\n        ? Math.min(0.12, 0.15 / (d_norm ** 3)) + Math.min(0.03, vel * 0.00002)\n        : 0.0;\n\n    // Exponential lag on direction and amplitude\n    const dAngle = ((angle - tidalAngle + 3 * Math.PI) % (2 * Math.PI)) - Math.PI;\n    tidalAngle += dAngle * (1 - Math.exp(-dt / 0.15));\n    epsilon    += (targetEps - epsilon) * (1 - Math.exp(-dt / 0.2));\n\n    // ── Draw ──────────────────────────────────────────────────────\n    ctx.clearRect(0, 0, W * dpr, H * dpr);\n\n    // Deformed star\n    const N = 360;\n    ctx.beginPath();\n    for (let i = 0; i <= N; i++) {\n        const theta = (i / N) * 2 * Math.PI;\n        const alpha = theta - tidalAngle;\n        const cosA  = Math.cos(alpha);\n        const P2    = (3 * cosA * cosA - 1) / 2;\n        const r     = R * (1 + epsilon * P2);\n        const x     = cx + r * Math.cos(theta);\n        const y     = cy + r * Math.sin(theta);\n        i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);\n    }\n    ctx.closePath();\n    ctx.fillStyle = \"#BF4040\";\n    ctx.fill();\n\n    // Unperturbed outline (dashed circle)\n    ctx.beginPath();\n    ctx.arc(cx, cy, R, 0, 2 * Math.PI);\n    ctx.setLineDash([R * 0.07, R * 0.05]);\n    ctx.lineWidth   = 1.2;\n    ctx.strokeStyle = \"rgba(255,255,255,0.35)\";\n    ctx.stroke();\n    ctx.setLineDash([]);\n}\n\nrequestAnimationFrame(animate);\n</script>\n</body>\n</html>\n"
         },
         {
           "x": 20,
@@ -3997,54 +4581,65 @@
           "sizeMode": "auto"
         },
         {
-          "x": 669.5,
-          "y": 0,
+          "x": 679,
+          "y": 231.5,
           "id": "b67c0781-c521-470f-bac8-a8f17b2e60ac",
           "type": "text",
           "width": 261,
           "height": 97,
           "zIndex": 1,
-          "content": "<p style=\"text-align: center; line-height: 0.7;\"><a target=\"_blank\" rel=\"noopener noreferrer\" class=\"orb-link\" href=\"https://bit.ly/3RkkPti\"><span style=\"color: rgb(255, 255, 255); font-family: Roboto, sans-serif; font-size: 24px;\">bit.ly/3RkkPti</span></a></p>",
-          "snapRef": "mc",
+          "content": "<p style=\"text-align: right; line-height: 0.7;\"><a target=\"_blank\" rel=\"noopener noreferrer\" class=\"orb-link\" href=\"https://bit.ly/3RkkPti\"><span style=\"color: rgb(37, 99, 235); font-family: Roboto, sans-serif; font-size: 24px;\">bit.ly/3RkkPti</span></a></p>",
+          "snapRef": "mr",
           "sizeMode": "auto"
         },
         {
-          "x": 720,
+          "x": 760,
           "y": 60,
           "id": "c29523c0-d401-4b08-bcd2-1ac0ccee8cfe",
           "alt": "",
           "src": "/uploads/6d579af5-2093-4c67-8956-155a163ecf45.png",
           "type": "image",
-          "width": 220,
-          "height": 220,
+          "width": 180,
+          "height": 180,
           "zIndex": 2,
           "objectFit": "contain",
           "borderRadius": 6
         },
         {
-          "x": 400,
-          "y": 0,
+          "x": 580,
+          "y": 3,
           "id": "861e07f8-0b1a-43ef-b00d-c8bfc6d994b7",
           "type": "text",
           "width": 380,
-          "height": 543,
+          "height": 97,
           "zIndex": 3,
-          "content": "<p><span style=\"font-family: Roboto, sans-serif; font-size: 20px;\">view the interactive slides:</span></p>",
+          "content": "<p style=\"text-align: right; line-height: 0.7;\"><span style=\"font-family: Roboto, sans-serif; font-size: 20px;\">view the interactive slides:</span></p>",
           "snapRef": "lr",
-          "rotation": 306,
+          "rotation": 0,
           "sizeMode": "auto"
         },
         {
-          "x": 580,
-          "y": 345,
+          "x": 700,
+          "y": 340,
           "id": "b86a13c5-71b6-412f-a215-aba32021b572",
           "type": "text",
-          "width": 380,
-          "height": 95,
+          "width": 260,
+          "height": 100,
           "zIndex": 3,
           "content": "<p style=\"text-align: right; line-height: 0.7;\"><span style=\"font-size: 20px;\">build your own slides:</span></p>",
           "snapRef": "lr",
           "rotation": 0,
+          "sizeMode": "auto"
+        },
+        {
+          "x": 580,
+          "y": 360,
+          "id": "d44b46b5-2821-4bae-aa91-9f68c6fe6635",
+          "type": "text",
+          "width": 380,
+          "height": 143,
+          "zIndex": 1,
+          "content": "<p style=\"text-align: right;\"><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://parallax-presentations.com\"><span style=\"color: rgb(37, 99, 235); font-size: 28px;\">parallax-presentations.com</span></a></p>",
           "sizeMode": "auto"
         }
       ],
@@ -4058,7 +4653,7 @@
   "createdAt": "2026-04-06T20:39:00.855Z",
   "expiresAt": null,
   "showClock": true,
-  "updatedAt": "2026-05-13T22:13:17.660Z",
+  "updatedAt": "2026-05-14T09:11:12.893Z",
   "footerMode": "sequence",
   "globalFont": "Barlow, sans-serif",
   "showFooter": true,
