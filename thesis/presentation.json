@@ -3855,6 +3855,32 @@
           "objectFit": "contain",
           "citationText": "Gray Stellar Photospheres",
           "clickToExpand": true
+        },
+        {
+          "x": 340,
+          "y": 380,
+          "id": "b60e4b9d-a153-47ef-afed-f2eb116374c0",
+          "alt": "",
+          "src": "/uploads/d7d4588a-ca8e-4603-b028-fe0bc8760ffa.png",
+          "type": "image",
+          "width": 260,
+          "height": 160,
+          "zIndex": 2,
+          "objectFit": "contain",
+          "clickToExpand": true
+        },
+        {
+          "x": 680,
+          "y": 140,
+          "id": "b4c60d7d-ca5d-425a-85d4-6a8ae5c8d217",
+          "alt": "",
+          "src": "/uploads/d8b7f8be-fd7e-455a-a5d9-4993ea2465c2.png",
+          "type": "image",
+          "width": 200,
+          "height": 140,
+          "zIndex": 2,
+          "objectFit": "contain",
+          "citationText": "Forman-Mackey exoplanet"
         }
       ],
       "background": {
@@ -3947,6 +3973,53 @@
           "height": 80,
           "zIndex": 1,
           "content": "<p><span style=\"color: rgb(30, 41, 59); font-family: Barlow, sans-serif; font-size: 28px;\">Measuring differential rotation: gaussian processes</span></p>"
+        },
+        {
+          "x": 20,
+          "y": 80,
+          "id": "d8117bc8-8601-4778-bb91-e0ecb79b4be7",
+          "alt": "",
+          "src": "/uploads/e314ebbd-3571-43a7-b1d0-5997243fac75.png",
+          "type": "image",
+          "width": 520,
+          "height": 380,
+          "zIndex": 3,
+          "objectFit": "contain",
+          "citationMode": "side",
+          "citationText": "Foreman Mackey - exoplanet docs",
+          "citationColor": "#3d3846"
+        },
+        {
+          "x": 580,
+          "y": 80,
+          "id": "293688fb-f1c8-45b5-8885-1f597bed6584",
+          "type": "text",
+          "width": 360,
+          "height": 140,
+          "zIndex": 1,
+          "content": "<p style=\"text-align: right; line-height: 0.7;\"><span style=\"color: rgb(30, 41, 59); font-family: Barlow, sans-serif; font-size: 20px;\">GPs are useful for measuring rotation, however, they tell us very little physical information about the star (Nicholson &amp; Aigrain 2022)</span></p>"
+        },
+        {
+          "x": 580,
+          "y": 280,
+          "id": "35574898-5312-43ba-96ca-f5bcada1541e",
+          "type": "text",
+          "width": 360,
+          "height": 140,
+          "zIndex": 1,
+          "content": "<p style=\"text-align: right; line-height: 0.7;\"><span style=\"color: rgb(30, 41, 59); font-family: Barlow, sans-serif; font-size: 20px;\">This makes GPs useful for detrending out stellar variability (e.g. if you care about transiting rocks), but not for learning about a stars spot properties!</span></p>"
+        },
+        {
+          "x": 0,
+          "y": 500,
+          "id": "d7aebf4a-ad48-489d-b805-1d5633231bf4",
+          "type": "text",
+          "width": 940,
+          "height": 60,
+          "zIndex": 1,
+          "content": "<p style=\"text-align: right; line-height: 0.7;\"><span style=\"color: rgb(220, 38, 38); font-family: Barlow, sans-serif; font-size: 18px;\"><em>Could it be possible to come up with a GP model in which the parameters of the GP correspond to starspot properties?</em></span></p>",
+          "fragment": true,
+          "fragmentIndex": 1
         }
       ],
       "background": {
@@ -3980,18 +4053,19 @@
           "content": "<p style=\"text-align: left;\"><span style=\"color: rgb(148, 163, 184); font-family: Barlow, sans-serif; font-size: 24px;\"><em>maybe even hopeless...?</em></span></p>"
         },
         {
-          "x": 40,
-          "y": 140,
+          "x": 20,
+          "y": 120,
           "id": "b618acb7-22fa-4307-8ce2-de95dd829798",
           "alt": "",
           "src": "/uploads/be697630-9fa5-4eaf-a834-9f1359ec27bb.png",
           "type": "image",
-          "width": 580,
-          "height": 200,
+          "width": 500,
+          "height": 160,
           "zIndex": 2,
           "objectFit": "contain",
-          "citationMode": "caption",
+          "citationMode": "side",
           "citationText": "Strassmeier 2009",
+          "citationColor": "#1a5fb4",
           "clickToExpand": true
         }
       ],
@@ -5854,7 +5928,7 @@
           "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">Thank you to my family</span></p>"
         },
         {
-          "x": 260,
+          "x": 220,
           "y": 80,
           "id": "e9cb5532-a436-4704-a294-15668c766b44",
           "alt": "",
@@ -6433,7 +6507,7 @@
   "createdAt": "2026-04-06T20:39:00.855Z",
   "expiresAt": null,
   "showClock": true,
-  "updatedAt": "2026-05-15T17:20:39.369Z",
+  "updatedAt": "2026-05-15T18:00:38.047Z",
   "footerMode": "sequence",
   "globalFont": "Barlow, sans-serif",
   "showFooter": true,
