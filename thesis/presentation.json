@@ -99,14 +99,14 @@
       "notes": "",
       "elements": [
         {
-          "x": 40,
+          "x": 80,
           "y": 140,
           "id": "a13cb309-0034-4dd5-a0f6-07f9ae6bc5b9",
           "type": "text",
           "width": 800,
           "height": 143,
           "zIndex": 1,
-          "content": "<p><span style=\"color: rgb(255, 255, 255); font-family: Roboto, sans-serif; font-size: 24px;\"><em>(1) What are </em></span><span style=\"color: rgb(220, 38, 38); font-family: Roboto, sans-serif; font-size: 24px;\"><em>low-mass stars</em></span><span style=\"color: rgb(255, 255, 255); font-family: Roboto, sans-serif; font-size: 24px;\"><em> and why are they interesting?</em></span></p>",
+          "content": "<p style=\"text-align: center;\"><span style=\"color: rgb(255, 255, 255); font-family: Roboto, sans-serif; font-size: 24px;\"><em>(1) What are </em></span><span style=\"color: rgb(220, 38, 38); font-family: Roboto, sans-serif; font-size: 24px;\"><em>low-mass stars</em></span><span style=\"color: rgb(255, 255, 255); font-family: Roboto, sans-serif; font-size: 24px;\"><em> and why are they interesting?</em></span></p>",
           "sizeMode": "auto"
         },
         {
@@ -117,29 +117,18 @@
           "width": 800,
           "height": 143,
           "zIndex": 1,
-          "content": "<p><span style=\"color: rgb(255, 255, 255); font-family: Roboto, sans-serif; font-size: 24px;\"><em>(2) Why is </em></span><span style=\"color: rgb(220, 38, 38); font-family: Roboto, sans-serif; font-size: 24px;\"><em>rotation</em></span><span style=\"color: rgb(255, 255, 255); font-family: Roboto, sans-serif; font-size: 24px;\"><em> fundamental to understanding stellar physics?</em></span></p>",
+          "content": "<p style=\"text-align: center;\"><span style=\"color: rgb(255, 255, 255); font-family: Roboto, sans-serif; font-size: 24px;\"><em>(2) Why is </em></span><span style=\"color: rgb(220, 38, 38); font-family: Roboto, sans-serif; font-size: 24px;\"><em>rotation</em></span><span style=\"color: rgb(255, 255, 255); font-family: Roboto, sans-serif; font-size: 24px;\"><em> fundamental to understanding stellar physics?</em></span></p>",
           "sizeMode": "auto"
         },
         {
-          "x": 100,
+          "x": 80,
           "y": 340,
           "id": "d95e382f-7a72-471e-a7de-d91449627cb8",
           "type": "text",
           "width": 860,
           "height": 143,
           "zIndex": 1,
-          "content": "<p><span style=\"color: rgb(255, 255, 255); font-family: Roboto, sans-serif; font-size: 24px;\"><em>(3) What can we infer about </em></span><span style=\"color: rgb(220, 38, 38); font-family: Roboto, sans-serif; font-size: 24px;\"><em>tides</em></span><span style=\"color: rgb(255, 255, 255); font-family: Roboto, sans-serif; font-size: 24px;\"><em> from the spin-orbit dynamics of </em></span><span style=\"color: rgb(220, 38, 38); font-family: Roboto, sans-serif; font-size: 24px;\"><em>binary stars</em></span><span style=\"color: rgb(255, 255, 255); font-family: Roboto, sans-serif; font-size: 24px;\"><em>?</em></span></p>",
-          "sizeMode": "auto"
-        },
-        {
-          "x": 160,
-          "y": 440,
-          "id": "8274feae-1868-43dd-ad4a-1f1d5519ae29",
-          "type": "text",
-          "width": 760,
-          "height": 143,
-          "zIndex": 1,
-          "content": "<p><span style=\"color: rgb(255, 255, 255); font-family: Roboto, sans-serif; font-size: 24px;\"><em>(4) How can we measure the </em></span><span style=\"color: rgb(220, 38, 38); font-family: Roboto, sans-serif; font-size: 24px;\"><em>differential rotation</em></span><span style=\"color: rgb(255, 255, 255); font-family: Roboto, sans-serif; font-size: 24px;\"><em> rate of a star?</em></span></p>",
+          "content": "<p style=\"text-align: center;\"><span style=\"color: rgb(255, 255, 255); font-family: Roboto, sans-serif; font-size: 24px;\"><em>(3) What have I been doing these past 7 years?</em></span></p>",
           "sizeMode": "auto"
         },
         {
@@ -1399,6 +1388,76 @@
       "autoAnimateDuration": 0.8
     },
     {
+      "id": "cce2aa54-dfc1-4c87-a8e2-a008c1453fea",
+      "notes": "",
+      "elements": [
+        {
+          "x": 20,
+          "y": 0,
+          "id": "b9c7a589-657a-4e51-8cf2-4efa8276014c",
+          "type": "text",
+          "width": 920,
+          "height": 240,
+          "zIndex": 3,
+          "content": "<p style=\"text-align: center; line-height: 0.9;\"><span style=\"color: rgb(255, 255, 255); font-family: Barlow, sans-serif; font-size: 24px;\">Rotation is also very important for how stars interact with their environment</span></p><p style=\"text-align: center; line-height: 0.9;\"><span style=\"color: rgb(255, 255, 255); font-family: Barlow, sans-serif; font-size: 24px;\">It is very common for Sun-like stars to have a binary companion, or orbiting planets</span></p><p style=\"text-align: center; line-height: 0.9;\"><span style=\"color: rgb(255, 255, 255); font-family: Barlow, sans-serif; font-size: 24px;\">Stellar rotation (and related processes like stellar activity) can play a profound influence on the orbital dynamics (and even the habitability of rocks)</span></p>"
+        },
+        {
+          "x": 340,
+          "y": 460,
+          "id": "9ce4b796-9212-4ee0-868f-7cbf0d8d9e11",
+          "type": "text",
+          "width": 260,
+          "height": 80,
+          "zIndex": 3,
+          "content": "<p style=\"text-align: center; line-height: 1;\"><span style=\"color: rgb(255, 255, 255); font-size: 20px;\">dynamical interactions</span></p>"
+        },
+        {
+          "x": 320,
+          "y": 480,
+          "id": "f8d1e464-bc30-4a42-8476-77718f01af5a",
+          "type": "callout",
+          "width": 36,
+          "height": 36,
+          "zIndex": 10,
+          "fontSize": 16,
+          "calloutColor": "#ef4444",
+          "calloutNumber": 7,
+          "calloutTextColor": "#ffffff"
+        },
+        {
+          "x": 100,
+          "y": 306,
+          "id": "00d5b343-ffee-4002-9ea3-f49f2f7a3ef7",
+          "alt": "",
+          "src": "/uploads/a3f6ac17-4c53-4ed1-82e6-d4cc261fc0c7.gif",
+          "crop": null,
+          "type": "image",
+          "width": 760,
+          "height": 134,
+          "imageH": 440,
+          "imageW": 760,
+          "zIndex": 2,
+          "shadowX": 2,
+          "shadowY": 2,
+          "snapRef": "lr",
+          "objectFit": "contain",
+          "shadowBlur": 2,
+          "borderRadius": 11,
+          "imageOffsetX": 0,
+          "imageOffsetY": -86
+        }
+      ],
+      "background": {
+        "type": "color",
+        "color": "#000000"
+      },
+      "slideGroup": null,
+      "autoAnimate": false,
+      "activeSection": 0,
+      "autoAnimateEasing": "ease-in-out",
+      "autoAnimateDuration": 0.8
+    },
+    {
       "id": "ef5d99b2-690a-4208-b30e-512da6e068c4",
       "notes": "",
       "elements": [
@@ -1566,76 +1625,6 @@
           "autoplay": false,
           "controls": true,
           "objectFit": "contain"
-        }
-      ],
-      "background": {
-        "type": "color",
-        "color": "#000000"
-      },
-      "slideGroup": null,
-      "autoAnimate": false,
-      "activeSection": 0,
-      "autoAnimateEasing": "ease-in-out",
-      "autoAnimateDuration": 0.8
-    },
-    {
-      "id": "cce2aa54-dfc1-4c87-a8e2-a008c1453fea",
-      "notes": "",
-      "elements": [
-        {
-          "x": 20,
-          "y": 0,
-          "id": "b9c7a589-657a-4e51-8cf2-4efa8276014c",
-          "type": "text",
-          "width": 920,
-          "height": 240,
-          "zIndex": 3,
-          "content": "<p style=\"text-align: center; line-height: 0.9;\"><span style=\"color: rgb(255, 255, 255); font-family: Barlow, sans-serif; font-size: 24px;\">Rotation is also very important for how stars interact with their environment</span></p><p style=\"text-align: center; line-height: 0.9;\"><span style=\"color: rgb(255, 255, 255); font-family: Barlow, sans-serif; font-size: 24px;\">It is very common for Sun-like stars to have a binary companion, or orbiting planets</span></p><p style=\"text-align: center; line-height: 0.9;\"><span style=\"color: rgb(255, 255, 255); font-family: Barlow, sans-serif; font-size: 24px;\">Stellar rotation (and related processes like stellar activity) can play a profound influence on the orbital dynamics (and even the habitability of rocks)</span></p>"
-        },
-        {
-          "x": 340,
-          "y": 460,
-          "id": "9ce4b796-9212-4ee0-868f-7cbf0d8d9e11",
-          "type": "text",
-          "width": 260,
-          "height": 80,
-          "zIndex": 3,
-          "content": "<p style=\"text-align: center; line-height: 1;\"><span style=\"color: rgb(255, 255, 255); font-size: 20px;\">dynamical interactions</span></p>"
-        },
-        {
-          "x": 320,
-          "y": 480,
-          "id": "f8d1e464-bc30-4a42-8476-77718f01af5a",
-          "type": "callout",
-          "width": 36,
-          "height": 36,
-          "zIndex": 10,
-          "fontSize": 16,
-          "calloutColor": "#ef4444",
-          "calloutNumber": 7,
-          "calloutTextColor": "#ffffff"
-        },
-        {
-          "x": 100,
-          "y": 306,
-          "id": "00d5b343-ffee-4002-9ea3-f49f2f7a3ef7",
-          "alt": "",
-          "src": "/uploads/a3f6ac17-4c53-4ed1-82e6-d4cc261fc0c7.gif",
-          "crop": null,
-          "type": "image",
-          "width": 760,
-          "height": 134,
-          "imageH": 440,
-          "imageW": 760,
-          "zIndex": 2,
-          "shadowX": 2,
-          "shadowY": 2,
-          "snapRef": "lr",
-          "objectFit": "contain",
-          "shadowBlur": 2,
-          "borderRadius": 11,
-          "imageOffsetX": 0,
-          "imageOffsetY": -86
         }
       ],
       "background": {
@@ -5712,6 +5701,16 @@
           "height": 80,
           "zIndex": 1,
           "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">Future projects: science applications</span></p>"
+        },
+        {
+          "x": 40,
+          "y": 140,
+          "id": "267121d3-8e59-4d8b-a7fb-12f2e2059158",
+          "type": "text",
+          "width": 860,
+          "height": 360,
+          "zIndex": 1,
+          "content": "<p style=\"line-height: 0.8;\"><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 20px;\">Can we use open clusters to measure how differential rotation evolves with mass and age?</span></p><p style=\"line-height: 0.8;\"><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 20px;\">What implications do DR constraints have for our understanding of stellar dynamo theory?</span></p><p style=\"line-height: 0.8;\"><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 20px;\">Can we measure stellar radii from lightcurves and spectra (combining inclination from the lightcurve with vsini from the spectrum)?</span></p><p style=\"line-height: 0.8;\"><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 20px;\">Do eclipsing binaries show evidence of differential rotation and could this explain the existence of subsynchronous binaries?</span></p><p style=\"line-height: 0.8;\"><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 20px;\">Are tidally locked binaries synchronized at all latitudes?</span></p><p style=\"line-height: 0.8;\"></p>"
         }
       ],
       "background": {
@@ -6507,7 +6506,7 @@
   "createdAt": "2026-04-06T20:39:00.855Z",
   "expiresAt": null,
   "showClock": true,
-  "updatedAt": "2026-05-15T18:00:38.047Z",
+  "updatedAt": "2026-05-15T18:30:56.760Z",
   "footerMode": "sequence",
   "globalFont": "Barlow, sans-serif",
   "showFooter": true,
