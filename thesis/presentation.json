@@ -2527,7 +2527,7 @@
           "width": 920,
           "height": 80,
           "zIndex": 1,
-          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">Modeling the dynamical evolution of binary stars</span></p>"
+          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">Binary stars evolve over time for several reasons</span></p>"
         },
         {
           "x": 60,
@@ -2811,26 +2811,26 @@
           "sizeMode": "auto"
         },
         {
-          "x": 460,
-          "y": 180,
+          "x": 400,
+          "y": 120,
           "id": "ef9b6929-2937-40eb-a9fa-908ae5edf5fe",
           "alt": "",
           "src": "/uploads/236ddf4e-dd30-4990-8c6f-e6b7bf008f4f.apng",
           "type": "image",
-          "width": 580,
-          "height": 400,
+          "width": 660,
+          "height": 480,
           "zIndex": 6,
           "objectFit": "contain"
         },
         {
-          "x": 0,
-          "y": 220,
+          "x": -80,
+          "y": 120,
           "id": "42412b5c-245f-4f7f-994c-9f6b0e31ac6a",
           "alt": "",
           "src": "/uploads/52d829ba-f634-403c-b8a2-c679e3d5bdc7.apng",
           "type": "image",
-          "width": 420,
-          "height": 320,
+          "width": 640,
+          "height": 480,
           "zIndex": 9,
           "objectFit": "contain"
         },
@@ -2851,17 +2851,6 @@
           "textColor": "#ffffff",
           "strokeWidth": 0,
           "borderRadius": 0
-        },
-        {
-          "x": 140,
-          "y": 480,
-          "id": "e6e15377-33c4-4fc2-8003-d739d4c43cb6",
-          "type": "text",
-          "width": 660,
-          "height": 112,
-          "zIndex": 10,
-          "content": "<p style=\"text-align: center; line-height: 1;\"><span style=\"color: rgb(226, 232, 240); font-family: Barlow, sans-serif; font-size: 20px;\">Tidal friction causes the system to dissipate energy in the form of heat</span></p>",
-          "sizeMode": "auto"
         }
       ],
       "background": {
@@ -3097,6 +3086,55 @@
           "id": "98912db4-a1d8-4f2b-9292-00ce6994cc53",
           "alt": "",
           "src": "/uploads/07e55fef-2b26-4a85-9245-d0cbe1fcd2c7.png",
+          "crop": null,
+          "type": "image",
+          "width": 268,
+          "height": 460,
+          "imageH": 460,
+          "imageW": 880,
+          "zIndex": 2,
+          "objectFit": "contain",
+          "imageOffsetX": 0,
+          "imageOffsetY": 0
+        },
+        {
+          "x": 140,
+          "y": 480,
+          "id": "1b3e0c1c-e2fc-4fcd-a943-5133b4a22c21",
+          "type": "text",
+          "width": 240,
+          "height": 80,
+          "zIndex": 3,
+          "content": "<p><span style=\"color: rgb(15, 23, 42); font-size: 24px;\">Age [Myr]</span></p>"
+        }
+      ],
+      "background": {
+        "type": "color",
+        "color": "#ffffff"
+      },
+      "slideGroup": "c8e994a8-8df6-4119-b9b7-00b71e0bdb70",
+      "activeSection": 1
+    },
+    {
+      "id": "e820ce2e-04d0-422e-91cc-7cf3d2407be6",
+      "notes": "",
+      "elements": [
+        {
+          "x": 20,
+          "y": 0,
+          "id": "16c95dc6-d79c-407a-989d-80ee718a7bcf",
+          "type": "text",
+          "width": 920,
+          "height": 80,
+          "zIndex": 1,
+          "content": "<p><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">Sensitivity analysis: CTL + stellar</span></p>"
+        },
+        {
+          "x": 40,
+          "y": 80,
+          "id": "1e0ebc82-d5e4-4c73-9d42-ee5e7c3864a4",
+          "alt": "",
+          "src": "/uploads/07e55fef-2b26-4a85-9245-d0cbe1fcd2c7.png",
           "type": "image",
           "width": 880,
           "height": 460,
@@ -3108,6 +3146,7 @@
         "type": "color",
         "color": "#ffffff"
       },
+      "slideGroup": "c8e994a8-8df6-4119-b9b7-00b71e0bdb70",
       "activeSection": 1
     },
     {
@@ -6506,7 +6545,7 @@
   "createdAt": "2026-04-06T20:39:00.855Z",
   "expiresAt": null,
   "showClock": true,
-  "updatedAt": "2026-05-15T18:30:56.760Z",
+  "updatedAt": "2026-05-15T19:01:57.386Z",
   "footerMode": "sequence",
   "globalFont": "Barlow, sans-serif",
   "showFooter": true,
