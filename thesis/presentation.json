@@ -4014,6 +4014,22 @@
           "height": 140,
           "zIndex": 1,
           "content": "<p style=\"line-height: 0.8;\"><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 28px;\">Further empirical evidence suggests that no one thinks measuring idea DR from lightcurves is a good idea</span></p>"
+        },
+        {
+          "x": 180,
+          "y": 120,
+          "id": "3ba81747-edd5-44aa-9928-1d935516dbc0",
+          "alt": "",
+          "src": "/uploads/2beee71b-f680-4d33-96f2-bf6ff4bf1836.png",
+          "type": "image",
+          "width": 620,
+          "height": 420,
+          "zIndex": 2,
+          "shadowX": 2,
+          "shadowY": 2,
+          "objectFit": "contain",
+          "shadowBlur": 2,
+          "borderRadius": 6
         }
       ],
       "background": {
@@ -5159,6 +5175,17 @@
           "objectFit": "contain",
           "shadowBlur": 2,
           "borderRadius": 4
+        },
+        {
+          "x": 560,
+          "y": 180,
+          "id": "f628b9b7-1929-4320-b01f-7dc0f869323c",
+          "type": "text",
+          "width": 380,
+          "height": 277,
+          "zIndex": 1,
+          "content": "<p style=\"line-height: 0.8;\"><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 24px;\">this method is best suited for fast rotators which have spot lifetimes longer than the rotation period</span></p><p style=\"line-height: 0.8;\"><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 24px;\">unfortunately the Sun is hard :(</span></p>",
+          "sizeMode": "auto"
         }
       ],
       "background": {
@@ -5201,6 +5228,17 @@
           "borderRadius": 4,
           "imageOffsetX": -40,
           "imageOffsetY": 0
+        },
+        {
+          "x": 560,
+          "y": 200,
+          "id": "ca41d105-ba2c-417d-a24a-d342763e0cf4",
+          "type": "text",
+          "width": 380,
+          "height": 252,
+          "zIndex": 1,
+          "content": "<p style=\"line-height: 0.8;\"><span style=\"color: rgb(51, 65, 85); font-family: Barlow, sans-serif; font-size: 24px;\">this method can work for a range of inclinations, but not those that are directly pole-on with long periods</span></p>",
+          "sizeMode": "auto"
         }
       ],
       "background": {
@@ -5293,7 +5331,7 @@
         },
         {
           "x": 0,
-          "y": 120,
+          "y": 260,
           "id": "06b0b292-cfac-4ddf-865a-aa0f9057b785",
           "alt": "",
           "src": "/uploads/5a6030b8-42c1-40a7-ad10-9b5a7ec9aee4.png",
@@ -5306,6 +5344,16 @@
           "objectFit": "contain",
           "shadowBlur": 2,
           "borderRadius": 4
+        },
+        {
+          "x": 40,
+          "y": 80,
+          "id": "1cf4068d-02ac-4287-a7f8-d3c9419b7691",
+          "type": "text",
+          "width": 880,
+          "height": 160,
+          "zIndex": 1,
+          "content": "<p style=\"line-height: 0.7;\"><span style=\"color: rgb(30, 41, 59); font-size: 20px;\">Can this work on real data?</span></p><p style=\"line-height: 0.7;\"><span style=\"color: rgb(30, 41, 59); font-size: 20px;\">Kepler-63 is a good benchmark system because it is a fast rotator (~5.4 days) and has a hot Jupiter companion that has been used to map out the sizes and positions of individual spots</span></p>"
         }
       ],
       "background": {
@@ -6385,7 +6433,7 @@
   "createdAt": "2026-04-06T20:39:00.855Z",
   "expiresAt": null,
   "showClock": true,
-  "updatedAt": "2026-05-15T16:59:24.108Z",
+  "updatedAt": "2026-05-15T17:20:39.369Z",
   "footerMode": "sequence",
   "globalFont": "Barlow, sans-serif",
   "showFooter": true,
