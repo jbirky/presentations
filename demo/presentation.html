@@ -1,0 +1,795 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>demo</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/black.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11/styles/monokai.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&family=Playfair+Display:wght@400;500;600;700;800;900&family=Merriweather:wght@300;400;700;900&family=Fira+Code:wght@300;400;500;600;700&family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Questrial&family=Didact+Gothic&family=Nunito:wght@300;400;500;600;700;800;900&family=Nunito+Sans:wght@300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&family=Dosis:wght@300;400;500;600;700;800&family=M+PLUS+Rounded+1c:wght@300;400;500;700;900&family=Jura:wght@300;400;500;600;700&family=Codystar:wght@300;400&family=Barlow:wght@300;400;500;600;700;800;900&family=Barlow+Condensed:wght@300;400;500;600;700;800;900&family=Asap+Condensed:wght@400;500;600;700;900&family=Istok+Web:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600;700;800;900&family=Source+Sans+3:wght@300;400;500;600;700;800;900&family=Fira+Sans:wght@300;400;500;600;700;800;900&family=Roboto+Condensed:wght@300;400;500;700&family=Roboto+Mono:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&family=Manrope:wght@300;400;500;600;700;800&family=Bebas+Neue&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Roboto+Flex:wght@300;400;500;600;700&family=Inter+Tight:wght@300;400;500;600;700;800;900&family=Geist:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&family=Figtree:wght@300;400;500;600;700;800;900&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/dreampulse/computer-modern-web-font@master/fonts.css">
+  <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/futura-pt">
+  <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/bauhaus-93">
+  <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/national-park">
+  <style>
+    @font-face { font-family: 'Latin Modern Roman'; font-style: normal; font-weight: 400; src: url('https://cdn.jsdelivr.net/npm/lm-web-fonts@0.1.0/fonts/lm-roman10-regular.woff2') format('woff2'), url('https://cdn.jsdelivr.net/npm/lm-web-fonts@0.1.0/fonts/lm-roman10-regular.woff') format('woff'); }
+    @font-face { font-family: 'Latin Modern Roman'; font-style: normal; font-weight: 700; src: url('https://cdn.jsdelivr.net/npm/lm-web-fonts@0.1.0/fonts/lm-roman10-bold.woff2') format('woff2'), url('https://cdn.jsdelivr.net/npm/lm-web-fonts@0.1.0/fonts/lm-roman10-bold.woff') format('woff'); }
+    @font-face { font-family: 'Latin Modern Roman'; font-style: italic; font-weight: 400; src: url('https://cdn.jsdelivr.net/npm/lm-web-fonts@0.1.0/fonts/lm-roman10-italic.woff2') format('woff2'), url('https://cdn.jsdelivr.net/npm/lm-web-fonts@0.1.0/fonts/lm-roman10-italic.woff') format('woff'); }
+    html, body { margin: 0; padding: 0; overflow: hidden; width: 100%; height: 100%; background: #000; }
+    /* Reset reveal.js section padding/alignment so absolute positions match the 960x540 editor canvas exactly */
+    .reveal .slides section { padding: 0 !important; text-align: left !important; }
+    /* Neutralise theme typography overrides so presentation matches editor exactly */
+    /* font-family only on section (inherited) so KaTeX's explicit rules take precedence */
+    .reveal .slides section { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+    .reveal .slides section * { text-transform: none !important; letter-spacing: normal !important; }
+    /* Explicit heading sizes — override theme so present mode matches editor exactly */
+    .reveal .slides section h1 { font-size: 2.5em; font-weight: bold; line-height: 1.2; margin: 0 0 0.4em; }
+    .reveal .slides section h2 { font-size: 1.6em; font-weight: bold; line-height: 1.2; margin: 0 0 0.4em; }
+    .reveal .slides section h3 { font-size: 1.3em; font-weight: bold; line-height: 1.2; margin: 0 0 0.4em; }
+    .reveal .slides section h4 { font-size: 1em;   font-weight: bold; line-height: 1.2; margin: 0 0 0.4em; }
+    .reveal .slides section p  { margin: 0 0 0.4em; line-height: 1.5; }
+    .reveal .slides section ul,
+    .reveal .slides section ol { padding-left: 1.5em; margin: 0 0 0.4em; }
+    .reveal .slides section li { margin-bottom: 0.2em; line-height: 1.5; }
+    .reveal .slides section a  { text-decoration: underline; }
+    /* reveal.js constrains/decorates section imgs — reset everything */
+    .reveal .slides section img { margin: 0 !important; border: none !important; background: none !important; box-shadow: none !important; max-width: none !important; max-height: none !important; }
+    /* Footer — explicit CSS rule with high specificity so reveal.js theme cannot override */
+    /* color only on the container so per-span inline colors (inactive sections) are not overridden */
+    .reveal .slides section .reveal-footer { color: #5e5c64 !important; }
+    .reveal .slides section .reveal-footer,
+    .reveal .slides section .reveal-footer * { font-family: -apple-system,sans-serif !important; font-size: 14px !important; }
+    #fs-btn {
+      position: fixed; bottom: 16px; right: 16px; z-index: 9999;
+      background: rgba(0,0,0,0.5); color: white; border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 6px; padding: 6px 10px; cursor: pointer; font-size: 13px;
+      backdrop-filter: blur(4px); transition: background 0.15s;
+    }
+    #fs-btn:hover { background: rgba(0,0,0,0.75); }
+    :fullscreen #fs-btn, :-webkit-full-screen #fs-btn { display: none; }
+    [data-expand] { transition:box-shadow 0.2s, outline 0.2s; outline:2px solid transparent; outline-offset:2px; }
+    [data-expand]:hover { outline-color:rgba(99,102,241,0.6); box-shadow:0 0 16px rgba(99,102,241,0.25); }
+    .expand-overlay { position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.92);z-index:10000;display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:0;transition:opacity 0.2s; }
+    .expand-overlay.active { opacity:1; }
+    .expand-overlay img { max-width:90vw;max-height:90vh;object-fit:contain;cursor:default;border-radius:4px; }
+    .image-popup { position:fixed;z-index:10001;background:rgba(20,20,30,0.95);color:#fff;padding:12px 18px;border-radius:8px;font-family:-apple-system,sans-serif;font-size:15px;line-height:1.5;max-width:400px;box-shadow:0 8px 32px rgba(0,0,0,0.4);border:1px solid rgba(255,255,255,0.1);opacity:0;transition:opacity 0.2s;white-space:pre-wrap;pointer-events:auto; }
+    .image-popup.active { opacity:1; }
+    [data-popup] { transition:box-shadow 0.2s, outline 0.2s; outline:2px solid transparent; outline-offset:2px; }
+    [data-popup]:hover { outline-color:rgba(251,191,36,0.5); box-shadow:0 0 12px rgba(251,191,36,0.2); }
+    .image-caption { position:absolute;left:0;right:0;top:100%;font-size:10px;color:rgba(255,255,255,0.5);font-family:-apple-system,sans-serif;line-height:1.3;padding:3px 2px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis; }
+    .image-caption a { color:rgba(255,255,255,0.5);text-decoration:underline;text-decoration-color:rgba(255,255,255,0.25); }
+    .cite-sup { position:absolute;top:4px;right:4px;background:rgba(0,0,0,0.55);color:rgba(255,255,255,0.85);font-size:10px;font-weight:700;font-family:-apple-system,sans-serif;min-width:16px;height:16px;border-radius:8px;display:flex;align-items:center;justify-content:center;padding:0 4px;pointer-events:none;line-height:1; }
+    .slide-citations { position:absolute;right:2px;top:0;bottom:0;z-index:890;display:flex;align-items:center;pointer-events:none; }
+    .slide-citations-text { writing-mode:vertical-rl;transform:rotate(180deg);font-size:9px;color:rgba(255,255,255,0.45);font-family:-apple-system,sans-serif;line-height:1.3;white-space:nowrap; }
+    .slide-citations-text a { color:rgba(255,255,255,0.45);text-decoration:underline; }
+    /* Custom fragment animations */
+    .fragment.slide-up { transform:translateY(40px); transition:transform 0.5s ease, opacity 0.5s ease; }
+    .fragment.slide-down { transform:translateY(-40px); transition:transform 0.5s ease, opacity 0.5s ease; }
+    .fragment.slide-left { transform:translateX(40px); transition:transform 0.5s ease, opacity 0.5s ease; }
+    .fragment.slide-right { transform:translateX(-40px); transition:transform 0.5s ease, opacity 0.5s ease; }
+    .fragment.slide-up,.fragment.slide-down,.fragment.slide-left,.fragment.slide-right { opacity:0; }
+    .fragment.slide-up.visible,.fragment.slide-down.visible,.fragment.slide-left.visible,.fragment.slide-right.visible { transform:none; opacity:1; }
+    .fragment.flip-up { transform:perspective(600px) rotateX(90deg); opacity:0; transition:transform 0.6s ease, opacity 0.3s ease; }
+    .fragment.flip-down { transform:perspective(600px) rotateX(-90deg); opacity:0; transition:transform 0.6s ease, opacity 0.3s ease; }
+    .fragment.flip-up.visible,.fragment.flip-down.visible { transform:none; opacity:1; }
+    /* Laser pointer / spotlight */
+    #laser-dot { position:fixed;width:12px;height:12px;border-radius:50%;background:radial-gradient(circle,#ff0000 0%,#ff0000 60%,rgba(255,0,0,0.4) 100%);box-shadow:0 0 8px 2px rgba(255,0,0,0.6);pointer-events:none;z-index:99999;display:none;transform:translate(-50%,-50%); }
+    #spotlight-overlay { position:fixed;top:0;left:0;width:100vw;height:100vh;pointer-events:none;z-index:99998;display:none; }
+    /* Slide overview panel */
+    #overview-toggle { position:fixed;top:16px;left:16px;z-index:9999;background:rgba(0,0,0,0.5);color:white;border:1px solid rgba(255,255,255,0.3);border-radius:6px;padding:6px 10px;cursor:pointer;font-size:13px;backdrop-filter:blur(4px);transition:background 0.15s; }
+    #overview-toggle:hover { background:rgba(0,0,0,0.75); }
+    :fullscreen #overview-toggle, :-webkit-full-screen #overview-toggle { display:none; }
+    #overview-panel { position:fixed;top:0;left:0;bottom:0;z-index:9998;background:rgba(15,15,25,0.95);backdrop-filter:blur(8px);border-right:1px solid rgba(255,255,255,0.1);transform:translateX(-100%);transition:transform 0.25s ease;overflow:hidden;display:flex;flex-direction:column; }
+    #overview-panel.open { transform:translateX(0); }
+    #overview-panel .ov-header { padding:12px 16px;font-size:12px;color:rgba(255,255,255,0.5);font-family:-apple-system,sans-serif;border-bottom:1px solid rgba(255,255,255,0.08);flex-shrink:0;display:flex;align-items:center;justify-content:space-between; }
+    #overview-panel .ov-body { flex:1;overflow:auto;padding:10px; }
+    #overview-panel .ov-body.linear { display:flex;flex-direction:column;gap:8px;width:180px; }
+    #overview-panel .ov-body.sections { display:flex;flex-direction:row;gap:16px;min-width:min-content;padding:10px 14px; }
+    #overview-panel .ov-section-col { display:flex;flex-direction:column;gap:8px;min-width:140px; }
+    #overview-panel .ov-section-label { font-size:10px;color:rgba(255,255,255,0.45);font-family:-apple-system,sans-serif;text-transform:uppercase;letter-spacing:0.04em;padding:0 4px 4px;border-bottom:1px solid rgba(255,255,255,0.08);margin-bottom:4px;white-space:nowrap; }
+    #overview-panel .ov-thumb { position:relative;border-radius:4px;overflow:hidden;cursor:pointer;border:2px solid transparent;transition:border-color 0.15s,box-shadow 0.15s;flex-shrink:0; }
+    #overview-panel .ov-thumb:hover { border-color:rgba(99,102,241,0.5);box-shadow:0 0 8px rgba(99,102,241,0.2); }
+    #overview-panel .ov-thumb.active { border-color:rgba(99,102,241,0.9);box-shadow:0 0 12px rgba(99,102,241,0.35); }
+    #overview-panel .ov-thumb-num { position:absolute;top:3px;left:3px;font-size:9px;color:rgba(255,255,255,0.7);background:rgba(0,0,0,0.6);padding:1px 4px;border-radius:3px;font-family:-apple-system,sans-serif;z-index:2; }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+    <section data-background-color="#1e1e2e" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
+<div style="position:absolute;left:32px;top:32px;width:214px;height:150px;z-index:1;overflow:hidden;box-sizing:border-box;"><svg width="100%" height="100%" viewBox="0 0 214 150" preserveAspectRatio="none" style="position:absolute;inset:0;overflow:visible;"><g fill="rgba99,102,241,0.15" stroke="rgba99,102,241,0.3" stroke-width="1"><rect x="0.5" y="0.5" width="213" height="149" rx="0" /></g><text x="107" y="75" dominant-baseline="middle" text-anchor="middle" font-size="12" fill="rgba255,255,255,0.4">Module</text></svg></div>
+<div style="position:absolute;left:254px;top:32px;width:214px;height:150px;z-index:1;overflow:hidden;box-sizing:border-box;"><svg width="100%" height="100%" viewBox="0 0 214 150" preserveAspectRatio="none" style="position:absolute;inset:0;overflow:visible;"><g fill="rgba99,102,241,0.15" stroke="rgba99,102,241,0.3" stroke-width="1"><rect x="0.5" y="0.5" width="213" height="149" rx="0" /></g></svg></div>
+<div style="position:absolute;left:476px;top:32px;width:214px;height:150px;z-index:1;overflow:hidden;box-sizing:border-box;"><svg width="100%" height="100%" viewBox="0 0 214 150" preserveAspectRatio="none" style="position:absolute;inset:0;overflow:visible;"><g fill="rgba99,102,241,0.15" stroke="rgba99,102,241,0.3" stroke-width="1"><rect x="0.5" y="0.5" width="213" height="149" rx="0" /></g></svg></div>
+<div style="position:absolute;left:698px;top:32px;width:214px;height:150px;z-index:1;overflow:hidden;box-sizing:border-box;"><svg width="100%" height="100%" viewBox="0 0 214 150" preserveAspectRatio="none" style="position:absolute;inset:0;overflow:visible;"><g fill="rgba99,102,241,0.15" stroke="rgba99,102,241,0.3" stroke-width="1"><rect x="0.5" y="0.5" width="213" height="149" rx="0" /></g></svg></div>
+<div style="position:absolute;left:32px;top:198px;width:436px;height:304px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><h2>Title</h2><p>Content spans multiple modules</p></div>
+<div style="position:absolute;left:828px;top:420px;width:80px;height:80px;z-index:2;overflow:hidden;box-sizing:border-box;opacity:0.7;"><svg width="100%" height="100%" viewBox="0 0 80 80" preserveAspectRatio="none" style="position:absolute;inset:0;overflow:visible;"><g fill="#6366f1" stroke="none" stroke-width="0"><ellipse cx="40" cy="40" rx="40" ry="40" /></g></svg></div>
+      <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><span class="reveal-time-widget" style="flex-shrink:0;"></span><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#3584e4;font-weight:700;">Introduction</span><span style="color:#94a3b8;font-weight:400;">Methods</span><span style="color:#94a3b8;font-weight:400;">Conclusion</span></div><span style="margin-left:12px;flex-shrink:0;">1 / 4</span></div>
+
+
+      
+    </section>
+    <section>
+    <section data-background-color="#ffffff" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
+<iframe srcdoc="<!DOCTYPE html>
+<html>
+<head><script>const EMBED_WIDTH=960,EMBED_HEIGHT=540;(function(){function fit(){document.querySelectorAll('svg').forEach(function(s){if(s._vb)return;var w=s.getAttribute('width'),h=s.getAttribute('height');if(w&amp;&amp;h&amp;&amp;!s.getAttribute('viewBox'))s.setAttribute('viewBox','0 0 '+parseFloat(w)+' '+parseFloat(h));if(s.getAttribute('viewBox')){s.setAttribute('width','100%');s.setAttribute('height','100%');s._vb=1;}});}window.addEventListener('load',fit);setTimeout(fit,100);setTimeout(fit,400);new MutationObserver(fit).observe(document.documentElement,{childList:true,subtree:true});})();</script><style>html,body{margin:0;padding:0;overflow:hidden;width:100%;height:100%;box-sizing:border-box;}canvas{display:block;}svg{display:block;}</style>
+<meta charset=&quot;utf-8&quot;>
+<title>Fourier Decomposition</title>
+<link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.4.6/jsxgraph.min.css&quot;>
+<script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.4.6/jsxgraphcore.js&quot;></script>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, serif; background: #fff; padding: 24px; }
+#wrap     { display: flex; flex-direction: column; align-items: center; gap: 16px; }
+h2        { font-size: 18px; font-weight: normal; color: #333; letter-spacing: 0.03em; }
+.sub      { font-size: 12px; color: #888; }
+#panels   { display: flex; gap: 24px; align-items: flex-start; }
+.panel    { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.ptitle   { font-size: 13px; color: #555; letter-spacing: 0.03em; }
+#b1       { width: 530px; height: 310px; }
+#b2       { width: 370px; height: 310px; }
+#controls { display: flex; align-items: center; gap: 40px; }
+.slrow    { display: flex; flex-direction: column; align-items: center; gap: 6px; }
+.slrow label { font-size: 14px; color: #333; }
+.slrow input[type=range] { width: 320px; cursor: pointer; accent-color: #BF4040; }
+.val      { color: #BF4040; font-weight: bold; }
+.chk      { font-size: 13px; color: #555; cursor: pointer; user-select: none; display: flex; align-items: center; gap: 5px; }
+.chk input { accent-color: #BF4040; cursor: pointer; }
+.legend   { display: flex; gap: 18px; font-size: 12px; color: #555; flex-wrap: wrap; }
+.legend span { display: flex; align-items: center; gap: 5px; }
+.lsw      { display: inline-block; width: 20px; height: 3px; }
+</style>
+</head>
+<body>
+<div id=&quot;wrap&quot;>
+  <div style=&quot;text-align:center&quot;>
+    <h2>Fourier Decomposition</h2>
+    <div class=&quot;sub&quot;>Building a periodic signal from harmonic components</div>
+  </div>
+  <div class=&quot;legend&quot;>
+    <span><span class=&quot;lsw&quot; style=&quot;background:#bbb;border-top:1px dashed #999&quot;></span> Target signal</span>
+    <span><span class=&quot;lsw&quot; style=&quot;background:#333;height:3px&quot;></span> Reconstruction (n harmonics)</span>
+  </div>
+  <div id=&quot;panels&quot;>
+    <div class=&quot;panel&quot;>
+      <div class=&quot;ptitle&quot;>Time series</div>
+      <div id=&quot;b1&quot;></div>
+    </div>
+    <div class=&quot;panel&quot;>
+      <div class=&quot;ptitle&quot;>Amplitude spectrum</div>
+      <div id=&quot;b2&quot;></div>
+    </div>
+  </div>
+  <div id=&quot;controls&quot;>
+    <div class=&quot;slrow&quot;>
+      <label>Harmonics &amp;nbsp; n = <span class=&quot;val&quot; id=&quot;nv&quot;>0</span>
+        &amp;nbsp;&amp;nbsp;·&amp;nbsp;&amp;nbsp;
+        Power captured: <span class=&quot;val&quot; id=&quot;pv&quot;>0.0</span>%</label>
+      <input type=&quot;range&quot; id=&quot;sl&quot; min=&quot;0&quot; max=&quot;10&quot; value=&quot;0&quot; step=&quot;1&quot;>
+    </div>
+    <label class=&quot;chk&quot;>
+      <input type=&quot;checkbox&quot; id=&quot;showComp&quot;> Show components
+    </label>
+  </div>
+</div>
+
+<script>
+&quot;use strict&quot;;
+
+// ── Signal definition ────────────────────────────────────────────
+const maxN = 10;
+const amps   = [1.0, 0.55, 0.38, 0.25, 0.18, 0.14, 0.10, 0.07, 0.05, 0.03];
+const phases = [0, Math.PI/3, -Math.PI/4, Math.PI/2, -Math.PI/6,
+                Math.PI/5, -Math.PI/3, Math.PI/4, -Math.PI/7, Math.PI/6];
+const HC = ['#2166AC','#B2182B','#1B7837','#E08214','#7B3294',
+            '#00796B','#C2185B','#1565C0','#6A1B9A','#D84315'];
+
+const totalPower = amps.reduce((s, a) => s + a * a, 0);
+
+function signal(t, n) {
+    let s = 0;
+    for (let k = 0; k < n; k++)
+        s += amps[k] * Math.cos(2 * Math.PI * (k + 1) * t + phases[k]);
+    return s;
+}
+
+// ── State ────────────────────────────────────────────────────────
+let nHarm = 0, showComp = false;
+
+// Pre-compute time points
+const NP = 500;
+const tPts = Array.from({length: NP}, (_, i) => i * 3 / (NP - 1));
+
+// Pre-compute target signal (static)
+const targetY = tPts.map(t => signal(t, maxN));
+
+// ── Board 1: Time series ─────────────────────────────────────────
+const B1 = JXG.JSXGraph.initBoard('b1', {
+    boundingbox: [-0.35, 2.3, 3.2, -2.5],
+    axis: false, grid: false,
+    showNavigation: false, showCopyright: false,
+    pan: { enabled: false }, zoom: { enabled: false },
+});
+
+// Axes
+B1.create('segment', [[0, -2.3], [0, 2.2]], {
+    strokeColor: '#444', strokeWidth: 1, highlight: false, fixed: true });
+B1.create('segment', [[-0.1, 0], [3.1, 0]], {
+    strokeColor: '#444', strokeWidth: 1, highlight: false, fixed: true });
+
+// Y ticks
+[-2, -1, 1, 2].forEach(v => {
+    B1.create('segment', [[-0.06, v], [0, v]], {
+        strokeColor: '#444', strokeWidth: 0.7, highlight: false, fixed: true });
+    B1.create('text', [-0.12, v, String(v)], {
+        fontSize: 10, color: '#666', anchorX: 'right', anchorY: 'middle',
+        fixed: true, highlight: false });
+});
+
+// X ticks
+[1, 2, 3].forEach(v => {
+    B1.create('segment', [[v, 0], [v, -0.06]], {
+        strokeColor: '#444', strokeWidth: 0.7, highlight: false, fixed: true });
+    B1.create('text', [v, -0.15, String(v)], {
+        fontSize: 10, color: '#666', anchorX: 'middle', anchorY: 'top',
+        fixed: true, highlight: false });
+});
+
+// Grid
+[-2, -1, 1, 2].forEach(v => {
+    B1.create('segment', [[0, v], [3, v]], {
+        strokeColor: '#f0f0f0', strokeWidth: 0.5, highlight: false, fixed: true });
+});
+[1, 2].forEach(v => {
+    B1.create('segment', [[v, -2.2], [v, 2.2]], {
+        strokeColor: '#f0f0f0', strokeWidth: 0.5, highlight: false, fixed: true });
+});
+
+// Axis labels
+B1.create('text', [1.5, -2.35, 'Time (period = 1)'], {
+    fontSize: 11, color: '#555', anchorX: 'middle', fixed: true, highlight: false });
+
+// Target curve (dashed gray)
+const targetCurve = B1.create('curve', [[], []], {
+    strokeColor: '#bbb', strokeWidth: 1.5, dash: 2, highlight: false });
+targetCurve.updateDataArray = function () {
+    this.dataX = tPts; this.dataY = targetY;
+};
+
+// Individual harmonic curves
+const harmCurves = [];
+for (let k = 0; k < maxN; k++) {
+    const kk = k;
+    const hc = B1.create('curve', [[], []], {
+        strokeColor: HC[kk], strokeWidth: 1.2, strokeOpacity: 0.4, highlight: false });
+    hc.updateDataArray = function () {
+        if (kk >= nHarm || !showComp) { this.dataX = []; this.dataY = []; return; }
+        this.dataX = tPts;
+        this.dataY = tPts.map(t => amps[kk] * Math.cos(2 * Math.PI * (kk + 1) * t + phases[kk]));
+    };
+    harmCurves.push(hc);
+}
+
+// Reconstruction curve (on top)
+const reconCurve = B1.create('curve', [[], []], {
+    strokeColor: '#333', strokeWidth: 2.8, highlight: false });
+reconCurve.updateDataArray = function () {
+    this.dataX = tPts;
+    this.dataY = tPts.map(t => signal(t, nHarm));
+};
+
+// ── Board 2: Amplitude spectrum ──────────────────────────────────
+const B2 = JXG.JSXGraph.initBoard('b2', {
+    boundingbox: [-0.5, 1.18, 11.3, -0.22],
+    axis: false, grid: false,
+    showNavigation: false, showCopyright: false,
+    pan: { enabled: false }, zoom: { enabled: false },
+});
+
+// Axes
+B2.create('segment', [[0.5, -0.05], [0.5, 1.12]], {
+    strokeColor: '#444', strokeWidth: 1, highlight: false, fixed: true });
+B2.create('segment', [[0.5, 0], [11, 0]], {
+    strokeColor: '#444', strokeWidth: 1, highlight: false, fixed: true });
+
+// Y ticks
+[0.2, 0.4, 0.6, 0.8, 1.0].forEach(v => {
+    B2.create('segment', [[0.5, v], [0.38, v]], {
+        strokeColor: '#444', strokeWidth: 0.7, highlight: false, fixed: true });
+    B2.create('text', [0.25, v, v.toFixed(1)], {
+        fontSize: 10, color: '#666', anchorX: 'right', anchorY: 'middle',
+        fixed: true, highlight: false });
+    B2.create('segment', [[0.5, v], [10.5, v]], {
+        strokeColor: '#f0f0f0', strokeWidth: 0.5, highlight: false, fixed: true });
+});
+
+// X labels
+for (let k = 1; k <= maxN; k++) {
+    B2.create('segment', [[k, 0], [k, -0.025]], {
+        strokeColor: '#444', strokeWidth: 0.7, highlight: false, fixed: true });
+    B2.create('text', [k, -0.08, String(k)], {
+        fontSize: 10, color: '#666', anchorX: 'middle',
+        fixed: true, highlight: false });
+}
+
+// Axis labels
+B2.create('text', [5.5, -0.18, 'Harmonic n'], {
+    fontSize: 11, color: '#555', anchorX: 'middle', fixed: true, highlight: false });
+B2.create('text', [-0.2, 0.56, 'Amplitude'], {
+    fontSize: 11, color: '#555', anchorX: 'middle', anchorY: 'middle',
+    rotate: 90, fixed: true, highlight: false });
+
+// Background bars (full spectrum, gray)
+const barW = 0.30;
+for (let k = 0; k < maxN; k++) {
+    B2.create('curve', [
+        [k+1 - barW, k+1 + barW, k+1 + barW, k+1 - barW, k+1 - barW],
+        [0, 0, amps[k], amps[k], 0]
+    ], {
+        strokeColor: '#ddd', strokeWidth: 0.5,
+        fillColor: '#f0f0f0', fillOpacity: 0.5,
+        highlight: false,
+    });
+}
+
+// Foreground bars (active harmonics, colored)
+for (let k = 0; k < maxN; k++) {
+    const kk = k;
+    const bar = B2.create('curve', [[], []], {
+        strokeColor: HC[kk], strokeWidth: 0.8,
+        fillColor: HC[kk], fillOpacity: 0.65,
+        highlight: false,
+    });
+    bar.updateDataArray = function () {
+        if (kk >= nHarm) { this.dataX = []; this.dataY = []; return; }
+        this.dataX = [kk+1 - barW, kk+1 + barW, kk+1 + barW, kk+1 - barW, kk+1 - barW];
+        this.dataY = [0, 0, amps[kk], amps[kk], 0];
+    };
+}
+
+// ── Refresh ──────────────────────────────────────────────────────
+function refresh() {
+    nHarm = +document.getElementById('sl').value;
+    showComp = document.getElementById('showComp').checked;
+    document.getElementById('nv').textContent = nHarm;
+
+    let pf = 0;
+    for (let k = 0; k < nHarm; k++) pf += amps[k] * amps[k];
+    document.getElementById('pv').textContent = (pf / totalPower * 100).toFixed(1);
+
+    B1.update();
+    B2.update();
+}
+
+document.getElementById('sl').addEventListener('input', refresh);
+document.getElementById('showComp').addEventListener('change', refresh);
+refresh();
+</script>
+</body>
+</html>
+" style="position:absolute;left:0px;top:0px;width:960px;height:540px;z-index:2;overflow:hidden;box-sizing:border-box;border:none;background:transparent;" scrolling="no"></iframe>
+      <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><span class="reveal-time-widget" style="flex-shrink:0;"></span><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#94a3b8;font-weight:400;">Introduction</span><span style="color:#3584e4;font-weight:700;">Methods</span><span style="color:#94a3b8;font-weight:400;">Conclusion</span></div><span style="margin-left:12px;flex-shrink:0;">2 / 4</span></div>
+
+
+      
+    </section>
+    <section data-background-color="#1e1e2e" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
+<div style="position:absolute;left:32px;top:32px;width:214px;height:150px;z-index:1;overflow:hidden;box-sizing:border-box;"><svg width="100%" height="100%" viewBox="0 0 214 150" preserveAspectRatio="none" style="position:absolute;inset:0;overflow:visible;"><g fill="rgba99,102,241,0.15" stroke="rgba99,102,241,0.3" stroke-width="1"><rect x="0.5" y="0.5" width="213" height="149" rx="0" /></g><text x="107" y="75" dominant-baseline="middle" text-anchor="middle" font-size="12" fill="rgba255,255,255,0.4">Module</text></svg></div>
+<div style="position:absolute;left:254px;top:32px;width:214px;height:150px;z-index:1;overflow:hidden;box-sizing:border-box;"><svg width="100%" height="100%" viewBox="0 0 214 150" preserveAspectRatio="none" style="position:absolute;inset:0;overflow:visible;"><g fill="rgba99,102,241,0.15" stroke="rgba99,102,241,0.3" stroke-width="1"><rect x="0.5" y="0.5" width="213" height="149" rx="0" /></g></svg></div>
+<div style="position:absolute;left:476px;top:32px;width:214px;height:150px;z-index:1;overflow:hidden;box-sizing:border-box;"><svg width="100%" height="100%" viewBox="0 0 214 150" preserveAspectRatio="none" style="position:absolute;inset:0;overflow:visible;"><g fill="rgba99,102,241,0.15" stroke="rgba99,102,241,0.3" stroke-width="1"><rect x="0.5" y="0.5" width="213" height="149" rx="0" /></g></svg></div>
+<div style="position:absolute;left:698px;top:32px;width:214px;height:150px;z-index:1;overflow:hidden;box-sizing:border-box;"><svg width="100%" height="100%" viewBox="0 0 214 150" preserveAspectRatio="none" style="position:absolute;inset:0;overflow:visible;"><g fill="rgba99,102,241,0.15" stroke="rgba99,102,241,0.3" stroke-width="1"><rect x="0.5" y="0.5" width="213" height="149" rx="0" /></g></svg></div>
+<div style="position:absolute;left:32px;top:198px;width:436px;height:304px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><h2>Title</h2><p>Content spans multiple modules</p></div>
+<div style="position:absolute;left:828px;top:420px;width:80px;height:80px;z-index:2;overflow:hidden;box-sizing:border-box;opacity:0.7;"><svg width="100%" height="100%" viewBox="0 0 80 80" preserveAspectRatio="none" style="position:absolute;inset:0;overflow:visible;"><g fill="#6366f1" stroke="none" stroke-width="0"><ellipse cx="40" cy="40" rx="40" ry="40" /></g></svg></div>
+      <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><span class="reveal-time-widget" style="flex-shrink:0;"></span><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#94a3b8;font-weight:400;">Introduction</span><span style="color:#3584e4;font-weight:700;">Methods</span><span style="color:#94a3b8;font-weight:400;">Conclusion</span></div><span style="margin-left:12px;flex-shrink:0;">3 / 4</span></div>
+
+
+      
+    </section>
+    </section>
+    <section data-background-color="#1e1e2e" style="padding:0;width:960px;height:600px;overflow:hidden;font-size:42px;">
+<div style="position:absolute;left:54.5251396648045px;top:12.513966480446925px;width:819.2178770949721px;height:180px;z-index:1;overflow:hidden;box-sizing:border-box; padding:8px 12px; color:white;"><p>some text <strong>(Reinhold et al., 2023)</strong></p></div>
+<div style="position:absolute;left:121.58659217877096px;top:132.56983240223462px;width:400px;height:300px;z-index:2;overflow:hidden;box-sizing:border-box;"><img src="./assets/a54744df-20b8-42fb-8142-78dcd3714c48.png" alt="" style="display:block;width:100%;height:100%;object-fit:contain;" /><span class="cite-sup">1</span></div>
+      <div class="reveal-footer" style="position:absolute;bottom:6px;left:16px;right:16px;z-index:900;display:flex;justify-content:center;align-items:center;pointer-events:none;box-sizing:border-box;"><span class="reveal-time-widget" style="flex-shrink:0;"></span><div style="display:flex;flex:1;justify-content:space-evenly;align-items:center;"><span style="color:#94a3b8;font-weight:400;">Introduction</span><span style="color:#94a3b8;font-weight:400;">Methods</span><span style="color:#3584e4;font-weight:700;">Conclusion</span></div><span style="margin-left:12px;flex-shrink:0;">4 / 4</span></div>
+
+      <div class="slide-citations"><div class="slide-citations-text">1. <a href="https://doi.org/10.1051/0004-6361/202346789" target="_blank" rel="noopener">Reinhold et al. (2023)</a></div></div>
+      
+    </section>
+    <section>
+      <div style="position:absolute;left:40px;top:30px;width:880px;height:540px;overflow:auto;z-index:1">
+        <h2 style="font-size:28px;margin:0 0 20px;color:rgba(255,255,255,0.95)">References</h2>
+        <div style="columns:2;column-gap:30px">
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[1]</span>Reinhold, Timo and Shapiro, Alexander I. and Solanki, Sami K. and Basri, Gibor (2023). New rotation period measurements of 67,163 Kepler stars. <em>Astronomy &amp; Astrophysics</em>, 678, A24. <a href="https://doi.org/10.1051/0004-6361/202346789" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[2]</span>Matt, Sean P. and Brun, A. Sacha and Baraffe, Isabelle and Bouvier, Jérôme and Chabrier, Gilles (2015). THE MASS-DEPENDENCE OF ANGULAR MOMENTUM EVOLUTION IN SUN-LIKE STARS. <em>The Astrophysical Journal</em>, 799, L23. <a href="https://doi.org/10.1088/2041-8205/799/2/L23" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[3]</span>David, Trevor J. and Petigura, Erik A. and Luger, Rodrigo and Foreman-Mackey, Daniel and Livingston, John H. and Mamajek, Eric E. and Hillenbrand, Lynne A. (2019). Four Newborn Planets Transiting the Young Solar Analog V1298 Tau. <em>The Astrophysical Journal Letters</em>, 885, L12. <a href="https://doi.org/10.3847/2041-8213/ab4c99" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[4]</span>. div-class-title-stellar-activity-differential-rotation-and-exoplanets-div.pdf..</div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[5]</span>Gordon, Tyler and Agol, Eric and Foreman-Mackey, Daniel (2020). A Fast, 2D Gaussian Process Method Based on Celerite: Applications to Transiting Exoplanet Discovery and Characterization. <em>The Astronomical Journal</em>, 160, 240. <a href="https://doi.org/10.3847/1538-3881/abbc16" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[6]</span>Aigrain, S. and Pont, F. and Zucker, S. (2012). A simple method to estimate radial velocity variations due to stellar activity using photometry*. <em>Monthly Notices of the Royal Astronomical Society</em>, 419, 3147-3158. <a href="https://doi.org/10.1111/j.1365-2966.2011.19960.x" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[7]</span>Long, Liu and Bi, Shaolan and Zhang, Jinghua and Zhang, Xianfei and Zhang, Liyun and Ge, Zhishuai and Li, Tanda and Chen, Xunzhou and Li, YaGuang and Ye, LiFei and Sun, TianCheng and Zhou, JianZhao (2023). Investigating 16 Open Clusters in the Kepler/K2–Gaia DR3 Field. I. Membership, Binary Systems, and Rotation. <em>The Astrophysical Journal Supplement Series</em>, 268, 30. <a href="https://doi.org/10.3847/1538-4365/ace5af" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[8]</span>Bedell, Megan and Hogg, David W. and Foreman-Mackey, Daniel and Montet, Benjamin T. and Luger, Rodrigo (2019). Wobble: A Data-driven Analysis Technique for Time-series Stellar Spectra. <em>The Astronomical Journal</em>, 158, 164. <a href="https://doi.org/10.3847/1538-3881/ab40a7" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[9]</span>Hsu, Chih-Chun and Burgasser, Adam J. and Theissen, Christopher A. and Gelino, Christopher R. and Birky, Jessica L. and Diamant, Sharon J. M. and Bardalez Gagliuffi, Daniella C. and Aganze, Christian and Blake, Cullen H. and Faherty, Jacqueline K. (2021). The Brown Dwarf Kinematics Project (BDKP). V. Radial and Rotational Velocities of T Dwarfs from Keck/NIRSPEC High-resolution Spectroscopy. <em>The Astrophysical Journal Supplement Series</em>, 257, 45. <a href="https://doi.org/10.3847/1538-4365/ac1c7d" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[10]</span>. Rotation and differential rotation in field F- and G-type stars | Astronomy &amp; Astrophysics (A&amp;A)..</div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[11]</span>Reiners, A. and Schmitt, J. H. M. M. (2002). On the feasibility of the detection of differential rotation in stellar absorption profiles. <em>Astronomy &amp; Astrophysics</em>, 384, 155-162. <a href="https://doi.org/10.1051/0004-6361:20011801" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[12]</span>Chen, Xiaodian and Wang, Shu and Deng, Licai and De Grijs, Richard and Yang, Ming and Tian, Hao (2020). The Zwicky Transient Facility Catalog of Periodic Variable Stars. <em>The Astrophysical Journal Supplement Series</em>, 249, 18. <a href="https://doi.org/10.3847/1538-4365/ab9cae" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[13]</span>Jayasinghe, T. and Stanek, K. Z. and Kochanek, C. S. and Shappee, B. J. and Holoien, T. W.-S. and Thompson, Todd A. and Prieto, J. L. and Dong, Subo and Pawlak, M. and Pejcha, O. and Shields, J. V. and Pojmanski, G. and Otero, S. and Britt, C. A. and Will, D. (2019). The ASAS-SN Catalog of Variable Stars II: Uniform Classification of 412,000 Known Variables. <em>Monthly Notices of the Royal Astronomical Society</em>, 486, 1907-1943. <a href="https://doi.org/10.1093/mnras/stz844" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[14]</span>Bianco, Federica B. and Ivezić, Željko and Jones, R. Lynne and Graham, Melissa L. and Marshall, Phil and Saha, Abhijit and Strauss, Michael A. and Yoachim, Peter and Ribeiro, Tiago and Anguita, Timo and Bauer, A. E. and Bauer, Franz E. and Bellm, Eric C. and Blum, Robert D. and Brandt, William N. and Brough, Sarah and Catelan, Márcio and Clarkson, William I. and Connolly, Andrew J. and Gawiser, Eric and Gizis, John E. and Hložek, Renée and Kaviraj, Sugata and Liu, Charles T. and Lochner, Michelle and Mahabal, Ashish A. and Mandelbaum, Rachel and McGehee, Peregrine and Neilsen Jr., Eric H. and Olsen, Knut A. G. and Peiris, Hiranya V. and Rhodes, Jason and Richards, Gordon T. and Ridgway, Stephen and Schwamb, Megan E. and Scolnic, Dan and Shemmer, Ohad and Slater, Colin T. and Slosar, Anže and Smartt, Stephen J. and Strader, Jay and Street, Rachel and Trilling, David E. and Verma, Aprajita and Vivas, A. K. and Wechsler, Risa H. and Willman, Beth (2022). Optimization of the Observing Cadence for the Rubin Observatory Legacy Survey of Space and Time: A Pioneering Process of Community-focused Experimental Design. <em>The Astrophysical Journal Supplement Series</em>, 258, 1. <a href="https://doi.org/10.3847/1538-4365/ac3e72" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[15]</span>Eldridge, John J. and Izzard, Robert G. and Tout, Christopher A. (2008). The effect of massive binaries on stellar populations and supernova progenitors., 384, 1109–1118. <a href="https://doi.org/10.1111/j.1365-2966.2007.12738.x" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[16]</span>Eldridge, J. J. and Tout, C. A. (2004). A more detailed look at the opacities for enriched carbon and oxygen mixtures., 348, 201–206. <a href="https://doi.org/10.1111/j.1365-2966.2004.07344.x" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[17]</span>Bastian, N. and Cabrera-Ziri, I. and Niederhofer, F. and de Mink, S. E. and Georgy, C. and Baade, D. and Correnti, M. and Usher, C. and Romaniello, M. (2017). A high fraction of Be stars in young massive clusters: evidence for a large population of near-critically rotating stars., 465, 4795–4799. <a href="https://doi.org/10.1093/mnras/stw3042" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[18]</span>Vanbeveren, D. and De Donder, E. and Van Bever, J. and Van Rensbergen, W. and De Loore, C. (1998). The WR and O-type star population predicted by massive star evolutionary synthesis., 3, 443–492. <a href="https://doi.org/10.1016/S1384-1076(98)00020-7" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[19]</span>Boubert, D. and Evans, N. W. (2018). On the kinematics of a runaway Be star population., 477, 5261–5278. <a href="https://doi.org/10.1093/mnras/sty980" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[20]</span>Vitense, E. (1953). Die wasserstoffkonvektionszone der sonne. Mit 11 textabbildungen., 32, 135.</div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[21]</span>Ugliano, Marcella and Janka, Hans-Thomas and Marek, Andreas and Arcones, Almudena (2012). Progenitor-explosion connection and remnant birth masses for neutrino-driven supernovae of iron-core progenitors., 757, 69. <a href="https://doi.org/10.1088/0004-637X/757/1/69" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[22]</span>Kaiser, Etienne A. and Hirschi, Raphael and Arnett, W. David and Georgy, Cyril and Scott, Laura J. A. and Cristini, Andrea (2020). Relative importance of convective uncertainties in massive stars., 496, 1967–1989. <a href="https://doi.org/10.1093/mnras/staa1595" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[23]</span>Lattimer, J. M. and Schramm, D. N. (1976). The tidal disruption of neutron stars by black holes in close binaries.., 210, 549–567. <a href="https://doi.org/10.1086/154860" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[24]</span>Lattimer, J. M. and Schramm, D. N. (1974). Black-hole-neutron-star collisions., 192, L145. <a href="https://doi.org/10.1086/181612" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[25]</span>Meyer, B. S. and Mathews, G. J. and Howard, W. M. and Woosley, S. E. and Hoffman, R. D. (1992). R-process nucleosynthesis in the high-entropy supernova bubble., 399, 656. <a href="https://doi.org/10.1086/171957" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[26]</span>Brun, Allan Sacha and Browning, Matthew K. (2017). Magnetism, dynamo action and the solar-stellar connection. <em>Living Reviews in Solar Physics</em>, 14, 4. <a href="https://doi.org/10.1007/s41116-017-0007-8" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[27]</span>Ballot, Jérôme and Brun, Allan Sacha and Turck-Chièze, Sylvaine (2007). Simulations of Turbulent Convection in Rotating Young Solarlike Stars: Differential Rotation and Meridional Circulation. <em>The Astrophysical Journal</em>, 669, 1190. <a href="https://doi.org/10.1086/521617" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[28]</span>Reinhold, Timo and Gizon, Laurent (2015). Rotation, differential rotation, and gyrochronology of active Kepler stars. <em>Astronomy &amp; Astrophysics</em>, 583, A65. <a href="https://doi.org/10.1051/0004-6361/201526216" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[29]</span>Brun, Allan Sacha and Browning, Matthew K. (2017). Magnetism, dynamo action and the solar-stellar connection. <em>Living Reviews in Solar Physics</em>, 14, 4. <a href="https://doi.org/10.1007/s41116-017-0007-8" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[30]</span>. Differential rotation on rapidly rotating stars.. <a href="https://doi.org/10.1002/asna.200710880" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[31]</span>. dissertation.pdf..</div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[32]</span>Boyle, Andrew W. and Bouma, Luke G. and Mann, Andrew W. (2026). The TESS All-Sky Rotation Survey: Periods for 944,056 Stars Within 500 pc.. <a href="https://doi.org/10.48550/arXiv.2603.05586" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[33]</span>Vasil, Geoffrey M. and Lecoanet, Daniel and Augustson, Kyle and Burns, Keaton J. and Oishi, Jeffrey S. and Brown, Benjamin P. and Brummell, Nicholas and Julien, Keith (2024). The solar dynamo begins near the surface. <em>Nature</em>, 629, 769-772. <a href="https://doi.org/10.1038/s41586-024-07315-1" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[34]</span>Guerrero, G. and Smolarkiewicz, P. K. and Kosovichev, A. G. and Mansour, N. N. (2013). Differential rotation in solar-like stars from global simulations. <em>The Astrophysical Journal</em>, 779, 176. <a href="https://doi.org/10.1088/0004-637X/779/2/176" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[35]</span>Netto, Yuri and Valio, Adriana (2020). Stellar Magnetic Activity and &quot;Butterfly Diagram&quot; of Kepler-63. <em>Astronomy &amp; Astrophysics</em>, 635, A78. <a href="https://doi.org/10.1051/0004-6361/201936219" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[36]</span>Browning, Matthew (2010). Differential Rotation and Magnetism in Simulations of Fully Convective Stars. <em>Proceedings of the International Astronomical Union</em>, 6, 69–77. <a href="https://doi.org/10.1017/S1743921311017467" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[37]</span>Guerrero, G. and Smolarkiewicz, P. K. and Kosovichev, A. G. and Mansour, N. N. (2013). Differential rotation in solar-like stars from global simulations. <em>The Astrophysical Journal</em>, 779, 176. <a href="https://doi.org/10.1088/0004-637X/779/2/176" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[38]</span>Nielsen, M. B. and Schunker, H. and Gizon, L. and Schou, J. and Ball, W. H. (2017). Limits on radial differential rotation in Sun-like stars from parametric fits to oscillation power spectra. <em>Astronomy &amp; Astrophysics</em>, 603, A6. <a href="https://doi.org/10.1051/0004-6361/201730896" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[39]</span>Hotta, Hideyuki and Hatta, Yoshiki (2026). The prevalence of solar-like differential rotation in slowly rotating solar-type stars. <em>Nature Astronomy</em>, 1–7. <a href="https://doi.org/10.1038/s41550-026-02793-x" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[40]</span>Hobson-Ritz, Marshall and Birky, Jessica and Peterson, Leah and Gwartney, Peter and Wong, Rachel and Delker, John and Gordon, Tyler and Gilbert, Samantha and Davenport, James R. A. and Barnes, Rory (2025). Tidal Synchronization of TESS Eclipsing Binaries. <em>The Astrophysical Journal</em>, 990, 124. <a href="https://doi.org/10.3847/1538-4357/adf10d" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[41]</span>Landin, N. R. and Mendes, L. T. S. and Vaz, L. P. R. (2010). Theoretical values of convective turnover times and Rossby numbers for solar-like, pre-main sequence stars. <em>Astronomy &amp; Astrophysics</em>, 510, A46. <a href="https://doi.org/10.1051/0004-6361/200913015" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[42]</span>Collier Cameron, A. (2007). Differential rotation on rapidly rotating stars. <em>Astronomische Nachrichten</em>, 328, 1030–1033. <a href="https://doi.org/10.1002/asna.200710880" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[43]</span>Käpylä, Petri J. and Browning, Matthew K. and Brun, Allan Sacha and Guerrero, Gustavo and Warnecke, Jörn (2023). Simulations of Solar and Stellar Dynamos and Their Theoretical Interpretation. <em>Space Science Reviews</em>, 219, 58. <a href="https://doi.org/10.1007/s11214-023-01005-6" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[44]</span>Mabuchi, Jun and Masada, Youhei and Kageyama, Akira (2015). Differential Rotation in Magnetized and Non-magnetized Stars. <em>The Astrophysical Journal</em>, 806, 10. <a href="https://doi.org/10.1088/0004-637X/806/1/10" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[45]</span>Luger, Rodrigo and Foreman-Mackey, Daniel and Hedges, Christina and Hogg, David W. (2021). Mapping Stellar Surfaces. I. Degeneracies in the Rotational Light-curve Problem. <em>The Astronomical Journal</em>, 162, 123. <a href="https://doi.org/10.3847/1538-3881/abfdb8" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[46]</span>Barrault, L. and Bugnet, L. and Mathis, S. (2024). Constraining differential rotation in gamma Doradus stars from inertial dips properties..</div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[47]</span>Breimann, Angela A. and Matt, Sean P. and Naylor, Tim (2021). Statistical Fitting of Evolution Models to Rotation Rates of Sun-Like Stars. <em>The Astrophysical Journal</em>, 913, 75. <a href="https://doi.org/10.3847/1538-4357/abf0a3" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[48]</span>Lu, Yuxi(Lucy) and Angus, Ruth and Foreman-Mackey, Daniel and Hattori, Soichiro (2024). In This Day and Age: An Empirical Gyrochronology Relation for Partially and Fully Convective Single Field Stars. <em>The Astronomical Journal</em>, 167, 159. <a href="https://doi.org/10.3847/1538-3881/ad28b9" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[49]</span>Lu, Yuxi (Lucy) and Angus, Ruth and Curtis, Jason L. and David, Trevor J. and Kiman, Rocio (2021). Gyro-kinematic Ages for around 30,000 Kepler Stars. <em>The Astronomical Journal</em>, 161, 189. <a href="https://doi.org/10.3847/1538-3881/abe4d6" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[50]</span>Barnes, Sydney A. and Kim, Yong-Cheol (2010). ANGULAR MOMENTUM LOSS FROM COOL STARS: AN EMPIRICAL EXPRESSION AND CONNECTION TO S℡LAR ACTIVITY. <em>The Astrophysical Journal</em>, 721, 675–685. <a href="https://doi.org/10.1088/0004-637X/721/1/675" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[51]</span>Lurie, John C. and Vyhmeister, Karl and Hawley, Suzanne L. and Adilia, Jamel and Chen, Andrea and Davenport, James R. A. and Jurić, Mario and Puig-Holzman, Michael and Weisenburger, Kolby L. (2017). Tidal Synchronization and Differential Rotation of Kepler Eclipsing Binaries. <em>The Astronomical Journal</em>, 154, 250. <a href="https://doi.org/10.3847/1538-3881/aa974d" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[52]</span>Davenport, James R. A. and Covey, Kevin R. (2018). Rotating Stars from Kepler Observed with Gaia DR2. <em>The Astrophysical Journal</em>, 868, 151. <a href="https://doi.org/10.3847/1538-4357/aae842" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[53]</span>Herbst, W. and Bailer-Jones, C. A. L. and Mundt, R. and Meisenheimer, K. and Wackermann, R. (2002). Stellar rotation and variability in the Orion Nebula Cluster. <em>Astronomy &amp; Astrophysics</em>, 396, 513–532. <a href="https://doi.org/10.1051/0004-6361:20021362" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[54]</span>Claytor, Zachary R. and van Saders, Jennifer L. and Llama, Joe and Sadowski, Peter and Quach, Brandon and Avallone, Ellis A. (2022). Recovery of TESS Stellar Rotation Periods Using Deep Learning. <em>The Astrophysical Journal</em>, 927, 219. <a href="https://doi.org/10.3847/1538-4357/ac498f" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[55]</span>Nielsen, M. B. and Gizon, L. and Cameron, R. H. and Miesch, M. (2019). Starspot rotation rates versus activity cycle phase: Butterfly diagrams of &lt;i&gt;Kepler&lt;/i&gt; stars are unlike that of the Sun. <em>Astronomy &amp; Astrophysics</em>, 622, A85. <a href="https://doi.org/10.1051/0004-6361/201834373" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[56]</span>Küker, Manfred and Rüdiger, Günther (2008). Modelling solar and stellar differential rotation. <em>Journal of Physics: Conference Series</em>, 118, 012029. <a href="https://doi.org/10.1088/1742-6596/118/1/012029" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[57]</span>Gilhool, Steven H. and Blake, Cullen H. and Terrien, Ryan C. and Bender, Chad and Mahadevan, Suvrath and Deshpande, Rohit (2017). The Rotation of M Dwarfs Observed by the Apache Point Galactic Evolution Experiment. <em>The Astronomical Journal</em>, 155, 38. <a href="https://doi.org/10.3847/1538-3881/aa9c7c" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[58]</span>Hsu, Chih-Chun and Burgasser, Adam J. and Theissen, Christopher A. and Gelino, Christopher R. and Birky, Jessica L. and Diamant, Sharon J. M. and Gagliuffi, Daniella C. Bardalez and Aganze, Christian and Blake, Cullen H. and Faherty, Jacqueline K. (2021). The Brown Dwarf Kinematics Project (BDKP). V. Radial and Rotational Velocities of T Dwarfs from Keck/NIRSPEC High-Resolution Spectroscopy. <em>The Astrophysical Journal Supplement Series</em>, 257, 45. <a href="https://doi.org/10.3847/1538-4365/ac1c7d" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[59]</span>Cameron, Andrew Collier (1999). Doppler Imaging of Stars with Surface Inhomogeneities. <em>International Astronomical Union Colloquium</em>, 170, 233–242. <a href="https://doi.org/10.1017/S0252921100048612" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[60]</span>Lanza, A. F. and Chagas, M. L. Das and Medeiros, J. R. De (2014). Measuring stellar differential rotation with high-precision space-borne photometry. <em>Astronomy &amp; Astrophysics</em>, 564, A50. <a href="https://doi.org/10.1051/0004-6361/201323172" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[61]</span>Gordon, Tyler A. and Davenport, James R. A. and Angus, Ruth and Foreman-Mackey, Daniel and Agol, Eric and Covey, Kevin R. and Agüeros, Marcel and Kipping, David (2021). Stellar Rotation in the K2 Sample: Evidence for Modified Spindown. <em>The Astrophysical Journal</em>, 913, 70. <a href="https://doi.org/10.3847/1538-4357/abf63e" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[62]</span>Finley, Adam J. and Matt, Sean P. and See, Victor (2018). The Effect of Magnetic Variability on Stellar Angular Momentum Loss. I. The Solar Wind Torque during Sunspot Cycles 23 and 24. <em>The Astrophysical Journal</em>, 864, 125. <a href="https://doi.org/10.3847/1538-4357/aad7b6" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[63]</span>Lanza, A. F. (2022). A model for spin-orbit commensurability and synchronous starspot activity in stars with close-by planets. <em>arXiv:2201.07481 [astro-ph]</em>.</div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[64]</span>Angus, Ruth and Beane, Angus and Price-Whelan, Adrian M. and Newton, Elisabeth and Curtis, Jason L. and Berger, Travis and van Saders, Jennifer and Kiman, Rocio and Foreman-Mackey, Daniel and Lu, Yuxi and Anderson, Lauren and Faherty, Jacqueline K. (2020). Exploring the evolution of stellar rotation using Galactic kinematics. <em>arXiv:2005.09387 [astro-ph]</em>.</div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[65]</span>Matt, Sean P. and Brun, A. Sacha and Baraffe, Isabelle and Bouvier, Jérôme and Chabrier, Gilles (2015). The Mass-dependence of Angular Momentum Evolution in Sun-like Stars. <em>The Astrophysical Journal Letters</em>, 799, L23. <a href="https://doi.org/10.1088/2041-8205/799/2/L23" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[66]</span>Habets, G. M. H. J. and Zwaan, C. (1989). Asynchronous rotation in close binary systems with circular orbits. <em>\textbackslashaap</em>, 211, 56–70.</div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[67]</span>Herbst, W. and Bailer-Jones, C. A. L. and Mundt, R. (2001). The Mass Dependence of Stellar Rotation in the Orion Nebula Cluster. <em>\textbackslashapjl</em>, 554, L197–L200. <a href="https://doi.org/10.1086/321706" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[68]</span>Kraft, R. P. (1967). Studies of Stellar Rotation. V. The Dependence of Rotation on Age among Solar-Type Stars. <em>\textbackslashapj</em>, 150, 551. <a href="https://doi.org/10.1086/149359" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[69]</span>Kovács, G. and Hartman, J. D. and Bakos, G. Á. and Quinn, S. N. and Penev, K. and Latham, D. W. and Bhatti, W. and Csubry, Z. and de Val-Borro, M. (2014). Stellar rotational periods in the planet hosting open cluster Praesepe. <em>\textbackslashmnras</em>, 442, 2081–2093. <a href="https://doi.org/10.1093/mnras/stu946" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[70]</span>Levato, H. (1974). Rotation in binary stars. <em>\textbackslashaap</em>, 35, 259–265.</div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[71]</span>MacGregor, K. B. and Brenner, M. (1991). Rotational evolution of solar-type stars. I - Main-sequence evolution. <em>\textbackslashapj</em>, 376, 204–213. <a href="https://doi.org/10.1086/170269" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[72]</span>Newton, E. R. and Irwin, J. and Charbonneau, D. and Berlind, P. and Calkins, M. L. and Mink, J. (2017). The Hα Emission of Nearby M Dwarfs and its Relation to Stellar Rotation. <em>\textbackslashapj</em>, 834, 85. <a href="https://doi.org/10.3847/1538-4357/834/1/85" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[73]</span>Pizzolato, N. and Maggio, A. and Micela, G. and Sciortino, S. and Ventura, P. (2003). The stellar activity-rotation relationship revisited: Dependence of saturated and non-saturated X-ray emission regimes on stellar mass for late-type dwarfs. <em>Astronomy &amp; Astrophysics</em>, 397, 147–157. <a href="https://doi.org/10.1051/0004-6361:20021560" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[74]</span>Barnes, Sydney A. (2003). On the Rotational Evolution of Solar- and Late-Type Stars, Its Magnetic Origins, and the Possibility of Stellar Gyrochronology*. <em>The Astrophysical Journal</em>, 586, 464. <a href="https://doi.org/10.1086/367639" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[75]</span>Delorme, P. and Collier Cameron, A. and Hebb, L. and Rostron, J. and Lister, T. A. and Norton, A. J. and Pollacco, D. and West, R. G. (2011). Stellar rotation in the Hyades and Praesepe: gyrochronology and braking time-scale. <em>\textbackslashmnras</em>, 413, 2218–2234. <a href="https://doi.org/10.1111/j.1365-2966.2011.18299.x" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[76]</span>Basri, G. (1987). Stellar activity in synchronized binaries. II - A correlation analysis with single stars. <em>\textbackslashapj</em>, 316, 377–388. <a href="https://doi.org/10.1086/165207" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[77]</span>Bolmont, Emeline and Mathis, Stéphane (2016). Effect of the rotation and tidal dissipation history of stars on the evolution of close-in planets. <em>Celestial Mechanics and Dynamical Astronomy</em>, 126, 275–296. <a href="https://doi.org/10.1007/s10569-016-9690-3" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[78]</span>Pantolmos, George and Matt, Sean P. (2017). Magnetic braking of Sun-like and low-mass stars: Dependence on coronal temperature. <em>The Astrophysical Journal</em>, 849, 83. <a href="https://doi.org/10.3847/1538-4357/aa9061" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[79]</span>Matt, Sean P. and MacGregor, Keith B. and Pinsonneault, Marc H. and Greene, Thomas P. (2012). MAGNETIC BRAKING FORMULATION FOR SUN-LIKE STARS: DEPENDENCE ON DIPOLE FIELD STRENGTH AND ROTATION RATE. <em>The Astrophysical Journal Letters</em>, 754, L26. <a href="https://doi.org/10.1088/2041-8205/754/2/L26" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[80]</span>Angus, Ruth and Morton, Timothy and Aigrain, Suzanne and Foreman-Mackey, Daniel and Rajpaul, Vinesh (2018). Inferring probabilistic stellar rotation periods using Gaussian processes. <em>Monthly Notices of the Royal Astronomical Society</em>, 474, 2094-2108. <a href="https://doi.org/10.1093/mnras/stx2109" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[81]</span>McQuillan, A. and Mazeh, T. and Aigrain, S. (2014). ROTATION PERIODS OF 34,030 KEPLER MAIN-SEQUENCE STARS: THE FULL AUTOCORRELATION SAMPLE. <em>The Astrophysical Journal Supplement Series</em>, 211, 24. <a href="https://doi.org/10.1088/0067-0049/211/2/24" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[82]</span>Luger, Rodrigo and Agol, Eric and Foreman-Mackey, Daniel and Fleming, David P. and Lustig-Yaeger, Jacob and Deitrick, Russell (2019). starry: Analytic Occultation Light Curves. <em>The Astronomical Journal</em>, 157, 64. <a href="https://doi.org/10.3847/1538-3881/aae8e5" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[83]</span>Kipping, David M. (2012). An analytic model for rotational modulations in the photometry of spotted stars. <em>Monthly Notices of the Royal Astronomical Society</em>, 427, 2487-2511. <a href="https://doi.org/10.1111/j.1365-2966.2012.22124.x" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[84]</span>Ireland, Lewis G. and Matt, Sean P. and Davey, Charlie R. and Harris, Owain L. and Slade-Harajda, Tobias W. and Finley, Adam J. and Zanni, Claudio (2022). Effect of Differential Rotation on Magnetic Braking of Low-Mass and Solar-Like Stars: A Proof-of-Concept Study. <em>The Astrophysical Journal</em>, 925, 100. <a href="https://doi.org/10.3847/1538-4357/ac3a71" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[85]</span>Aigrain, S. and Llama, J. and Ceillier, T. and Chagas, M. L. das and Davenport, J. R. A. and García, R. A. and Hay, K. L. and Lanza, A. F. and McQuillan, A. and Mazeh, T. and de Medeiros, J. R. and Nielsen, M. B. and Reinhold, T. (2015). Testing the recovery of stellar rotation signals from Kepler light curves using a blind hare-and-hounds exercise. <em>Monthly Notices of the Royal Astronomical Society</em>, 450, 3211-3226. <a href="https://doi.org/10.1093/mnras/stv853" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[86]</span>Araújo, Alexandre and Valio, Adriana (2021). Kepler-411 star activity: connection between starspots and superflares. <em>The Astrophysical Journal Letters</em>, 922, L23. <a href="https://doi.org/10.3847/2041-8213/ac3767" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[87]</span>Barnes, J. R. and Jeffers, S. V. and Jones, H. R. A. and Pavlenko, Ya V. and Jenkins, J. S. and Haswell, C. A. and Lohr, M. E. (2015). Starspot distributions on fully convective M dwarfs: implications for radial velocity planet searches. <em>The Astrophysical Journal</em>, 812, 42. <a href="https://doi.org/10.1088/0004-637X/812/1/42" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[88]</span>Kovari, Zs and Korhonen, H. and Strassmeier, K. G. and Weber, M. and Kriskovics, L. and Savanov, I. (2013). Doppler imaging of stellar surface structure - XXIV. The lithium-rich single K-giants DP Canum Venaticorum and DI Piscium. <em>Astronomy &amp; Astrophysics</em>, 551, A2. <a href="https://doi.org/10.1051/0004-6361/201220227" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[89]</span>Kővári, Zsolt and Kriskovics, Levente and Oláh, Katalin and Vida, Krisztián and Bartus, János and Strassmeier, Klaus G. and Weber, Michael (2013). Surface differential rotation of IL Hya from time-series Doppler images. <em>Proceedings of the International Astronomical Union</em>, 9, 379-380. <a href="https://doi.org/10.1017/S1743921314002543" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[90]</span>Barnes, J. R. and Cameron, A. Collier and Donati, J.-F. and James, D. J. and Marsden, S. C. and Petit, P. (2005). The Dependence of Differential Rotation on Temperature and Rotation. <em>Monthly Notices of the Royal Astronomical Society: Letters</em>, 357, L1-L5. <a href="https://doi.org/10.1111/j.1745-3933.2005.08587.x" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[91]</span>Kővári, Zs and Künstler, A. and Strassmeier, K. G. and Carroll, T. A. and Weber, M. and Kriskovics, L. and Oláh, K. and Vida, K. and Granzer, T. (2016). Time-series Doppler images and surface differential rotation of the effectively-single rapidly-rotating K-giant KU Pegasi. <em>Astronomy &amp; Astrophysics</em>, 596, A53. <a href="https://doi.org/10.1051/0004-6361/201628425" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[92]</span>Kővári, Zs and Oláh, K. and Kriskovics, L. and Vida, K. and Forgács-Dajka, E. and Strassmeier, K. G. (2017). Rotation--differential rotation relationships for late-type single and binary stars from Doppler imaging. <em>Astronomische Nachrichten</em>, 338, 903-909. <a href="https://doi.org/10.1002/asna.201713400" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[93]</span>Brun, Allan Sacha and Strugarek, Antoine and Varela, Jacobo and Matt, Sean P. and Augustson, Kyle C. and Emeriau, Constance and DoCao, Olivier Long and Brown, Benjamin and Toomre, Juri (2017). On differential rotation and overshooting in solar-like stars. <em>The Astrophysical Journal</em>, 836, 192. <a href="https://doi.org/10.3847/1538-4357/aa5c40" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[94]</span>Boulkaboul, Amina and Chaouche, Lotfi Yelles and Lanzafame, Alessandro C. and Damerdji, Yassine (2025). Magnetic activity and differential rotation of HIP12653. <em>Research in Astronomy and Astrophysics</em>, 25, 125001. <a href="https://doi.org/10.1088/1674-4527/ae05fb" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[95]</span>Araújo,  and Valio,  (2023). Dependence of stellar differential rotation on effective temperature and rotation: an analysis from starspot transit mapping.. <a href="https://doi.org/10.48550/arXiv.2309.10805" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[96]</span>Klein, Baptiste and Aigrain, Suzanne and Cretignier, Michael and Al Moulla, Khaled and Dumusque, Xavier and Barragán, Oscar and Yu, Haochuan and Mortier, Annelies and Rescigno, Federica and Cameron, Andrew Collier and López-Morales, Mercedes and Meunier, Nadège and Sozzetti, Alessandro and O’Sullivan, Niamh K (2024). Investigating stellar activity through eight years of Sun-as-a-star observations. <em>Monthly Notices of the Royal Astronomical Society</em>, 531, 4238-4262. <a href="https://doi.org/10.1093/mnras/stae1313" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[97]</span>Collier Cameron, A. and Donati, J.-F. and Semel, M. (2002). Stellar differential rotation from direct star-spot tracking. <em>Monthly Notices of the Royal Astronomical Society</em>, 330, 699-706. <a href="https://doi.org/10.1046/j.1365-8711.2002.05120.x" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[98]</span>Lund, Mikkel N. and Miesch, Mark S. and Christensen-Dalsgaard, Jørgen (2014). DIFFERENTIAL ROTATION IN MAIN-SEQUENCE SOLAR-LIKE STARS: QUALITATIVE INFERENCE FROM ASTEROSEISMIC DATA. <em>The Astrophysical Journal</em>, 790, 121. <a href="https://doi.org/10.1088/0004-637X/790/2/121" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[99]</span>Eiff, Matthias Ammler-von and Reiners, Ansgar (2012). New measurements of rotation and differential rotation in A-F stars: Are there two populations of differentially rotating stars?. <em>Astronomy &amp; Astrophysics</em>, 542, A116. <a href="https://doi.org/10.1051/0004-6361/201118724" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[100]</span>Nielsen, M. B. and Schunker, H. and Gizon, L. and Ball, W. H. (2015). Constraining differential rotation of Sun-like stars from asteroseismic and starspot rotation periods. <em>Astronomy &amp; Astrophysics</em>, 582, A10. <a href="https://doi.org/10.1051/0004-6361/201526615" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+          <div style="margin-bottom:8px;line-height:1.5;font-size:14px;color:rgba(255,255,255,0.85)"><span style="color:#5e5c64;font-weight:700;margin-right:6px">[101]</span>Lößnitz, Emily Joe and Pietrow, Alexander G. M. and Chakraborty, Hritam and Verma, Meetu and Kontogiannis, Ioannis and Balthasar, Horst and Denker, Carsten and Lendl, Monika (2025). Differential rotation of solar α sunspots and implications for stellar light curves. <em>Astronomy &amp; Astrophysics</em>, 703, A187. <a href="https://doi.org/10.1051/0004-6361/202555654" target="_blank" rel="noopener" style="color:rgba(99,102,241,0.8);font-size:0.85em">DOI</a></div>
+        </div>
+      </div>
+    </section>
+    </div>
+  </div>
+  <button id="fs-btn" title="Enter fullscreen (F)" onclick="document.documentElement.requestFullscreen&&document.documentElement.requestFullscreen()">&#x26F6; Fullscreen</button>
+  <button id="overview-toggle" title="Slide overview (G)">&#x25A6; Overview</button>
+  <div id="overview-panel"><div class="ov-header"><span>Slides</span><span id="ov-count"></span></div><div class="ov-body linear" id="ov-body"></div></div>
+  <div id="laser-dot"></div>
+  <canvas id="spotlight-overlay"></canvas>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/highlight/highlight.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script>
+    var _customTransitions = ['differential-rotation'];
+    var _globalTransition = 'slide';
+    var _isGlobalCustom = _customTransitions.indexOf(_globalTransition) !== -1;
+    Reveal.initialize({
+      hash: true,
+      width: 960,
+      height: 600,
+      margin: 0,
+      minScale: 0,
+      maxScale: 10,
+      center: false,
+      transition: _isGlobalCustom ? 'none' : _globalTransition,
+      plugins: [ RevealNotes, RevealHighlight ]
+    });
+    Reveal.on('ready', function() {
+      document.querySelectorAll('span[data-math-latex]').forEach(function(el) {
+        try {
+          katex.render(el.getAttribute('data-math-latex'), el, {
+            displayMode: el.getAttribute('data-math-display') === 'true',
+            throwOnError: false
+          });
+        } catch(e) {}
+      });
+    });
+    // ── Custom transitions (differential rotation) ───────────────────────
+    (function() {
+      var prevH = 0, prevV = 0;
+      Reveal.on('ready', function(e) { prevH = e.indexh || 0; prevV = e.indexv || 0; });
+      Reveal.on('slidechanged', function(e) {
+        var prev = e.previousSlide;
+        var transName = null;
+        if (prev && prev.getAttribute('data-custom-transition'))
+          transName = prev.getAttribute('data-custom-transition');
+        else if (_isGlobalCustom)
+          transName = _globalTransition;
+        var dir = 1;
+        if ((e.indexh || 0) < prevH || ((e.indexh || 0) === prevH && (e.indexv || 0) < prevV)) dir = -1;
+        prevH = e.indexh || 0;
+        prevV = e.indexv || 0;
+        if (transName === 'differential-rotation') drTransition(dir);
+      });
+      function drTransition(dir) {
+        var N = 16;
+        var vw = window.innerWidth, vh = window.innerHeight;
+        var bh = vh / N;
+        var BAUHAUS = ['#CC0000', '#003399', '#FFCC00'];
+        var overlay = document.createElement('div');
+        overlay.style.cssText = 'position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:9998;pointer-events:none;overflow:hidden;';
+        var pending = N;
+        for (var i = 0; i < N; i++) {
+          var band = document.createElement('div');
+          band.style.cssText = 'position:absolute;left:0;width:100%;background:#000;box-sizing:border-box;';
+          band.style.top = (i * bh) + 'px';
+          band.style.height = (bh + 0.5) + 'px';
+          if (i < N - 1) {
+            band.style.borderBottom = '1.5px solid ' + BAUHAUS[i % 3];
+          }
+          overlay.appendChild(band);
+          var lat = Math.PI * ((i + 0.5) / N - 0.5);
+          var cos2 = Math.cos(lat); cos2 = cos2 * cos2;
+          var dur = 0.4 + 1.0 * (1 - cos2);
+          gsap.to(band, {
+            x: dir * (vw + 20),
+            duration: dur,
+            ease: 'none',
+            onComplete: function() { pending--; if (pending <= 0) overlay.remove(); }
+          });
+        }
+        document.body.appendChild(overlay);
+      }
+    })();
+
+    // ── Image click interactions (popup + expand) ─────────────────────
+    (function() {
+      function dismissAll() {
+        var p = document.querySelector('.image-popup');
+        if (p) { p.classList.remove('active'); setTimeout(function() { p.remove(); }, 200); }
+        var ov = document.querySelector('.expand-overlay');
+        if (ov) { ov.classList.remove('active'); setTimeout(function() { ov.remove(); }, 200); }
+      }
+      function showPopup(el, anchor) {
+        var old = document.querySelector('.image-popup');
+        if (old) old.remove();
+        var text = el.getAttribute('data-popup');
+        var pos = el.getAttribute('data-popup-pos') || 'below';
+        var fs = el.getAttribute('data-popup-fs') || '15';
+        var rect = anchor.getBoundingClientRect();
+        var p = document.createElement('div');
+        p.className = 'image-popup';
+        p.textContent = text;
+        p.style.fontSize = fs + 'px';
+        if (pos === 'center') {
+          p.style.left = (rect.left + rect.width/2) + 'px';
+          p.style.top = (rect.top + rect.height/2) + 'px';
+          p.style.transform = 'translate(-50%,-50%)';
+        } else if (pos === 'side') {
+          p.style.top = (rect.top + rect.height/2) + 'px';
+          if (rect.right + 320 < window.innerWidth) {
+            p.style.left = (rect.right + 12) + 'px';
+            p.style.transform = 'translateY(-50%)';
+          } else {
+            p.style.left = (rect.left - 12) + 'px';
+            p.style.transform = 'translate(-100%,-50%)';
+          }
+        } else {
+          p.style.left = (rect.left + rect.width/2) + 'px';
+          p.style.top = (rect.bottom + 12) + 'px';
+          p.style.transform = 'translateX(-50%)';
+        }
+        document.body.appendChild(p);
+        requestAnimationFrame(function() { p.classList.add('active'); });
+      }
+      document.addEventListener('click', function(e) {
+        if (e.target.closest('.image-popup')) return;
+        var ov = e.target.closest('.expand-overlay');
+        if (ov) {
+          if (e.target.tagName === 'IMG') return;
+          dismissAll(); return;
+        }
+        var el = e.target.closest('[data-popup],[data-expand]');
+        if (!el) { dismissAll(); return; }
+        e.stopPropagation();
+        dismissAll();
+        var hasPopup = el.hasAttribute('data-popup');
+        var hasExpand = el.hasAttribute('data-expand');
+        var img = el.querySelector('img');
+        if (hasExpand && img) {
+          var overlay = document.createElement('div');
+          overlay.className = 'expand-overlay';
+          var big = document.createElement('img');
+          big.src = img.src;
+          big.onclick = function(ev) { ev.stopPropagation(); };
+          overlay.appendChild(big);
+          document.body.appendChild(overlay);
+          requestAnimationFrame(function() {
+            overlay.classList.add('active');
+            if (hasPopup) showPopup(el, big);
+          });
+        } else if (hasPopup) {
+          showPopup(el, el);
+        }
+      });
+      document.addEventListener('keydown', function(e) { if (e.key === 'Escape') dismissAll(); });
+    })();
+
+    // ── Slide overview panel ──────────────────────────────────────────
+    (function() {
+      var LAYOUT = 'linear';
+      var SLIDES = [{"h":0,"v":0,"flatIdx":0,"section":""},{"h":1,"v":0,"flatIdx":1,"section":""},{"h":1,"v":1,"flatIdx":2,"section":""},{"h":2,"v":0,"flatIdx":3,"section":""}];
+      var panel = document.getElementById('overview-panel');
+      var body = document.getElementById('ov-body');
+      var toggle = document.getElementById('overview-toggle');
+      var countEl = document.getElementById('ov-count');
+      var thumbs = [];
+      var THUMB_W = LAYOUT === 'sections' ? 130 : 150;
+      var slideW = 960, slideH = 600;
+      var thumbH = Math.round(THUMB_W * slideH / slideW);
+      var isOpen = false;
+
+      countEl.textContent = SLIDES.length;
+
+      function buildThumbnails() {
+        var allSections = document.querySelectorAll('.reveal .slides > section');
+        var slideEls = [];
+        allSections.forEach(function(sec) {
+          var nested = sec.querySelectorAll(':scope > section');
+          if (nested.length > 0) {
+            nested.forEach(function(s) { slideEls.push(s); });
+          } else {
+            slideEls.push(sec);
+          }
+        });
+
+        if (LAYOUT === 'sections') {
+          var groups = {};
+          var order = [];
+          SLIDES.forEach(function(s, i) {
+            var key = s.section || '(No Section)';
+            if (!groups[key]) { groups[key] = []; order.push(key); }
+            groups[key].push({ meta: s, idx: i, el: slideEls[i] });
+          });
+          order.forEach(function(key) {
+            var col = document.createElement('div');
+            col.className = 'ov-section-col';
+            var label = document.createElement('div');
+            label.className = 'ov-section-label';
+            label.textContent = key;
+            col.appendChild(label);
+            groups[key].forEach(function(item) {
+              col.appendChild(makeThumb(item.meta, item.idx, item.el));
+            });
+            body.appendChild(col);
+          });
+        } else {
+          SLIDES.forEach(function(s, i) {
+            body.appendChild(makeThumb(s, i, slideEls[i]));
+          });
+        }
+      }
+
+      function makeThumb(meta, idx, srcEl) {
+        var wrap = document.createElement('div');
+        wrap.className = 'ov-thumb';
+        wrap.style.width = THUMB_W + 'px';
+        wrap.style.height = thumbH + 'px';
+        var num = document.createElement('div');
+        num.className = 'ov-thumb-num';
+        num.textContent = idx + 1;
+        wrap.appendChild(num);
+        if (srcEl) {
+          var clone = srcEl.cloneNode(true);
+          clone.style.cssText = 'position:absolute;top:0;left:0;width:' + slideW + 'px;height:' + slideH + 'px;transform:scale(' + (THUMB_W/slideW) + ');transform-origin:top left;pointer-events:none;overflow:hidden;';
+          clone.querySelectorAll('.reveal-footer').forEach(function(f) { f.remove(); });
+          clone.querySelectorAll('iframe').forEach(function(f) { f.remove(); });
+          clone.querySelectorAll('video').forEach(function(v) { v.pause(); v.removeAttribute('autoplay'); });
+          wrap.appendChild(clone);
+        } else {
+          wrap.style.background = 'rgba(30,30,46,0.8)';
+        }
+        wrap.onclick = function() { Reveal.slide(meta.h, meta.v); updateActive(); };
+        thumbs.push({ el: wrap, h: meta.h, v: meta.v });
+        return wrap;
+      }
+
+      function updateActive() {
+        var state = Reveal.getIndices();
+        thumbs.forEach(function(t) {
+          if (t.h === state.h && t.v === state.v) t.el.classList.add('active');
+          else t.el.classList.remove('active');
+        });
+        var active = body.querySelector('.ov-thumb.active');
+        if (active) active.scrollIntoView({ block: 'nearest', inline: 'nearest', behavior: 'smooth' });
+      }
+
+      function togglePanel() {
+        isOpen = !isOpen;
+        if (isOpen) panel.classList.add('open');
+        else panel.classList.remove('open');
+      }
+
+      toggle.onclick = togglePanel;
+      document.addEventListener('keydown', function(e) {
+        if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+        if (e.key === 'g' || e.key === 'G') { e.preventDefault(); togglePanel(); }
+      });
+
+      Reveal.on('ready', function() { buildThumbnails(); updateActive(); });
+      Reveal.on('slidechanged', function() { updateActive(); });
+    })();
+
+
+
+    (function() {
+      var mode = 'clock24';
+      var timerDur = 20 * 60;
+      var timerStart = Date.now();
+      function pad(n) { return n < 10 ? '0' + n : '' + n; }
+      function fmt() {
+        if (mode === 'clock12') return new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: true });
+        if (mode === 'clock24') return new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: false });
+        var elapsed = Math.floor((Date.now() - timerStart) / 1000);
+        var secs = mode === 'timer-down' ? Math.max(0, timerDur - elapsed) : elapsed;
+        var h = Math.floor(secs / 3600), m = Math.floor((secs % 3600) / 60), s = secs % 60;
+        return h > 0 ? h + ':' + pad(m) + ':' + pad(s) : pad(m) + ':' + pad(s);
+      }
+      function update() { document.querySelectorAll('.reveal-time-widget').forEach(function(el) { el.textContent = fmt(); }); }
+      update();
+      setInterval(update, 1000);
+    })();
+
+  </script>
+</body>
+</html>
